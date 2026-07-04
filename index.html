@@ -446,9 +446,19 @@ function toggleSpot(id){
   render();
 }
 
-/* ── data loading ── */
+/* ── data loading ──
+   Every fetch has a hard timeout: a hanging request (e.g. an API mid-outage
+   returning nothing) must NEVER block rendering. Each source renders as soon
+   as it lands — data.json and the live layer are fully independent. */
+function fetchT(url, ms){
+  var ctl = (typeof AbortController !== 'undefined') ? new AbortController() : null;
+  var t;
+  var p = fetch(url, ctl ? { cache:'no-store', signal:ctl.signal } : { cache:'no-store' });
+  var timeout = new Promise(function(_, rej){ t = setTimeout(function(){ if (ctl) ctl.abort(); rej(new Error('timeout ' + ms + 'ms')); }, ms); });
+  return Promise.race([p, timeout]).then(function(r){ clearTimeout(t); return r; }, function(e){ clearTimeout(t); throw e; });
+}
 function loadData(){
-  return fetch('data.json?_=' + Date.now(), { cache:'no-store' })
+  return fetchT('data.json?_=' + Date.now(), 12000)
     .then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(function(j){
       if (!j || !j.days || !j.days.length) throw new Error('bad shape');
@@ -457,13 +467,14 @@ function loadData(){
     });
 }
 function loadLive(){
-  function get(u){ return fetch(u, { cache:'no-store' }).then(function(r){ if (!r.ok) throw 0; return r.json(); }); }
-  return Promise.allSettled ? Promise.allSettled([get(OM_MARINE), get(OM_WEATHER)]).then(function(rs){
-    LIVE.marine = rs[0].status === 'fulfilled' ? rs[0].value.current : null;
-    LIVE.weather = rs[1].status === 'fulfilled' ? rs[1].value.current : null;
-    LIVE.ok = !!(LIVE.marine || LIVE.weather);
+  function get(u){ return fetchT(u, 10000).then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }); }
+  function settle(p){ return p.then(function(v){ return { ok:true, v:v }; }, function(e){ return { ok:false, e:e }; }); }
+  return Promise.all([settle(get(OM_MARINE)), settle(get(OM_WEATHER))]).then(function(rs){
+    LIVE.marine = rs[0].ok ? rs[0].v.current : LIVE.marine;   // keep last good on transient failure
+    LIVE.weather = rs[1].ok ? rs[1].v.current : null;         // wind falls back to 6am forecast in UI
+    LIVE.ok = !!(rs[0].ok || rs[1].ok);
     if (LIVE.ok) LIVE.at = Date.now();
-  }) : Promise.resolve();
+  });
 }
 
 var REFRESHING = false, LAST_REFRESH = 0;
@@ -473,8 +484,14 @@ function refreshAll(force){
   if (!force && now - LAST_REFRESH < 30000) { render(); return; } // re-render only (clock/next-tide) on bursty resume events
   REFRESHING = true; LAST_REFRESH = now;
   $('rbtn').classList.add('spin');
-  Promise.all([ loadData().catch(function(e){ console.warn('data.json failed', e); }), loadLive() ])
-    .then(function(){ REFRESHING = false; $('rbtn').classList.remove('spin'); render(); });
+  var pending = 2;
+  function done(){
+    render(); // progressive: paint whatever just arrived
+    if (--pending <= 0) { REFRESHING = false; $('rbtn').classList.remove('spin'); }
+  }
+  loadData().catch(function(e){ console.warn('data.json failed', e); }).then(done);
+  loadLive().then(done, done);
+  setTimeout(function(){ if (REFRESHING) { REFRESHING = false; $('rbtn').classList.remove('spin'); render(); } }, 25000); // belt & braces
 }
 
 /* ── pull to refresh ── */
