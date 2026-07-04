@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Surf Guru</title>
+<meta name="description" content="Uira's Northern Beaches surf dashboard — daily Surfline verdict + live conditions">
+<meta name="theme-color" content="#0b3a5c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Surf Guru">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" href="icon-180.png">
+<style>
+  :root {
+    color-scheme: light;
+    --bg:#f2f5f8; --card:#fff; --line:#e5eaf0;
+    --ink:#101827; --ink2:#4b5563; --ink3:#8b95a3;
+    --accent:#0a6ea8; --accent-soft:#e3f1f9;
+    --good:#178a50; --good-soft:#e2f5ea;
+    --fair:#b07d10; --fair-soft:#fdf3d9;
+    --poor:#c0392b; --poor-soft:#fdeae7;
+    --est:#7a6cc9;  --est-soft:#eeebfa;
+    --r:16px; --rs:11px;
+    --shadow:0 1px 3px rgba(16,24,39,.07);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI',Roboto,sans-serif;
+    background:var(--bg); color:var(--ink); font-size:15px; line-height:1.45;
+    padding-bottom:calc(24px + env(safe-area-inset-bottom));
+    overscroll-behavior-y:contain;
+  }
+  button { font:inherit; border:0; background:none; color:inherit; cursor:pointer; }
+
+  /* header */
+  .hdr {
+    position:sticky; top:0; z-index:100;
+    background:linear-gradient(160deg,#0b3a5c,#0a6ea8);
+    color:#fff; padding:calc(10px + env(safe-area-inset-top)) 16px 10px;
+  }
+  .hdr-in { display:flex; align-items:center; gap:10px; max-width:560px; margin:0 auto; }
+  .hdr h1 { font-size:17px; font-weight:800; letter-spacing:-.02em; }
+  .hdr .sub { font-size:11px; opacity:.75; }
+  .hdr .right { margin-left:auto; display:flex; align-items:center; gap:8px; }
+  .pill {
+    display:inline-flex; align-items:center; gap:5px;
+    font-size:10.5px; font-weight:700; padding:4px 9px; border-radius:99px;
+    background:rgba(255,255,255,.16);
+  }
+  .pill .dot { width:6px; height:6px; border-radius:50%; background:#7fd8a8; }
+  .pill.stale .dot { background:#f5c04e; }
+  .pill.err .dot { background:#f08a7a; }
+  .rbtn {
+    width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,.16);
+    display:flex; align-items:center; justify-content:center; font-size:16px;
+  }
+  .rbtn:active { background:rgba(255,255,255,.3); }
+  .rbtn.spin svg { animation:rot 1s linear infinite; }
+  @keyframes rot { to { transform:rotate(360deg); } }
+
+  /* pull to refresh */
+  #ptr {
+    height:0; overflow:hidden; display:flex; align-items:flex-end; justify-content:center;
+    color:var(--ink3); font-size:12px; font-weight:600; transition:height .2s ease;
+  }
+  #ptr.pulling { transition:none; }
+  #ptr .in { padding:8px; }
+
+  .wrap { max-width:560px; margin:0 auto; padding:12px 14px 0; }
+
+  /* strips */
+  .strip {
+    display:flex; gap:8px; align-items:baseline; font-size:12.5px;
+    padding:9px 13px; border-radius:var(--rs); margin-bottom:10px; line-height:1.4;
+  }
+  .strip.shark { background:var(--poor-soft); color:#7f2222; }
+  .strip.shark.clear { background:var(--good-soft); color:#14532d; }
+  .strip a { color:inherit; font-weight:700; }
+
+  /* day tabs */
+  .seg { display:flex; background:#e6ebf1; border-radius:12px; padding:3px; margin-bottom:12px; }
+  .seg button { flex:1; padding:8px 4px; font-size:13.5px; font-weight:600; border-radius:9px; color:var(--ink2); min-height:42px; }
+  .seg button.on { background:#fff; color:var(--ink); box-shadow:0 1px 4px rgba(16,24,39,.12); }
+  .seg button .d { display:block; font-size:9.5px; font-weight:500; color:var(--ink3); }
+
+  /* verdict */
+  .verdict {
+    background:linear-gradient(160deg,#0b3a5c 0%,#0a6ea8 90%); color:#fff;
+    border-radius:var(--r); padding:16px; margin-bottom:12px;
+    box-shadow:0 6px 18px rgba(10,60,92,.25);
+  }
+  .verdict .k { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; opacity:.7; }
+  .verdict .hl { font-size:21px; font-weight:800; letter-spacing:-.02em; margin:3px 0 2px; }
+  .verdict .why { font-size:13px; opacity:.92; }
+  .vrow { display:flex; gap:8px; margin-top:12px; }
+  .vstat { flex:1; background:rgba(255,255,255,.13); border-radius:11px; padding:7px 10px; min-width:0; }
+  .vstat .n { font-size:15px; font-weight:700; white-space:nowrap; }
+  .vstat .l { font-size:9.5px; text-transform:uppercase; letter-spacing:.05em; opacity:.7; }
+  .vwin { margin-top:11px; background:rgba(255,255,255,.13); border-radius:11px; padding:9px 12px; font-size:12.5px; }
+  .vwin b { display:block; font-size:10px; text-transform:uppercase; letter-spacing:.07em; opacity:.7; font-weight:700; margin-bottom:1px; }
+
+  /* live card */
+  .card { background:var(--card); border-radius:var(--r); padding:14px; box-shadow:var(--shadow); margin-bottom:12px; }
+  .card h2 { font-size:14px; font-weight:700; display:flex; align-items:center; gap:7px; margin-bottom:10px; }
+  .live-tag { font-size:9px; font-weight:800; letter-spacing:.06em; color:#fff; background:var(--good); border-radius:99px; padding:2.5px 7px; display:inline-flex; align-items:center; gap:4px; }
+  .live-tag .d { width:5px; height:5px; background:#fff; border-radius:50%; animation:blink 1.6s infinite; }
+  @keyframes blink { 50% { opacity:.3; } }
+  .live-tag.off { background:var(--ink3); }
+  .card h2 .when { margin-left:auto; font-size:10.5px; font-weight:500; color:var(--ink3); }
+  .lgrid { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+  .lv { background:var(--bg); border-radius:var(--rs); padding:8px 10px; }
+  .lv .v { font-size:15px; font-weight:700; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .lv .v small { font-size:11px; font-weight:600; color:var(--ink2); }
+  .lv .k { font-size:9.5px; color:var(--ink3); text-transform:uppercase; letter-spacing:.05em; }
+  .lv .s { font-size:10.5px; color:var(--ink2); margin-top:1px; }
+  .lnote { font-size:11.5px; color:var(--ink3); margin-top:9px; }
+
+  /* spots */
+  .sec-h { font-size:15px; font-weight:700; margin:2px 0 8px; display:flex; align-items:baseline; gap:8px; }
+  .sec-h .hint { font-size:11px; font-weight:500; color:var(--ink3); }
+  .spot { background:var(--card); border-radius:var(--r); box-shadow:var(--shadow); margin-bottom:8px; overflow:hidden; }
+  .spot-btn { display:grid; grid-template-columns:1fr auto; gap:2px 10px; width:100%; text-align:left; padding:12px 14px; }
+  .spot-btn:active { background:#fafbfc; }
+  .spot .nm { font-size:14.5px; font-weight:700; display:flex; align-items:center; gap:7px; }
+  .spot .sz { font-size:14.5px; font-weight:800; text-align:right; font-variant-numeric:tabular-nums; }
+  .spot .meta { font-size:11.5px; color:var(--ink2); }
+  .spot .sub { font-size:11.5px; color:var(--ink3); text-align:right; }
+  .chip { display:inline-flex; font-size:9.5px; font-weight:800; text-transform:uppercase; letter-spacing:.04em; border-radius:99px; padding:2px 7px; }
+  .chip.good { background:var(--good-soft); color:var(--good); }
+  .chip.fair { background:var(--fair-soft); color:var(--fair); }
+  .chip.poor { background:var(--poor-soft); color:var(--poor); }
+  .chip.est { background:var(--est-soft); color:var(--est); }
+  .best-tag { font-size:9px; font-weight:800; color:var(--accent); background:var(--accent-soft); border-radius:99px; padding:2px 6px; }
+  .spot-det { border-top:1px solid var(--line); padding:12px 14px; display:none; }
+  .spot.open .spot-det { display:block; }
+  .spot-det .note { font-size:12.5px; color:var(--ink2); }
+  .kv { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; margin-top:10px; }
+  .kv div { background:var(--bg); border-radius:9px; padding:7px 9px; }
+  .kv .v { font-size:13.5px; font-weight:700; }
+  .kv .k2 { font-size:9px; color:var(--ink3); text-transform:uppercase; letter-spacing:.05em; }
+  .swl { display:flex; align-items:center; gap:8px; padding:7px 0; border-bottom:1px solid var(--line); font-size:12.5px; }
+  .swl:last-child { border-bottom:0; }
+  .swl .h { font-weight:700; min-width:46px; }
+  .swl .lbl { margin-left:auto; font-size:9.5px; font-weight:700; text-transform:uppercase; color:var(--accent); background:var(--accent-soft); padding:2px 7px; border-radius:99px; }
+  .dal { background:var(--poor-soft); color:#7f2222; border-radius:9px; padding:8px 11px; font-size:11.5px; margin-top:9px; }
+  .tipbox { background:var(--accent-soft); border-radius:9px; padding:9px 11px; font-size:12px; color:#0b4a70; margin-top:9px; }
+  .tipbox b { display:block; }
+
+  /* tides */
+  .tides { display:grid; grid-template-columns:repeat(4,1fr); gap:7px; }
+  .tide { background:var(--bg); border-radius:var(--rs); padding:8px 4px; text-align:center; }
+  .tide.next { background:var(--accent-soft); }
+  .tide .h { font-size:13.5px; font-weight:700; }
+  .tide.hi .h { color:var(--accent); }
+  .tide .t { font-size:11px; color:var(--ink2); }
+  .tide .y { font-size:8.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink3); }
+
+  /* gear */
+  .gear { border-left:3px solid var(--accent); background:var(--bg); border-radius:9px; padding:10px 12px; margin-bottom:8px; }
+  .gear .g1 { display:flex; align-items:center; gap:7px; font-size:13.5px; font-weight:700; flex-wrap:wrap; }
+  .gtag { font-size:9px; font-weight:800; text-transform:uppercase; color:var(--accent); background:var(--accent-soft); border-radius:99px; padding:2px 7px; }
+  .gear .gf { font-size:12px; font-weight:600; color:var(--accent); margin-top:1px; }
+  .gear .gw { font-size:11.5px; color:var(--ink2); margin-top:2px; }
+  .wet { display:flex; gap:9px; align-items:center; font-size:12.5px; background:var(--bg); border-radius:9px; padding:9px 12px; }
+  .wet .alt { font-size:11px; color:var(--ink3); }
+
+  .foot { text-align:center; font-size:10.5px; color:var(--ink3); line-height:1.7; margin-top:18px; padding:0 10px; }
+  .err { background:var(--poor-soft); color:#7f2222; border-radius:var(--r); padding:16px; font-size:13.5px; margin-bottom:12px; }
+  .skel { color:var(--ink3); font-size:13px; text-align:center; padding:30px 0; }
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <div>
+      <h1>🌊 Surf Guru</h1>
+      <div class="sub" id="hdrSub">Northern Beaches</div>
+    </div>
+    <div class="right">
+      <span class="pill" id="pill"><span class="dot"></span><span id="pillTxt">…</span></span>
+      <button class="rbtn" id="rbtn" aria-label="Refresh" onclick="refreshAll(true)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-2.64-6.36M21 3v6h-6"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="ptr"><div class="in" id="ptrTxt">Pull to refresh</div></div>
+
+<div class="wrap" id="app"><div class="skel">Loading forecast…</div></div>
+
+<script>
+'use strict';
+/* ═══ Surf Guru Mobile — rebuilt 2026-07-04 ═══
+   Data: data.json (published daily by the 6am agent) + Open-Meteo live layer (fetched on device).
+   No service worker by design: every open hits the network; last good data cached in localStorage. */
+
+var SPOTS = [
+  { id:'dee-why',   name:'Dee Why',   emoji:'🏠' },
+  { id:'long-reef', name:'Long Reef', emoji:'🌿' },
+  { id:'curl-curl', name:'Curl Curl', emoji:'🌀' },
+  { id:'manly',     name:'Manly',     emoji:'🌊' }
+];
+var QUIVER_WETSUITS = [
+  { name:"O'Neill Hyperfreak 4/3", lo:12, hi:17 },
+  { name:'Rip Curl Heatseeker 3/2', lo:16, hi:21 },
+  { name:'Rip Curl SS/LL 2/2', lo:20, hi:24 }
+];
+var RATING_SCORE = { 'poor':18,'poor-fair':35,'fair':52,'fair-good':68,'good':82,'epic':95 };
+var RATING_LABEL = { 'poor':'Poor','poor-fair':'Poor–Fair','fair':'Fair','fair-good':'Fair–Good','good':'Good','epic':'Epic' };
+
+/* Open-Meteo endpoints — fetched from the phone, CORS-enabled, no key */
+var OM_MARINE = 'https://marine-api.open-meteo.com/v1/marine?latitude=-33.7508&longitude=151.3050'
+  + '&current=wave_height,wave_period,wave_direction,swell_wave_height,swell_wave_period,swell_wave_direction,sea_surface_temperature'
+  + '&timezone=Australia%2FSydney';
+var OM_WEATHER = 'https://api.open-meteo.com/v1/forecast?latitude=-33.7538&longitude=151.2850'
+  + '&current=temperature_2m,wind_speed_10m,wind_gusts_10m,wind_direction_10m'
+  + '&wind_speed_unit=kmh&timezone=Australia%2FSydney';
+
+var SURF = null, LIVE = { marine:null, weather:null, at:null, ok:false };
+var state = { view:'today', spot:'dee-why', open:false };
+try {
+  var s1 = localStorage.getItem('sgm-view'); if (['today','tomorrow','weekend'].indexOf(s1) !== -1) state.view = s1;
+  var s2 = localStorage.getItem('sgm-spot'); if (SPOTS.some(function(s){ return s.id === s2; })) state.spot = s2;
+} catch(e){}
+
+function $(id){ return document.getElementById(id); }
+function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+function day(){ if (!SURF) return null; return SURF.days.filter(function(d){ return d.id === state.view; })[0] || SURF.days[0]; }
+function ftFromM(m){ return m == null ? null : Math.round(m * 3.28084 * 10) / 10; }
+function deg16(d){ var n=['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW']; return n[Math.round(((d % 360) / 22.5)) % 16]; }
+function windRel(deg){ // Northern Beaches face ~ESE
+  if (deg == null) return '';
+  if (deg >= 225 && deg <= 335) return 'offshore';
+  if (deg >= 45 && deg <= 155) return 'onshore';
+  return 'cross';
+}
+function timeAgo(t){ var m = Math.round((Date.now() - t) / 60000); return m < 1 ? 'just now' : m + 'm ago'; }
+function toMin(s){ var m = String(s||'').match(/(\d+):(\d+)\s*(am|pm)/i); if (!m) return -1; var h = +m[1] % 12; if (/pm/i.test(m[3])) h += 12; return h * 60 + +m[2]; }
+function sydNowMin(){ var p = new Date().toLocaleTimeString('en-GB',{ timeZone:'Australia/Sydney', hour:'2-digit', minute:'2-digit' }).split(':'); return +p[0]*60 + +p[1]; }
+
+/* ── decision engine (ported intact from desktop v3) ── */
+function dirMult(deg){
+  if (deg == null) return .7;
+  if (deg >= 30 && deg <= 80) return 1;
+  if (deg > 80 && deg <= 160) return .88;
+  if (deg > 160 && deg <= 195) return .55;
+  return .65;
+}
+function scoreSpot(sd){
+  if (!sd) return 0;
+  var s = RATING_SCORE[sd.rating] || 40;
+  if (sd.energy_kj != null) s = s * .6 + Math.min(sd.energy_kj / 300, 1) * 22 + ((sd.consistency || 50) / 100) * 18;
+  if (sd.swells && sd.swells[0]) s *= (dirMult(sd.swells[0].deg) * .3 + .7);
+  if (sd.wind_rel && sd.wind_rel.indexOf('offshore') !== -1) s += 4;
+  if (sd.wind_rel === 'onshore') s -= 8;
+  return Math.max(2, Math.min(99, Math.round(s)));
+}
+function bestSpot(d){
+  var best = null, bs = -1;
+  SPOTS.forEach(function(sp){
+    var sd = d.spots[sp.id]; if (!sd) return;
+    var sc = scoreSpot(sd);
+    if (sc > bs) { bs = sc; best = { sp:sp, sd:sd, score:sc }; }
+  });
+  return best;
+}
+function sizeMaxFt(str){ var m = String(str||'').match(/(\d+)\s*[–-]\s*(\d+)/); return m ? +m[2] : (parseInt(str,10) || 0); }
+function pickGear(sd){
+  if (!sd) return null;
+  var mx = sizeMaxFt(sd.size_ft), r = sd.rating || 'fair', en = sd.energy_kj;
+  var weak = (en != null && en < 100) || r === 'poor' || r === 'poor-fair';
+  var p = [];
+  if (mx >= 5) {
+    p.push({ b:'JS Forget Me Not 3 · 6’2 / 31.7L', f:'JS Tri L (thruster)', tag:'Step-up', why:'Solid size — paddle power, hold and confidence over ' + sd.size_ft + 'ft faces.' });
+    p.push({ b:'Sharpeye Inferno 72 · 5’9 / 28.6L', f:'Carver Tri-Quad L', tag:'If it backs off', why:'Stretch the daily driver with the Carver set if it’s more playful than heavy.' });
+  } else if (mx <= 2 || (mx <= 3 && weak)) {
+    p.push({ b:'JS Sub Zero · 5’6 / 30.3L', f:'MF Twin+1 M/L', tag:'Groveller', why:'Small/weak conditions — extra volume and the confirmed Twin+1 keep you gliding through fat sections.' });
+    p.push({ b:'Sharpeye Inferno 72 · 5’9 / 28.6L', f:'Performer Tri M', tag:'If it’s punchier', why:'If sets show more push than the numbers suggest, the 72 keeps it performance.' });
+  } else if ((r === 'good' || r === 'fair-good' || r === 'epic') && mx >= 3) {
+    p.push({ b:'Sharpeye Inferno FT · 5’11 / 28.8L', f:'H4 Quad L', tag:'Fast walls', why:'Quality running waves — quad drive and high-line speed on Filipe’s model.' });
+    p.push({ b:'Sharpeye Inferno 72 · 5’9 / 28.6L', f:'FT Tri L (thruster)', tag:'All-rounder', why:'If it’s more rippable than racy, the 72 with FT thrusters for pivot.' });
+  } else {
+    p.push({ b:'Sharpeye Inferno 72 · 5’9 / 28.6L', f:'Sharpeye Tri L (thruster)', tag:'Daily driver', why:'Average-to-good surf — performance baseline, thruster for pivot.' });
+    p.push({ b:'JS Sub Zero · 5’6 / 30.3L', f:'MF Twin+1 M/L', tag:'If it’s softer', why:'Drop to the groveller if sections run fat or crumbly.' });
+  }
+  return p;
+}
+function pickWetsuit(){
+  var t = (LIVE.ok && LIVE.marine && LIVE.marine.sea_surface_temperature != null) ? Math.round(LIVE.marine.sea_surface_temperature) : SURF.water_temp_c;
+  var opts = QUIVER_WETSUITS.filter(function(w){ return t >= w.lo && t <= w.hi; });
+  var month = new Date().getMonth() + 1, winter = month >= 6 && month <= 8;
+  if (opts.length > 1) { opts.sort(function(a,b){ return winter ? a.lo - b.lo : b.lo - a.lo; }); return { main:opts[0].name, alt:opts[1].name + ' if the sun’s out and wind is light', t:t }; }
+  return { main:(opts[0] || QUIVER_WETSUITS[0]).name, alt:null, t:t };
+}
+
+/* ── rendering ── */
+function ratingClass(r){ if(!r) return 'est'; if (r.indexOf('good') !== -1 || r === 'epic') return 'good'; if (r === 'fair') return 'fair'; return r === 'poor-fair' ? 'fair' : 'poor'; }
+
+function render(){
+  var app = $('app');
+  if (!SURF || !SURF.days) { app.innerHTML = '<div class="err"><b>Couldn’t load forecast data.</b><br>Check your connection and pull down to retry.</div>'; return; }
+  var d = day();
+  if (!d.spots[state.spot]) state.spot = 'dee-why';
+  var best = bestSpot(d);
+  var h = '';
+
+  // shark strip
+  var sh = SURF.shark || {};
+  if (sh.level === 'alert') h += '<div class="strip shark"><span>🦈</span><span><b>Shark activity:</b> ' + esc(sh.summary) + ' <a href="' + esc(sh.link) + '" target="_blank" rel="noopener">SharkSmart ↗</a></span></div>';
+  else if (sh.level === 'unknown') h += '<div class="strip shark"><span>🦈</span><span>' + esc(sh.summary || 'SharkSmart feed unavailable — check live detections.') + ' <a href="' + esc(sh.link) + '" target="_blank" rel="noopener">SharkSmart ↗</a></span></div>';
+  else h += '<div class="strip shark clear"><span>🦈</span><span>No active shark alerts on the Northern Beaches. <a href="' + esc(sh.link || 'https://www.sharksmart.nsw.gov.au/shark-activity') + '" target="_blank" rel="noopener">SharkSmart ↗</a></span></div>';
+
+  // day tabs
+  h += '<div class="seg">' + SURF.days.map(function(dd){
+    return '<button onclick="setView(\'' + dd.id + '\')" class="' + (dd.id === state.view ? 'on' : '') + '">' + esc(dd.label) + '<span class="d">' + esc(dd.date) + '</span></button>';
+  }).join('') + '</div>';
+
+  // verdict
+  if (best) {
+    var sd = best.sd;
+    h += '<div class="verdict">'
+      + '<div class="k">' + (state.view === 'today' ? 'Today’s call' : (state.view === 'tomorrow' ? 'Tomorrow’s call' : 'Weekend call')) + '</div>'
+      + '<div class="hl">' + best.sp.emoji + ' ' + esc(best.sp.name) + ' — ' + esc(RATING_LABEL[sd.rating] || sd.rating) + '</div>'
+      + '<div class="why">' + esc(d.note || '') + '</div>'
+      + '<div class="vrow">'
+      + '<div class="vstat"><div class="n">' + esc(sd.size_ft) + ' ft</div><div class="l">' + esc(sd.size_desc || 'Size') + '</div></div>'
+      + '<div class="vstat"><div class="n">' + (sd.energy_kj != null ? sd.energy_kj + ' kJ' : '—') + '</div><div class="l">Energy</div></div>'
+      + '<div class="vstat"><div class="n">' + best.score + '/100</div><div class="l">Guru score</div></div>'
+      + '</div>'
+      + (sd.window ? '<div class="vwin"><b>Best window</b>' + esc(sd.window) + '</div>' : '')
+      + '</div>';
+  }
+
+  // live now card
+  h += renderLive();
+
+  // spots
+  h += '<div class="sec-h">Spots <span class="hint">tap for detail</span></div>';
+  SPOTS.forEach(function(sp){
+    var sd2 = d.spots[sp.id]; if (!sd2) return;
+    var isBest = best && best.sp.id === sp.id;
+    var open = state.spot === sp.id && state.open;
+    h += '<div class="spot' + (open ? ' open' : '') + '">'
+      + '<button class="spot-btn" onclick="toggleSpot(\'' + sp.id + '\')">'
+      + '<div class="nm">' + sp.emoji + ' ' + esc(sp.name) + (isBest ? ' <span class="best-tag">BEST</span>' : '') + '</div>'
+      + '<div class="sz">' + esc(sd2.size_ft) + ' ft</div>'
+      + '<div class="meta"><span class="chip ' + ratingClass(sd2.rating) + '">' + esc(RATING_LABEL[sd2.rating] || sd2.rating || '—') + '</span>'
+      + (sd2.status === 'estimated' ? ' <span class="chip est">est</span>' : '') + '</div>'
+      + '<div class="sub">' + esc(sd2.wind_rel || '') + (sd2.energy_kj != null ? ' · ' + sd2.energy_kj + ' kJ' : '') + '</div>'
+      + '</button>';
+    if (open) {
+      h += '<div class="spot-det">'
+        + (sd2.window ? '<div class="note">' + esc(sd2.window) + '</div>' : '')
+        + '<div class="kv">'
+        + '<div><div class="v">' + esc(sd2.size_desc || '—') + '</div><div class="k2">Faces</div></div>'
+        + '<div><div class="v">' + (sd2.consistency != null ? sd2.consistency + '/100' : '—') + '</div><div class="k2">Consistency</div></div>'
+        + '<div><div class="v">' + esc(sd2.wind_rel || '—') + '</div><div class="k2">Wind</div></div>'
+        + '</div>';
+      if (sd2.swells && sd2.swells.length) {
+        h += '<div style="margin-top:10px">' + sd2.swells.map(function(sw){
+          return '<div class="swl"><span class="h">' + sw.h_ft + 'ft</span><span>' + sw.period_s + 's · ' + esc(sw.dir) + ' ' + sw.deg + '°</span><span class="lbl">' + esc(sw.label || '') + '</span></div>';
+        }).join('') + '</div>';
+      }
+      (sd2.alerts || []).forEach(function(a){ h += '<div class="dal">⚠️ ' + esc(a) + '</div>'; });
+      if (sd2.tip) h += '<div class="tipbox"><b>' + esc(sd2.tip.label) + '</b>' + esc(sd2.tip.text) + '</div>';
+      h += '</div>';
+    }
+    h += '</div>';
+  });
+
+  // tides
+  var nowM = sydNowMin(), nextFound = false;
+  h += '<div class="card" style="margin-top:12px"><h2>Tides <span class="when">' + esc((SURF.tides || {}).station || '') + '</span></h2><div class="tides">'
+    + ((SURF.tides || {}).events || []).map(function(t){
+        var isNext = !nextFound && state.view === 'today' && toMin(t.time) >= nowM;
+        if (isNext) nextFound = true;
+        return '<div class="tide ' + (t.type === 'high' ? 'hi' : '') + (isNext ? ' next' : '') + '"><div class="h">' + t.height_m + 'm</div><div class="t">' + esc(t.time) + '</div><div class="y">' + esc(t.type) + (isNext ? ' · next' : '') + '</div></div>';
+      }).join('')
+    + '</div>'
+    + (SURF.sun ? '<div class="lnote">☀️ First–last light: sunrise ' + esc(SURF.sun.sunrise) + ' · sunset ' + esc(SURF.sun.sunset) + ' · last light ' + esc(SURF.sun.last_light) + '</div>' : '')
+    + '</div>';
+
+  // gear
+  var gsd = d.spots[best ? best.sp.id : 'dee-why'];
+  var picks = pickGear(gsd);
+  h += '<div class="card"><h2>Board + fins' + (best ? ' <span class="when">for ' + esc(best.sp.name) + '</span>' : '') + '</h2>';
+  if (picks) picks.forEach(function(g){
+    h += '<div class="gear"><div class="g1">' + esc(g.b) + ' <span class="gtag">' + esc(g.tag) + '</span></div><div class="gf">⋔ ' + esc(g.f) + '</div><div class="gw">' + esc(g.why) + '</div></div>';
+  });
+  var ws = pickWetsuit();
+  h += '<div class="wet"><span style="font-size:17px">🥶</span><span><b>' + esc(ws.main) + '</b> — ' + ws.t + '°C water, ' + (LIVE.ok && LIVE.weather ? Math.round(LIVE.weather.temperature_2m) : SURF.air_temp_c) + '°C air' + (ws.alt ? '<div class="alt">Alt: ' + esc(ws.alt) + '</div>' : '') + '</span></div>';
+  h += '</div>';
+
+  // footer
+  h += '<div class="foot">Forecast published ' + esc(new Date(SURF.published).toLocaleString('en-AU',{ timeZone:'Australia/Sydney', weekday:'short', day:'numeric', month:'short', hour:'numeric', minute:'2-digit' }))
+    + ' AEST · Surfline + SharkSmart NSW<br>Live layer: Open-Meteo · ' + (LIVE.ok ? 'updated ' + timeAgo(LIVE.at) : 'unavailable')
+    + '<br>' + esc(SURF.forecaster_note || '') + '</div>';
+
+  app.innerHTML = h;
+  renderPill();
+}
+
+function renderLive(){
+  var w = LIVE.weather, m = LIVE.marine;
+  var head = '<h2>Right now <span class="live-tag' + (LIVE.ok ? '' : ' off') + '"><span class="d"></span>' + (LIVE.ok ? 'LIVE' : 'OFFLINE') + '</span><span class="when">' + (LIVE.at ? 'updated ' + timeAgo(LIVE.at) : '') + '</span></h2>';
+  if (!LIVE.ok || (!w && !m)) {
+    return '<div class="card">' + head + '<div class="lnote">Live conditions unavailable — showing this morning’s forecast. Wind: ' + esc((SURF.wind || {}).summary || '—') + '</div></div>';
+  }
+  var rel = w ? windRel(w.wind_direction_10m) : '';
+  var relIcon = rel === 'offshore' ? '✅' : (rel === 'onshore' ? '⚠️' : '↔️');
+  var h = '<div class="card">' + head + '<div class="lgrid">';
+  if (w) h += '<div class="lv"><div class="v">' + Math.round(w.wind_speed_10m) + '<small> kph</small></div><div class="k">Wind ' + deg16(w.wind_direction_10m) + '</div><div class="s">' + relIcon + ' ' + rel + (w.wind_gusts_10m ? ' · gust ' + Math.round(w.wind_gusts_10m) : '') + '</div></div>';
+  if (m) h += '<div class="lv"><div class="v">' + ftFromM(m.swell_wave_height) + '<small> ft</small></div><div class="k">Swell ' + deg16(m.swell_wave_direction) + '</div><div class="s">' + Math.round(m.swell_wave_period) + 's @ ' + Math.round(m.swell_wave_direction) + '°</div></div>';
+  if (m) h += '<div class="lv"><div class="v">' + ftFromM(m.wave_height) + '<small> ft</small></div><div class="k">Total sea</div><div class="s">' + (m.sea_surface_temperature != null ? '🌡 ' + Math.round(m.sea_surface_temperature) + '°C water' : '') + '</div></div>';
+  h += '</div><div class="lnote">Open-Meteo model data at Dee Why — Surfline’s daily read stays the source of truth for quality.</div></div>';
+  return h;
+}
+
+function renderPill(){
+  var pill = $('pill'), txt = $('pillTxt');
+  if (!SURF) { pill.className = 'pill err'; txt.textContent = 'No data'; return; }
+  var ageH = (Date.now() - new Date(SURF.published).getTime()) / 36e5;
+  var when = new Date(SURF.published).toLocaleTimeString('en-AU',{ timeZone:'Australia/Sydney', hour:'numeric', minute:'2-digit' });
+  if (ageH > 26) { pill.className = 'pill stale'; txt.textContent = 'Stale · ' + new Date(SURF.published).toLocaleDateString('en-AU',{ day:'numeric', month:'short' }); }
+  else { pill.className = 'pill'; txt.textContent = 'Live · ' + when; }
+  $('hdrSub').textContent = 'Northern Beaches · ' + new Date().toLocaleDateString('en-AU',{ timeZone:'Australia/Sydney', weekday:'short', day:'numeric', month:'short' });
+}
+
+/* ── interactions ── */
+function setView(v){ state.view = v; state.open = false; try { localStorage.setItem('sgm-view', v); } catch(e){} render(); }
+function toggleSpot(id){
+  if (state.spot === id) state.open = !state.open;
+  else { state.spot = id; state.open = true; }
+  try { localStorage.setItem('sgm-spot', id); } catch(e){}
+  render();
+}
+
+/* ── data loading ── */
+function loadData(){
+  return fetch('data.json?_=' + Date.now(), { cache:'no-store' })
+    .then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function(j){
+      if (!j || !j.days || !j.days.length) throw new Error('bad shape');
+      SURF = j;
+      try { localStorage.setItem('sgm-cache', JSON.stringify(j)); } catch(e){}
+    });
+}
+function loadLive(){
+  function get(u){ return fetch(u, { cache:'no-store' }).then(function(r){ if (!r.ok) throw 0; return r.json(); }); }
+  return Promise.allSettled ? Promise.allSettled([get(OM_MARINE), get(OM_WEATHER)]).then(function(rs){
+    LIVE.marine = rs[0].status === 'fulfilled' ? rs[0].value.current : null;
+    LIVE.weather = rs[1].status === 'fulfilled' ? rs[1].value.current : null;
+    LIVE.ok = !!(LIVE.marine || LIVE.weather);
+    if (LIVE.ok) LIVE.at = Date.now();
+  }) : Promise.resolve();
+}
+
+var REFRESHING = false, LAST_REFRESH = 0;
+function refreshAll(force){
+  var now = Date.now();
+  if (REFRESHING) return;
+  if (!force && now - LAST_REFRESH < 30000) { render(); return; } // re-render only (clock/next-tide) on bursty resume events
+  REFRESHING = true; LAST_REFRESH = now;
+  $('rbtn').classList.add('spin');
+  Promise.all([ loadData().catch(function(e){ console.warn('data.json failed', e); }), loadLive() ])
+    .then(function(){ REFRESHING = false; $('rbtn').classList.remove('spin'); render(); });
+}
+
+/* ── pull to refresh ── */
+(function(){
+  var startY = 0, pulling = false, dist = 0, THRESH = 72;
+  var ptr = $('ptr'), ptxt = $('ptrTxt');
+  document.addEventListener('touchstart', function(e){
+    if (window.scrollY <= 0) { startY = e.touches[0].clientY; pulling = true; dist = 0; }
+  }, { passive:true });
+  document.addEventListener('touchmove', function(e){
+    if (!pulling) return;
+    dist = e.touches[0].clientY - startY;
+    if (dist > 8 && window.scrollY <= 0) {
+      ptr.classList.add('pulling');
+      var hgt = Math.min(dist * .45, 90);
+      ptr.style.height = hgt + 'px';
+      ptxt.textContent = hgt >= THRESH * .45 ? '↑ Release to refresh' : '↓ Pull to refresh';
+    }
+  }, { passive:true });
+  document.addEventListener('touchend', function(){
+    if (!pulling) return;
+    pulling = false;
+    ptr.classList.remove('pulling');
+    if (parseFloat(ptr.style.height || 0) >= THRESH * .45) { ptxt.textContent = 'Refreshing…'; refreshAll(true); setTimeout(function(){ ptr.style.height = '0px'; }, 700); }
+    else ptr.style.height = '0px';
+  });
+})();
+
+/* ── boot ── */
+try { var c = localStorage.getItem('sgm-cache'); if (c) SURF = JSON.parse(c); } catch(e){}
+if (SURF) render();                       // instant paint from last-good cache
+refreshAll(true);                         // then network refresh
+setInterval(function(){ refreshAll(false); }, 10 * 60 * 1000);
+document.addEventListener('visibilitychange', function(){ if (!document.hidden) refreshAll(false); });
+window.addEventListener('pageshow', function(){ refreshAll(false); });
+</script>
+</body>
+</html>
