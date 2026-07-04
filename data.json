@@ -1,0 +1,301 @@
+{
+ "published": "2026-07-04T06:15+10:00",
+ "source": "live",
+ "forecaster_note": "Fun clean surf at the south exposures this morning — a bit of bump later but still alright. Mid-period S swell filtering in, hopefully chest to head high at the S magnets; other breaks stay quite small. Clean offshore W winds through the morning, then light–moderate S'ly. INCOMING: solid winter swell — Sunday solid but breezy SW–S; Tue/Wed the standout clean overhead days. — Hugh McDowell (Surfline)",
+ "water_temp_c": 19,
+ "air_temp_c": 9,
+ "wind": {
+  "speed_kph": 11,
+  "gust_kph": 22,
+  "dir": "WNW",
+  "deg": 292,
+  "relative": "offshore",
+  "summary": "Light WNW offshores through the morning, trending light–moderate S'ly with some bump after midday"
+ },
+ "sun": {
+  "sunrise": "7:01am",
+  "sunset": "4:59pm",
+  "last_light": "5:26pm"
+ },
+ "shark": {
+  "level": "alert",
+  "summary": "Busy day yesterday (Fri): Dee Why closed twice — shark sighted 8:48am (beach closed, reopened 11:25am), drone sighting 12:41pm (evacuated again), then a 3.38m tiger shark tagged & released off the Dee Why SMART drumline at 1:20pm. North Curl Curl evacuated 1:38pm and South Narrabeen twice (12:32pm, 2:36pm). No detections overnight — check surf club status before paddling DY or Curly.",
+  "affected": [
+   "dee-why",
+   "curl-curl"
+  ],
+  "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
+ },
+ "tides": {
+  "station": "Blue Fish Point",
+  "events": [
+   {
+    "time": "5:05am",
+    "height_m": 0.3,
+    "type": "low"
+   },
+   {
+    "time": "11:12am",
+    "height_m": 1.2,
+    "type": "high"
+   },
+   {
+    "time": "4:37pm",
+    "height_m": 0.6,
+    "type": "low"
+   },
+   {
+    "time": "10:56pm",
+    "height_m": 1.6,
+    "type": "high"
+   }
+  ]
+ },
+ "days": [
+  {
+   "id": "today",
+   "label": "Today",
+   "date": "Sat 4 Jul",
+   "done": false,
+   "note": "Your window lines up: clean WNW offshores all morning and the 1.2m high at 11:12am sits right in your 10–12 slot. The 12s swell is dead S (182°) — it underperforms at Dee Why and lights up the S magnets, so Long Reef is the call. S'ly bump arrives after midday. Big shark day yesterday at DY/Curly — scan the lineup and check flags first.",
+   "spots": {
+    "dee-why": {
+     "status": "live",
+     "rating": "fair",
+     "size_ft": "1–2",
+     "size_desc": "Thigh–stomach",
+     "energy_kj": 106,
+     "consistency": 36,
+     "wind_rel": "offshore",
+     "swells": [
+      {
+       "h_ft": 3.7,
+       "period_s": 12,
+       "dir": "S",
+       "deg": 182,
+       "label": "Primary — dead S"
+      },
+      {
+       "h_ft": 2.0,
+       "period_s": 8,
+       "dir": "ENE",
+       "deg": 58,
+       "label": "ENE groundswell"
+      },
+      {
+       "h_ft": 3.7,
+       "period_s": 6,
+       "dir": "SSW",
+       "deg": 212,
+       "label": "Windswell"
+      }
+     ],
+     "window": "Backup only — dead S 182° wraps badly here. If you stay local, surf the 9–11:30am glass into the high.",
+     "alerts": [
+      "Closed twice yesterday: sightings 8:48am & 12:41pm, 3.38m tiger tagged off the drumline 1:20pm — check flags before paddling."
+     ],
+     "tip": {
+      "label": "Skip DY — swell angle wrong",
+      "text": "106kJ but only 36/100 consistency and the energy is all dead-S 12s, the one angle that wraps badly into this bank. Same swell is hitting Long Reef square. Don't burn the morning waiting on sets here."
+     }
+    },
+    "long-reef": {
+     "status": "live",
+     "rating": "fair-good",
+     "size_ft": "2–3",
+     "size_desc": "Chest–overhead sets",
+     "energy_kj": 166,
+     "consistency": 44,
+     "wind_rel": "offshore",
+     "swells": [
+      {
+       "h_ft": 3.7,
+       "period_s": 12,
+       "dir": "S",
+       "deg": 182,
+       "label": "Primary — dead S"
+      },
+      {
+       "h_ft": 2.0,
+       "period_s": 8,
+       "dir": "ENE",
+       "deg": 58,
+       "label": "ENE groundswell"
+      },
+      {
+       "h_ft": 3.7,
+       "period_s": 6,
+       "dir": "SSW",
+       "deg": 212,
+       "label": "Windswell"
+      }
+     ],
+     "window": "Today's call: 9–11:30am into the 11:11am high, clean WNW offshore before the S'ly. Best energy on the stretch.",
+     "tip": {
+      "label": "Today's call — 166kJ, S magnet",
+      "text": "The south side soaks up the dead-S 12s that Dee Why wastes — 166kJ and fair-to-good, chest to overhead on sets. Frontside on the rights off the reef. Get it before the S'ly bumps it after midday."
+     }
+    },
+    "curl-curl": {
+     "status": "live",
+     "rating": "fair",
+     "size_ft": "1–3",
+     "size_desc": "Waist–chest",
+     "energy_kj": 138,
+     "consistency": 57,
+     "wind_rel": "offshore",
+     "swells": [
+      {
+       "h_ft": 3.7,
+       "period_s": 12,
+       "dir": "S",
+       "deg": 182,
+       "label": "Primary — dead S"
+      },
+      {
+       "h_ft": 2.0,
+       "period_s": 8,
+       "dir": "ENE",
+       "deg": 58,
+       "label": "ENE groundswell"
+      },
+      {
+       "h_ft": 3.7,
+       "period_s": 6,
+       "dir": "SSW",
+       "deg": 212,
+       "label": "Windswell"
+      }
+     ],
+     "window": "Solid plan B — most consistent on the stretch (57/100). Morning into the high tide.",
+     "alerts": [
+      "North Curl Curl evacuated 1:38pm yesterday after a drone shark sighting."
+     ],
+     "tip": {
+      "label": "Plan B — 57/100 consistency",
+      "text": "Curly eats S swell: 138kJ and the best waves-per-hour number on the coast today. Waist–chest peaks, rights off the south end for your frontside. Shark drone cleared the water here yesterday arvo — stay aware."
+     }
+    },
+    "manly": {
+     "status": "live",
+     "rating": "fair",
+     "size_ft": "1–2",
+     "size_desc": "Thigh–stomach",
+     "energy_kj": 89,
+     "consistency": 40,
+     "wind_rel": "offshore",
+     "swells": [
+      {
+       "h_ft": 3.7,
+       "period_s": 12,
+       "dir": "S",
+       "deg": 182,
+       "label": "Primary — dead S"
+      },
+      {
+       "h_ft": 2.0,
+       "period_s": 8,
+       "dir": "ENE",
+       "deg": 58,
+       "label": "ENE groundswell"
+      },
+      {
+       "h_ft": 3.7,
+       "period_s": 6,
+       "dir": "SSW",
+       "deg": 212,
+       "label": "Windswell"
+      }
+     ],
+     "window": "Swell shadow on a dead-S — small and soft. Save it for Sunday's shelter.",
+     "tip": {
+      "label": "Pass — 89kJ shadow",
+      "text": "North-facing Manly barely sees 182° S swell. 89kJ of thigh-high. Its day is tomorrow when the solid S arrives and this corner is the sheltered option."
+     }
+    }
+   }
+  },
+  {
+   "id": "tomorrow",
+   "label": "Tomorrow",
+   "date": "Sun 5 Jul",
+   "done": false,
+   "note": "Solid winter swell arrives — Dee Why 4–5ft, Long Reef 6–8ft — but breezy-to-strong SW–S winds limit options. Dawn patrol before it blows, or hunt the sheltered southern corners. Manly's protection makes it the smart mid-morning bet.",
+   "spots": {
+    "dee-why": {
+     "status": "live",
+     "rating": "fair",
+     "size_ft": "4–5",
+     "size_desc": "Head–overhead",
+     "wind_rel": "cross-off",
+     "window": "Dawn before the SW–S wind builds; your fav size but wind-affected — the Point could handle it if the angle has any E in it."
+    },
+    "long-reef": {
+     "status": "live",
+     "rating": "fair",
+     "size_ft": "6–8",
+     "size_desc": "Overhead–double",
+     "wind_rel": "cross",
+     "window": "Serious size for the outer reefs — experienced crew only, early, before the S'ly gets strong."
+    },
+    "curl-curl": {
+     "status": "live",
+     "rating": "fair",
+     "size_ft": "4–6",
+     "size_desc": "Head–well overhead",
+     "wind_rel": "cross",
+     "window": "Big and raw with S wind on it — south corner early or leave it."
+    },
+    "manly": {
+     "status": "live",
+     "rating": "fair-good",
+     "size_ft": "2–3",
+     "size_desc": "Waist–shoulder",
+     "wind_rel": "offshore",
+     "window": "The S-wind shelter: wrapping swell in the protected corner while everywhere else is blown. Best Sunday bet for your 10–12 window."
+    }
+   }
+  },
+  {
+   "id": "weekend",
+   "label": "Weekend",
+   "date": "Sun 5 Jul",
+   "done": false,
+   "note": "Remaining weekend = Sunday: solid swell, breezy SW–S winds. Sheltered corners (Manly) or dawn only. The real prize is Tue–Wed — clean overhead-plus mornings as the swell holds and winds back off.",
+   "spots": {
+    "dee-why": {
+     "status": "live",
+     "rating": "fair",
+     "size_ft": "4–5",
+     "size_desc": "Head–overhead (Sun)",
+     "wind_rel": "cross-off",
+     "window": "Sun dawn patrol only — wind-limited. Tue/Wed look like the quality DY days."
+    },
+    "long-reef": {
+     "status": "live",
+     "rating": "fair",
+     "size_ft": "6–8",
+     "size_desc": "Overhead–double (Sun)",
+     "wind_rel": "cross",
+     "window": "Sun: XL and wind-affected. Watch Tue for OH–2xOH clean."
+    },
+    "curl-curl": {
+     "status": "live",
+     "rating": "fair",
+     "size_ft": "4–6",
+     "size_desc": "Head–well overhead (Sun)",
+     "wind_rel": "cross",
+     "window": "Sun: raw S-swell size; south corner at dawn or skip."
+    },
+    "manly": {
+     "status": "live",
+     "rating": "fair-good",
+     "size_ft": "2–3",
+     "size_desc": "Waist–shoulder (Sun)",
+     "wind_rel": "offshore",
+     "window": "Sun: the sheltered call — fun wrapping waist–shoulder waves while the open beaches are blown out."
+    }
+   }
+  }
+ ]
+}
