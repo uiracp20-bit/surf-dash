@@ -411,10 +411,16 @@ function renderLive(){
   if (!LIVE.ok || (!w && !m)) {
     return '<div class="card">' + head + '<div class="lnote">Live conditions unavailable — showing this morning’s forecast. Wind: ' + esc((SURF.wind || {}).summary || '—') + '</div></div>';
   }
-  var rel = w ? windRel(w.wind_direction_10m) : '';
-  var relIcon = rel === 'offshore' ? '✅' : (rel === 'onshore' ? '⚠️' : '↔️');
   var h = '<div class="card">' + head + '<div class="lgrid">';
-  if (w) h += '<div class="lv"><div class="v">' + Math.round(w.wind_speed_10m) + '<small> kph</small></div><div class="k">Wind ' + deg16(w.wind_direction_10m) + '</div><div class="s">' + relIcon + ' ' + rel + (w.wind_gusts_10m ? ' · gust ' + Math.round(w.wind_gusts_10m) : '') + '</div></div>';
+  if (w) {
+    var rel = windRel(w.wind_direction_10m);
+    var relIcon = rel === 'offshore' ? '✅' : (rel === 'onshore' ? '⚠️' : '↔️');
+    h += '<div class="lv"><div class="v">' + Math.round(w.wind_speed_10m) + '<small> kph</small></div><div class="k">Wind ' + deg16(w.wind_direction_10m) + '</div><div class="s">' + relIcon + ' ' + rel + (w.wind_gusts_10m ? ' · gust ' + Math.round(w.wind_gusts_10m) : '') + '</div></div>';
+  } else if (SURF.wind) {
+    // live wind source unreachable — fall back to the morning forecast, clearly labelled
+    var fw = SURF.wind, rel2 = fw.relative || windRel(fw.deg);
+    h += '<div class="lv"><div class="v">' + fw.speed_kph + '<small> kph</small></div><div class="k">Wind ' + esc(fw.dir) + ' · 6am f’cast</div><div class="s">' + (rel2 === 'offshore' ? '✅' : (rel2 === 'onshore' ? '⚠️' : '↔️')) + ' ' + esc(rel2) + (fw.gust_kph ? ' · gust ' + fw.gust_kph : '') + '</div></div>';
+  }
   if (m) h += '<div class="lv"><div class="v">' + ftFromM(m.swell_wave_height) + '<small> ft</small></div><div class="k">Swell ' + deg16(m.swell_wave_direction) + '</div><div class="s">' + Math.round(m.swell_wave_period) + 's @ ' + Math.round(m.swell_wave_direction) + '°</div></div>';
   if (m) h += '<div class="lv"><div class="v">' + ftFromM(m.wave_height) + '<small> ft</small></div><div class="k">Total sea</div><div class="s">' + (m.sea_surface_temperature != null ? '🌡 ' + Math.round(m.sea_surface_temperature) + '°C water' : '') + '</div></div>';
   h += '</div><div class="lnote">Open-Meteo model data at Dee Why — Surfline’s daily read stays the source of truth for quality.</div></div>';
