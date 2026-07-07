@@ -1,151 +1,119 @@
 {
-  "published": "2026-07-06T06:20+10:00",
+  "published": "2026-07-07T21:05+10:00",
   "source": "live",
-  "forecaster_note": "Solid surf but S/SE winds — sheltered southern corners for the fun-sized clean stuff. Well overhead to 2x overhead at the south exposures, but onshore and messy on the open beaches all day. INCOMING: a solid winter swell — Tue & Wed the standout clean overhead-plus mornings, Thu a possible renewal in size, Fri cleaning up as winds swing W. — Tim Williams (Surfline)",
+  "forecaster_note": "Solid! OH to 2x OH surf for the open exposures, with S-magnets into the well-overhead to 2x-overhead-plus range. Swell is trending SE and coming in at a solid size — most breaks head-to-overhead, the sheltered southern corners more doable at chest-to-head-high. S'lies mean those sheltered corners are the cleanest option. INCOMING: a solid winter swell holds — Wed decent morning options with PM OK too (OH surf mostly), Thu a slow fade as S/SE backs off, Fri exposures cleaning up as winds swing W, and the weekend eases to fun offshore-morning size. — Hugh McDowell (Surfline)",
   "water_temp_c": 19,
-  "air_temp_c": 13,
+  "air_temp_c": 14,
   "wind": {
-    "speed_kph": 21,
-    "gust_kph": 34,
+    "speed_kph": 17,
+    "gust_kph": 31,
     "dir": "S",
     "deg": 180,
-    "relative": "onshore",
-    "summary": "S 21kph (34 gusts) — onshore-to-cross and lumpy on the open beaches; tuck into the sheltered southern corners, and go early before it builds"
+    "relative": "cross",
+    "summary": "S 17kph (31 gusts) — cross-shore on the NE beaches, straight onshore on the S-facing reefs. Lumpy on the open banks; the sheltered southern corners are the clean play."
   },
   "sun": {
-    "sunrise": "7:01am",
-    "sunset": "4:59pm",
+    "sunrise": "7:00am",
+    "sunset": "5:00pm",
     "last_light": "5:27pm"
   },
   "shark": {
-    "level": "alert",
-    "summary": "Two drone shark sightings on the Northern Beaches yesterday morning (Sun 5 Jul): Newport 8:08am and Warriewood 8:09am, both water-evacuated. Neither at your tracked breaks (Dee Why, Long Reef, Curl Curl, Manly) and nothing overnight — but sharks are about with this S-swell push, so stay aware and check the flags.",
+    "level": "clear",
+    "summary": "No shark detections at your tracked breaks (Dee Why, Long Reef, Curl Curl, Manly) or anywhere on the Northern Beaches in the past 24h. The only NSW detection today was a 3.15m tiger shark tagged & released off a SMART drumline at Pambula (far south coast). Still, plenty of S-swell energy pushing marine life around — scan the lineup and check the flags.",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
   "tides": {
     "station": "Blue Fish Point",
     "events": [
-      {
-        "time": "6:26am",
-        "height_m": 0.3,
-        "type": "low"
-      },
-      {
-        "time": "12:46pm",
-        "height_m": 1.3,
-        "type": "high"
-      },
-      {
-        "time": "6:32pm",
-        "height_m": 0.6,
-        "type": "low"
-      },
-      {
-        "time": "12:36am",
-        "height_m": 1.4,
-        "type": "high"
-      }
+      { "time": "12:36am", "height_m": 1.4, "type": "high" },
+      { "time": "7:12am", "height_m": 0.3, "type": "low" },
+      { "time": "1:40pm", "height_m": 1.4, "type": "high" },
+      { "time": "7:42pm", "height_m": 0.6, "type": "low" }
     ]
   },
   "days": [
     {
       "id": "today",
       "label": "Today",
-      "date": "Mon 6 Jul",
-      "done": false,
-      "note": "Messy S-wind day with plenty of size in the water (11ft @ 11s SSE, 166°). The open beaches are onshore-to-cross and lumpy — the play is a sheltered southern corner early, before the S'ly fully fills in. Dee Why Point tucks in for clean frontside rights; Curl Curl's south end is the other option. Your 10–12 window will be catching the building bump, so the earlier the better. Two shark drone sightings up the coast yesterday AM — none at your breaks, but scan the lineup.",
+      "date": "Tue 7 Jul",
+      "done": true,
+      "note": "Big solid day gone by — 6–8ft+ and well overhead across the exposures on a SE/S swell (9.9ft @ 11s SE 132°, 1132kJ at Dee Why), but S winds kept it cross-to-onshore and lumpy on the open banks. The clean play was the sheltered southern corners: Dee Why Point for frontside rights, Curl Curl's south end. Day's done now — the real prize is Wed's cleaner overhead morning.",
       "spots": {
         "dee-why": {
           "status": "live",
-          "rating": "poor-fair",
-          "size_ft": "4–6",
-          "size_desc": "Overhead sets",
-          "energy_kj": 741,
+          "rating": "fair",
+          "size_ft": "6–8",
+          "size_desc": "2–3x overhead",
+          "energy_kj": 1132,
           "consistency": 100,
           "wind_rel": "cross",
           "swells": [
-            {
-              "h_ft": 11,
-              "period_s": 11,
-              "dir": "SSE",
-              "deg": 166,
-              "label": "Primary — SSE groundswell"
-            }
+            { "h_ft": 9.9, "period_s": 11, "dir": "SE", "deg": 132, "label": "Primary — SE groundswell" },
+            { "h_ft": 6.2, "period_s": 11, "dir": "S", "deg": 185, "label": "Secondary — S swell" },
+            { "h_ft": 1.3, "period_s": 15, "dir": "ESE", "deg": 120, "label": "Background — ESE long-period" }
           ],
-          "window": "Sheltered play — the open bank is cross-shore and lumpy. Tuck into Dee Why Point early for your frontside rights before the S wind fills in. Fun overhead corners on the sets.",
+          "window": "The best of the four — SE 132° energy suits the bank and the wind sits cross-shore rather than dead onshore. The Point was the pick for clean frontside rights; open bank fun but lumpy on the sets.",
           "tip": {
             "label": "Point over beachbreak",
-            "text": "741kJ and 100/100 consistency means the sets keep marching, but it's all SSE 166° energy the open bank chops up in this S wind. The Point is the answer — it shelters from the S'ly and hands you clean frontside rights. Be there before 9 while it's cleanest."
+            "text": "1132kJ and 100/100 consistency means relentless sets, and SE 132° is a workable angle here (not the dead-S wrap that ruins it). In the S wind the Point shelters best and hands you clean frontside rights — that was the call today."
           }
         },
         "long-reef": {
           "status": "live",
           "rating": "poor",
-          "size_ft": "6–8",
-          "size_desc": "Double-overhead, raw",
-          "energy_kj": 1088,
+          "size_ft": "6–8+",
+          "size_desc": "3x overhead, raw",
+          "energy_kj": 1482,
           "consistency": 100,
           "wind_rel": "onshore",
           "swells": [
-            {
-              "h_ft": 11,
-              "period_s": 11,
-              "dir": "SSE",
-              "deg": 166,
-              "label": "Primary — SSE groundswell"
-            }
+            { "h_ft": 9.9, "period_s": 11, "dir": "SE", "deg": 132, "label": "Primary — SE groundswell" },
+            { "h_ft": 6.2, "period_s": 11, "dir": "S", "deg": 185, "label": "Secondary — S swell" },
+            { "h_ft": 1.3, "period_s": 15, "dir": "ESE", "deg": 120, "label": "Background — ESE long-period" }
           ],
-          "window": "Biggest, rawest option — 1088kJ of S swell straight onto the outer reefs, but the S wind is onshore and it's messy. Experienced crew, dawn only.",
+          "window": "Biggest and rawest — a huge 1482kJ of S/SE swell straight onto the outer reefs at 3x overhead, but the S wind is dead onshore and it was a mess. Experienced crew, dawn only.",
           "tip": {
             "label": "Too much, too messy",
-            "text": "Long Reef soaks up every bit of this S swell — 1088kJ, 6–8ft and building — but the wind sits straight onshore here. Big and disorganised, not the clean 4–5ft-with-shape you want. Bookmark it for Tue when winds ease."
+            "text": "Long Reef soaks up every scrap of this swell — 1482kJ, 6–8ft+ — but the wind sits straight onshore here. Big and disorganised, not the makeable stuff you want. Bookmark it for a cleaner-wind morning."
           }
         },
         "curl-curl": {
           "status": "live",
           "rating": "poor",
-          "size_ft": "4–6",
-          "size_desc": "Overhead, S-magnet",
-          "energy_kj": 907,
+          "size_ft": "6–8",
+          "size_desc": "2–3x overhead, S-magnet",
+          "energy_kj": 1152,
           "consistency": 100,
           "wind_rel": "onshore",
           "swells": [
-            {
-              "h_ft": 11,
-              "period_s": 11,
-              "dir": "SSE",
-              "deg": 166,
-              "label": "Primary — SSE groundswell"
-            }
+            { "h_ft": 9.9, "period_s": 11, "dir": "SE", "deg": 132, "label": "Primary — SE groundswell" },
+            { "h_ft": 6.2, "period_s": 11, "dir": "S", "deg": 185, "label": "Secondary — S swell" },
+            { "h_ft": 1.3, "period_s": 15, "dir": "ESE", "deg": 120, "label": "Background — ESE long-period" }
           ],
-          "window": "S-swell magnet loaded up (907kJ) but onshore-affected. The south end / Curl Curl corner is the cleaner nook early before the wind builds.",
+          "window": "S-magnet fully loaded (1152kJ) but onshore-affected. The south end / Curl Curl corner off the rocks was the cleaner nook for frontside rights.",
           "tip": {
             "label": "South corner or skip",
-            "text": "Curly eats S swell so the size is there — 907kJ — but the open beach is onshore and lumpy. Tuck into the south end for rights off the rocks (your frontside) early, otherwise it's a wash."
+            "text": "Curly eats S swell so the size was all there — 1152kJ — but the open beach was onshore and lumpy. The south-end rights off the rocks (your frontside) were the only tidy option."
           }
         },
         "manly": {
           "status": "live",
-          "rating": "poor-fair",
-          "size_ft": "2–4",
-          "size_desc": "Head-high sets",
-          "energy_kj": 540,
+          "rating": "fair",
+          "size_ft": "4–5",
+          "size_desc": "2x overhead",
+          "energy_kj": 1028,
           "consistency": 100,
           "wind_rel": "cross",
           "swells": [
-            {
-              "h_ft": 11,
-              "period_s": 11,
-              "dir": "SSE",
-              "deg": 166,
-              "label": "Primary — SSE groundswell"
-            }
+            { "h_ft": 9.9, "period_s": 11, "dir": "SE", "deg": 132, "label": "Primary — SE groundswell" },
+            { "h_ft": 6.2, "period_s": 11, "dir": "S", "deg": 185, "label": "Secondary — S swell" },
+            { "h_ft": 1.3, "period_s": 15, "dir": "ESE", "deg": 120, "label": "Background — ESE long-period" }
           ],
-          "window": "Smallest and most sheltered — cross-shore wind, head-high on the sets. Cleaner than the open beaches but soft. Backup if you want mellow.",
+          "window": "Smallest and most wind-sheltered — 4–5ft on the sets with cross-shore wind. Cleaner than the S-facing beaches but soft. The mellow backup.",
           "tip": {
-            "label": "Sheltered but small",
-            "text": "North-facing Manly sees the least of this SSE swell — 540kJ, 2–4ft — but it's the most wind-protected corner. Fine for a clean cruisy paddle; for real size and punch the S magnets have it, just messier."
+            "label": "Sheltered but softer",
+            "text": "North-facing Manly saw the least of this SE swell — 1028kJ, 4–5ft — but it's the most wind-protected corner. Fine for a clean paddle; for real size and punch the S magnets had it, just messier."
           }
         }
       }
@@ -153,9 +121,9 @@
     {
       "id": "tomorrow",
       "label": "Tomorrow",
-      "date": "Tue 7 Jul",
+      "date": "Wed 8 Jul",
       "done": false,
-      "note": "The standout clean day — Tim's calling a quality morning, overhead to 2x-overhead across most breaks as the S swell holds and winds back off. Dee Why 4–6ft, the reefs a solid 6–8ft. Your 10–12 window should score if you want size with shape; dawn for the glassiest.",
+      "note": "The standout clean-ish day — Hugh's calling decent morning options with the PM OK too, overhead surf mostly as the S/SE swell holds and winds back off a touch. Dee Why 4–6ft, the reefs a solid 6–8ft. Your 10–12 window should score size with more shape than today; dawn for the glassiest before any S'ly nudges back.",
       "spots": {
         "dee-why": {
           "status": "live",
@@ -163,7 +131,7 @@
           "size_ft": "4–6",
           "size_desc": "Overhead+",
           "wind_rel": "offshore-am",
-          "window": "Quality morning — 4–6ft with cleaner winds. The Point and the open banks both on offer; this is your day for size with shape. Early is glassiest."
+          "window": "Quality morning — 4–6ft with cleaner winds. The Point and open banks both on offer; this is the day for size with shape. Early is glassiest."
         },
         "long-reef": {
           "status": "live",
@@ -171,15 +139,15 @@
           "size_ft": "6–8",
           "size_desc": "Double-overhead",
           "wind_rel": "offshore-am",
-          "window": "Serious size for the outer reefs — 6–8ft+. Experienced crew, dawn before any S'ly returns. Step-up territory."
+          "window": "Serious size on the outer reefs — 6–8ft. Experienced crew, dawn before any S'ly returns. Step-up territory."
         },
         "curl-curl": {
           "status": "live",
           "rating": "fair-good",
-          "size_ft": "6–8",
+          "size_ft": "4–6",
           "size_desc": "Well overhead",
           "wind_rel": "offshore-am",
-          "window": "Loaded S-magnet at 6–8ft with a cleaner morning — the south corner for the more makeable walls."
+          "window": "Loaded S-magnet at 4–6ft with a cleaner morning — the south corner for the more makeable walls."
         },
         "manly": {
           "status": "live",
@@ -187,7 +155,7 @@
           "size_ft": "4–5",
           "size_desc": "Head–overhead",
           "wind_rel": "offshore-am",
-          "window": "Finally sees real size — 4–5ft head-high-plus. Fun rippable option if the reefs feel too heavy."
+          "window": "Holds real size — 4–5ft head-high-plus. Fun rippable option if the reefs feel too heavy."
         }
       }
     },
@@ -196,7 +164,7 @@
       "label": "Weekend",
       "date": "Sat 11 – Sun 12 Jul",
       "done": false,
-      "note": "The week's big S swell fades by the weekend. Saturday: SE energy easing to 2–3ft but an offshore morning window means clean, fun-size surf across the region — your kind of Saturday session. Sunday drops smaller (1–2ft), groveller territory. Sat AM is the pick.",
+      "note": "The week's big S/SE swell fades by the weekend. Saturday: energy eases to 2–3ft but an offshore morning window means clean, fun-size surf across the region — your kind of Saturday session. Sunday drops smaller (1–2ft) with all-day offshores, crisp and clean but groveller territory. Sat AM is the pick.",
       "spots": {
         "dee-why": {
           "status": "live",
@@ -209,10 +177,10 @@
         "long-reef": {
           "status": "live",
           "rating": "fair",
-          "size_ft": "2–4",
-          "size_desc": "Chest–head (Sat)",
+          "size_ft": "2–3",
+          "size_desc": "Waist–chest+ (Sat)",
           "wind_rel": "offshore-am",
-          "window": "Sat: 2–4ft with residual S energy, cleanest early. Sun eases to 1–3ft."
+          "window": "Sat: 2–3ft+ of residual S energy, cleanest early. Sun eases to 1–3ft."
         },
         "curl-curl": {
           "status": "live",
