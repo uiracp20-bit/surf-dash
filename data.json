@@ -1,27 +1,26 @@
 {
- "published": "2026-07-11T14:05+10:00",
+ "published": "2026-07-12T06:20+10:00",
  "source": "live",
- "forecaster_note": "Fun, easing surf with offshore winds — get it early for the most size and the dropping tide. SE/ESE swell still offering head-high sets at the better exposures, smaller elsewhere. Winds stay favourable through midday before a light northerly drift — not enough to ruin it, but quality holds better at S-facing breaks. Sun: small but worth a paddle with all-day offshores, crisp and clean. INCOMING: next SE–E swell fills in Wednesday for another round of decent to maybe solid size. — Kurt Korte (Surfline)",
+ "forecaster_note": "Small surf but worth a paddle with all-day offshores — crisp and clean. Getting into the waist-to-chest range as the SE swell eases right back; biggest in the morning. Clean and well shaped all day with breezy offshores — pack some extra foam and maybe take a big board out to make the most of it. INCOMING: Weds to the weekend, the next SE–E swell fills in for another round of decent to maybe solid size. — Anthony Spinks (Surfline)",
  "water_temp_c": 19,
- "air_temp_c": 17,
+ "air_temp_c": 12,
  "wind": {
-  "speed_kph": 8,
-  "gust_kph": 14,
-  "dir": "NNE",
-  "deg": 22,
-  "relative": "cross",
-  "summary": "N–NNE 8kph (13–14 gusts) — the forecast light northerly drift has arrived. Offshore at Long Reef, light cross at DY/Curly, gentle onshore at Manly. Still very surfable."
+  "speed_kph": 21,
+  "gust_kph": 48,
+  "dir": "NW",
+  "deg": 315,
+  "relative": "offshore",
+  "summary": "NW 21kph, gusting to 48 — straight offshore at all four spots, all day. Groomed and clean, just punchy gusts on the paddle-out."
  },
  "sun": {
-  "sunrise": "7:00am",
-  "sunset": "5:02pm",
-  "last_light": "5:29pm"
+  "sunrise": "6:59am",
+  "sunset": "5:03pm",
+  "last_light": "5:30pm"
  },
  "shark": {
   "level": "alert",
-  "summary": "Two Northern Beaches alerts in 24h: 2.94m White Shark tagged & released from the Dee Why SMART drumline Fri 4:21pm, and a shark spotted by SLS drone at Long Reef 10:32am today — water was evacuated. Stay sharp at DY/Long Reef, surf with company.",
+  "summary": "Shark observed by SLS drone at Long Reef 10:32am Saturday — water was evacuated. Only Northern Beaches detection in the last 24h. Stay sharp at Long Reef, surf with company.",
   "affected": [
-   "dee-why",
    "long-reef"
   ],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
@@ -30,24 +29,24 @@
   "station": "Blue Fish Point",
   "events": [
    {
-    "time": "5:12am",
-    "height_m": 1.1,
+    "time": "12:29am",
+    "height_m": 0.3,
+    "type": "low"
+   },
+   {
+    "time": "6:18am",
+    "height_m": 1.2,
     "type": "high"
    },
    {
-    "time": "10:53am",
+    "time": "11:50am",
     "height_m": 0.4,
     "type": "low"
    },
    {
-    "time": "5:36pm",
-    "height_m": 1.7,
+    "time": "6:29pm",
+    "height_m": 1.8,
     "type": "high"
-   },
-   {
-    "time": "12:29am",
-    "height_m": 0.3,
-    "type": "low"
    }
   ]
  },
@@ -55,162 +54,159 @@
   {
    "id": "today",
    "label": "Today",
-   "date": "Sat 11 Jul",
+   "date": "Sun 12 Jul",
    "done": false,
-   "note": "Arvo update: SE/ESE swell easing but still fun — ride the push into the 5:36pm high before last light 5:29pm. Light northerly drift, cleanest at S-facing breaks. 🦈 Shark activity at Dee Why (drumline tag Fri arvo) and Long Reef (drone sighting this morning, water evacuated) — buddy up.",
+   "note": "Offshore all day and clean — a small-but-fun Sunday. Biggest in the morning as the SE swell eases; your 10–12 slot rides the drop from the 6:18am high to the 11:50am low. Bring volume. 🦈 Drone spotted a shark at Long Reef yesterday morning (water evacuated) — buddy up if you surf there.",
    "spots": {
     "dee-why": {
      "status": "live",
      "rating": "fair",
-     "size_ft": "2–3",
-     "size_desc": "Chest–head",
-     "energy_kj": 171,
-     "consistency": 66,
-     "wind_rel": "cross-off",
+     "size_ft": "1–3",
+     "size_desc": "Waist–chest",
+     "energy_kj": 92,
+     "consistency": 65,
+     "wind_rel": "offshore",
      "swells": [
       {
-       "h_ft": 3.9,
-       "period_s": 8,
-       "dir": "SE",
-       "deg": 139,
-       "label": "Primary — SE mid-period (173kJ)"
-      },
-      {
-       "h_ft": 2.6,
-       "period_s": 11,
+       "h_ft": 3.2,
+       "period_s": 10,
        "dir": "ESE",
-       "deg": 111,
-       "label": "Secondary — ESE groundswell (147kJ)"
+       "deg": 116,
+       "label": "Primary — ESE groundswell (160kJ)"
       },
       {
-       "h_ft": 0.5,
-       "period_s": 14,
-       "dir": "S",
-       "deg": 180,
-       "label": "Background — dead-S, only 7kJ"
+       "h_ft": 1.2,
+       "period_s": 8,
+       "dir": "SSE",
+       "deg": 165,
+       "label": "Secondary — SSE mid-period (15kJ)"
+      },
+      {
+       "h_ft": 3.2,
+       "period_s": 4,
+       "dir": "NNW",
+       "deg": 338,
+       "label": "Local NNW windswell (27kJ)"
       }
      ],
-     "window": "Swell fades through the arvo — get in on the incoming ahead of the 5:36pm high. N breeze is a light cross, still clean enough.",
-     "alerts": [
-      "🦈 2.94m White Shark tagged & released from the DY SMART drumline Fri 4:21pm — stay alert"
-     ],
+     "window": "Morning is the call — surf the drop from the 6:18am high toward the 11:50am low. Mid-morning mid-tide should have the banks working.",
      "tip": {
       "label": "Point call",
-      "text": "171kJ at 66/100 — fun chest–head walls. SE 139° + ESE 111° is a good angle here (dead-S is only 7kJ background, no bad wrap). Frontside rights at the Point on the incoming tide."
+      "text": "92kJ at 65/100 — waist–chest and groomed. ESE 116° is a friendly angle with zero dead-S wrap, but the Point will be soft at this size — frontside rights off the beachie banks are the better bet."
      }
     },
     "long-reef": {
      "status": "live",
      "rating": "fair-good",
      "size_ft": "2–3",
-     "size_desc": "Chest–overhead",
-     "energy_kj": 197,
-     "consistency": 64,
+     "size_desc": "Chest–head",
+     "energy_kj": 115,
+     "consistency": 63,
      "wind_rel": "offshore",
      "swells": [
       {
-       "h_ft": 2.7,
-       "period_s": 11,
+       "h_ft": 3.3,
+       "period_s": 10,
        "dir": "ESE",
-       "deg": 111,
-       "label": "Primary — ESE groundswell (150kJ)"
+       "deg": 114,
+       "label": "Primary — ESE groundswell (168kJ)"
       },
       {
-       "h_ft": 3.0,
-       "period_s": 9,
-       "dir": "SSE",
-       "deg": 156,
-       "label": "Secondary — SSE mid-period (108kJ)"
-      },
-      {
-       "h_ft": 2.3,
+       "h_ft": 1.3,
        "period_s": 8,
-       "dir": "ESE",
-       "deg": 109,
-       "label": "Tertiary — ESE short-period (56kJ)"
+       "dir": "SSE",
+       "deg": 163,
+       "label": "Secondary — SSE mid-period (18kJ)"
+      },
+      {
+       "h_ft": 1.5,
+       "period_s": 4,
+       "dir": "NNE",
+       "deg": 26,
+       "label": "Background — NNE windswell"
       }
      ],
-     "window": "Standout of the four this arvo — 197kJ, NNE offshore and chest–overhead sets on the reefs. Incoming tide to 5:36pm suits it.",
+     "window": "Biggest and best-rated of the four — the reefs sweep up the leftover ESE groundswell. Morning through midday on the dropping tide.",
      "alerts": [
-      "🦈 Shark spotted by SLS drone 10:32am today — water was evacuated. Check conditions before paddling out"
+      "🦈 Shark observed by SLS drone 10:32am Sat — water was evacuated. Surf with company and check with lifeguards"
      ],
      "tip": {
       "label": "Best bet",
-      "text": "Best rating (fair–good) and most energy on the stretch, with genuine offshore. Weigh it against this morning's drone sighting — go with a mate."
+      "text": "Fair–good, 115kJ, chest–head and dead offshore — the size-holder today. Weigh it against yesterday morning's drone sighting: go with a mate, don't dawn-patrol it solo."
      }
     },
     "curl-curl": {
      "status": "live",
      "rating": "fair",
-     "size_ft": "2–3",
-     "size_desc": "Chest–overhead",
-     "energy_kj": 167,
-     "consistency": 67,
-     "wind_rel": "cross-off",
+     "size_ft": "1–3",
+     "size_desc": "Waist–chest",
+     "energy_kj": 101,
+     "consistency": 66,
+     "wind_rel": "offshore",
      "swells": [
       {
-       "h_ft": 2.7,
-       "period_s": 11,
+       "h_ft": 3.3,
+       "period_s": 10,
        "dir": "ESE",
-       "deg": 111,
-       "label": "Primary — ESE groundswell (150kJ)"
+       "deg": 114,
+       "label": "Primary — ESE groundswell (168kJ)"
       },
       {
-       "h_ft": 3.0,
-       "period_s": 9,
-       "dir": "SSE",
-       "deg": 156,
-       "label": "Secondary — SSE mid-period (108kJ)"
-      },
-      {
-       "h_ft": 2.3,
+       "h_ft": 1.3,
        "period_s": 8,
-       "dir": "ESE",
-       "deg": 109,
-       "label": "Tertiary — ESE short-period (56kJ)"
+       "dir": "SSE",
+       "deg": 163,
+       "label": "Secondary — SSE mid-period (18kJ)"
+      },
+      {
+       "h_ft": 1.5,
+       "period_s": 4,
+       "dir": "NNE",
+       "deg": 26,
+       "label": "Background — NNE windswell"
       }
      ],
-     "window": "Clean-enough beachie peaks on the incoming — the S-swell magnet holds size as the SE fades. Light cross only.",
+     "window": "Clean peaks on the morning tide drop — holds a touch more push than DY and no shark flags here.",
      "tip": {
       "label": "Plan B",
-      "text": "167kJ at 67/100 — most consistent of the four. Backside lefts or frontside rights depending on the bank; no shark flags here today."
+      "text": "101kJ at 66/100 — the most consistent beachie option. Pick your bank: backside lefts or frontside rights both on offer, empty early."
      }
     },
     "manly": {
      "status": "live",
      "rating": "fair",
-     "size_ft": "1–3",
-     "size_desc": "Waist–shoulder",
-     "energy_kj": 172,
+     "size_ft": "1–2+",
+     "size_desc": "Thigh–stomach",
+     "energy_kj": 111,
      "consistency": 65,
-     "wind_rel": "onshore",
+     "wind_rel": "offshore",
      "swells": [
       {
-       "h_ft": 2.7,
-       "period_s": 11,
+       "h_ft": 3.3,
+       "period_s": 10,
        "dir": "ESE",
-       "deg": 111,
-       "label": "Primary — ESE groundswell (150kJ)"
+       "deg": 114,
+       "label": "Primary — ESE groundswell (168kJ)"
       },
       {
-       "h_ft": 3.0,
-       "period_s": 9,
-       "dir": "SSE",
-       "deg": 156,
-       "label": "Secondary — SSE mid-period (108kJ)"
-      },
-      {
-       "h_ft": 2.3,
+       "h_ft": 1.3,
        "period_s": 8,
-       "dir": "ESE",
-       "deg": 109,
-       "label": "Tertiary — ESE short-period (56kJ)"
+       "dir": "SSE",
+       "deg": 163,
+       "label": "Secondary — SSE mid-period (18kJ)"
+      },
+      {
+       "h_ft": 1.5,
+       "period_s": 4,
+       "dir": "NNE",
+       "deg": 26,
+       "label": "Background — NNE windswell"
       }
      ],
-     "window": "Smallest and least clean today — light NNE onshore ruffles it. Only worth it if you're already there.",
+     "window": "Smallest of the four — tidy little peelers for a longboard or groveler cruise.",
      "tip": {
       "label": "Skip",
-      "text": "Waist–shoulder with a gentle onshore — DY, Long Reef and Curly all beat it this arvo."
+      "text": "Thigh–stomach and clean, but Long Reef, Curly and DY all beat it for push this morning."
      }
     }
    }
@@ -218,104 +214,98 @@
   {
    "id": "tomorrow",
    "label": "Tomorrow",
-   "date": "Sun 12 Jul",
+   "date": "Mon 13 Jul",
    "done": false,
-   "note": "Small but worth a paddle — all-day offshores, crisp and clean. Groveler/fish day. The 10–12 slot rides the drop to the 11:50am low: fun, uncrowded peelers.",
+   "note": "Likely small to tiny but clean — traces of swell and breezy offshores. Rest day, or a longboard glide at whichever bank still bends. The next SE–E swell arrives Wednesday.",
    "spots": {
     "dee-why": {
      "status": "live",
-     "rating": "poor-fair",
-     "size_ft": "1–2",
-     "size_desc": "Knee–waist",
+     "rating": "poor",
+     "size_ft": "0–1",
+     "size_desc": "Ankle–knee",
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore",
-     "window": "Small, crisp and uncrowded — bring volume and pick the low-tide banks around midday."
+     "window": "Tiny — log it or skip it."
     },
     "long-reef": {
      "status": "live",
      "rating": "poor-fair",
-     "size_ft": "1–3",
-     "size_desc": "Waist–chest",
+     "size_ft": "1–2",
+     "size_desc": "Knee–thigh",
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore",
-     "window": "Best size-holder Sunday — the reefs sweep up the leftover ESE energy. Mid-morning on the dropping tide."
+     "window": "Only spot holding rideable size — the reefs milk what's left of the ESE energy."
     },
     "curl-curl": {
      "status": "live",
-     "rating": "poor-fair",
-     "size_ft": "1–2+",
-     "size_desc": "Knee–waist",
+     "rating": "poor",
+     "size_ft": "0–1",
+     "size_desc": "Ankle–knee",
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore",
-     "window": "Clean little beachie peaks all day — groveler territory at the better banks."
+     "window": "Tiny, clean, empty."
     },
     "manly": {
      "status": "live",
      "rating": "poor",
-     "size_ft": "1–2",
-     "size_desc": "Knee–waist",
+     "size_ft": "0–1",
+     "size_desc": "Ankle–knee",
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore",
-     "window": "Tiny but tidy — longboard cruise or skip."
+     "window": "Near-flat — skip."
     }
    }
   },
   {
    "id": "weekend",
    "label": "Weekend",
-   "date": "Sat 11 – Sun 12 Jul",
+   "date": "Sat 18 – Sun 19 Jul",
    "done": false,
-   "note": "Sat delivered early and is fading into the evening high. Sun: 1–3ft leftovers with all-day offshores — small, crisp fish/longboard territory. Next real SE–E swell fills in Wednesday (Long Reef showing 6–8ft on the charts — watch it).",
+   "note": "Next weekend: leftovers of Wednesday's SE–E swell keep 2–3ft in the water with decent shape likely as it slowly eases — Sunday looks a touch bigger than Saturday at the exposed spots. If Wed–Thu delivers (Long Reef charts show 4–5ft), next weekend is worth planning around.",
    "spots": {
     "dee-why": {
-     "status": "live",
-     "rating": "poor-fair",
-     "size_ft": "1–2",
-     "size_desc": "Knee–waist (Sun)",
+     "status": "estimated",
+     "rating": "fair",
+     "size_ft": "1–3",
+     "size_desc": "Waist–chest",
      "energy_kj": null,
      "consistency": null,
-     "wind_rel": "offshore",
-     "window": "Sat's session window has largely passed; Sun is small, clean and empty — volume required.",
-     "alerts": [
-      "🦈 White Shark tagged at the DY drumline Fri arvo — stay aware through the weekend"
-     ]
+     "wind_rel": "offshore-am",
+     "window": "Easing SE–E swell, winter morning offshores likely — mid-morning window should work both days."
     },
     "long-reef": {
-     "status": "live",
-     "rating": "poor-fair",
-     "size_ft": "1–3",
-     "size_desc": "Waist–chest (Sun)",
+     "status": "estimated",
+     "rating": "fair-good",
+     "size_ft": "2–3",
+     "size_desc": "Chest–shoulder",
      "energy_kj": null,
      "consistency": null,
-     "wind_rel": "offshore",
-     "window": "Sunday's best size on the stretch — reefs hold the leftover ESE pulse.",
-     "alerts": [
-      "🦈 Drone sighting Sat morning (water evacuated) — check SharkSmart before Sunday's paddle"
-     ]
+     "wind_rel": "offshore-am",
+     "window": "Best size-holder again — Sunday 19th showing 2–3ft as the mid-week swell eases through."
     },
     "curl-curl": {
-     "status": "live",
-     "rating": "poor-fair",
-     "size_ft": "1–2+",
-     "size_desc": "Knee–waist (Sun)",
+     "status": "estimated",
+     "rating": "fair",
+     "size_ft": "1–3",
+     "size_desc": "Waist–chest",
      "energy_kj": null,
      "consistency": null,
-     "wind_rel": "offshore",
-     "window": "Small clean peaks Sunday — fun on a groveler at the banks."
+     "wind_rel": "offshore-am",
+     "window": "S-swell magnet keeps the peaks rolling — 2–3ft Sunday on the charts."
     },
     "manly": {
-     "status": "live",
-     "rating": "poor",
-     "size_ft": "1–2",
-     "size_desc": "Knee–waist (Sun)",
+     "status": "estimated",
+     "rating": "fair",
+     "size_ft": "1–3",
+     "size_desc": "Waist–chest",
      "energy_kj": null,
      "consistency": null,
-     "wind_rel": "offshore",
-     "window": "Tiny Sunday — log it or leave it."
+     "wind_rel": "offshore-am",
+     "window": "Rideable both days, bigger Sunday — the protected option if the swell overdelivers mid-week."
     }
    }
   }
