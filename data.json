@@ -1,5 +1,5 @@
 {
- "published": "2026-07-14T06:04+10:00",
+ "published": "2026-07-14T07:26+10:00",
  "source": "live",
  "forecaster_note": "Tiny and flat to open the week — Tuesday is just windchop under clean offshores. The standout is WEDNESDAY: a solid dead-south groundswell (8.8ft @ 10s, 179°) fires ~1100kJ of energy (peaking near 1750), loading the south-exposed beaches — Long Reef well overhead, Curl Curl close behind — while Dee Why stays undersized as that dead-S angle wraps in poorly. A dawn session beats the midday southerly change. The weekend eases into fun 1–3ft ESE, a friendlier angle for the Point. — Surf Guru, read from Surfline model data (no written report scraped this run).",
  "water_temp_c": 17,
@@ -18,9 +18,9 @@
   "last_light": "5:31pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart feed not available this refresh (all NSW detection endpoints were offline) — tap to check live detections before you paddle out.",
-  "affected": [],
+  "level": "alert",
+  "summary": "Active few days on the Northern Beaches — SLS drones cleared the water at three beaches in the last 24h: Long Reef (7:32am Mon 13th) and North Curl Curl (12:08pm Mon 13th) — both your southern spots — plus a fresh sighting at Palm Beach this morning (7:11am Tue 14th). All drone sightings, water evacuated each time. Stay switched on, especially at Long Reef and Curl Curl.",
+  "affected": ["long-reef", "curl-curl"],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
  "tides": {
@@ -38,7 +38,7 @@
    "label": "Today",
    "date": "Tue 14 Jul",
    "done": false,
-   "note": "Flat and poor across the board — only ~7kJ of energy and the biggest reading is 3-second NW windchop, so nothing rideable is reaching the banks. Clean light W offshore, but there's no swell to work with. A rest day (and it's a Tuesday anyway) — save your legs for Wednesday's south pulse. 🦈 The SharkSmart detection feed was offline this refresh, so no live shark data — tap the live map before you go.",
+   "note": "Flat and poor across the board — only ~7kJ of energy and the biggest reading is 3-second NW windchop, so nothing rideable is reaching the banks. Clean light W offshore, but there's no swell to work with. A rest day (and it's a Tuesday anyway) — save your legs for Wednesday's south pulse. 🦈 Heads up — drones evacuated Long Reef (Mon 7:32am) and North Curl Curl (Mon 12:08pm), plus Palm Beach this morning. Both your southern options had sightings yesterday, so stay alert if the water's not as flat as forecast.",
    "spots": {
     "dee-why": {
      "status": "live",
