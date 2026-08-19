@@ -26,10 +26,26 @@
   "tides": {
     "station": "Blue Fish Point",
     "events": [
-      { "time": "12:58am", "height_m": 1.05, "type": "high" },
-      { "time": "6:49am", "height_m": 0.57, "type": "low" },
-      { "time": "1:50pm", "height_m": 1.35, "type": "high" },
-      { "time": "8:46pm", "height_m": 0.66, "type": "low" }
+      {
+        "time": "12:58am",
+        "height_m": 1.05,
+        "type": "high"
+      },
+      {
+        "time": "6:49am",
+        "height_m": 0.57,
+        "type": "low"
+      },
+      {
+        "time": "1:50pm",
+        "height_m": 1.35,
+        "type": "high"
+      },
+      {
+        "time": "8:46pm",
+        "height_m": 0.66,
+        "type": "low"
+      }
     ]
   },
   "days": [
@@ -49,8 +65,20 @@
           "consistency": null,
           "wind_rel": "offshore-am",
           "swells": [
-            { "h_ft": 3.5, "period_s": 6, "dir": "ENE", "deg": 61, "label": "Primary ENE windswell" },
-            { "h_ft": 2.0, "period_s": 7, "dir": "SE", "deg": 136, "label": "SE background" }
+            {
+              "h_ft": 3.5,
+              "period_s": 6,
+              "dir": "ENE",
+              "deg": 61,
+              "label": "Primary ENE windswell"
+            },
+            {
+              "h_ft": 2.0,
+              "period_s": 7,
+              "dir": "SE",
+              "deg": 136,
+              "label": "SE background"
+            }
           ],
           "window": "6:45–9:30am. NW offshore off the 6:49am low, tide pushing in. Rating drops to Poor-Fair from 10am when the wind goes N then NE.",
           "tip": {
@@ -67,8 +95,20 @@
           "consistency": null,
           "wind_rel": "offshore-am",
           "swells": [
-            { "h_ft": 3.5, "period_s": 6, "dir": "ENE", "deg": 61, "label": "Primary ENE windswell" },
-            { "h_ft": 2.0, "period_s": 7, "dir": "SE", "deg": 136, "label": "SE background" }
+            {
+              "h_ft": 3.5,
+              "period_s": 6,
+              "dir": "ENE",
+              "deg": 61,
+              "label": "Primary ENE windswell"
+            },
+            {
+              "h_ft": 2.0,
+              "period_s": 7,
+              "dir": "SE",
+              "deg": 136,
+              "label": "SE background"
+            }
           ],
           "window": "Dawn–midday. Holds Fair all day here — the only one of the four Surfline doesn't downgrade at 10am, and the wind stays offshore-to-cross an extra two hours.",
           "tip": {
@@ -85,8 +125,20 @@
           "consistency": null,
           "wind_rel": "offshore-am",
           "swells": [
-            { "h_ft": 3.5, "period_s": 6, "dir": "ENE", "deg": 61, "label": "Primary ENE windswell" },
-            { "h_ft": 2.0, "period_s": 7, "dir": "SE", "deg": 136, "label": "SE background" }
+            {
+              "h_ft": 3.5,
+              "period_s": 6,
+              "dir": "ENE",
+              "deg": 61,
+              "label": "Primary ENE windswell"
+            },
+            {
+              "h_ft": 2.0,
+              "period_s": 7,
+              "dir": "SE",
+              "deg": 136,
+              "label": "SE background"
+            }
           ],
           "window": "6:45–11:00am. Offshore holds until roughly noon, then NNE crosses it up.",
           "tip": {
@@ -103,11 +155,25 @@
           "consistency": null,
           "wind_rel": "cross-off",
           "swells": [
-            { "h_ft": 3.5, "period_s": 6, "dir": "ENE", "deg": 61, "label": "Primary ENE windswell" },
-            { "h_ft": 2.0, "period_s": 7, "dir": "SE", "deg": 136, "label": "SE background" }
+            {
+              "h_ft": 3.5,
+              "period_s": 6,
+              "dir": "ENE",
+              "deg": 61,
+              "label": "Primary ENE windswell"
+            },
+            {
+              "h_ft": 2.0,
+              "period_s": 7,
+              "dir": "SE",
+              "deg": 136,
+              "label": "SE background"
+            }
           ],
           "window": "Dawn only — cross-shore from 8am and Poor-Fair from 10.",
-          "alerts": ["Wind goes cross at North Steyne two hours before the northern spots"],
+          "alerts": [
+            "Wind goes cross at North Steyne two hours before the northern spots"
+          ],
           "tip": {
             "label": "Skip unless you're already south",
             "text": "Same energy, worst exposure. North Steyne is the first of the four to lose the offshore and the smallest on this angle — Dee Why or Long Reef is a better use of the same drive."
@@ -131,7 +197,10 @@
           "consistency": null,
           "wind_rel": "offshore",
           "window": "8:00–11:00am. Clean NW offshore before it builds to 20 gusting 40 kph by 3pm.",
-          "alerts": ["Energy drops to 25 kJ by late afternoon"]
+          "tip": {
+            "label": "Volume day",
+            "text": "37 kJ and a 6-second period — nothing that needs a wave to push it is going to work. Paddle-and-flow session on the biggest thing you own, and the clean NW offshore makes it worth going anyway."
+          }
         },
         "long-reef": {
           "status": "live",
@@ -161,8 +230,10 @@
           "energy_kj": 37,
           "consistency": null,
           "wind_rel": "offshore",
-          "window": "Early only.",
-          "alerts": ["Smallest of the four again"]
+          "window": "Early only. Smallest of the four and the NW goes gusty from midday.",
+          "alerts": [
+            "Smallest of the four again"
+          ]
         }
       }
     },
@@ -182,7 +253,10 @@
           "consistency": null,
           "wind_rel": "offshore-am",
           "window": "Sunday 8:00–11:00am only. Saturday is a write-off.",
-          "alerts": ["Sat 22: 10–19 kJ, shin-to-knee — skip it", "Sun 23: 185° primary is dead south and wraps poorly here"]
+          "alerts": [
+            "Sat 22: 10–19 kJ, shin-to-knee — skip it",
+            "Sun 23: 185° primary is dead south and wraps poorly here"
+          ]
         },
         "long-reef": {
           "status": "live",
@@ -193,7 +267,9 @@
           "consistency": null,
           "wind_rel": "offshore-am",
           "window": "Sunday 8:00–11:30am — best of the four on the S angle and the only one at chest high.",
-          "alerts": ["Sat 22: flat, 10–19 kJ"]
+          "alerts": [
+            "Sat 22: flat, 10–19 kJ"
+          ]
         },
         "curl-curl": {
           "status": "live",
@@ -204,7 +280,9 @@
           "consistency": null,
           "wind_rel": "offshore-am",
           "window": "Sunday morning. W offshore until roughly 11am, NE crosses it by mid-afternoon.",
-          "alerts": ["Sat 22: flat, 10–19 kJ"]
+          "alerts": [
+            "Sat 22: flat, 10–19 kJ"
+          ]
         },
         "manly": {
           "status": "live",
@@ -215,7 +293,10 @@
           "consistency": null,
           "wind_rel": "offshore-am",
           "window": "Sunday 8:00–10:00am. Rated Fair early but the smallest of the four.",
-          "alerts": ["Sat 22: Poor, 10–19 kJ", "Weakest of the four across both days"]
+          "alerts": [
+            "Sat 22: Poor, 10–19 kJ",
+            "Weakest of the four across both days"
+          ]
         }
       }
     }
