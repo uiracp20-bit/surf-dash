@@ -1,121 +1,141 @@
 {
-  "published": "2026-08-23T06:25:00+10:00",
+  "published": "2026-08-25T06:17:00+10:00",
   "source": "live",
-  "forecaster_note": "Sth magnets seeing a bump of size with S swell on its way. Clean morning, afternoon texture. There's a little bit of long range S swell which will show its face mid-morning. Expect small, clean and full conditions at dawn, then as the tide works its way out, a few larger chest high sets should emerge. We're in for some NE onshores in the afternoon, so head to the Sth facing beaches / Nth corners to grab the new size and the cleanest conditions — the exposed stretches will be fairly chopped up. — Anthony Spinks, Surfline",
+  "forecaster_note": "Small to fun sized surf with clean options all day — factor in the small AM and big PM high tides. NE windswell and little pulses of mid and long period S swell will keep most beaches in the chest high range. The south magnets and northerly-protected zones will be the pick, as we’re going to see some texturey N winds through the morning; breezier N’lies in the afternoon mean most breaks will see some bump, so head for south-facing shelter for the cleanest conditions. — Surfline Australia forecast team",
   "water_temp_c": 17,
-  "air_temp_c": 17,
+  "air_temp_c": 21,
   "wind": {
-    "speed_kph": 3,
-    "gust_kph": 4,
-    "dir": "WNW",
-    "deg": 282,
-    "relative": "offshore",
-    "summary": "Glassy W/WNW offshore under 5 kph until ~11am, then NE onshore 11–16 kph shuts it down from midday"
+    "speed_kph": 14,
+    "gust_kph": 39,
+    "dir": "NNW",
+    "deg": 340,
+    "relative": "cross",
+    "summary": "N–NNW 9–20 km/h, gusting 39 — offshore at Long Reef and Curl Curl, cross-shore into Dee Why and Manly. Freshens through the afternoon."
   },
   "sun": {
-    "sunrise": "6:26am",
-    "sunset": "5:31pm",
-    "last_light": "5:56pm"
+    "sunrise": "6:24am",
+    "sunset": "5:32pm",
+    "last_light": "5:58pm"
   },
   "shark": {
     "level": "alert",
-    "summary": "Two SLSNSW drone sightings yesterday morning (Sat 22 Aug) — Shelly Beach 8:10am and Mona Vale 8:45am, both with water evacuated. Nothing new overnight; feed is live (latest statewide detection 14.5h old, 7 in the past 24h). Shelly sits right around the Manly headland — stay switched on there.",
-    "affected": ["manly"],
+    "summary": "Shark sighted by drone at Newport Beach 6:50am Mon 24 Aug — water was cleared. That’s the only Northern Beaches sighting in the last 24h and none at Dee Why, Long Reef, Curl Curl or Manly. SLS advise no drones flying today at Collaroy, Warriewood or Mona Vale. Feed live (latest statewide detection 18h old, 14 statewide in 24h).",
+    "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
   "tides": {
     "station": "Blue Fish Point",
     "events": [
-      { "time": "5:09am", "height_m": 0.93, "type": "high" },
-      { "time": "10:00am", "height_m": 0.7, "type": "low" },
-      { "time": "4:59pm", "height_m": 1.41, "type": "high" },
-      { "time": "12:10am", "height_m": 0.5, "type": "low" }
+      {
+        "time": "12:45am",
+        "height_m": 0.4,
+        "type": "low"
+      },
+      {
+        "time": "6:43am",
+        "height_m": 1.1,
+        "type": "high"
+      },
+      {
+        "time": "11:54am",
+        "height_m": 0.6,
+        "type": "low"
+      },
+      {
+        "time": "6:25pm",
+        "height_m": 1.5,
+        "type": "high"
+      }
     ]
   },
   "days": [
     {
       "id": "today",
       "label": "Today",
-      "date": "Sun 23 Aug",
+      "date": "Tue 25 Aug",
       "done": false,
-      "note": "The S groundswell landed — 5.6ft @ 9s from 182°, peaking at 505 kJ at dawn and bleeding down to 149 kJ by midday. Dead south is the wrong door for Dee Why, so the size is at Long Reef and Curl Curl. Offshore and glassy until ~11am, then NE onshore. Go now.",
+      "note": "NE windswell at 54° is doing the work — the angle Dee Why likes, but only 124 kJ behind it and a 7s period, so sets will be sparse. Long Reef is the standout: it’s the one spot where the N–NNW breeze is straight offshore. Mid-morning on the draining tide to the 11:54am low.",
       "spots": {
         "dee-why": {
           "status": "live",
-          "rating": "fair",
-          "size_ft": "3–4",
+          "rating": "poor-fair",
+          "size_ft": "2–4",
           "size_desc": "Waist–chest",
-          "energy_kj": 333,
-          "consistency": 100,
-          "wind_rel": "offshore-am",
+          "energy_kj": 124,
+          "consistency": null,
+          "wind_rel": "cross",
           "swells": [
-            { "h_ft": 5.6, "period_s": 9, "dir": "S", "deg": 182, "label": "Primary S groundswell" },
-            { "h_ft": 2.0, "period_s": 6, "dir": "ENE", "deg": 67, "label": "ENE windswell" },
-            { "h_ft": 0.5, "period_s": 18, "dir": "S", "deg": 184, "label": "Long-period S pulse" }
+            {
+              "h_ft": 5.1,
+              "period_s": 7,
+              "dir": "NE",
+              "deg": 54,
+              "label": "NE windswell (primary)"
+            },
+            {
+              "h_ft": 1.6,
+              "period_s": 9,
+              "dir": "S",
+              "deg": 175,
+              "label": "Mid-period S swell"
+            },
+            {
+              "h_ft": 0.7,
+              "period_s": 15,
+              "dir": "S",
+              "deg": 184,
+              "label": "Long-period S pulse"
+            }
           ],
-          "window": "7–10:30am while the W offshore holds and the tide drains to the 10:00am low. Point is your best shot — the beachie will be closing out on that S angle.",
-          "alerts": ["Dead S at 182° — wraps badly into Dee Why, expect the bay to feel half the size it is next door"],
+          "window": "9–11:30am. Tide drains off the 6:43am high to the 11:54am low — that’s when the NE windswell starts finding shape at the Point. N–NNW breeze is cross-shore here, so expect some bump on the open beach.",
+          "alerts": [
+            "N–NNW breeze is cross-shore at Dee Why — Long Reef and Curl Curl get the cleaner offshore angle today"
+          ],
           "tip": {
             "label": "Frontside at the Point",
-            "text": "100/100 consistency and 333 kJ at 9am means sets keep coming — but the S angle robs the bay. Sit tight on the Point for the frontside right rather than paddling around the beachie hunting a bank that isn't lined up."
+            "text": "NE at 54° is exactly the angle Dee Why likes — but 124 kJ is modest energy, so it’ll be a short-period 7s wobble rather than a lined-up swell. Ride your high-volume board and sit deep at the Point for the frontside rights; the bay itself will feel gutless."
           }
         },
         "long-reef": {
           "status": "live",
           "rating": "fair-good",
-          "size_ft": "4–6",
-          "size_desc": "Chest–overhead",
-          "energy_kj": 333,
-          "consistency": 100,
-          "wind_rel": "offshore-am",
-          "swells": [
-            { "h_ft": 5.6, "period_s": 9, "dir": "S", "deg": 182, "label": "Primary S groundswell" },
-            { "h_ft": 2.0, "period_s": 6, "dir": "ENE", "deg": 67, "label": "ENE windswell" },
-            { "h_ft": 0.5, "period_s": 18, "dir": "S", "deg": 184, "label": "Long-period S pulse" }
-          ],
-          "window": "Pick of the day. 6–11am — biggest, cleanest, and the only spot properly exposed to the 182° line. Chest to a foot overhead on the sets.",
+          "size_ft": "3–5",
+          "size_desc": "Chest–head",
+          "energy_kj": 124,
+          "consistency": null,
+          "wind_rel": "offshore",
+          "window": "9am–12pm — pick of the four today. N–NNW is straight offshore here and the reef holds the 7s NE windswell better than the beaches.",
           "tip": {
-            "label": "Backside on the lefts",
-            "text": "The south swell runs down the reef and throws lefts — backside for you. 505 kJ at 6am dropping to 149 by noon, so the early is genuinely a different wave to the late. Don't sleep in."
+            "label": "Best call of the day",
+            "text": "Only spot rating fair-to-good this morning. Same 124 kJ everywhere, but Long Reef converts the NE angle into 3–5ft with a clean offshore groom — go here before the 15:00 breeze builds to 20 km/h."
           }
         },
         "curl-curl": {
           "status": "live",
-          "rating": "fair-good",
-          "size_ft": "4–5",
-          "size_desc": "Chest–head",
-          "energy_kj": 333,
-          "consistency": 100,
-          "wind_rel": "offshore-am",
-          "swells": [
-            { "h_ft": 5.6, "period_s": 9, "dir": "S", "deg": 182, "label": "Primary S groundswell" },
-            { "h_ft": 2.0, "period_s": 6, "dir": "ENE", "deg": 67, "label": "ENE windswell" },
-            { "h_ft": 0.5, "period_s": 18, "dir": "S", "deg": 184, "label": "Long-period S pulse" }
-          ],
-          "window": "Strong second option. 7–11am, north corner for the cleanest water. Punchy chest-to-head on the banks — exactly your bracket.",
+          "rating": "fair",
+          "size_ft": "2–5",
+          "size_desc": "Waist–chest",
+          "energy_kj": 124,
+          "consistency": null,
+          "wind_rel": "offshore",
+          "window": "8:30–11am. Offshore N–NNW cleans it up; the banks will decide it — look for the deeper corners on the draining tide.",
           "tip": {
-            "label": "North corner",
-            "text": "Spinks says head to south-facing beaches and north corners today. Curl Curl's north end is the shelter play once the NE fills in — it'll hold shape 30–45 min longer than the open stretch."
+            "label": "Backup to Long Reef",
+            "text": "Clean and offshore but inconsistent on 7s period — sets will be sparse. Worth a drive-by look from the headland before committing."
           }
         },
         "manly": {
           "status": "live",
-          "rating": "fair",
+          "rating": "poor-fair",
           "size_ft": "2–3",
           "size_desc": "Thigh–stomach",
-          "energy_kj": 333,
-          "consistency": 100,
-          "wind_rel": "offshore-am",
-          "swells": [
-            { "h_ft": 5.6, "period_s": 9, "dir": "S", "deg": 182, "label": "Primary S groundswell" },
-            { "h_ft": 2.0, "period_s": 6, "dir": "ENE", "deg": 67, "label": "ENE windswell" },
-            { "h_ft": 0.5, "period_s": 18, "dir": "S", "deg": 184, "label": "Long-period S pulse" }
-          ],
-          "window": "Skip it today unless you want a soft one — half the size of Long Reef with the same wind clock.",
-          "alerts": ["⚠️ Shark: drone sighting at Shelly Beach 8:10am Sat 22 Aug, water evacuated"],
+          "energy_kj": 124,
+          "consistency": null,
+          "wind_rel": "cross",
+          "window": "Skip unless you want an easy paddle. Smallest of the four — North Steyne is cross-shore and only picking up 2–3ft off the NE.",
           "tip": {
-            "label": "Not today",
-            "text": "Same 333 kJ arriving but the headland eats the S angle — 2–3ft thigh-high while Long Reef is chest to overhead. Drive the extra 10 minutes."
+            "label": "Low priority",
+            "text": "Manly filters the short-period NE angle worst of the four. Save the drive."
           }
         }
       }
@@ -123,50 +143,58 @@
     {
       "id": "tomorrow",
       "label": "Tomorrow",
-      "date": "Mon 24 Aug",
+      "date": "Wed 26 Aug",
       "done": false,
-      "note": "Swell backs off hard — 3ft @ 11s from 181°, energy down to 101 kJ. N/NNW cross-shore at dawn, gusty NE 20 kph by afternoon. A dawn-patrol-or-nothing day, and only Long Reef really holds.",
+      "note": "Short and sharp — offshore window from dawn to about 8:30/9am on a fun ENE windswell, then southerlies shut it down everywhere except Manly, which turns offshore. Set an alarm or don’t bother.",
       "spots": {
         "dee-why": {
           "status": "live",
           "rating": "fair",
           "size_ft": "2–3",
-          "size_desc": "Thigh–stomach",
-          "energy_kj": 101,
-          "consistency": 93,
-          "wind_rel": "cross",
-          "window": "6–9am before the NNW cross-shore adds texture. Marginal.",
-          "alerts": ["Drops to poor-fair by midday as the NE builds"]
+          "size_desc": "Thigh–waist",
+          "energy_kj": 102,
+          "consistency": null,
+          "wind_rel": "offshore-am",
+          "window": "Dawn to 8:30am. Hard cut-off — southerlies arrive mid-morning and it goes onshore for the rest of the day.",
+          "alerts": [
+            "Wind swings S (191°, 16 km/h gusting 38) from roughly 9am — the offshore window is short"
+          ]
         },
         "long-reef": {
           "status": "live",
-          "rating": "fair-good",
-          "size_ft": "3–4",
-          "size_desc": "Waist–shoulder",
-          "energy_kj": 101,
-          "consistency": 93,
-          "wind_rel": "cross",
-          "window": "Best of a quiet day. 6–10am — waist to shoulder on the exposed banks with 93% consistency."
+          "rating": "fair",
+          "size_ft": "3–5",
+          "size_desc": "Waist–chest",
+          "energy_kj": 102,
+          "consistency": null,
+          "wind_rel": "offshore-am",
+          "window": "6:30–8:30am only. Best size of the four again, but it goes onshore once the S wind fills in.",
+          "alerts": [
+            "Onshore S from mid-morning"
+          ]
         },
         "curl-curl": {
           "status": "live",
           "rating": "fair",
-          "size_ft": "3–4",
+          "size_ft": "2–4",
           "size_desc": "Waist–shoulder",
-          "energy_kj": 101,
-          "consistency": 93,
-          "wind_rel": "cross",
-          "window": "6–9:30am. Fades to poor-fair once the NE swings in after midday."
+          "energy_kj": 102,
+          "consistency": null,
+          "wind_rel": "offshore-am",
+          "window": "Early only — clean until about 8/9am, then southerly bump.",
+          "alerts": [
+            "Onshore S from mid-morning"
+          ]
         },
         "manly": {
           "status": "live",
-          "rating": "poor-fair",
-          "size_ft": "2–3",
-          "size_desc": "Thigh–waist",
-          "energy_kj": 101,
-          "consistency": 93,
-          "wind_rel": "cross",
-          "window": "Not worth the trip — poor-fair from 9am onwards."
+          "rating": "fair",
+          "size_ft": "2–4",
+          "size_desc": "Thigh–stomach",
+          "energy_kj": 102,
+          "consistency": null,
+          "wind_rel": "offshore",
+          "window": "The one spot that improves as the day goes on — the S wind is offshore at North Steyne. Southern corner into the afternoon."
         }
       }
     },
@@ -175,51 +203,74 @@
       "label": "Weekend",
       "date": "Sat 29 – Sun 30 Aug",
       "done": false,
-      "note": "Another S pulse for the coming weekend. Sat 29 is the bigger day (up to 291 kJ, 6ft @ 8s from 175°) but a S cross-shore fills in from 10am. Sun 30 is smaller and cleaner with W offshore right through to noon — that's the session to plan around. Confidence still low (37–75%), so re-check midweek.",
+      "note": "Saturday brings a big dead-south groundswell — 8.5ft at 9s from 172° and 1116 kJ, roughly nine times today’s energy — but with a S onshore, so it’ll be size without shape and Dee Why will wrap it away. Sunday is the session: eases to 3–5ft with a light NW offshore. Plan for Sunday mid-morning.",
       "spots": {
         "dee-why": {
           "status": "live",
-          "rating": "fair",
-          "size_ft": "2–4",
-          "size_desc": "Thigh–shoulder",
-          "energy_kj": 285,
-          "consistency": 58,
-          "wind_rel": "offshore",
-          "window": "Sun 30, 7–11am — W offshore 5–7 kph the whole morning. Sat 29 has more push but S cross-shore from 10am.",
-          "alerts": ["Swell still ~175–178° — same bad S wrap for the bay", "Forecast confidence only 37–75% this far out"]
+          "rating": "poor-fair",
+          "size_ft": "4–8",
+          "size_desc": "Head–2ft overhead",
+          "energy_kj": 1116,
+          "consistency": null,
+          "wind_rel": "cross",
+          "swells": [
+            {
+              "h_ft": 8.5,
+              "period_s": 9,
+              "dir": "S",
+              "deg": 172,
+              "label": "Saturday S groundswell"
+            },
+            {
+              "h_ft": 3.7,
+              "period_s": 8,
+              "dir": "S",
+              "deg": 176,
+              "label": "Sunday easing S swell"
+            },
+            {
+              "h_ft": 2.6,
+              "period_s": 9,
+              "dir": "ESE",
+              "deg": 103,
+              "label": "Sunday ESE swell"
+            }
+          ],
+          "window": "SATURDAY: big but messy — 8.5ft at 9s from 172°, 1116 kJ, S wind cross-shore. SUNDAY is the pick: drops to 2–4ft with a NW offshore at 9 km/h and rates fair-to-good. Go Sunday mid-morning.",
+          "alerts": [
+            "Saturday swell is dead S at 172° — wraps badly into Dee Why, the bay will feel half the size it is at Long Reef",
+            "1116 kJ Saturday — 9x today’s energy. Serious water movement, strong rips"
+          ]
         },
         "long-reef": {
           "status": "live",
-          "rating": "fair-good",
-          "size_ft": "3–6",
-          "size_desc": "Waist–overhead",
-          "energy_kj": 291,
-          "consistency": 58,
-          "wind_rel": "offshore",
-          "window": "Again the pick. Sat 29 mid-morning for size (4–6ft, chest to a foot overhead), Sun 30 for clean W offshore and 4–5ft.",
-          "alerts": ["Forecast confidence 37–75% — re-check Wednesday"]
+          "rating": "fair",
+          "size_ft": "6–12",
+          "size_desc": "Up to 2x overhead",
+          "energy_kj": 1116,
+          "consistency": null,
+          "wind_rel": "onshore",
+          "window": "SATURDAY: biggest of the four at 6–12ft — experienced only, S onshore at 18 km/h. SUNDAY: 3–5ft, NW offshore, fair-to-good — the weekend’s best session."
         },
         "curl-curl": {
           "status": "live",
-          "rating": "fair",
-          "size_ft": "3–5",
-          "size_desc": "Waist–head",
-          "energy_kj": 291,
-          "consistency": 58,
-          "wind_rel": "offshore",
-          "window": "Sun 30 morning is the cleaner half. Sat 29 slips to poor-fair once the S cross-shore hits 17 kph mid-morning.",
-          "alerts": ["Forecast confidence 37–75%"]
+          "rating": "poor-fair",
+          "size_ft": "4–10",
+          "size_desc": "Overhead to well overhead",
+          "energy_kj": 1116,
+          "consistency": null,
+          "wind_rel": "onshore",
+          "window": "SATURDAY: 4–10ft and onshore — likely closing out. SUNDAY: 3–5ft with NW offshore, much more surfable."
         },
         "manly": {
           "status": "live",
           "rating": "fair",
-          "size_ft": "2–4",
-          "size_desc": "Thigh–chest",
-          "energy_kj": 285,
-          "consistency": 58,
-          "wind_rel": "offshore",
-          "window": "Sat 29 mid-morning is the one day Manly gets to 3–4ft. Otherwise thigh-to-waist.",
-          "alerts": ["Forecast confidence 37–75%"]
+          "size_ft": "3–6",
+          "size_desc": "Chest–head",
+          "energy_kj": 1116,
+          "consistency": null,
+          "wind_rel": "cross",
+          "window": "SATURDAY: the sheltered option — South Steyne / Shelly corner will be the only rideable size on that S angle. SUNDAY: 2–3ft and small."
         }
       }
     }
