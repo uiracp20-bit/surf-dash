@@ -18,18 +18,34 @@
     "last_light": "6:03pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
+    "level": "clear",
+    "summary": "SharkSmart NSW live: no shark detections or drone sightings at Dee Why, Long Reef, Curl Curl or Manly in the last 24 h. Most recent Northern Beaches activity was drone sightings at Bungan Beach (3:00pm) and North Palm Beach (1:58pm) on 31 Aug — about 39 h ago and well north of your spots. Feed is healthy: 8 real statewide detections in the last 24 h, the latest a tagged shark at Lighthouse Beach, Ballina at 6:50pm yesterday.",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
   "tides": {
     "station": "Blue Fish Point, Sydney",
     "events": [
-      { "time": "5:05am", "height_m": 0.33, "type": "low" },
-      { "time": "11:29am", "height_m": 1.56, "type": "high" },
-      { "time": "5:54pm", "height_m": 0.38, "type": "low" },
-      { "time": "11:53pm", "height_m": 1.29, "type": "high" }
+      {
+        "time": "5:05am",
+        "height_m": 0.33,
+        "type": "low"
+      },
+      {
+        "time": "11:29am",
+        "height_m": 1.56,
+        "type": "high"
+      },
+      {
+        "time": "5:54pm",
+        "height_m": 0.38,
+        "type": "low"
+      },
+      {
+        "time": "11:53pm",
+        "height_m": 1.29,
+        "type": "high"
+      }
     ]
   },
   "days": [
@@ -49,9 +65,27 @@
           "consistency": 100,
           "wind_rel": "offshore",
           "swells": [
-            { "h_ft": 2.5, "period_s": 10, "dir": "S", "deg": 178, "label": "S groundswell (primary — wraps poorly here)" },
-            { "h_ft": 2.4, "period_s": 6, "dir": "NNE", "deg": 29, "label": "NNE windswell (short period, adds texture)" },
-            { "h_ft": 1.6, "period_s": 10, "dir": "ENE", "deg": 75, "label": "ENE groundswell (right direction, too small)" }
+            {
+              "h_ft": 2.5,
+              "period_s": 10,
+              "dir": "S",
+              "deg": 178,
+              "label": "S groundswell (primary — wraps poorly here)"
+            },
+            {
+              "h_ft": 2.4,
+              "period_s": 6,
+              "dir": "NNE",
+              "deg": 29,
+              "label": "NNE windswell (short period, adds texture)"
+            },
+            {
+              "h_ft": 1.6,
+              "period_s": 10,
+              "dir": "ENE",
+              "deg": 75,
+              "label": "ENE groundswell (right direction, too small)"
+            }
           ],
           "window": "10am–12pm on the tide push if you go at all — but this is the weakest of your four options today. Only worth it if you want a mellow longboard-style paddle.",
           "alerts": [
@@ -134,7 +168,9 @@
           "consistency": 100,
           "wind_rel": "offshore",
           "window": "Nothing here worth the drive. 6–9am if you want a clean paddle before work.",
-          "alerts": ["172° still too far south for the Point to switch on"]
+          "alerts": [
+            "172° still too far south for the Point to switch on"
+          ]
         },
         "long-reef": {
           "status": "live",
@@ -145,7 +181,9 @@
           "consistency": 100,
           "wind_rel": "offshore-am",
           "window": "6–11am while it holds Fair. Drops to Poor–Fair from 3pm.",
-          "alerts": ["Smaller than today — the S primary trims to 2.1ft"]
+          "alerts": [
+            "Smaller than today — the S primary trims to 2.1ft"
+          ]
         },
         "curl-curl": {
           "status": "live",
@@ -156,7 +194,9 @@
           "consistency": 100,
           "wind_rel": "offshore-am",
           "window": "6–11am. Rated Poor by 3pm, so this is a strictly-morning day.",
-          "alerts": ["Steepest drop-off of the four — Fair at 9am, Poor by 3pm"]
+          "alerts": [
+            "Steepest drop-off of the four — Fair at 9am, Poor by 3pm"
+          ]
         },
         "manly": {
           "status": "live",
@@ -167,7 +207,9 @@
           "consistency": 100,
           "wind_rel": "offshore",
           "window": "Skip it. Smallest of the four again.",
-          "alerts": ["1–2ft all day, Poor–Fair from dawn to dark"]
+          "alerts": [
+            "1–2ft all day, Poor–Fair from dawn to dark"
+          ]
         }
       }
     },
@@ -229,7 +271,9 @@
           "consistency": 64,
           "wind_rel": "onshore-pm",
           "window": "Neither day. Most shadowed of the four from a 184° swell.",
-          "alerts": ["Stays 1–3ft even on Sunday's 846 kJ pulse — wrong angle entirely"]
+          "alerts": [
+            "Stays 1–3ft even on Sunday's 846 kJ pulse — wrong angle entirely"
+          ]
         }
       }
     }
