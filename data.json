@@ -2,7 +2,7 @@
  "published": "2026-09-03T06:20:00+10:00",
  "source": "live",
  "forecaster_note": "A day of small clean surf with breezy offshore winds — best suited for cruising bigger boards. Friday brings a long-period SSE swell with clean offshore winds early before northerlies develop. Saturday drops back a bit, but some small to fun surf, staying clean all day. Sunday picks up again, though maybe not until the winds trend onshore. Monday looks fun-sized and clean in the morning before strong onshores and building size. — Surfline forecast team, Sydney",
- "water_temp_c": 18,
+ "water_temp_c": 18.1,
  "air_temp_c": 21,
  "wind": {
   "speed_kph": 18,
@@ -18,8 +18,8 @@
   "last_light": "6:04pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "clear",
+  "summary": "SharkSmart NSW live: no shark detections or drone sightings at Dee Why, Long Reef, Curl Curl or Manly in the last 24 h. The only genuine Northern Beaches sighting was a drone spot at Avalon Beach at 4:09pm yesterday (water evacuated) — about 14 h ago and 13 km north of your spots. Feed is healthy: 15 real statewide detections in the last 24 h, the most recent a tagged shark at Lighthouse Beach, Ballina at 1:32am today.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
