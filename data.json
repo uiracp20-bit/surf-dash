@@ -1,16 +1,16 @@
 {
-  "published": "2026-09-04T06:45:00+10:00",
+  "published": "2026-09-04T17:40:00+10:00",
   "source": "live",
   "forecaster_note": "New short to mid-period S swell mix will give us some waist to chest high surf at the south magnets around dawn. We should then see it pick up to about chest / head high through later AM through the middle of the day, before a slight easing later afternoon. Small for other breaks. Clean until mid-morning, then light onshores through middle of the day and some bump and crumble. Breezy NE'lies in the afternoon add lump to all but sheltered S facing spots. — Hugh McDowell, Surfline",
   "water_temp_c": 17,
-  "air_temp_c": 21,
+  "air_temp_c": 19,
   "wind": {
-    "speed_kph": 8,
-    "gust_kph": 13,
-    "dir": "WNW",
-    "deg": 285,
-    "relative": "offshore",
-    "summary": "Light W/WNW offshore this morning, swinging NE onshore from midday and freshening to ~18 km/h by mid-afternoon."
+    "speed_kph": 18,
+    "gust_kph": 28,
+    "dir": "NE",
+    "deg": 45,
+    "relative": "onshore",
+    "summary": "Breezy NE onshore this afternoon, ~18 km/h gusting 28. Backs off to a light W offshore overnight, then NNW/W offshore all day Saturday."
   },
   "sun": {
     "sunrise": "6:11am",
@@ -18,8 +18,8 @@
     "last_light": "6:04pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
+    "level": "clear",
+    "summary": "No shark activity at Dee Why, Long Reef, Curl Curl or Manly in the last 24h. One SLS drone sighting up at Kiddies Corner, Palm Beach at 1:31pm today — 25km north, no impact on your spots. Feed is live (71 tagged detections statewide in 24h, newest 1.4h ago).",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
@@ -54,7 +54,7 @@
       "label": "Today",
       "date": "Fri 4 Sep",
       "done": false,
-      "note": "Go early. W/WNW offshore holds until roughly 11am, then NE onshore swings in and turns it to bump by midday. Long Reef and Curl Curl are the S-swell magnets today; Dee Why is smaller because the primary is dead S at 184° and wraps badly into the bowl.",
+      "note": "Day's basically done — last light 6:04pm. It ran to plan: clean W/WNW until mid-morning, then NE onshore from midday turned it to bump. Long Reef and Curl Curl held the S swell best. Saturday is the next paddle.",
       "spots": {
         "dee-why": {
           "status": "live",
@@ -64,7 +64,7 @@
           "energy_kj": 131,
           "consistency": 99,
           "wind_rel": "offshore-am",
-          "window": "6–10:30am — clean W/WNW at 8 km/h. Onshore NE from midday.",
+          "window": "Window has closed — NE onshore since midday. Next clean window is Saturday dawn.",
           "swells": [
             {
               "h_ft": 3.6,
@@ -100,7 +100,7 @@
           ],
           "tip": {
             "label": "Frontside read",
-            "text": "Point rights are your frontside, but at 184° the S swell folds off without shape. Sit wide on the bank south of the point and pick off the NE-swell peaks instead."
+            "text": "Today the S swell sat at 184° — dead south, folded flat into the bowl with no shape. Worth remembering: when the primary is 170–190°, skip the point and go to Long Reef instead."
           }
         },
         "long-reef": {
@@ -111,7 +111,7 @@
           "energy_kj": 131,
           "consistency": 99,
           "wind_rel": "offshore-am",
-          "window": "6–11am — best size of the four. Cross-shore NE after midday.",
+          "window": "Window has closed — best of the day was 6–11am. Saturday holds the most size again.",
           "swells": [
             {
               "h_ft": 3.6,
@@ -144,7 +144,7 @@
           ],
           "tip": {
             "label": "Pick of the day",
-            "text": "Straight-in S exposure means Long Reef eats this swell. Bigger, more consistent, and the NE cross doesn't ruin it as fast as it does Dee Why."
+            "text": "Straight-in S exposure meant Long Reef ate today's swell — 3–5ft versus Dee Why's 2–4ft. Same story Saturday and Sunday."
           }
         },
         "curl-curl": {
@@ -155,7 +155,7 @@
           "energy_kj": 131,
           "consistency": 99,
           "wind_rel": "offshore-am",
-          "window": "6–11am — south corner holds shape longest as the NE builds.",
+          "window": "Window has closed — south corner held longest. Back at it Saturday.",
           "swells": [
             {
               "h_ft": 3.6,
@@ -188,7 +188,7 @@
           ],
           "tip": {
             "label": "Backup",
-            "text": "South corner is the play — sheltered from the NE and still fed by the S swell. Lefts here are your backside."
+            "text": "South corner is the play on a dead-S swell — sheltered from the NE and still fed. Lefts here are your backside."
           }
         },
         "manly": {
@@ -199,7 +199,7 @@
           "energy_kj": 131,
           "consistency": 99,
           "wind_rel": "offshore-am",
-          "window": "Dawn only — onshore NE by midday and it falls apart.",
+          "window": "Gone. Onshore since midday.",
           "swells": [
             {
               "h_ft": 3.6,
@@ -235,7 +235,7 @@
           ],
           "tip": {
             "label": "Skip it",
-            "text": "Smallest and first to blow out. Only worth it if you're already in Manly."
+            "text": "Too far north for a dead-S swell. Only worth it if you're already in Manly."
           }
         }
       }
@@ -245,7 +245,7 @@
       "label": "Tomorrow",
       "date": "Sat 5 Sep",
       "done": false,
-      "note": "Swell drops off hard — energy halves to ~54 kJ. Upside: NNW/W offshore all day, so it's clean from dawn to dark. Long Reef and Curl Curl still hold waist-to-chest. Floaty-board day.",
+      "note": "The next real paddle. Swell drops back — energy halves to ~54 kJ — but NNW/W offshore blows all day so it's clean dawn to dark. Long Reef and Curl Curl hold waist-to-chest. Floaty-board day, mid-morning is fine for once.",
       "spots": {
         "dee-why": {
           "status": "live",
