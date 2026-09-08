@@ -1,5 +1,5 @@
 {
-  "published": "2026-09-08T21:30:00+10:00",
+  "published": "2026-09-08T21:36:00+10:00",
   "source": "live",
   "forecaster_note": "Wed 9 Sep — \"Looking at a window of quality surf through the morning. Then building onshore and lumpy.\" Wind should hold off in the morning for clean head-high-plus surf at the south exposures and fun sized stuff elsewhere for those that want to cruise. Then another south wind switch moves through about 10/11am with onshore, lumpy and building surf for the rest of the day. — Hugh McDowell, Surfline",
   "water_temp_c": 17,
@@ -18,8 +18,8 @@
     "last_light": "6:07pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
+    "level": "clear",
+    "summary": "No shark detections at Dee Why, Long Reef, Curl Curl or Manly in the last 24h. One tagged white shark (#3608) was picked up by the Palm Beach receiver at 8:36am today — 20km north of your breaks. Feed is live (104 detections statewide in 24h, newest 9:10pm tonight).",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
