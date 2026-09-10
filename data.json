@@ -1,5 +1,5 @@
 {
-  "published": "2026-09-11T06:55:00+10:00",
+  "published": "2026-09-11T08:40:00+10:00",
   "source": "live",
   "forecaster_note": "Long period S swell has filled in and mixed with the easing mid-period stuff — inconsistent but well overhead sets for the exposed banks, with a baseline of head to overhead. Elsewhere expect easier size but still with occasional powerful sets wrapping in. Early offshore W/SW winds see some good surf for breaks that can handle a bit of energy. Winds then trend S/SE but drop lighter through the day and size eases a touch for textured, crumbly surf into the afternoon. — Surfline forecast team",
   "water_temp_c": 17.5,
@@ -18,18 +18,34 @@
     "last_light": "6:09pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
+    "level": "clear",
+    "summary": "No shark detections on the Northern Beaches (Palm Beach → Manly) in the last 24h. Feed live as of 8:33am — 62 detections statewide, nearest activity Cronulla and Bennetts Beach.",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
   "tides": {
     "station": "Blue Fish Point, Sydney",
     "events": [
-      { "time": "2:05am", "height_m": 0.15, "type": "low" },
-      { "time": "8:10am", "height_m": 1.47, "type": "high" },
-      { "time": "2:05pm", "height_m": 0.26, "type": "low" },
-      { "time": "8:20pm", "height_m": 1.68, "type": "high" }
+      {
+        "time": "2:05am",
+        "height_m": 0.15,
+        "type": "low"
+      },
+      {
+        "time": "8:10am",
+        "height_m": 1.47,
+        "type": "high"
+      },
+      {
+        "time": "2:05pm",
+        "height_m": 0.26,
+        "type": "low"
+      },
+      {
+        "time": "8:20pm",
+        "height_m": 1.68,
+        "type": "high"
+      }
     ]
   },
   "days": [
@@ -49,11 +65,25 @@
           "consistency": 100,
           "wind_rel": "offshore-am",
           "swells": [
-            { "h_ft": 6.6, "period_s": 11, "dir": "S", "deg": 184, "label": "Primary S groundswell" },
-            { "h_ft": 3.4, "period_s": 8, "dir": "SE", "deg": 129, "label": "Mid-period SE" }
+            {
+              "h_ft": 6.6,
+              "period_s": 11,
+              "dir": "S",
+              "deg": 184,
+              "label": "Primary S groundswell"
+            },
+            {
+              "h_ft": 3.4,
+              "period_s": 8,
+              "dir": "SE",
+              "deg": 129,
+              "label": "Mid-period SE"
+            }
           ],
           "window": "6–10am. Offshore holds until roughly 11am, then S/SE onshore junks it up.",
-          "alerts": ["Dead S at 184° — expect the wrap to be sloppy and the Point to be inconsistent. Long Reef and Curl Curl are the better calls today."],
+          "alerts": [
+            "Dead S at 184° — expect the wrap to be sloppy and the Point to be inconsistent. Long Reef and Curl Curl are the better calls today."
+          ],
           "tip": {
             "label": "Frontside at the Point",
             "text": "If you do paddle out at Dee Why, sit wide at the Point and wait for the bigger long-period sets — the 11s stuff is the only thing bending in with any shape. The 8s SE mush will close out on the bank."
@@ -68,11 +98,25 @@
           "consistency": 100,
           "wind_rel": "cross",
           "swells": [
-            { "h_ft": 6.0, "period_s": 11, "dir": "S", "deg": 185, "label": "Primary S groundswell" },
-            { "h_ft": 3.4, "period_s": 8, "dir": "SE", "deg": 130, "label": "Mid-period SE" }
+            {
+              "h_ft": 6.0,
+              "period_s": 11,
+              "dir": "S",
+              "deg": 185,
+              "label": "Primary S groundswell"
+            },
+            {
+              "h_ft": 3.4,
+              "period_s": 8,
+              "dir": "SE",
+              "deg": 130,
+              "label": "Mid-period SE"
+            }
           ],
           "window": "Dawn to 9am while the wind is still light. Biggest of the four by a margin.",
-          "alerts": ["Well overhead sets — solid, powerful and inconsistent. Strong paddle required."],
+          "alerts": [
+            "Well overhead sets — solid, powerful and inconsistent. Strong paddle required."
+          ],
           "tip": {
             "label": "Size is here",
             "text": "This is the day for the step-up. Cross-shore texture but the sheer size makes it worth it — pick off the long-period sets and let the 8s slop go through."
@@ -87,8 +131,20 @@
           "consistency": 100,
           "wind_rel": "offshore",
           "swells": [
-            { "h_ft": 6.0, "period_s": 11, "dir": "S", "deg": 185, "label": "Primary S groundswell" },
-            { "h_ft": 3.4, "period_s": 8, "dir": "SE", "deg": 130, "label": "Mid-period SE" }
+            {
+              "h_ft": 6.0,
+              "period_s": 11,
+              "dir": "S",
+              "deg": 185,
+              "label": "Primary S groundswell"
+            },
+            {
+              "h_ft": 3.4,
+              "period_s": 8,
+              "dir": "SE",
+              "deg": 130,
+              "label": "Mid-period SE"
+            }
           ],
           "window": "6–11am. Best combination of size and offshore wind on the coast this morning.",
           "tip": {
@@ -105,11 +161,25 @@
           "consistency": 100,
           "wind_rel": "offshore",
           "swells": [
-            { "h_ft": 6.0, "period_s": 11, "dir": "S", "deg": 185, "label": "Primary S groundswell" },
-            { "h_ft": 3.4, "period_s": 8, "dir": "SE", "deg": 130, "label": "Mid-period SE" }
+            {
+              "h_ft": 6.0,
+              "period_s": 11,
+              "dir": "S",
+              "deg": 185,
+              "label": "Primary S groundswell"
+            },
+            {
+              "h_ft": 3.4,
+              "period_s": 8,
+              "dir": "SE",
+              "deg": 130,
+              "label": "Mid-period SE"
+            }
           ],
           "window": "Any time before midday — but it's the smallest option today.",
-          "alerts": ["Heavily shadowed from the S swell — half the size of everywhere else."],
+          "alerts": [
+            "Heavily shadowed from the S swell — half the size of everywhere else."
+          ],
           "tip": {
             "label": "Fallback only",
             "text": "Clean and offshore but waist-to-chest. Only worth it if you want an easy one — the energy is all going to the north corners today."
@@ -182,7 +252,9 @@
           "consistency": 80,
           "wind_rel": "offshore-am",
           "window": "Both mornings before 11am. Sunday afternoon goes poor with 22 km/h NE.",
-          "alerts": ["Swell stays dead S (182–185°) all weekend — Dee Why keeps under-performing its neighbours."]
+          "alerts": [
+            "Swell stays dead S (182–185°) all weekend — Dee Why keeps under-performing its neighbours."
+          ]
         },
         "long-reef": {
           "status": "live",
@@ -213,7 +285,9 @@
           "consistency": 80,
           "wind_rel": "offshore-am",
           "window": "Small both days — early sessions only.",
-          "alerts": ["Shadowed all weekend by the S direction."]
+          "alerts": [
+            "Shadowed all weekend by the S direction."
+          ]
         }
       }
     }
