@@ -1,5 +1,5 @@
 {
-  "published": "2026-09-12T07:10:00+10:00",
+  "published": "2026-09-12T08:30:00+10:00",
   "source": "live",
   "forecaster_note": "Size comes back up as the mid-period swell eases further but new longer-period S swell fills in and helps out. Solid surf in the head to overhead range for south-swell-favouring breaks. Less exposed spots should see slow sets wrapping in at around head high, sheltered corners much smaller. Offshore winds early give a window of decent conditions before NE sea breezes in the afternoon mean all but S-facing breaks go onshore and lumpy. — Surfline forecast team",
   "water_temp_c": 17,
@@ -12,20 +12,40 @@
     "relative": "offshore",
     "summary": "Light NW offshore till mid-morning, then NE sea breeze 15–23 km/h from midday"
   },
-  "sun": { "sunrise": "6:00am", "sunset": "5:45pm", "last_light": "6:09pm" },
+  "sun": {
+    "sunrise": "6:00am",
+    "sunset": "5:45pm",
+    "last_light": "6:09pm"
+  },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
+    "level": "clear",
+    "summary": "No shark detections Palm Beach → Manly in the last 24h. Feed live (newest NSW detection 30 min ago, 128 statewide in 24h).",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
   "tides": {
     "station": "Blue Fish Point, Sydney",
     "events": [
-      { "time": "2:40am", "height_m": 0.2, "type": "low" },
-      { "time": "8:48am", "height_m": 1.5, "type": "high" },
-      { "time": "2:49pm", "height_m": 0.3, "type": "low" },
-      { "time": "9:00pm", "height_m": 1.6, "type": "high" }
+      {
+        "time": "2:40am",
+        "height_m": 0.2,
+        "type": "low"
+      },
+      {
+        "time": "8:48am",
+        "height_m": 1.5,
+        "type": "high"
+      },
+      {
+        "time": "2:49pm",
+        "height_m": 0.3,
+        "type": "low"
+      },
+      {
+        "time": "9:00pm",
+        "height_m": 1.6,
+        "type": "high"
+      }
     ]
   },
   "days": [
@@ -45,12 +65,32 @@
           "consistency": 47,
           "wind_rel": "offshore-am",
           "swells": [
-            { "h_ft": 4.3, "period_s": 12, "dir": "S", "deg": 182, "label": "Primary S groundswell" },
-            { "h_ft": 2.2, "period_s": 7, "dir": "ESE", "deg": 121, "label": "Easing ESE windswell" },
-            { "h_ft": 1.4, "period_s": 18, "dir": "S", "deg": 186, "label": "Long-period S pulse" }
+            {
+              "h_ft": 4.3,
+              "period_s": 12,
+              "dir": "S",
+              "deg": 182,
+              "label": "Primary S groundswell"
+            },
+            {
+              "h_ft": 2.2,
+              "period_s": 7,
+              "dir": "ESE",
+              "deg": 121,
+              "label": "Easing ESE windswell"
+            },
+            {
+              "h_ft": 1.4,
+              "period_s": 18,
+              "dir": "S",
+              "deg": 186,
+              "label": "Long-period S pulse"
+            }
           ],
           "window": "6:00–10:30am while the NW offshore holds. Chest-high sets, inconsistent at 47%.",
-          "alerts": ["Dead S swell at 182° wraps badly here — expect soft, gutless sets between the good ones"],
+          "alerts": [
+            "Dead S swell at 182° wraps badly here — expect soft, gutless sets between the good ones"
+          ],
           "tip": {
             "label": "Frontside at the Point",
             "text": "The Point is your frontside wall but the S direction won't light it up. Sit wide on the bank and be patient — 47% consistency means long lulls then a set of three."
@@ -65,9 +105,27 @@
           "consistency": 47,
           "wind_rel": "offshore-am",
           "swells": [
-            { "h_ft": 4.3, "period_s": 12, "dir": "S", "deg": 182, "label": "Primary S groundswell" },
-            { "h_ft": 2.2, "period_s": 7, "dir": "ESE", "deg": 121, "label": "Easing ESE windswell" },
-            { "h_ft": 1.4, "period_s": 18, "dir": "S", "deg": 186, "label": "Long-period S pulse" }
+            {
+              "h_ft": 4.3,
+              "period_s": 12,
+              "dir": "S",
+              "deg": 182,
+              "label": "Primary S groundswell"
+            },
+            {
+              "h_ft": 2.2,
+              "period_s": 7,
+              "dir": "ESE",
+              "deg": 121,
+              "label": "Easing ESE windswell"
+            },
+            {
+              "h_ft": 1.4,
+              "period_s": 18,
+              "dir": "S",
+              "deg": 186,
+              "label": "Long-period S pulse"
+            }
           ],
           "window": "6:00–11:00am. Best of the four — takes the S swell square on and the NW is straight offshore.",
           "tip": {
@@ -84,9 +142,27 @@
           "consistency": 47,
           "wind_rel": "offshore-am",
           "swells": [
-            { "h_ft": 4.3, "period_s": 12, "dir": "S", "deg": 182, "label": "Primary S groundswell" },
-            { "h_ft": 2.2, "period_s": 7, "dir": "ESE", "deg": 121, "label": "Easing ESE windswell" },
-            { "h_ft": 1.4, "period_s": 18, "dir": "S", "deg": 186, "label": "Long-period S pulse" }
+            {
+              "h_ft": 4.3,
+              "period_s": 12,
+              "dir": "S",
+              "deg": 182,
+              "label": "Primary S groundswell"
+            },
+            {
+              "h_ft": 2.2,
+              "period_s": 7,
+              "dir": "ESE",
+              "deg": 121,
+              "label": "Easing ESE windswell"
+            },
+            {
+              "h_ft": 1.4,
+              "period_s": 18,
+              "dir": "S",
+              "deg": 186,
+              "label": "Long-period S pulse"
+            }
           ],
           "window": "6:00–11:00am before the NE onshore at midday.",
           "tip": {
@@ -103,12 +179,32 @@
           "consistency": 47,
           "wind_rel": "offshore-am",
           "swells": [
-            { "h_ft": 4.3, "period_s": 12, "dir": "S", "deg": 182, "label": "Primary S groundswell" },
-            { "h_ft": 2.2, "period_s": 7, "dir": "ESE", "deg": 121, "label": "Easing ESE windswell" },
-            { "h_ft": 1.4, "period_s": 18, "dir": "S", "deg": 186, "label": "Long-period S pulse" }
+            {
+              "h_ft": 4.3,
+              "period_s": 12,
+              "dir": "S",
+              "deg": 182,
+              "label": "Primary S groundswell"
+            },
+            {
+              "h_ft": 2.2,
+              "period_s": 7,
+              "dir": "ESE",
+              "deg": 121,
+              "label": "Easing ESE windswell"
+            },
+            {
+              "h_ft": 1.4,
+              "period_s": 18,
+              "dir": "S",
+              "deg": 186,
+              "label": "Long-period S pulse"
+            }
           ],
           "window": "6:00–9:00am only — goes cross-shore early and POOR by afternoon.",
-          "alerts": ["Most sheltered of the four — S swell barely gets in, half the size of Long Reef"],
+          "alerts": [
+            "Most sheltered of the four — S swell barely gets in, half the size of Long Reef"
+          ],
           "tip": {
             "label": "Skip it today",
             "text": "Thigh to waist while Long Reef is chest to overhead. Only worth it if you want an easy longboard paddle."
@@ -132,7 +228,9 @@
           "consistency": 57,
           "wind_rel": "cross-off",
           "window": "6:00–8:30am. Drops to thigh-stomach after that and the wind ruins it.",
-          "alerts": ["Energy halves overnight — 272 kJ down to 125 kJ"]
+          "alerts": [
+            "Energy halves overnight — 272 kJ down to 125 kJ"
+          ]
         },
         "long-reef": {
           "status": "live",
@@ -163,7 +261,9 @@
           "consistency": 57,
           "wind_rel": "onshore",
           "window": "Dawn patrol only — onshore from 9am.",
-          "alerts": ["Onshore most of the day"]
+          "alerts": [
+            "Onshore most of the day"
+          ]
         }
       }
     },
@@ -183,7 +283,9 @@
           "consistency": 52,
           "wind_rel": "offshore-am",
           "window": "Sat 6–10:30am is the stronger of the two mornings.",
-          "alerts": ["S-dominant swell both days — not Dee Why's direction"]
+          "alerts": [
+            "S-dominant swell both days — not Dee Why's direction"
+          ]
         },
         "long-reef": {
           "status": "live",
@@ -214,7 +316,9 @@
           "consistency": 52,
           "wind_rel": "cross",
           "window": "Dawn only, both days. Smallest of the four all weekend.",
-          "alerts": ["Too sheltered for this S swell"]
+          "alerts": [
+            "Too sheltered for this S swell"
+          ]
         }
       }
     }
