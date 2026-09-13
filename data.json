@@ -1,5 +1,5 @@
 {
-  "published": "2026-09-14T01:20:00+10:00",
+  "published": "2026-09-14T06:45:00+10:00",
   "source": "live",
   "forecaster_note": "A bit of south swell left – chest high or so at the exposures, clean at the south-facing breaks with N winds. Not a standout day, but there should be fun sized waves at the south exposures; elsewhere lumpier and junkier as short-period NE swell fills in. — Tim Williams, Surfline. Water temp is estimated (no live station feed this run).",
   "water_temp_c": 18,
@@ -18,8 +18,8 @@
     "last_light": "6:11pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
+    "level": "alert",
+    "summary": "2 tagged white shark detections at Palm Beach last night (6:15pm and 5:49pm), about 20 km north of Dee Why. No detections at Dee Why, Long Reef, Curl Curl or Manly in the past 24h. Feed live — newest NSW detection 6 min ago.",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
