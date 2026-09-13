@@ -18,8 +18,8 @@
     "last_light": "6:11pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh – tap to check live detections",
+    "level": "alert",
+    "summary": "2 tagged white sharks detected at Palm Beach last night (5:49pm and 6:15pm), about 20 km north of Dee Why – nothing since, both now ~15h old. No detections at Dee Why, Long Reef, Curl Curl or Manly in the past 24h. Feed confirmed live: newest NSW detection 20 min ago, 119 statewide in 24h.",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
