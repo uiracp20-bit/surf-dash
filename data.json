@@ -1,5 +1,5 @@
 {
-  "published": "2026-09-15T06:25:00+10:00",
+  "published": "2026-09-15T08:25:00+10:00",
   "source": "live",
   "forecaster_note": "If you're keen it will be worth going out in the morning for a wave. Small and clean, from traces of remaining south swell and a bit of NE wind wave. Probably best taking a log or something floaty. Later onshore and building — probably ending up blown out — as a strong S wind change comes through. – Surfline forecast team. Water temp is estimated (no live station feed this run).",
   "water_temp_c": 17.5,
@@ -18,9 +18,11 @@
     "last_light": "6:11pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
-    "affected": [],
+    "level": "alert",
+    "summary": "Tagged White Shark #3654 detected by the North Steyne receiver at 12:22pm yesterday (Mon 14 Sep) — ~20h ago. That's the only real Northern Beaches detection in 24h; Dee Why, Long Reef and Curl Curl are clear. Feed is live (95 statewide detections in 24h, newest minutes old).",
+    "affected": [
+      "manly"
+    ],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
   "tides": {
