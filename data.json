@@ -1,5 +1,5 @@
 {
-  "published": "2026-09-17T07:40:00+10:00",
+  "published": "2026-09-17T07:45:00+10:00",
   "source": "live",
   "forecaster_note": "Winds will go mostly offshore until about 9/10am. Northern Beaches seeing WSW winds and clean surf for pretty much every spot. Big range of sizes across the breaks: well OH – 2x OH at S magnets, head high or so to a little OH for north ends, waist high in sheltered corners. Later AM winds go onshore. – Surfline forecast team. Water temp is estimated (no live station feed this run).",
   "water_temp_c": 17.0,
@@ -18,8 +18,8 @@
     "last_light": "6:13pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
+    "level": "clear",
+    "summary": "No shark detections anywhere on the Northern Beaches (Palm Beach to Manly) in the last 24 hours. Feed is live — newest NSW detection 3.2h old, 22 statewide in 24h.",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
