@@ -1,5 +1,5 @@
 {
-  "published": "2026-09-18T06:16:00+10:00",
+  "published": "2026-09-18T06:22:00+10:00",
   "source": "live",
   "forecaster_note": "Looking like a good morning of surf with size hitting the 2ft-overhead range for the standout magnets around the region, and something more easy size wrapping to other breaks. Similar size PM. Winds will be light and offshore early and it's well worth making the time for. Sea breezes into the afternoon will drop quality for most spots as surf gets textured around midday and then more bumpy PM, but the south-facing breaks will stay cleanish. – Surfline forecast team. Water temp is estimated (no live station feed this run).",
   "water_temp_c": 17.5,
@@ -18,8 +18,8 @@
     "last_light": "6:13pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
+    "level": "clear",
+    "summary": "All four tracked spots clear — no detections at Dee Why, Long Reef, Curl Curl or Manly in the last 24h. Nearest Northern Beaches activity: SLS drone sighting at Warriewood Beach, Wed 17 Sep 3:30pm (water evacuated) — about 8 km north of Long Reef. 28 real detections statewide in 24h; feed live as of 6:09am.",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
