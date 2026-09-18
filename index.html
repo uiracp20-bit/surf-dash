@@ -205,10 +205,13 @@ var SPOTS = [
   { id:'curl-curl', name:'Curl Curl', emoji:'🌀' },
   { id:'manly',     name:'Manly',     emoji:'🌊' }
 ];
+/* Quiver updated 2026-09-19: O'Neill Hyperfreak 4/3 binned, O'Neill Hyperfire 3/2
+   added. Coldest suit is now a 3/2 — Uira's floor is 16C, which covers a full
+   Dee Why winter. Warmest suit MUST stay first: it is the out-of-range fallback. */
 var QUIVER_WETSUITS = [
-  { name:"O'Neill Hyperfreak 4/3", lo:12, hi:17 },
-  { name:'Rip Curl Heatseeker 3/2', lo:16, hi:21 },
-  { name:'Rip Curl SS/LL 2/2', lo:20, hi:24 }
+  { name:"O'Neill Hyperfire 3/2", lo:16, hi:20 },
+  { name:'Rip Curl Heatseeker 3/2', lo:18, hi:22 },
+  { name:'Rip Curl Dawn Patrol 2/2 SA/LL', lo:21, hi:25 }
 ];
 var RATING_SCORE = { 'poor':18,'poor-fair':35,'fair':52,'fair-good':68,'good':82,'epic':95 };
 var RATING_LABEL = { 'poor':'Poor','poor-fair':'Poor–Fair','fair':'Fair','fair-good':'Fair–Good','good':'Good','epic':'Epic' };
@@ -344,8 +347,10 @@ function pickWetsuit(){
   var t = (LIVE.ok && LIVE.marine && LIVE.marine.sea_surface_temperature != null) ? Math.round(LIVE.marine.sea_surface_temperature) : SURF.water_temp_c;
   var opts = QUIVER_WETSUITS.filter(function(w){ return t >= w.lo && t <= w.hi; });
   var month = new Date().getMonth() + 1, winter = month >= 6 && month <= 8;
-  if (opts.length > 1) { opts.sort(function(a,b){ return winter ? a.lo - b.lo : b.lo - a.lo; }); return { main:opts[0].name, alt:opts[1].name + ' if the sun’s out and wind is light', t:t }; }
-  return { main:(opts[0] || QUIVER_WETSUITS[0]).name, alt:null, t:t };
+  if (opts.length > 1) { opts.sort(function(a,b){ return winter ? a.lo - b.lo : b.lo - a.lo; }); var altWarmer = opts[1].lo < opts[0].lo; return { main:opts[0].name, alt:opts[1].name + (altWarmer ? ' if the wind is up or the sun stays away' : ' if the sun’s out and wind is light'), t:t }; }
+  /* out of range: too cold -> warmest suit; too warm -> lightest. Never index 0 blindly. */
+  var LAST = QUIVER_WETSUITS[QUIVER_WETSUITS.length - 1];
+  return { main:(opts[0] || (t > LAST.hi ? LAST : QUIVER_WETSUITS[0])).name, alt:null, t:t };
 }
 
 /* ── rendering ── */
