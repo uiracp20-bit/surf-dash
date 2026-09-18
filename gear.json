@@ -1,0 +1,56 @@
+{
+  "version": "2026-09-19",
+  "updated": "2026-09-19",
+  "_note": "SINGLE SOURCE OF TRUTH for Uira's quiver and the selection logic. Both dashboards and the 6:10am task read this file. Edit here, nowhere else. Mobile PWA fetches it from GitHub Pages; the desktop dashboard gets it injected into its #gear-data block by the daily task.",
+
+  "boards": {
+    "sub": { "name": "JS Sub Zero",          "dims": "5’6 / 30.3L",  "fin": "MF Twin+1 M/L",        "fin_alt": "Al Merrick Tri-Quad L (quad)", "role": "Groveller" },
+    "i72": { "name": "Sharpeye Inferno 72",  "dims": "5’9 / 28.6L",  "fin": "Sharpeye Tri L (thruster)", "fin_good": "FT Tri L (thruster)", "fin_alt": "Carver Tri-Quad L", "role": "Daily driver" },
+    "ft":  { "name": "Sharpeye Inferno FT",  "dims": "5’11 / 28.8L", "fin": "H4 Quad L",            "fin_alt": "Carver Tri-Quad L (quad mode)", "role": "Fast walls" },
+    "fmn": { "name": "JS Forget Me Not 3",   "dims": "6’2 / 31.7L",  "fin": "JS Tri L (thruster)",  "fin_alt": "Al Merrick Tri-Quad L", "role": "Step-up" }
+  },
+
+  "board_logic": {
+    "driver": "energy_kj x dominant_swell_period",
+    "size_decides": false,
+    "_size_note": "Surfline quotes WAVE FACE in ft, a different scale from the Aussie back-of-wave metres Uira reads. Size is display-only and must never select a board.",
+    "long_period_cutoff_s": 13,
+    "dominant_period_rule": "max(h_ft^2 * period_s)",
+    "tier_boards": ["sub", "i72", "ft", "fmn"],
+    "bands_short_kj": [150, 400, 700],
+    "bands_long_kj": [120, 350, 600],
+    "no_energy_tier": 1,
+    "_no_energy_note": "Missing energy reading falls to the daily driver, never the step-up."
+  },
+
+  "wetsuits": [
+    { "name": "O'Neill Hyperfreak Fire 3/2",      "lo": 16, "hi": 20, "role": "Warmest — winter and cold offshore mornings" },
+    { "name": "Rip Curl Heatseeker 3/2",          "lo": 18, "hi": 22, "role": "Autumn / spring standard" },
+    { "name": "Rip Curl Dawn Patrol 2/2 SA/LL",   "lo": 21, "hi": 25, "role": "Summer — short arm, long leg" }
+  ],
+
+  "wetsuit_logic": {
+    "winter_months": [6, 7, 8],
+    "cold_floor_c": 16,
+    "warn_below_floor": false,
+    "_overlap_note": "The two 3/2s overlap at 18-20C. Winter defaults to the warmer suit (first in the list); outside winter the lighter one leads with the warmer offered as the windy/overcast alternate.",
+    "_fallback_note": "Out of range: below the coldest lo use the FIRST suit, above the warmest hi use the LAST. Never index 0 blindly."
+  },
+
+  "size_display": {
+    "unit": "m",
+    "face_ft_to_m": 0.1524,
+    "label": "Aussie back-of-wave metres",
+    "_formula": "face_ft / 2 = back_ft; back_ft * 0.3048 = m"
+  },
+
+  "fins_owned": [
+    "FCS II FT Tri L", "FCS II H4 Quad L", "FCS II Performer Tri M", "FCS II MF Twin+1 M/L",
+    "FCS II Sharp Eye Tri L", "FCS II Al Merrick Tri-Quad L", "FCS II JS Tri L",
+    "FCS II Carver Tri-Quad L", "FCS II Reactor Quad Rear M", "FCS II Pyzel Tri L"
+  ],
+
+  "retired": [
+    { "name": "O'Neill Hyperfreak 4/3", "type": "wetsuit", "retired": "2026-09-19", "reason": "binned by Uira — never recommend" }
+  ]
+}
