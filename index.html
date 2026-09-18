@@ -270,23 +270,73 @@ function bestSpot(d){
   return best;
 }
 function sizeMaxFt(str){ var m = String(str||'').match(/(\d+)\s*[–-]\s*(\d+)/); return m ? +m[2] : (parseInt(str,10) || 0); }
+/* Surfline quotes WAVE FACE in ft. Uira reads Aussie back-of-wave metres.
+   face_ft / 2 = back_ft; back_ft * 0.3048 = m  ->  face_ft * 0.1524 */
+function mFromFaceFt(f){ return Math.round(f * 0.1524 * 10) / 10; }
+function sizeM(str){
+  var m = String(str||'').match(/(\d+)\s*[–-]\s*(\d+)/);
+  if (m) return mFromFaceFt(+m[1]) + '–' + mFromFaceFt(+m[2]);
+  var n = parseInt(str,10); return n ? String(mFromFaceFt(n)) : null;
+}
+/* Dominant swell = the component carrying the most energy (h^2 * T), not the tallest. */
+function domPeriod(sd){
+  var sw = (sd && sd.swells) || [], best = null, bs = -1;
+  sw.forEach(function(s){
+    var h = +s.h_ft || 0, t = +s.period_s || 0, e = h * h * t;
+    if (e > bs) { bs = e; best = t; }
+  });
+  return best || null;
+}
+/* ═══ BOARD ENGINE — ENERGY x SWELL PERIOD ═══
+   Size NEVER decides the board. Surfline's ft is wave FACE, a different scale from
+   what Uira reads in the water (2-6ft face = 0.3-0.9m), so it is display-only.
+   Long period (>13s) shifts the same kJ up a band: the push lands with more weight. */
+var BANDS_SHORT = [150, 400, 700];   /* <=13s : SubZero | Inferno 72 | Inferno FT | FMN3 */
+var BANDS_LONG  = [120, 350, 600];   /* >13s  : power arrives earlier                   */
+var BRD = {
+  sub: { b:'JS Sub Zero · 5\u20196 / 30.3L',        f:'MF Twin+1 M/L' },
+  i72: { b:'Sharpeye Inferno 72 · 5\u20199 / 28.6L', f:'FT Tri L (thruster)' },
+  ft:  { b:'Sharpeye Inferno FT · 5\u201911 / 28.8L',f:'H4 Quad L' },
+  fmn: { b:'JS Forget Me Not 3 · 6\u20192 / 31.7L',  f:'JS Tri L (thruster)' }
+};
+function gearTier(en, T){
+  if (en == null) return 1;                       /* no energy reading -> daily driver, never the 6'2 */
+  var B = (T != null && T > 13) ? BANDS_LONG : BANDS_SHORT;
+  if (en < B[0]) return 0;
+  if (en < B[1]) return 1;
+  if (en < B[2]) return 2;
+  return 3;
+}
 function pickGear(sd){
   if (!sd) return null;
-  var mx = sizeMaxFt(sd.size_ft), r = sd.rating || 'fair', en = sd.energy_kj;
-  var weak = (en != null && en < 100) || r === 'poor' || r === 'poor-fair';
+  var en = sd.energy_kj, T = domPeriod(sd), r = sd.rating || 'fair';
+  var longP = (T != null && T > 13);
+  var B = longP ? BANDS_LONG : BANDS_SHORT;
+  var tier = gearTier(en, T);
+  var ctx = (en != null ? en + ' kJ' : 'no energy reading')
+          + (T != null ? ' @ ' + T + 's' : '')
+          + (longP ? ' — long-period bands' : '');
   var p = [];
-  if (mx >= 5) {
-    p.push({ b:'JS Forget Me Not 3 · 6’2 / 31.7L', f:'JS Tri L (thruster)', tag:'Step-up', why:'Solid size — paddle power, hold and confidence over ' + sd.size_ft + 'ft faces.' });
-    p.push({ b:'Sharpeye Inferno 72 · 5’9 / 28.6L', f:'Carver Tri-Quad L', tag:'If it backs off', why:'Stretch the daily driver with the Carver set if it’s more playful than heavy.' });
-  } else if (mx <= 2 || (mx <= 3 && weak)) {
-    p.push({ b:'JS Sub Zero · 5’6 / 30.3L', f:'MF Twin+1 M/L', tag:'Groveller', why:'Small/weak conditions — extra volume and the confirmed Twin+1 keep you gliding through fat sections.' });
-    p.push({ b:'Sharpeye Inferno 72 · 5’9 / 28.6L', f:'Performer Tri M', tag:'If it’s punchier', why:'If sets show more push than the numbers suggest, the 72 keeps it performance.' });
-  } else if ((r === 'good' || r === 'fair-good' || r === 'epic') && mx >= 3) {
-    p.push({ b:'Sharpeye Inferno FT · 5’11 / 28.8L', f:'H4 Quad L', tag:'Fast walls', why:'Quality running waves — quad drive and high-line speed on Filipe’s model.' });
-    p.push({ b:'Sharpeye Inferno 72 · 5’9 / 28.6L', f:'FT Tri L (thruster)', tag:'All-rounder', why:'If it’s more rippable than racy, the 72 with FT thrusters for pivot.' });
+  if (tier === 0) {
+    p.push({ b:BRD.sub.b, f:BRD.sub.f, tag:'Groveller',
+      why:ctx + '. Under ' + B[0] + ' kJ there is nothing to push against — volume and the confirmed Twin+1 to keep gliding through the fat bits.' });
+    p.push({ b:BRD.i72.b, f:'Performer Tri M', tag:'If it has more push',
+      why:'If the sets feel heavier than ' + (en != null ? en + ' kJ' : 'the numbers') + ' suggests, step back onto the 72.' });
+  } else if (tier === 1) {
+    p.push({ b:BRD.i72.b, f:(r === 'good' || r === 'fair-good' || r === 'epic') ? 'FT Tri L (thruster)' : 'Sharpeye Tri L (thruster)', tag:'Daily driver',
+      why:ctx + '. Sits in the ' + B[0] + '–' + B[1] + ' kJ daily-driver band — performance baseline, thruster for pivot. No reason to go bigger.' });
+    p.push({ b:BRD.sub.b, f:BRD.sub.f, tag:'If it runs fat',
+      why:'Drop to the groveller if sections crumble or the wave count dries up.' });
+  } else if (tier === 2) {
+    p.push({ b:BRD.ft.b, f:BRD.ft.f, tag:'Fast walls',
+      why:ctx + '. Real drive in the ' + B[1] + '–' + B[2] + ' kJ band — quad speed down the line on Filipe\u2019s model.' });
+    p.push({ b:BRD.i72.b, f:'Carver Tri-Quad L', tag:'If it is more rippable',
+      why:'Stretch the 72 with the Carver set if it is pivoty rather than racy.' });
   } else {
-    p.push({ b:'Sharpeye Inferno 72 · 5’9 / 28.6L', f:'Sharpeye Tri L (thruster)', tag:'Daily driver', why:'Average-to-good surf — performance baseline, thruster for pivot.' });
-    p.push({ b:'JS Sub Zero · 5’6 / 30.3L', f:'MF Twin+1 M/L', tag:'If it’s softer', why:'Drop to the groveller if sections run fat or crumbly.' });
+    p.push({ b:BRD.fmn.b, f:BRD.fmn.f, tag:'Step-up',
+      why:ctx + '. Over the ' + B[2] + ' kJ step-up floor — genuine power, so paddle, hold and confidence win.' });
+    p.push({ b:BRD.ft.b, f:BRD.ft.f, tag:'If it backs off',
+      why:'Drop to the FT quad if the sets are running wall rather than heavy slab.' });
   }
   return p;
 }
@@ -328,8 +378,8 @@ function render(){
       + '<div class="hl">' + best.sp.emoji + ' ' + esc(best.sp.name) + ' — ' + esc(RATING_LABEL[sd.rating] || sd.rating) + '</div>'
       + '<div class="why">' + esc(d.note || '') + '</div>'
       + '<div class="vrow">'
-      + '<div class="vstat"><div class="n">' + esc(sd.size_ft) + ' ft</div><div class="l">' + esc(sd.size_desc || 'Size') + '</div></div>'
-      + '<div class="vstat"><div class="n">' + (sd.energy_kj != null ? sd.energy_kj + ' kJ' : '—') + '</div><div class="l">Energy</div></div>'
+      + '<div class="vstat"><div class="n">' + esc(sizeM(sd.size_ft) || '—') + ' m</div><div class="l">' + esc(sd.size_ft) + ' ft face</div></div>'
+      + '<div class="vstat"><div class="n">' + (sd.energy_kj != null ? sd.energy_kj + ' kJ' : '—') + '</div><div class="l">Energy' + (domPeriod(sd) != null ? ' · ' + domPeriod(sd) + 's' : '') + '</div></div>'
       + '<div class="vstat"><div class="n">' + best.score + '/100</div><div class="l">Guru score</div></div>'
       + '</div>'
       + (sd.window ? '<div class="vwin"><b>Best window</b>' + esc(sd.window) + '</div>' : '')
@@ -348,7 +398,7 @@ function render(){
     h += '<div class="spot' + (open ? ' open' : '') + '">'
       + '<button class="spot-btn" onclick="toggleSpot(\'' + sp.id + '\')">'
       + '<div class="nm">' + sp.emoji + ' ' + esc(sp.name) + (isBest ? ' <span class="best-tag">BEST</span>' : '') + '</div>'
-      + '<div class="sz">' + esc(sd2.size_ft) + ' ft</div>'
+      + '<div class="sz">' + esc(sizeM(sd2.size_ft) || '—') + ' m<small style="font-weight:500;opacity:.55"> · ' + esc(sd2.size_ft) + 'ft face</small></div>'
       + '<div class="meta"><span class="chip ' + ratingClass(sd2.rating) + '">' + esc(RATING_LABEL[sd2.rating] || sd2.rating || '—') + '</span>'
       + (sd2.status === 'estimated' ? ' <span class="chip est">est</span>' : '') + '</div>'
       + '<div class="sub">' + esc(sd2.wind_rel || '') + (sd2.energy_kj != null ? ' · ' + sd2.energy_kj + ' kJ' : '') + '</div>'
