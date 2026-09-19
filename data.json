@@ -1,16 +1,16 @@
 {
-  "published": "2026-09-20T06:20:00+10:00",
+  "published": "2026-09-20T09:10:00+10:00",
   "source": "live",
   "forecaster_note": "Clean chest to head high surf at the S magnets, with another pulse of S swell expected later. The shorter-period S swell has eased further, but mid and long-period S fills in through the day. Clean all morning under light offshores, then NE sea breezes turn things bumpy to lumpy for most — S-facing corners stay cleanish. (Surfline Sydney forecast team, 20 Sep 2026.)",
   "water_temp_c": 18,
-  "air_temp_c": 14,
+  "air_temp_c": 23,
   "wind": {
-    "speed_kph": 11,
-    "gust_kph": 19,
+    "speed_kph": 9,
+    "gust_kph": 18,
     "dir": "WNW",
-    "deg": 284,
+    "deg": 305,
     "relative": "offshore",
-    "summary": "Light WNW offshore until ~10am, then a soft NE sea breeze; gusty W kick near dusk."
+    "summary": "WNW offshore hanging on another hour or two, then a light NE sea breeze from around midday; gusty W kick near dusk."
   },
   "sun": {
     "sunrise": "5:49am",
@@ -18,9 +18,13 @@
     "last_light": "6:15pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
-    "affected": [],
+    "level": "alert",
+    "summary": "Active: SLSNSW drone sighted a shark at Freshwater Beach at 7:22am today. Also overnight, tagged white shark #2373 pinged the North Narrabeen receiver at 10:04pm (19 Sep). Dee Why sits between the two — nothing logged on its own beach, but keep your head up.",
+    "affected": [
+      "curl-curl",
+      "manly",
+      "long-reef"
+    ],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
   "tides": {
@@ -54,7 +58,7 @@
       "label": "Today",
       "date": "Sun 20 Sep",
       "done": false,
-      "note": "Small but clean. Thigh-to-waist everywhere with light WNW offshore holding until roughly 10am, then a soft NE sea breeze puts bump on it. The swell is dead S at 185 degrees, so Dee Why is wrapping poorly - Long Reef and Curl Curl hold the better shape. Hot day too: 14C at dawn, 28C by noon.",
+      "note": "Small but clean and the offshore is still holding at 9am — you've got maybe two hours before the NE sea breeze puts bump on it. Thigh-to-waist everywhere. Swell is dead S at 185 degrees so Dee Why is wrapping poorly; Long Reef and Curl Curl hold the better shape. Hot one today, 28C by noon. Note the shark alert at Freshwater this morning.",
       "spots": {
         "dee-why": {
           "status": "live",
@@ -94,7 +98,7 @@
               "label": "Local SW chop"
             }
           ],
-          "window": "Dawn to 9:30am, before the NE breeze",
+          "window": "Now until ~11:30am, before the NE breeze",
           "alerts": [
             "Dead-S swell at 185° — wraps badly into Dee Why, soft lined-up walls rather than punch"
           ],
@@ -141,11 +145,14 @@
               "label": "Local SW chop"
             }
           ],
-          "window": "Dawn to 9:30am — pick of the four this morning",
+          "window": "Now until ~11:30am — pick of the four this morning",
           "tip": {
             "label": "Frontside walls",
             "text": "Best angle of the four for this S swell. Sit wide on the point and take the frontside rights — they'll run further than anything at Dee Why today."
-          }
+          },
+          "alerts": [
+            "🦈 Tagged white shark detected at North Narrabeen receiver 10:04pm last night"
+          ]
         },
         "curl-curl": {
           "status": "live",
@@ -185,11 +192,14 @@
               "label": "Local SW chop"
             }
           ],
-          "window": "Dawn to 10am",
+          "window": "Now until midday",
           "tip": {
             "label": "Work the south end",
             "text": "S swell into the south corner gives the cleanest banks. Rights off the peaks are your frontside; the lefts are short backside sections."
-          }
+          },
+          "alerts": [
+            "🦈 Shark sighted by drone at Freshwater Beach 7:22am today"
+          ]
         },
         "manly": {
           "status": "live",
@@ -231,6 +241,7 @@
           ],
           "window": "Skip it — not worth the drive today",
           "alerts": [
+            "🦈 Shark sighted by drone at Freshwater Beach 7:22am today",
             "Weakest of the four on this angle — smallest and softest"
           ],
           "tip": {
