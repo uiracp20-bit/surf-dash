@@ -18,8 +18,8 @@
     "last_light": "6:15pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
+    "level": "clear",
+    "summary": "No shark detections at Dee Why, Long Reef, Curl Curl or Manly in the past 24h. Nearest: one SLS drone sighting at Freshwater Beach (between Curl Curl and Manly) at 7:22am Sun 20 Sep — about 23h ago. Feed confirmed live: 72 detections statewide in the last 24h.",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
