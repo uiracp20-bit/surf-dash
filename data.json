@@ -1,5 +1,5 @@
 {
- "published": "2026-09-23T06:06:00+10:00",
+ "published": "2026-09-23T07:52:00+10:00",
  "source": "live",
  "forecaster_note": "Winds go offshore and S and NE swell mix cleans up. Head to overhead. Head to OH sets at the south magnets. Powerful, but with waits between the sets. A notch smaller elsewhere. Clean this morning with light variable to offshore winds but still some wobble and jumble to it as NE wind wave gets in. NE winds expected to pick up mid-morning and most spots trend junky. Sheltered northern corners stay cleanest. — Hugh McDowell, Surfline",
  "water_temp_c": 18,
@@ -18,8 +18,8 @@
   "last_light": "6:17pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "clear",
+  "summary": "No shark detections anywhere between Palm Beach and Manly in the past 24h — Dee Why, Long Reef, Curl Curl and Manly all clear. Nearest recent: an SLS drone sighting at Freshwater Beach at 7:22am Sun 20 Sep, about 73h ago. Feed confirmed live — newest statewide detection 24 minutes ago, 65 real detections statewide in the last 24h.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
