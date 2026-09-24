@@ -210,12 +210,13 @@ var SPOTS = [
    The copy below is only the OFFLINE FALLBACK: it is used when the fetch fails,
    and is overwritten by the live file on every successful load. Do not hand-edit
    it to change gear — edit gear.json, which is what the daily task publishes. */
-var GEAR_FALLBACK = {"version":"2026-09-19","updated":"2026-09-19","_note":"SINGLE SOURCE OF TRUTH for Uira's quiver and the selection logic. Both dashboards and the 6:10am task read this file. Edit here, nowhere else. Mobile PWA fetches it from GitHub Pages; the desktop dashboard gets it injected into its #gear-data block by the daily task.","boards":{"sub":{"name":"JS Sub Zero","dims":"5’6 / 30.3L","fin":"MF Twin+1 M/L","fin_alt":"Al Merrick Tri-Quad L (quad)","role":"Groveller"},"i72":{"name":"Sharpeye Inferno 72","dims":"5’9 / 28.6L","fin":"Sharpeye Tri L (thruster)","fin_good":"FT Tri L (thruster)","fin_alt":"Carver Tri-Quad L","role":"Daily driver"},"ft":{"name":"Sharpeye Inferno FT","dims":"5’11 / 28.8L","fin":"H4 Quad L","fin_alt":"Carver Tri-Quad L (quad mode)","role":"Fast walls"},"fmn":{"name":"JS Forget Me Not 3","dims":"6’2 / 31.7L","fin":"JS Tri L (thruster)","fin_alt":"Al Merrick Tri-Quad L","role":"Step-up"}},"board_logic":{"driver":"energy_kj x dominant_swell_period","size_decides":false,"_size_note":"Surfline quotes WAVE FACE in ft, a different scale from the Aussie back-of-wave metres Uira reads. Size is display-only and must never select a board.","long_period_cutoff_s":13,"dominant_period_rule":"max(h_ft^2 * period_s)","tier_boards":["sub","i72","ft","fmn"],"bands_short_kj":[150,400,700],"bands_long_kj":[120,350,600],"no_energy_tier":1,"_no_energy_note":"Missing energy reading falls to the daily driver, never the step-up."},"wetsuits":[{"name":"O'Neill Hyperfreak Fire 3/2","lo":16,"hi":20,"role":"Warmest — winter and cold offshore mornings"},{"name":"Rip Curl Heatseeker 3/2","lo":18,"hi":22,"role":"Autumn / spring standard"},{"name":"Rip Curl Dawn Patrol 2/2 SA/LL","lo":21,"hi":25,"role":"Summer — short arm, long leg"}],"wetsuit_logic":{"winter_months":[6,7,8],"cold_floor_c":16,"warn_below_floor":false,"_overlap_note":"The two 3/2s overlap at 18-20C. Winter defaults to the warmer suit (first in the list); outside winter the lighter one leads with the warmer offered as the windy/overcast alternate.","_fallback_note":"Out of range: below the coldest lo use the FIRST suit, above the warmest hi use the LAST. Never index 0 blindly."},"size_display":{"unit":"m","face_ft_to_m":0.1524,"label":"Aussie back-of-wave metres","_formula":"face_ft / 2 = back_ft; back_ft * 0.3048 = m"},"fins_owned":["FCS II FT Tri L","FCS II H4 Quad L","FCS II Performer Tri M","FCS II MF Twin+1 M/L","FCS II Sharp Eye Tri L","FCS II Al Merrick Tri-Quad L","FCS II JS Tri L","FCS II Carver Tri-Quad L","FCS II Reactor Quad Rear M","FCS II Pyzel Tri L"],"retired":[{"name":"O'Neill Hyperfreak 4/3","type":"wetsuit","retired":"2026-09-19","reason":"binned by Uira — never recommend"}]};
+var GEAR_FALLBACK = {"version":"2026-09-24","updated":"2026-09-24","_note":"SINGLE SOURCE OF TRUTH for Uira's quiver and the selection logic. Both dashboards and the 6:10am task read this file. Edit here, nowhere else. Mobile PWA fetches it from GitHub Pages; the desktop dashboard gets it injected into its #gear-data block by the daily task.","boards":{"sub":{"name":"JS Sub Zero","dims":"5’6 / 30.3L","fin":"MF Twin+1 M/L","fin_alt":"Al Merrick Tri-Quad L (quad)","role":"Groveller","active":true,"status":"owned"},"i72":{"name":"Sharpeye Inferno 72","dims":"5’9 / 28.6L","fin":"Sharpeye Tri L (thruster)","fin_good":"FT Tri L (thruster)","fin_alt":"Carver Tri-Quad L","role":"Daily driver","active":true,"status":"owned"},"ft":{"name":"Sharpeye Inferno FT","dims":"5’11 / 28.8L","fin":"H4 Quad L","fin_alt":"Carver Tri-Quad L (quad mode)","role":"Fast walls","active":true,"status":"owned"},"fmn":{"name":"JS Forget Me Not 3","dims":"6’2 / 31.7L","fin":"JS Tri L (thruster)","fin_alt":"Al Merrick Tri-Quad L","role":"Step-up","active":true,"status":"owned"},"syn":{"name":"Sharpeye Synergy","dims":"5’11 / 29.5L","specs":"5'11 x 19 1/4 x 2 9/16 · PU · squash · FCS2 thruster","fin":null,"fin_alt":null,"_fin_note":"UNTESTED — no confirmed pairing yet. Candidates: Sharpeye Tri L, FT Tri L, JS Tri L. Engine prints 'fins: your call' until this is set.","role":"Power — paddle, hold and control in bigger or more powerful surf, still responsive","active":false,"status":"on_order","ordered":"2026-09-24","due":"2026-10-16","shop":"Surfection Mosman","order_ref":"PO 786586 / board 1178331","shaper_notes":"Rails foiled down a little. More paddle power, hold and control in larger or more powerful waves while still feeling responsive."}},"board_logic":{"driver":"energy_kj x dominant_swell_period","size_decides":false,"_size_note":"Surfline quotes WAVE FACE in ft, a different scale from the Aussie back-of-wave metres Uira reads. Size is display-only and must never select a board.","long_period_cutoff_s":13,"dominant_period_rule":"max(h_ft^2 * period_s)","bands_short_kj":[150,400,700],"bands_long_kj":[120,350,600],"no_energy_tier":1,"_no_energy_note":"Missing energy reading falls to the daily driver, never the step-up.","tiers":[{"label":"Groveller","picks":["sub","i72"]},{"label":"Daily driver","picks":["i72","ft"]},{"label":"Power","picks":["syn","ft","i72"]},{"label":"Step-up","picks":["fmn","syn","ft"]}],"_tier_note":"Each tier lists boards in preference order. The engine takes the first TWO that are active:true, so an on-order or retired board degrades gracefully instead of being recommended. Inferno 72 and Inferno FT deliberately share the daily-driver tier (72 primary, FT when walls run fast and clean).","_synergy_note":"Synergy sits between the FT and the FMN3: it takes the powerful-but-not-heavy days the FT was being stretched into, pushing the 6'2 up to genuinely serious surf only. While active:false, tier 2 falls back to the FT — the pre-Synergy behaviour."},"wetsuits":[{"name":"O'Neill Hyperfreak Fire 3/2","lo":16,"hi":20,"role":"Warmest — winter and cold offshore mornings"},{"name":"Rip Curl Heatseeker 3/2","lo":18,"hi":22,"role":"Autumn / spring standard"},{"name":"Rip Curl Dawn Patrol 2/2 SA/LL","lo":21,"hi":25,"role":"Summer — short arm, long leg"}],"wetsuit_logic":{"winter_months":[6,7,8],"cold_floor_c":16,"warn_below_floor":false,"_overlap_note":"The two 3/2s overlap at 18-20C. Winter defaults to the warmer suit (first in the list); outside winter the lighter one leads with the warmer offered as the windy/overcast alternate.","_fallback_note":"Out of range: below the coldest lo use the FIRST suit, above the warmest hi use the LAST. Never index 0 blindly."},"size_display":{"unit":"m","face_ft_to_m":0.1524,"label":"Aussie back-of-wave metres","_formula":"face_ft / 2 = back_ft; back_ft * 0.3048 = m"},"fins_owned":["FCS II FT Tri L","FCS II H4 Quad L","FCS II Performer Tri M","FCS II MF Twin+1 M/L","FCS II Sharp Eye Tri L","FCS II Al Merrick Tri-Quad L","FCS II JS Tri L","FCS II Carver Tri-Quad L","FCS II Reactor Quad Rear M","FCS II Pyzel Tri L"],"retired":[{"name":"O'Neill Hyperfreak 4/3","type":"wetsuit","retired":"2026-09-19","reason":"binned by Uira — never recommend"}]};
 var GEAR = GEAR_FALLBACK;
 function gearOK(g){
   return !!(g && g.boards && g.board_logic && g.wetsuits && g.wetsuits.length
             && g.board_logic.bands_short_kj && g.board_logic.bands_long_kj
-            && g.board_logic.tier_boards && g.size_display);
+            && g.board_logic.tiers && g.board_logic.tiers.length === 4
+            && g.size_display);
 }
 var RATING_SCORE = { 'poor':18,'poor-fair':35,'fair':52,'fair-good':68,'good':82,'epic':95 };
 var RATING_LABEL = { 'poor':'Poor','poor-fair':'Poor–Fair','fair':'Fair','fair-good':'Fair–Good','good':'Good','epic':'Epic' };
@@ -297,6 +298,19 @@ function domPeriod(sd){
 /* ═══ BOARD ENGINE — ENERGY x SWELL PERIOD ═══
    Every threshold below comes from GEAR.board_logic (gear.json). Nothing here is
    hardcoded: to retune the bands, edit gear.json. Size NEVER selects a board. */
+
+/* Tier -> the first TWO boards in that tier's pick list that are active:true.
+   An on-order or retired board is skipped, so the quiver degrades gracefully
+   instead of recommending something Uira does not physically have. */
+function activePicks(ti){
+  var t = (GEAR.board_logic.tiers || [])[ti] || {};
+  var out = [];
+  (t.picks || []).forEach(function(k){
+    var b = GEAR.boards[k];
+    if (b && b.active !== false && out.indexOf(k) === -1 && out.length < 2) out.push(k);
+  });
+  return out;
+}
 function gearTier(en, T){
   var L = GEAR.board_logic;
   if (en == null) return L.no_energy_tier;
@@ -304,45 +318,46 @@ function gearTier(en, T){
   for (var i = 0; i < B.length; i++) { if (en < B[i]) return i; }
   return B.length;
 }
-function boardLine(key, tag, why){
+function boardLine(key, tag, why, good){
   var b = GEAR.boards[key];
   if (!b) return null;
-  return { b: b.name + ' \u00b7 ' + b.dims, f: b.fin, tag: tag, why: why, _k: key };
+  var fin = b.fin;
+  if (good && b.fin_good) fin = b.fin_good;
+  if (!fin) fin = 'fins: your call — no confirmed pairing yet';
+  return { b: b.name + ' · ' + b.dims, f: fin, tag: tag, why: why, _k: key };
 }
+var ALT_TAG = ['If it has more push', 'If walls run fast', 'If it is more rippable', 'If it backs off'];
+var ALT_WHY = [
+  'If the sets feel heavier than the numbers suggest, step back onto the 72.',
+  'Clean, racy sections reward the quad drive over the thruster pivot.',
+  'Drop down if it is pivoty rather than genuinely powerful.',
+  'Drop down if the sets are running wall rather than heavy slab.'
+];
 function pickGear(sd){
-  if (!sd) return null;
+  if (!sd || !GEAR) return null;
   var L = GEAR.board_logic;
   var en = sd.energy_kj, T = domPeriod(sd), r = sd.rating || 'fair';
   var longP = (T != null && T > L.long_period_cutoff_s);
   var B = longP ? L.bands_long_kj : L.bands_short_kj;
   var tier = gearTier(en, T);
-  var keys = L.tier_boards;
+  var keys = activePicks(tier);
+  var good = (r === 'good' || r === 'fair-good' || r === 'epic');
+  var label = ((L.tiers || [])[tier] || {}).label || 'Board';
   var ctx = (en != null ? en + ' kJ' : 'no energy reading')
           + (T != null ? ' @ ' + T + 's' : '')
-          + (longP ? ' \u2014 long-period bands' : '');
+          + (longP ? ' — long-period bands' : '');
+  var why;
+  if (tier === 0)      why = ctx + '. Under ' + B[0] + ' kJ there is nothing to push against — volume and glide to keep moving through the fat bits.';
+  else if (tier === 1) why = ctx + '. Sits in the ' + B[0] + '–' + B[1] + ' kJ daily-driver band — performance baseline. No reason to go bigger.';
+  else if (tier === 2) why = ctx + '. Real power in the ' + B[1] + '–' + B[2] + ' kJ band — paddle, hold and control while staying responsive.';
+  else                 why = ctx + '. Over the ' + B[2] + ' kJ step-up floor — genuine power, so paddle, hold and confidence win.';
   var p = [];
-  if (tier === 0) {
-    p.push(boardLine(keys[0], 'Groveller', ctx + '. Under ' + B[0] + ' kJ there is nothing to push against \u2014 volume and the confirmed Twin+1 to keep gliding through the fat bits.'));
-    p.push(boardLine(keys[1], 'If it has more push', 'If the sets feel heavier than ' + (en != null ? en + ' kJ' : 'the numbers') + ' suggests, step back onto the 72.'));
-  } else if (tier === 1) {
-    var i72 = GEAR.boards[keys[1]] || {};
-    var good = (r === 'good' || r === 'fair-good' || r === 'epic');
-    var l1 = boardLine(keys[1], 'Daily driver', ctx + '. Sits in the ' + B[0] + '\u2013' + B[1] + ' kJ daily-driver band \u2014 performance baseline, thruster for pivot. No reason to go bigger.');
-    if (l1 && good && i72.fin_good) l1.f = i72.fin_good;
-    p.push(l1);
-    p.push(boardLine(keys[0], 'If it runs fat', 'Drop to the groveller if sections crumble or the wave count dries up.'));
-  } else if (tier === 2) {
-    p.push(boardLine(keys[2], 'Fast walls', ctx + '. Real drive in the ' + B[1] + '\u2013' + B[2] + ' kJ band \u2014 quad speed down the line.'));
-    var l2 = boardLine(keys[1], 'If it is more rippable', 'Stretch the 72 with the Carver set if it is pivoty rather than racy.');
-    var i72b = GEAR.boards[keys[1]] || {};
-    if (l2 && i72b.fin_alt) l2.f = i72b.fin_alt;
-    p.push(l2);
-  } else {
-    p.push(boardLine(keys[3], 'Step-up', ctx + '. Over the ' + B[2] + ' kJ step-up floor \u2014 genuine power, so paddle, hold and confidence win.'));
-    p.push(boardLine(keys[2], 'If it backs off', 'Drop to the FT quad if the sets are running wall rather than heavy slab.'));
-  }
+  if (!keys.length) return null;
+  p.push(boardLine(keys[0], label, why, good));
+  if (keys[1]) p.push(boardLine(keys[1], ALT_TAG[tier], ALT_WHY[tier], good));
   return p.filter(Boolean);
 }
+
 function pickWetsuit(){
   var W = GEAR.wetsuits, L = GEAR.wetsuit_logic || {};
   var t = (LIVE.ok && LIVE.marine && LIVE.marine.sea_surface_temperature != null)
