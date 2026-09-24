@@ -1,5 +1,5 @@
 {
- "published": "2026-09-25T06:29:00+10:00",
+ "published": "2026-09-25T06:32:00+10:00",
  "source": "live",
  "forecaster_note": "A few little peaky waves, best this morning for more south facing breaks. NE wind wave and traces of S swell for some peaky mixed up surf in the waist to chest range. Morning at the south facing spots and in the north corners is looking best as winds blow light northerly, before NE winds pick up mid-morning and it gets junky elsewhere. Saturday holds a similar small NE wind-swell; Sunday sees a stronger, gustier wind event push in with bigger surf at the exposed spots but onshore and lumpy — small clean corners the pick. — Hugh McDowell, Surfline",
  "water_temp_c": 17,
@@ -18,8 +18,8 @@
   "last_light": "6:18pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "alert",
+  "summary": "No detections at Dee Why, Long Reef, Curl Curl or Manly themselves in the last 24h. Nearest real hit: a tagged White Shark (#3668) ping at the North Narrabeen receiver, ~2-3km north of Long Reef, at 9:17pm last night (~9h ago) — a passive tag detection, not a sighting. Feed is current (newest statewide ping <1h old).",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
