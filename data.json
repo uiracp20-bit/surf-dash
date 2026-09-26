@@ -1,5 +1,5 @@
 {
-  "published": "2026-09-27T06:29:00+10:00",
+  "published": "2026-09-27T06:38:00+10:00",
   "source": "live",
   "forecaster_note": "Nothing too exciting looking today. Head-to-slightly-overhead surf at the south exposures but onshore and lumpy under the southerlies. Small clean wave in the sheltered corners from leftover NE wind wave — best in the morning, probably fun enough on a small wave or longboard. — Hugh McDowell / Anthony Spinks, Surfline",
   "water_temp_c": 18,
@@ -18,18 +18,34 @@
     "last_light": "6:20pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
+    "level": "clear",
+    "summary": "No detections at Dee Why, Long Reef, Curl Curl or Manly — or anywhere on the Northern Beaches — in the last 24h. Nearest recent regional hit: the same tagged White Shark (#3668) receiver ping at North Narrabeen noted in recent runs, now ~57h old and well outside the 24h window. Feed is current (newest statewide ping <1h old).",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
   "tides": {
     "station": "Blue Fish Point, Sydney",
     "events": [
-      { "time": "2:03am", "height_m": 0.2, "type": "low" },
-      { "time": "8:15am", "height_m": 1.6, "type": "high" },
-      { "time": "2:15pm", "height_m": 0.3, "type": "low" },
-      { "time": "8:22pm", "height_m": 1.7, "type": "high" }
+      {
+        "time": "2:03am",
+        "height_m": 0.2,
+        "type": "low"
+      },
+      {
+        "time": "8:15am",
+        "height_m": 1.6,
+        "type": "high"
+      },
+      {
+        "time": "2:15pm",
+        "height_m": 0.3,
+        "type": "low"
+      },
+      {
+        "time": "8:22pm",
+        "height_m": 1.7,
+        "type": "high"
+      }
     ]
   },
   "days": [
@@ -49,8 +65,20 @@
           "consistency": null,
           "wind_rel": "cross",
           "swells": [
-            { "h_ft": 7.5, "period_s": 8, "dir": "S", "deg": 190, "label": "Dominant dead-S groundswell" },
-            { "h_ft": 3.9, "period_s": 8, "dir": "NE", "deg": 61, "label": "Leftover NE windswell" }
+            {
+              "h_ft": 7.5,
+              "period_s": 8,
+              "dir": "S",
+              "deg": 190,
+              "label": "Dominant dead-S groundswell"
+            },
+            {
+              "h_ft": 3.9,
+              "period_s": 8,
+              "dir": "NE",
+              "deg": 61,
+              "label": "Leftover NE windswell"
+            }
           ],
           "window": "Best early while it's still just cross-shore — the dead-S angle wraps badly here so most of the push is junky; the NE leftover in the corners is cleaner.",
           "tip": {
@@ -67,11 +95,25 @@
           "consistency": null,
           "wind_rel": "onshore",
           "swells": [
-            { "h_ft": 7.5, "period_s": 8, "dir": "S", "deg": 190, "label": "Dominant dead-S groundswell" },
-            { "h_ft": 3.9, "period_s": 8, "dir": "NE", "deg": 61, "label": "Leftover NE windswell" }
+            {
+              "h_ft": 7.5,
+              "period_s": 8,
+              "dir": "S",
+              "deg": 190,
+              "label": "Dominant dead-S groundswell"
+            },
+            {
+              "h_ft": 3.9,
+              "period_s": 8,
+              "dir": "NE",
+              "deg": 61,
+              "label": "Leftover NE windswell"
+            }
           ],
           "window": "Ironically the one day size doesn't save it — direct onshore S wind on the S-facing reef makes this the worst-rated spot of the four despite the biggest swell.",
-          "alerts": ["Onshore wind directly hitting the reef — skip unless it backs off"],
+          "alerts": [
+            "Onshore wind directly hitting the reef — skip unless it backs off"
+          ],
           "tip": {
             "label": "Skip today",
             "text": "The reef usually loves S swell but a direct onshore S wind ruins it — not worth the drive unless the wind eases."
@@ -86,8 +128,20 @@
           "consistency": null,
           "wind_rel": "onshore",
           "swells": [
-            { "h_ft": 7.5, "period_s": 8, "dir": "S", "deg": 190, "label": "Dominant dead-S groundswell" },
-            { "h_ft": 3.9, "period_s": 8, "dir": "NE", "deg": 61, "label": "Leftover NE windswell" }
+            {
+              "h_ft": 7.5,
+              "period_s": 8,
+              "dir": "S",
+              "deg": 190,
+              "label": "Dominant dead-S groundswell"
+            },
+            {
+              "h_ft": 3.9,
+              "period_s": 8,
+              "dir": "NE",
+              "deg": 61,
+              "label": "Leftover NE windswell"
+            }
           ],
           "window": "Biggest waves of the four but onshore and lumpy — early is the only shot before the wind fully takes hold.",
           "tip": {
@@ -104,8 +158,20 @@
           "consistency": null,
           "wind_rel": "cross",
           "swells": [
-            { "h_ft": 7.5, "period_s": 8, "dir": "S", "deg": 190, "label": "Dominant dead-S groundswell" },
-            { "h_ft": 3.9, "period_s": 8, "dir": "NE", "deg": 61, "label": "Leftover NE windswell" }
+            {
+              "h_ft": 7.5,
+              "period_s": 8,
+              "dir": "S",
+              "deg": 190,
+              "label": "Dominant dead-S groundswell"
+            },
+            {
+              "h_ft": 3.9,
+              "period_s": 8,
+              "dir": "NE",
+              "deg": 61,
+              "label": "Leftover NE windswell"
+            }
           ],
           "window": "Smallest of the four but most sheltered from the S energy and wind — cam confirms thigh-to-waist and clean-ish early.",
           "tip": {
@@ -131,7 +197,9 @@
           "consistency": null,
           "wind_rel": "onshore",
           "window": "Not explicitly forecast — expect leftover size easing through the day with wind slowly backing off the S.",
-          "alerts": ["Not covered in today's forecaster update (skips from Sun to Tue) — estimated from the surrounding trend"]
+          "alerts": [
+            "Not covered in today's forecaster update (skips from Sun to Tue) — estimated from the surrounding trend"
+          ]
         },
         "long-reef": {
           "status": "estimated",
@@ -142,7 +210,9 @@
           "consistency": null,
           "wind_rel": "onshore",
           "window": "Not explicitly forecast — likely still onshore-affected but smaller than today.",
-          "alerts": ["Not covered in today's forecaster update (skips from Sun to Tue) — estimated from the surrounding trend"]
+          "alerts": [
+            "Not covered in today's forecaster update (skips from Sun to Tue) — estimated from the surrounding trend"
+          ]
         },
         "curl-curl": {
           "status": "estimated",
@@ -153,7 +223,9 @@
           "consistency": null,
           "wind_rel": "onshore",
           "window": "Not explicitly forecast — likely still onshore-affected but smaller than today.",
-          "alerts": ["Not covered in today's forecaster update (skips from Sun to Tue) — estimated from the surrounding trend"]
+          "alerts": [
+            "Not covered in today's forecaster update (skips from Sun to Tue) — estimated from the surrounding trend"
+          ]
         },
         "manly": {
           "status": "estimated",
@@ -164,7 +236,9 @@
           "consistency": null,
           "wind_rel": "cross",
           "window": "Not explicitly forecast — the sheltered option again if the pattern holds like today.",
-          "alerts": ["Not covered in today's forecaster update (skips from Sun to Tue) — estimated from the surrounding trend"]
+          "alerts": [
+            "Not covered in today's forecaster update (skips from Sun to Tue) — estimated from the surrounding trend"
+          ]
         }
       }
     },
@@ -184,7 +258,9 @@
           "consistency": null,
           "wind_rel": "cross",
           "window": "Too far out for a real call — recheck a day or two before.",
-          "alerts": ["⚠️ Beyond the 5-day forecast window — placeholder only"]
+          "alerts": [
+            "⚠️ Beyond the 5-day forecast window — placeholder only"
+          ]
         },
         "long-reef": {
           "status": "estimated",
@@ -195,7 +271,9 @@
           "consistency": null,
           "wind_rel": "cross",
           "window": "Too far out for a real call — recheck a day or two before.",
-          "alerts": ["⚠️ Beyond the 5-day forecast window — placeholder only"]
+          "alerts": [
+            "⚠️ Beyond the 5-day forecast window — placeholder only"
+          ]
         },
         "curl-curl": {
           "status": "estimated",
@@ -206,7 +284,9 @@
           "consistency": null,
           "wind_rel": "cross",
           "window": "Too far out for a real call — recheck a day or two before.",
-          "alerts": ["⚠️ Beyond the 5-day forecast window — placeholder only"]
+          "alerts": [
+            "⚠️ Beyond the 5-day forecast window — placeholder only"
+          ]
         },
         "manly": {
           "status": "estimated",
@@ -217,7 +297,9 @@
           "consistency": null,
           "wind_rel": "cross",
           "window": "Too far out for a real call — recheck a day or two before.",
-          "alerts": ["⚠️ Beyond the 5-day forecast window — placeholder only"]
+          "alerts": [
+            "⚠️ Beyond the 5-day forecast window — placeholder only"
+          ]
         }
       }
     }
