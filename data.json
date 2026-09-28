@@ -1,5 +1,5 @@
 {
-  "published": "2026-09-29T06:13:00+10:00",
+  "published": "2026-09-29T06:14:00+10:00",
   "source": "live",
   "forecaster_note": "Winds have gone offshore and it's clean, fun-sized surf this morning — chest to around head high at the south exposures, smaller but rideable elsewhere. NE seabreeze crumbles most spots in the arvo (S-facing stays cleaner), and a long-period S swell may start filling in late. — Surfline forecaster (Hugh's Monday NSW update)",
   "water_temp_c": 18,
@@ -18,8 +18,8 @@
     "last_light": "6:21pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
+    "level": "clear",
+    "summary": "No shark detections at Dee Why, Long Reef, Curl Curl or Manly — or anywhere Palm Beach to Manly — in the last 24h. Feed is current (newest statewide detection ~1.5h old; 39 real detections statewide in 24h, none on the Northern Beaches).",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
