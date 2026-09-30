@@ -1,5 +1,5 @@
 {
-  "published": "2026-10-01T06:12:00+10:00",
+  "published": "2026-10-01T06:13:00+10:00",
   "source": "live",
   "forecaster_note": "Easing south swell and some short-period NE wind wave are giving peaky, fun-sized surf — chest to head at S exposures, around chest high elsewhere. Cleanest in the morning with light NW winds, then NE picks up again mid-morning, so look to more sheltered S-facing spots. — Surfline forecaster Hugh McDowell (Thu 1 Oct)",
   "water_temp_c": 18,
@@ -18,8 +18,8 @@
     "last_light": "6:22pm"
   },
   "shark": {
-    "level": "unknown",
-    "summary": "SharkSmart check pending this refresh — tap to check live detections",
+    "level": "alert",
+    "summary": "Northern Beaches detections in the last 24h: Palm Beach — 2 tagged shark detections (~7h and ~10h ago); Newport — SLS drone sighting (~17h ago). None at Dee Why, Long Reef, Curl Curl or Manly. Feed is current (newest statewide detection 0.3h old; 60 real detections statewide in 24h). Check the live map before paddling out.",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
