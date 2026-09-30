@@ -1,25 +1,25 @@
 {
-  "published": "2026-09-30T06:13:00+10:00",
+  "published": "2026-10-01T06:12:00+10:00",
   "source": "live",
-  "forecaster_note": "Long-period S swell is in, mixed with mid-period energy — a wait between the bigger sets and some power when they come. Light N breeze at dawn, cleanest at the N corners and S-facing spots; NE from mid-morning, so head to sheltered S-facing banks later. Find a good bank/reef or it can be a bit straight. — Surfline forecaster (Wed 30 Sep)",
-  "water_temp_c": 19,
-  "air_temp_c": 11,
+  "forecaster_note": "Easing south swell and some short-period NE wind wave are giving peaky, fun-sized surf — chest to head at S exposures, around chest high elsewhere. Cleanest in the morning with light NW winds, then NE picks up again mid-morning, so look to more sheltered S-facing spots. — Surfline forecaster Hugh McDowell (Thu 1 Oct)",
+  "water_temp_c": 18,
+  "air_temp_c": 15,
   "wind": {
-    "speed_kph": 7,
-    "gust_kph": 8,
+    "speed_kph": 9,
+    "gust_kph": 13,
     "dir": "NNW",
     "deg": 333,
     "relative": "offshore",
-    "summary": "Light NNW 7 kph — offshore at dawn, cross-shore by 9am. Swings NE onshore ~14 kph from noon, 23 kph (gusts ~34) by 3pm."
+    "summary": "Light NNW 9 kph — offshore at dawn and through 9am (gusts ~20). NE onshore from noon, 24 kph (gusts 30) by 3pm."
   },
   "sun": {
-    "sunrise": "5:35am",
+    "sunrise": "5:33am",
     "sunset": "5:57pm",
     "last_light": "6:22pm"
   },
   "shark": {
-    "level": "clear",
-    "summary": "No shark detections at Dee Why, Long Reef, Curl Curl or Manly — or anywhere Palm Beach to Manly — in the last 24h. Feed is current (newest statewide detection minutes old; 47 real detections statewide in 24h, none on the Northern Beaches).",
+    "level": "unknown",
+    "summary": "SharkSmart check pending this refresh — tap to check live detections",
     "affected": [],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
@@ -27,23 +27,23 @@
     "station": "Blue Fish Point, Sydney",
     "events": [
       {
-        "time": "3:50am",
-        "height_m": 0.3,
+        "time": "4:33am",
+        "height_m": 0.4,
         "type": "low"
       },
       {
-        "time": "10:14am",
+        "time": "11:03am",
         "height_m": 1.7,
         "type": "high"
       },
       {
-        "time": "4:47pm",
-        "height_m": 0.2,
+        "time": "5:47pm",
+        "height_m": 0.3,
         "type": "low"
       },
       {
-        "time": "10:47pm",
-        "height_m": 1.3,
+        "time": "11:45pm",
+        "height_m": 1.2,
         "type": "high"
       }
     ]
@@ -52,156 +52,128 @@
     {
       "id": "today",
       "label": "Today",
-      "date": "Wed 30 Sep",
+      "date": "Thu 1 Oct",
       "done": false,
-      "note": "Solid long-period S groundswell in (3.7ft @ 16s, 595 kJ — real power) on a light N/NW dawn. Long Reef and Curl Curl are the picks — S-facing, they use it. Dee Why cops the dead-S 183° angle and wraps badly. Sets have a wait, so find a bank. Best ~7–11am (high tide 10:14am); NE onshore from noon, 23 kph by 3pm.",
+      "note": "Peaky NE wind swell (4.9ft @ 7s, 208 kJ — fun, not powerful) with a fading 2ft S swell, on a light NNW offshore dawn. Dee Why gets the NE at its best angle; Long Reef picks up the most size. Best 6:30–10am — then the NE turns onshore from noon. High tide 11:03am. Surfline sizes are conservative; the forecaster calls chest high, more at S exposures.",
       "spots": {
         "dee-why": {
           "status": "live",
           "rating": "fair",
-          "size_ft": "4–5",
-          "size_desc": "Chest–head",
-          "energy_kj": 595,
+          "size_ft": "1–2",
+          "size_desc": "Thigh–stomach+",
+          "energy_kj": 208,
           "consistency": null,
           "wind_rel": "offshore-am",
           "swells": [
             {
-              "h_ft": 3.7,
-              "period_s": 16,
-              "dir": "S",
-              "deg": 183,
-              "label": "Dominant long-period S groundswell (dead-S angle)"
+              "h_ft": 4.9,
+              "period_s": 7,
+              "dir": "NE",
+              "deg": 48,
+              "label": "Dominant short-period NE wind swell — the good angle"
             },
             {
-              "h_ft": 2.6,
-              "period_s": 10,
+              "h_ft": 2.0,
+              "period_s": 12,
               "dir": "S",
-              "deg": 172,
-              "label": "Secondary mid-period S"
-            },
-            {
-              "h_ft": 0.9,
-              "period_s": 10,
-              "dir": "ENE",
-              "deg": 69,
-              "label": "Minor NE swell — the good angle"
+              "deg": 178,
+              "label": "Secondary S swell (dead-S angle, wraps poorly at Dee Why)"
             }
           ],
-          "window": "Light NNW till ~9am, cross-shore after, NE onshore from noon. Dead-S 183° wraps badly here — the 16s period helps, but it'll be smaller and inconsistent vs the S exposures. Pick the peaks the small NE 69° helps.",
+          "window": "Light NNW offshore till ~9am, cross-shore by noon, NE onshore from 3pm. NE 48° is the ideal angle here — peaky beachbreak, go early before the NE lumps it up. The dead-S 178° component wraps badly, so favour peaks with NE in them.",
           "tip": {
-            "label": "Dead S — skip the Point rights",
-            "text": "Dominant energy is dead-S (~183°), the angle that doesn't work at the Point. Frontside rights are a trap on it; use backside lefts when the S is doing the work and take peaks with some NE in them. Long 16s period gives the odd solid set — be patient."
+            "label": "NE peaks — frontside at the Point",
+            "text": "Short-period NE is the good angle at Dee Why. Frontside rights at the Point, backside lefts on the beach peaks. Only 7s, so it's punchy rather than powerful — commit to the takeoff and stay on the drive."
           }
         },
         "long-reef": {
           "status": "live",
-          "rating": "fair-good",
-          "size_ft": "6–8",
-          "size_desc": "Overhead–well overhead",
-          "energy_kj": 595,
+          "rating": "fair",
+          "size_ft": "1–3",
+          "size_desc": "Waist–shoulder",
+          "energy_kj": 208,
           "consistency": null,
           "wind_rel": "offshore-am",
           "swells": [
             {
-              "h_ft": 3.7,
-              "period_s": 16,
-              "dir": "S",
-              "deg": 183,
-              "label": "Dominant long-period S groundswell (dead-S angle)"
+              "h_ft": 4.9,
+              "period_s": 7,
+              "dir": "NE",
+              "deg": 48,
+              "label": "Dominant short-period NE wind swell — the good angle"
             },
             {
-              "h_ft": 2.6,
-              "period_s": 10,
+              "h_ft": 2.0,
+              "period_s": 12,
               "dir": "S",
-              "deg": 172,
-              "label": "Secondary mid-period S"
-            },
-            {
-              "h_ft": 0.9,
-              "period_s": 10,
-              "dir": "ENE",
-              "deg": 69,
-              "label": "Minor NE swell — the good angle"
+              "deg": 178,
+              "label": "Secondary S swell (dead-S angle, wraps poorly at Dee Why)"
             }
           ],
-          "window": "Best of the four: S-facing reef, uses the 3.7ft/16s S swell head-on. Light offshore till ~9am; stays cleaner than most into the arvo. Power in the sets with a wait between — mind the size on the bigger ones.",
+          "window": "Picks up the most size of the four. Light offshore till ~9am, cross-shore NE from noon. Reef handles the little S swell better than the beachies.",
           "tip": {
-            "label": "Sit wide, pick your bomb",
-            "text": "595 kJ at 16s is real power. Frontside rights off the reef — sit a touch wider than usual, let the first of the set go and take the one with shape. Paddle strong, commit early."
+            "label": "Frontside rights off the reef",
+            "text": "Waist to shoulder with some S in the mix. Pick the sections that line up — 7s wind swell can back off between sets, so be patient and position on the peak."
           }
         },
         "curl-curl": {
           "status": "live",
-          "rating": "fair-good",
-          "size_ft": "5–7",
-          "size_desc": "Head–2ft overhead",
-          "energy_kj": 595,
+          "rating": "fair",
+          "size_ft": "1–2",
+          "size_desc": "Thigh–stomach+",
+          "energy_kj": 208,
           "consistency": null,
           "wind_rel": "offshore-am",
           "swells": [
             {
-              "h_ft": 3.7,
-              "period_s": 16,
-              "dir": "S",
-              "deg": 183,
-              "label": "Dominant long-period S groundswell (dead-S angle)"
+              "h_ft": 4.9,
+              "period_s": 7,
+              "dir": "NE",
+              "deg": 48,
+              "label": "Dominant short-period NE wind swell — the good angle"
             },
             {
-              "h_ft": 2.6,
-              "period_s": 10,
+              "h_ft": 2.0,
+              "period_s": 12,
               "dir": "S",
-              "deg": 172,
-              "label": "Secondary mid-period S"
-            },
-            {
-              "h_ft": 0.9,
-              "period_s": 10,
-              "dir": "ENE",
-              "deg": 69,
-              "label": "Minor NE swell — the good angle"
+              "deg": 178,
+              "label": "Secondary S swell (dead-S angle, wraps poorly at Dee Why)"
             }
           ],
-          "window": "Big S-swell magnet: head to overhead with light N early. Best 7–10am before the NE lumps it up. Find a good bank or it can be a bit straight.",
+          "window": "Light offshore early, then NE cross-shore. Fun and peaky; find the bank with the best shape.",
           "tip": {
             "label": "Find the bank",
-            "text": "Solid and a bit straight if you sit on the wrong bank. Look for the peak that's holding shape and take the shoulder — the long period gives real push."
+            "text": "Smaller and peaky — look for the peak holding its shape and take the shoulder. Good for a flowy session."
           }
         },
         "manly": {
           "status": "live",
           "rating": "fair",
-          "size_ft": "3–4",
-          "size_desc": "Waist–chest",
-          "energy_kj": 595,
+          "size_ft": "1–2",
+          "size_desc": "Thigh–waist",
+          "energy_kj": 208,
           "consistency": null,
           "wind_rel": "cross-off",
           "swells": [
             {
-              "h_ft": 3.7,
-              "period_s": 16,
-              "dir": "S",
-              "deg": 183,
-              "label": "Dominant long-period S groundswell (dead-S angle)"
+              "h_ft": 4.9,
+              "period_s": 7,
+              "dir": "NE",
+              "deg": 48,
+              "label": "Dominant short-period NE wind swell — the good angle"
             },
             {
-              "h_ft": 2.6,
-              "period_s": 10,
+              "h_ft": 2.0,
+              "period_s": 12,
               "dir": "S",
-              "deg": 172,
-              "label": "Secondary mid-period S"
-            },
-            {
-              "h_ft": 0.9,
-              "period_s": 10,
-              "dir": "ENE",
-              "deg": 69,
-              "label": "Minor NE swell — the good angle"
+              "deg": 178,
+              "label": "Secondary S swell (dead-S angle, wraps poorly at Dee Why)"
             }
           ],
-          "window": "Sheltered from the S so much smaller — camera-confirmed waist to chest. Cross-shore N breeze, tidiest when the NE comes in later.",
+          "window": "Cross-shore NNW at dawn, onshore NE from noon. Smallest of the four but the most sheltered later in the day.",
           "tip": {
             "label": "Sheltered fallback",
-            "text": "Least S energy of the four — softer, but the cleanest option if you can't stomach the size or the arvo NE arrives."
+            "text": "Smaller and softer. Only worth it if you want an easy one or the NE has wrecked the others."
           }
         }
       }
@@ -209,11 +181,24 @@
     {
       "id": "tomorrow",
       "label": "Tomorrow",
-      "date": "Thu 1 Oct",
+      "date": "Fri 2 Oct",
       "done": false,
-      "note": "Easing S swell plus short-period NE wind wave — peaky, fun-sized: chest to maybe head at S exposures, smaller elsewhere. Cleanest early with light NW (8–10 kph), NE picks up late morning. Long Reef first, Curl Curl second. Sizes estimated from the forecaster text.",
+      "note": "Peaky NE eases to waist–chest. NW winds cleanest through the morning; NE likely returns later, best at the sheltered N corners — though winds could go offshore again late. Sizes estimated from the forecaster text.",
       "spots": {
         "dee-why": {
+          "status": "estimated",
+          "rating": "poor-fair",
+          "size_ft": "2–3",
+          "size_desc": "Waist–chest",
+          "energy_kj": null,
+          "consistency": null,
+          "wind_rel": "offshore-am",
+          "window": "Light wind early (under 10 kph) before NE returns. Easing NE — small and peaky.",
+          "alerts": [
+            "Size est. from forecaster narrative — Surfline wave feed unavailable this run"
+          ]
+        },
+        "long-reef": {
           "status": "estimated",
           "rating": "fair",
           "size_ft": "2–3",
@@ -221,20 +206,7 @@
           "energy_kj": null,
           "consistency": null,
           "wind_rel": "offshore-am",
-          "window": "Light NW early, NE onshore late morning. Easing S wraps poorly here — small and peaky.",
-          "alerts": [
-            "Size est. from forecaster narrative — Surfline wave feed unavailable this run"
-          ]
-        },
-        "long-reef": {
-          "status": "estimated",
-          "rating": "fair-good",
-          "size_ft": "3–4",
-          "size_desc": "Chest–head",
-          "energy_kj": null,
-          "consistency": null,
-          "wind_rel": "offshore-am",
-          "window": "Best pick: S-facing takes what's left of the S swell. Go early on the NW before the NE gets in.",
+          "window": "Best of the four for shape: light wind all morning, reef handles the easing swell.",
           "alerts": [
             "Size est. from forecaster narrative — Surfline wave feed unavailable this run"
           ]
@@ -242,25 +214,25 @@
         "curl-curl": {
           "status": "estimated",
           "rating": "fair",
-          "size_ft": "3–4",
-          "size_desc": "Chest–head",
+          "size_ft": "2–3",
+          "size_desc": "Waist–chest",
           "energy_kj": null,
           "consistency": null,
           "wind_rel": "offshore-am",
-          "window": "Peaky chest-to-head at the S end. Clean early, bumpy once NE arrives.",
+          "window": "Peaky and fun early; bumpier once the NE arrives.",
           "alerts": [
             "Size est. from forecaster narrative — Surfline wave feed unavailable this run"
           ]
         },
         "manly": {
           "status": "estimated",
-          "rating": "fair",
+          "rating": "poor-fair",
           "size_ft": "2–3",
           "size_desc": "Waist–chest",
           "energy_kj": null,
           "consistency": null,
           "wind_rel": "cross-off",
-          "window": "Smaller and sheltered; tidy option later if the NE picks up.",
+          "window": "Sheltered N corner — tidy option if the NE picks up later.",
           "alerts": [
             "Size est. from forecaster narrative — Surfline wave feed unavailable this run"
           ]
@@ -272,58 +244,58 @@
       "label": "Weekend",
       "date": "Sat 3 – Sun 4 Oct",
       "done": false,
-      "note": "Fri looks like small peaky NE (waist–chest) with NW mornings. Sat/Sun hinge on a coastal low expected to form right on the coast — could turn on decent surf or a mess; the forecaster can't call it yet. Recheck Friday. Daylight saving starts Sun 4 Oct (clocks forward 2am) — dawn arrives an hour 'later'.",
+      "note": "Sat is the pick: winds should swing favourable and clean up an easing NE wind swell, maybe a little local S swell — fun peaky surf, some clean options. Sun turns S 20 kph+ from dawn, so get Sat. Forecaster says it's still uncertain and will shift — recheck Friday. Daylight saving starts Sun 4 Oct (clocks forward 2am): sunrise ~6:29am AEDT.",
       "spots": {
         "dee-why": {
           "status": "estimated",
           "rating": "fair",
           "size_ft": "2–4",
-          "size_desc": "Uncertain — coastal low watch",
+          "size_desc": "Uncertain",
           "energy_kj": null,
           "consistency": null,
           "wind_rel": "cross-off",
-          "window": "Too far out for a real call. Sat AM looks light S cross-shore; watch the low's swell direction — NE–ENE would be the good angle.",
+          "window": "Sat: light winds swinging favourable, easing NE wind swell — the good angle here. Sun: S 20 kph cross-shore, worse.",
           "alerts": [
-            "⚠️ Weekend still uncertain — a coastal low may develop right on the coast (could deliver decent surf, but wind and swell are hard to pin down). Size is a placeholder; recheck Fri."
+            "⚠️ Weekend still uncertain — forecaster flags swell/wind could shift; sizes are placeholders. Recheck Friday."
           ]
         },
         "long-reef": {
           "status": "estimated",
           "rating": "fair",
           "size_ft": "2–4",
-          "size_desc": "Uncertain — coastal low watch",
+          "size_desc": "Uncertain",
           "energy_kj": null,
           "consistency": null,
           "wind_rel": "cross-off",
-          "window": "Too far out for a real call. Reef handles whatever S/SE close-range swell the low throws.",
+          "window": "Reef handles the local S swell if it builds. Sat best; Sun S wind spoils it.",
           "alerts": [
-            "⚠️ Weekend still uncertain — a coastal low may develop right on the coast (could deliver decent surf, but wind and swell are hard to pin down). Size is a placeholder; recheck Fri."
+            "⚠️ Weekend still uncertain — forecaster flags swell/wind could shift; sizes are placeholders. Recheck Friday."
           ]
         },
         "curl-curl": {
           "status": "estimated",
           "rating": "fair",
           "size_ft": "2–4",
-          "size_desc": "Uncertain — coastal low watch",
+          "size_desc": "Uncertain",
           "energy_kj": null,
           "consistency": null,
           "wind_rel": "cross-off",
-          "window": "Too far out for a real call — S-facing peaks pick up close-range swell best.",
+          "window": "S-facing peaks pick up any local S swell. Sat clean options, Sun bumpy.",
           "alerts": [
-            "⚠️ Weekend still uncertain — a coastal low may develop right on the coast (could deliver decent surf, but wind and swell are hard to pin down). Size is a placeholder; recheck Fri."
+            "⚠️ Weekend still uncertain — forecaster flags swell/wind could shift; sizes are placeholders. Recheck Friday."
           ]
         },
         "manly": {
           "status": "estimated",
           "rating": "poor-fair",
           "size_ft": "2–4",
-          "size_desc": "Uncertain — coastal low watch",
+          "size_desc": "Uncertain",
           "energy_kj": null,
           "consistency": null,
           "wind_rel": "cross-off",
-          "window": "Too far out for a real call — sheltered, smaller.",
+          "window": "Sheltered, smaller. Sat tidy, Sun S wind.",
           "alerts": [
-            "⚠️ Weekend still uncertain — a coastal low may develop right on the coast (could deliver decent surf, but wind and swell are hard to pin down). Size is a placeholder; recheck Fri."
+            "⚠️ Weekend still uncertain — forecaster flags swell/wind could shift; sizes are placeholders. Recheck Friday."
           ]
         }
       }
