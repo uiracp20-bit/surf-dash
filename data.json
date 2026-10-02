@@ -1,48 +1,50 @@
 {
-  "published": "2026-10-02T06:24:00+10:00",
+  "published": "2026-10-03T06:27:00+10:00",
   "source": "live",
-  "forecaster_note": "Peaky NE swell — waist to chest high at most spots. Offshores this morning but pretty raw and junky, settling a little with time as they hold till mid-morning. Similar size through the day, then light southerlies come through: S corners and N-facing spots best this afternoon. Size grades up Sat with short-period NE wind wave. — Surfline forecaster (Fri 2 Oct)",
+  "forecaster_note": "Small to modest peaky-to-junky surf Sat, lightest winds in the AM — waist to chest high, N corners cleanest; NE wind builds later with showers and thunderstorms around. Sun the better day: winds swing offshore as the coastal low moves away, cleaning up short-period E/NE swell for fun to good peaky surf (head high-ish), though still uncertain. Mon a possible target day. — Surfline forecaster (Fri 2 Oct)",
   "water_temp_c": 19,
   "air_temp_c": 17,
   "wind": {
-    "speed_kph": 5,
-    "gust_kph": 6,
-    "dir": "WNW",
-    "deg": 284,
-    "relative": "offshore",
-    "summary": "Light WNW 5 kph offshore at dawn, cross-shore S by 9am, then ESE onshore 15 kph from noon (gusts ~18 by 6pm)."
+    "speed_kph": 6,
+    "gust_kph": 7,
+    "dir": "NNE",
+    "deg": 26,
+    "relative": "cross",
+    "summary": "Light NNE 6 kph at dawn, cross-shore N 8 kph by 9am, then NE onshore 15 kph from noon (gusts ~31), freshening to 23 kph by 6pm."
   },
   "sun": {
-    "sunrise": "5:32am",
-    "sunset": "5:58pm",
-    "last_light": "6:23pm"
+    "sunrise": "5:31am",
+    "sunset": "5:59pm",
+    "last_light": "6:24pm"
   },
   "shark": {
     "level": "alert",
-    "summary": "Northern Beaches detections in the last 24h: Palm Beach — 10 tagged shark detections (latest ~7h ago, spread over ~7–12h ago); Newport — SLS drone sighting (~19h ago). None at Dee Why, Long Reef, Curl Curl or Manly. Feed is current (newest statewide detection 0.5h old; 61 real detections statewide in 24h). Check the live map before paddling out.",
-    "affected": [],
+    "summary": "Northern Beaches detections in the last 24h: Manly Beach — SLS drone sighting (~17h ago); North Narrabeen — 1 tagged shark detection (~21h ago). None at Dee Why, Long Reef or Curl Curl. Feed is current (newest statewide detection 0.3h old; 69 real detections statewide in 24h). Check the live map before paddling out.",
+    "affected": [
+      "manly"
+    ],
     "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
   },
   "tides": {
     "station": "Blue Fish Point, Sydney",
     "events": [
       {
-        "time": "5:22am",
+        "time": "6:22am",
         "height_m": 0.5,
         "type": "low"
       },
       {
-        "time": "11:59am",
+        "time": "1:05pm",
         "height_m": 1.6,
         "type": "high"
       },
       {
-        "time": "6:56pm",
-        "height_m": 0.3,
+        "time": "8:12pm",
+        "height_m": 0.4,
         "type": "low"
       },
       {
-        "time": "12:54am",
+        "time": "3:16am",
         "height_m": 1.1,
         "type": "high"
       }
@@ -52,98 +54,98 @@
     {
       "id": "today",
       "label": "Today",
-      "date": "Fri 2 Oct",
+      "date": "Sat 3 Oct",
       "done": false,
-      "note": "Peaky NE wind swell (5.5ft @ 7s, ~304 kJ — fun, not powerful) with a tiny 0.8ft S swell. Light WNW offshore at dawn but the forecaster calls it raw and junky; winds go cross-shore ~9am then onshore ESE from noon, with light southerlies later. Best 6:30–9:30am. Low 5:22am, high 11:59am. Long Reef picks up the most size; Dee Why gets the NE at its best angle.",
+      "note": "Small, peaky NE wind swell (4.8ft @ 7s, ~245 kJ — fun, not powerful) plus a tiny 0.9ft S. Light NNE at dawn, cross-shore ~9am, then NE onshore from noon and freshening to 23 kph by 6pm — and showers/thunderstorms around. Mid-morning (10–12) is already onshore-ish, so go early for the lightest winds: north corners cleanest. Low 6:22am, high 1:05pm. Long Reef takes the most size.",
       "spots": {
         "dee-why": {
           "status": "live",
           "rating": "poor-fair",
           "size_ft": "1–2",
           "size_desc": "Thigh–stomach+",
-          "energy_kj": 304,
+          "energy_kj": 245,
           "consistency": null,
-          "wind_rel": "offshore-am",
+          "wind_rel": "onshore",
           "swells": [
             {
-              "h_ft": 5.5,
+              "h_ft": 4.8,
               "period_s": 7,
               "dir": "NE",
-              "deg": 47,
+              "deg": 55,
               "label": "Dominant short-period NE wind swell — the good angle"
             },
             {
-              "h_ft": 0.8,
-              "period_s": 10,
+              "h_ft": 0.9,
+              "period_s": 5,
               "dir": "S",
-              "deg": 176,
-              "label": "Minor S swell (dead-S angle, wraps poorly at Dee Why)"
+              "deg": 178,
+              "label": "Minor short-period S swell (dead-S angle, wraps poorly at Dee Why)"
             }
           ],
-          "window": "Light WNW offshore at first light, cross-shore by 9am, onshore from noon. NE 47° is the ideal angle but it's raw and junky — go early, pick the cleaner peaks. Dead-S component is tiny.",
+          "window": "Light NNE at first light, cross-shore ~9am, onshore NE from noon. Peaky and weak into the 6:22am low — NE 55° is the good angle but it's lumpy; N corner for the cleanest peaks. Dead-S component tiny.",
           "tip": {
-            "label": "NE peaks — frontside at the Point",
-            "text": "Short-period NE is the good angle at Dee Why. Frontside rights at the Point, backside lefts on the beach peaks. 7s means punchy not powerful — commit and stay on the drive."
+            "label": "North corner — frontside at the Point",
+            "text": "Short-period NE is the right angle at Dee Why. Frontside rights at the Point, backside lefts on the beach peaks. 7s means punchy not powerful — stay on the drive and pick the N corner."
           }
         },
         "long-reef": {
           "status": "live",
           "rating": "fair",
           "size_ft": "1–3",
-          "size_desc": "Waist–shoulder",
-          "energy_kj": 304,
+          "size_desc": "Waist–chest",
+          "energy_kj": 245,
           "consistency": null,
-          "wind_rel": "offshore-am",
+          "wind_rel": "offshore",
           "swells": [
             {
-              "h_ft": 5.5,
+              "h_ft": 4.8,
               "period_s": 7,
               "dir": "NE",
-              "deg": 47,
+              "deg": 55,
               "label": "Dominant short-period NE wind swell — the good angle"
             },
             {
-              "h_ft": 0.8,
-              "period_s": 10,
+              "h_ft": 0.9,
+              "period_s": 5,
               "dir": "S",
-              "deg": 176,
-              "label": "Minor S swell (dead-S angle, wraps poorly at Dee Why)"
+              "deg": 178,
+              "label": "Minor short-period S swell (dead-S angle, wraps poorly at Dee Why)"
             }
           ],
-          "window": "Picks up the most size of the four and rates best (fair). Offshore at dawn, cross-shore by 9am, onshore from noon. Reef handles the minor S better than the beachies.",
+          "window": "Picks up the most size of the four and rates best (fair). Lightest winds early; onshore NE builds from noon. Reef handles the minor S better than the beachies.",
           "tip": {
             "label": "Frontside rights off the reef",
-            "text": "Waist to shoulder. 7s wind swell can back off between sets — be patient and position on the peak that lines up."
+            "text": "Waist to chest. 7s wind swell can back off between sets — be patient and sit on the peak that lines up."
           }
         },
         "curl-curl": {
           "status": "live",
-          "rating": "poor-fair",
-          "size_ft": "1–2",
-          "size_desc": "Thigh–stomach+",
-          "energy_kj": 304,
+          "rating": "fair",
+          "size_ft": "1–3",
+          "size_desc": "Waist–shoulder",
+          "energy_kj": 245,
           "consistency": null,
-          "wind_rel": "offshore-am",
+          "wind_rel": "cross-off",
           "swells": [
             {
-              "h_ft": 5.5,
+              "h_ft": 4.8,
               "period_s": 7,
               "dir": "NE",
-              "deg": 47,
+              "deg": 55,
               "label": "Dominant short-period NE wind swell — the good angle"
             },
             {
-              "h_ft": 0.8,
-              "period_s": 10,
+              "h_ft": 0.9,
+              "period_s": 5,
               "dir": "S",
-              "deg": 176,
-              "label": "Minor S swell (dead-S angle, wraps poorly at Dee Why)"
+              "deg": 178,
+              "label": "Minor short-period S swell (dead-S angle, wraps poorly at Dee Why)"
             }
           ],
-          "window": "Light offshore early, then cross-shore/onshore. Fun and peaky when it cleans up; find the bank with the best shape.",
+          "window": "Light cross-shore early, then onshore NE. Fun and peaky when it holds shape; N end cleanest.",
           "tip": {
             "label": "Find the bank",
-            "text": "Smaller and peaky — look for the peak holding its shape and take the shoulder. Flowy session board."
+            "text": "Waist to shoulder and peaky — look for the bank holding its shape and take the shoulder. Flowy session board."
           }
         },
         "manly": {
@@ -151,26 +153,26 @@
           "rating": "poor-fair",
           "size_ft": "1–2",
           "size_desc": "Thigh–waist",
-          "energy_kj": 304,
+          "energy_kj": 245,
           "consistency": null,
-          "wind_rel": "cross-off",
+          "wind_rel": "onshore",
           "swells": [
             {
-              "h_ft": 5.5,
+              "h_ft": 4.8,
               "period_s": 7,
               "dir": "NE",
-              "deg": 47,
+              "deg": 55,
               "label": "Dominant short-period NE wind swell — the good angle"
             },
             {
-              "h_ft": 0.8,
-              "period_s": 10,
+              "h_ft": 0.9,
+              "period_s": 5,
               "dir": "S",
-              "deg": 176,
-              "label": "Minor S swell (dead-S angle, wraps poorly at Dee Why)"
+              "deg": 178,
+              "label": "Minor short-period S swell (dead-S angle, wraps poorly at Dee Why)"
             }
           ],
-          "window": "Offshore/cross at dawn, onshore ESE from noon. Smallest of the four — mostly worth it for an easy one.",
+          "window": "Smallest of the four and onshore-ish early; North Steyne is mostly an easy-one fallback.",
           "tip": {
             "label": "Sheltered fallback",
             "text": "Smaller and softer. Only worth it if the others are too raw."
@@ -181,19 +183,19 @@
     {
       "id": "tomorrow",
       "label": "Tomorrow",
-      "date": "Sat 3 Oct",
+      "date": "Sun 4 Oct",
       "done": false,
-      "note": "Size grades up with short-period NE wind wave — chest to maybe head high and peaky at most breaks. Light trending breezy N/NE; mornings and north corners cleanest, biggest in the arvo but with lighter morning winds. Mid-morning is workable. Sizes estimated from forecaster text.",
+      "note": "Winds swing offshore W (~9–10 kph till late morning) as the coastal low moves away, cleaning up a short-period E/NE swell — forecaster has fun to good peaky surf, head high to slightly above, with S corners later. Your 10am–12pm window should be clean (W ~10 kph at 10am); southerly cross-shore ~23 kph from 1pm. DAYLIGHT SAVING STARTS 2am — clocks +1h, sunrise 6:29am. Low 8:39am. Sizes estimated; forecaster flags uncertainty.",
       "spots": {
         "dee-why": {
           "status": "estimated",
-          "rating": "fair",
-          "size_ft": "3–4",
-          "size_desc": "Chest–head",
+          "rating": "fair-good",
+          "size_ft": "3–5",
+          "size_desc": "Chest–head+",
           "energy_kj": null,
           "consistency": null,
-          "wind_rel": "cross-off",
-          "window": "Light morning winds trending breezy N/NE — NE 40–50° swell is the good angle here. Go 8–11am for the cleanest window; north corner best.",
+          "wind_rel": "offshore-am",
+          "window": "Offshore W all morning — the best window of the weekend; NE swell at its ideal angle for Dee Why. Go 8–11am, low tide 8:39am. S wind from 1pm.",
           "alerts": [
             "Size/rating estimated from the forecaster text"
           ]
@@ -205,21 +207,21 @@
           "size_desc": "Chest–head+",
           "energy_kj": null,
           "consistency": null,
-          "wind_rel": "cross-off",
-          "window": "Biggest of the four; north corner cleanest. Light morning, N/NE breeze building.",
+          "wind_rel": "offshore-am",
+          "window": "Biggest of the four; clean through the morning on W offshores. S corners later as the S picks up.",
           "alerts": [
             "Size/rating estimated from the forecaster text"
           ]
         },
         "curl-curl": {
           "status": "estimated",
-          "rating": "fair",
-          "size_ft": "3–4",
+          "rating": "fair-good",
+          "size_ft": "3–5",
           "size_desc": "Chest–head",
           "energy_kj": null,
           "consistency": null,
-          "wind_rel": "cross-off",
-          "window": "North corners cleanest; light morning then breezy N/NE.",
+          "wind_rel": "offshore-am",
+          "window": "Clean offshore morning; peaky banks — find the one with shape. S wind from 1pm.",
           "alerts": [
             "Size/rating estimated from the forecaster text"
           ]
@@ -227,12 +229,12 @@
         "manly": {
           "status": "estimated",
           "rating": "fair",
-          "size_ft": "2–3",
-          "size_desc": "Waist–chest+",
+          "size_ft": "2–4",
+          "size_desc": "Waist–head",
           "energy_kj": null,
           "consistency": null,
-          "wind_rel": "cross-off",
-          "window": "Smallest, but the north end should be tidy early.",
+          "wind_rel": "offshore-am",
+          "window": "Smallest, but cleaner than today on the W offshore.",
           "alerts": [
             "Size/rating estimated from the forecaster text"
           ]
@@ -244,58 +246,58 @@
       "label": "Weekend",
       "date": "Sat 3 – Sun 4 Oct",
       "done": false,
-      "note": "Sat: size grading up, peaky chest–head NE wind wave, N/NE breeze — go early. Sun: winds swing favourable and clean up an easing E/NE short-period swell, maybe some local S — fun to good peaky surf, but forecaster says it's uncertain so recheck. Daylight saving starts Sun 4 Oct (clocks +1h). Mon looks like a nice-sized peaky S + E/NE mix as the coastal low moves away.",
+      "note": "Sat: small, peaky NE wind swell, lightest winds early, onshore from noon with storms about — second-best day. Sun is the pick: W offshores clean up a short-period E/NE swell, fun to good head-high-ish peaks, but the forecaster says it's uncertain so recheck. Clocks go +1h at 2am Sunday. Just past the weekend: Mon 5 Oct looks like a nice-sized peaky S + E/NE mix (head high) with light morning winds — 'could be a day to target' — and Tue eases to waist–chest ENE with clean morning offshores.",
       "spots": {
         "dee-why": {
           "status": "estimated",
-          "rating": "fair-good",
-          "size_ft": "3–5",
-          "size_desc": "Chest–head+",
+          "rating": "fair",
+          "size_ft": "2–5",
+          "size_desc": "Waist–head+",
           "energy_kj": null,
           "consistency": null,
           "wind_rel": "offshore-am",
-          "window": "Sat: light N/NE, north corners best early. Sun: winds swing favourable, cleaner but easing — still uncertain.",
+          "window": "Sat: light NNE early then onshore — N corners. Sun: W offshores, cleaner and bigger — the pick. Mon: light morning winds, peaky head-high mix — possible target day.",
           "alerts": [
-            "Size/rating estimated from the forecaster text — likely to change"
+            "Aggregate Sat–Sun, estimated from the forecaster text — likely to change"
           ]
         },
         "long-reef": {
           "status": "estimated",
           "rating": "fair-good",
-          "size_ft": "3–5",
-          "size_desc": "Chest–head+",
+          "size_ft": "2–5",
+          "size_desc": "Waist–head+",
           "energy_kj": null,
           "consistency": null,
           "wind_rel": "offshore-am",
-          "window": "Sat: light N/NE, north corners best early. Sun: winds swing favourable, cleaner but easing — still uncertain.",
+          "window": "Sat: light NNE early then onshore — N corners. Sun: W offshores, cleaner and bigger — the pick. Mon: light morning winds, peaky head-high mix — possible target day.",
           "alerts": [
-            "Size/rating estimated from the forecaster text — likely to change"
+            "Aggregate Sat–Sun, estimated from the forecaster text — likely to change"
           ]
         },
         "curl-curl": {
           "status": "estimated",
-          "rating": "fair-good",
-          "size_ft": "3–5",
-          "size_desc": "Chest–head",
+          "rating": "fair",
+          "size_ft": "2–5",
+          "size_desc": "Waist–head",
           "energy_kj": null,
           "consistency": null,
           "wind_rel": "offshore-am",
-          "window": "Sat: light N/NE, north corners best early. Sun: winds swing favourable, cleaner but easing — still uncertain.",
+          "window": "Sat: light NNE early then onshore — N corners. Sun: W offshores, cleaner and bigger — the pick. Mon: light morning winds, peaky head-high mix — possible target day.",
           "alerts": [
-            "Size/rating estimated from the forecaster text — likely to change"
+            "Aggregate Sat–Sun, estimated from the forecaster text — likely to change"
           ]
         },
         "manly": {
           "status": "estimated",
           "rating": "fair",
-          "size_ft": "2–4",
-          "size_desc": "Waist–head",
+          "size_ft": "1–4",
+          "size_desc": "Thigh–head",
           "energy_kj": null,
           "consistency": null,
           "wind_rel": "offshore-am",
-          "window": "Sat: light N/NE, north corners best early. Sun: winds swing favourable, cleaner but easing — still uncertain.",
+          "window": "Sat: light NNE early then onshore — N corners. Sun: W offshores, cleaner and bigger — the pick. Mon: light morning winds, peaky head-high mix — possible target day.",
           "alerts": [
-            "Size/rating estimated from the forecaster text — likely to change"
+            "Aggregate Sat–Sun, estimated from the forecaster text — likely to change"
           ]
         }
       }
