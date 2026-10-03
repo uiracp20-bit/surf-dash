@@ -18,8 +18,8 @@
   "last_light": "7:25pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "alert",
+  "summary": "Northern Beaches, last 24h: Palm Beach — 8 tagged shark detections (newest ~4.6h ago). Nothing at Dee Why, Long Reef, Curl Curl or Manly. Feed current (newest activity <1h old). Check the live map before paddling out.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
