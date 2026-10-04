@@ -18,8 +18,8 @@
   "last_light": "7:25pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "alert",
+  "summary": "Northern Beaches, last 24h: one SLS drone shark sighting at Whale Beach (7:33am Sun, ~22h ago). Nothing at Dee Why, Long Reef, Curl Curl or Manly. Feed current (newest statewide activity <1h old; 40+ detections statewide, mostly Central/South Coast and Mid-North Coast). Check the live map before paddling out.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
