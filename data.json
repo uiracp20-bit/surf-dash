@@ -1,25 +1,25 @@
 {
- "published": "2026-10-04T07:10:00+11:00",
+ "published": "2026-10-05T06:20:00+11:00",
  "source": "live",
- "forecaster_note": "Winds light and calm at dawn, cleaning up a nice shot of short-period E/NE swell, with a touch of S swell for a couple of wedgey options on the exposed beaches. The magnets are fun, picking up a few head-high sets and hollowing out toward low. A late southerly change will limit clean options to the southern corners — get amongst it early. Mon: peaky head-high S + E/NE mix, light AM winds. Wed looks like a skip. — Surfline forecaster (Sun 4 Oct)",
- "water_temp_c": 19,
- "air_temp_c": 13,
+ "forecaster_note": "As the weekend's coastal low moves away we're left with a nice-sized short-period mix of S and E/NE swell for peaky, head-high surf. Light SW winds through the morning for the cleanest conditions, onshores kicking in later for bump and chop. Tue: easing ENE + S, waist to chest, clean in the morning. Wed–Thu: windy onshore south swell — a skip unless the wind swings SW. — Surfline forecaster (Mon 5 Oct)",
+ "water_temp_c": 18,
+ "air_temp_c": 15,
  "wind": {
-  "speed_kph": 9,
-  "gust_kph": 17,
-  "dir": "W",
-  "deg": 283,
+  "speed_kph": 7,
+  "gust_kph": 10,
+  "dir": "SW",
+  "deg": 235,
   "relative": "offshore",
-  "summary": "Light W 9 kph offshore at dawn, WNW 13 kph by 10am, light and variable at 1pm, then SE onshore ~20 kph from 4pm with a late southerly change."
+  "summary": "Light SW 7 kph offshore at 6am, near-calm at 9am, then E onshore 9 kph by noon building to ~15 kph by 3pm."
  },
  "sun": {
-  "sunrise": "6:29am",
+  "sunrise": "6:28am",
   "sunset": "7:00pm",
   "last_light": "7:25pm"
  },
  "shark": {
-  "level": "alert",
-  "summary": "Northern Beaches, last 24h: Palm Beach — 8 tagged shark detections (newest ~4.6h ago). Nothing at Dee Why, Long Reef, Curl Curl or Manly. Feed current (newest activity <1h old). Check the live map before paddling out.",
+  "level": "unknown",
+  "summary": "SharkSmart check pending this refresh — tap to check live detections",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
@@ -27,22 +27,22 @@
   "station": "Blue Fish Point, Sydney",
   "events": [
    {
-    "time": "3:16am",
+    "time": "4:36am",
     "height_m": 1.1,
     "type": "high"
    },
    {
-    "time": "8:39am",
+    "time": "10:03am",
     "height_m": 0.6,
     "type": "low"
    },
    {
-    "time": "3:19pm",
+    "time": "4:33pm",
     "height_m": 1.6,
     "type": "high"
    },
    {
-    "time": "10:28pm",
+    "time": "11:32pm",
     "height_m": 0.3,
     "type": "low"
    }
@@ -52,156 +52,156 @@
   {
    "id": "today",
    "label": "Today",
-   "date": "Sun 4 Oct",
+   "date": "Mon 5 Oct",
    "done": false,
-   "note": "Clean start: light W offshore, NE 6ft @ 8s (~535 kJ) plus a touch of SE and tiny S. Go 7–10am before the winds ease; Long Reef and Curl Curl rate best (fair-good). SE onshore ~20 kph from 4pm with a late southerly change. Low 8:39am, high 3:19pm.",
+   "note": "Peaky NE 5.6ft @ 10s (~700 kJ) plus short S — chest to head, light SW then calm 6–9am. Best window 6–10am; Dee Why and Manly rate fair-good early. Onshore E kicks in by noon, ~15 kph by 3pm. High 4:36am, low 10:03am — dropping tide through the morning.",
    "spots": {
     "dee-why": {
      "status": "live",
-     "rating": "fair",
-     "size_ft": "1–3",
-     "size_desc": "Waist–head",
-     "energy_kj": 535,
+     "rating": "fair-good",
+     "size_ft": "2–3",
+     "size_desc": "Chest–head",
+     "energy_kj": 698,
      "consistency": null,
      "wind_rel": "offshore-am",
      "swells": [
       {
-       "h_ft": 6.2,
-       "period_s": 8,
+       "h_ft": 5.6,
+       "period_s": 10,
        "dir": "NE",
-       "deg": 55,
-       "label": "Dominant short-period NE swell — the good angle"
+       "deg": 58,
+       "label": "Dominant NE swell — the good angle, a notch longer period than yesterday"
       },
       {
-       "h_ft": 2.0,
+       "h_ft": 3.5,
        "period_s": 8,
-       "dir": "SE",
-       "deg": 157,
-       "label": "Secondary SE swell — adds peaky wedge energy"
+       "dir": "S",
+       "deg": 180,
+       "label": "Short-period S swell (dead-S angle — wraps poorly at Dee Why, fine at the exposed magnets)"
       },
       {
-       "h_ft": 0.4,
-       "period_s": 16,
-       "dir": "S",
-       "deg": 187,
-       "label": "Tiny long-period S (dead-S angle, wraps poorly at Dee Why)"
+       "h_ft": 0.2,
+       "period_s": 15,
+       "dir": "SSW",
+       "deg": 190,
+       "label": "Negligible long-period S"
       }
      ],
-     "window": "Light W offshore at first light, WNW 13 kph by 10am — clean through the morning, tide dropping to the 8:39am low. SE onshore ~20 kph from 4pm. NE 55° is the right angle; the S component is tiny.",
+     "window": "SW 7 kph offshore at 6am, glassy by 9am, E onshore by noon. Falling tide to the 10:03am low. NE 58° is the right angle; the S component wraps poorly here.",
      "tip": {
       "label": "Frontside rights at the Point",
-      "text": "Short-period NE is the right angle — frontside rights at the Point, backside lefts on the beach peaks. 8s is punchy not powerful: stay on the drive and take the N corner."
+      "text": "Punchy NE — take the Point on your forehand, backside lefts on the beach peaks. 10s gives a bit more push than yesterday; sit a touch wider on the outside."
      }
     },
     "long-reef": {
      "status": "live",
-     "rating": "fair-good",
-     "size_ft": "2–3",
-     "size_desc": "Chest–overhead",
-     "energy_kj": 535,
+     "rating": "fair",
+     "size_ft": "2–4",
+     "size_desc": "Head–2ft overhead",
+     "energy_kj": 698,
      "consistency": null,
-     "wind_rel": "offshore-am",
+     "wind_rel": "cross-off",
      "swells": [
       {
-       "h_ft": 6.2,
-       "period_s": 8,
+       "h_ft": 5.6,
+       "period_s": 10,
        "dir": "NE",
-       "deg": 55,
-       "label": "Dominant short-period NE swell — the good angle"
+       "deg": 58,
+       "label": "Dominant NE swell — the good angle, a notch longer period than yesterday"
       },
       {
-       "h_ft": 2.0,
+       "h_ft": 3.5,
        "period_s": 8,
-       "dir": "SE",
-       "deg": 157,
-       "label": "Secondary SE swell — adds peaky wedge energy"
+       "dir": "S",
+       "deg": 180,
+       "label": "Short-period S swell (dead-S angle — wraps poorly at Dee Why, fine at the exposed magnets)"
       },
       {
-       "h_ft": 0.4,
-       "period_s": 16,
-       "dir": "S",
-       "deg": 187,
-       "label": "Tiny long-period S (dead-S angle, wraps poorly at Dee Why)"
+       "h_ft": 0.2,
+       "period_s": 15,
+       "dir": "SSW",
+       "deg": 190,
+       "label": "Negligible long-period S"
       }
      ],
-     "window": "Picks up the most size and rates best (fair-good). Offshore W early and through ~10am, hollowing toward the 8:39am low. Southerly change late — get in before it.",
+     "window": "Cross-shore light SW early, calm ~9am then onshore E from noon. Picks up the most size and the S wedge. Low tide 10:03am will hollow the banks.",
      "tip": {
       "label": "Frontside rights off the reef",
-      "text": "Chest to overhead and hollowing at low. Sit deep on the peak, commit to the drop and take the wedgey sections on your forehand."
+      "text": "Biggest of the four — sit deep on the peak, commit on the drop and use the wedgey sections on your forehand."
      }
     },
     "curl-curl": {
      "status": "live",
-     "rating": "fair-good",
-     "size_ft": "1–2+",
-     "size_desc": "Thigh–stomach+",
-     "energy_kj": 535,
+     "rating": "fair",
+     "size_ft": "2–3+",
+     "size_desc": "Chest–1ft overhead",
+     "energy_kj": 698,
      "consistency": null,
-     "wind_rel": "offshore-am",
+     "wind_rel": "cross-off",
      "swells": [
       {
-       "h_ft": 6.2,
-       "period_s": 8,
+       "h_ft": 5.6,
+       "period_s": 10,
        "dir": "NE",
-       "deg": 55,
-       "label": "Dominant short-period NE swell — the good angle"
+       "deg": 58,
+       "label": "Dominant NE swell — the good angle, a notch longer period than yesterday"
       },
       {
-       "h_ft": 2.0,
+       "h_ft": 3.5,
        "period_s": 8,
-       "dir": "SE",
-       "deg": 157,
-       "label": "Secondary SE swell — adds peaky wedge energy"
+       "dir": "S",
+       "deg": 180,
+       "label": "Short-period S swell (dead-S angle — wraps poorly at Dee Why, fine at the exposed magnets)"
       },
       {
-       "h_ft": 0.4,
-       "period_s": 16,
-       "dir": "S",
-       "deg": 187,
-       "label": "Tiny long-period S (dead-S angle, wraps poorly at Dee Why)"
+       "h_ft": 0.2,
+       "period_s": 15,
+       "dir": "SSW",
+       "deg": 190,
+       "label": "Negligible long-period S"
       }
      ],
-     "window": "Light offshore to 10am, fair-good rating early. Peaky banks; N end cleanest as the S change arrives.",
+     "window": "Light SW cross-shore to 9am, glassy-ish at the 10am low. Peaky banks; north end cleanest once the E breeze comes up.",
      "tip": {
       "label": "Find the bank",
-      "text": "Peaky and fun — find the bank holding shape and take the shoulder. Good flowy session board."
+      "text": "Peaky with a S wedge in the mix — find the bank holding shape and take the shoulder."
      }
     },
     "manly": {
      "status": "live",
-     "rating": "fair",
-     "size_ft": "1–2",
-     "size_desc": "Thigh–waist",
-     "energy_kj": 535,
+     "rating": "fair-good",
+     "size_ft": "2–3",
+     "size_desc": "Chest–head",
+     "energy_kj": 698,
      "consistency": null,
      "wind_rel": "offshore-am",
      "swells": [
       {
-       "h_ft": 6.2,
-       "period_s": 8,
+       "h_ft": 5.6,
+       "period_s": 10,
        "dir": "NE",
-       "deg": 55,
-       "label": "Dominant short-period NE swell — the good angle"
+       "deg": 58,
+       "label": "Dominant NE swell — the good angle, a notch longer period than yesterday"
       },
       {
-       "h_ft": 2.0,
+       "h_ft": 3.5,
        "period_s": 8,
-       "dir": "SE",
-       "deg": 157,
-       "label": "Secondary SE swell — adds peaky wedge energy"
+       "dir": "S",
+       "deg": 180,
+       "label": "Short-period S swell (dead-S angle — wraps poorly at Dee Why, fine at the exposed magnets)"
       },
       {
-       "h_ft": 0.4,
-       "period_s": 16,
-       "dir": "S",
-       "deg": 187,
-       "label": "Tiny long-period S (dead-S angle, wraps poorly at Dee Why)"
+       "h_ft": 0.2,
+       "period_s": 15,
+       "dir": "SSW",
+       "deg": 190,
+       "label": "Negligible long-period S"
       }
      ],
-     "window": "Smallest of the four but clean with W offshore early. North Steyne is mostly a fun-wave option. Manly had a drone sighting yesterday — shark status updating shortly.",
+     "window": "Light SW offshore at 6am, calm 9am. Falling tide to the 10am low. Sheltered corner handles the S component better than Dee Why.",
      "tip": {
-      "label": "North Steyne peaks",
-      "text": "Thigh to waist and clean — a groveller-friendly morning. Pick the best peak and keep it simple."
+      "label": "Backside lefts, frontside rights",
+      "text": "Peaks both ways — go left on the backhand off the S wedge, rights off the NE energy."
      }
     }
    }
@@ -209,41 +209,21 @@
   {
    "id": "tomorrow",
    "label": "Tomorrow",
-   "date": "Mon 5 Oct",
+   "date": "Tue 6 Oct",
    "done": false,
-   "note": "Peaky S + E/NE short-period mix for head-high surf at most breaks; light W offshore in the morning (7 kph), onshore ESE later. Fair-good at Dee Why, Curl Curl and Manly from ~7–10am. Short-period S can wedge — pick the north-facing corners.",
+   "note": "Easing ENE + S mix, waist to chest high. Clean offshore W 8–11 kph through the morning, light onshores in the arvo. Aim for the lower tide (low 11:19am; high 5:42am).",
    "spots": {
     "dee-why": {
      "status": "estimated",
-     "rating": "fair-good",
-     "size_ft": "2–4",
-     "size_desc": "Chest–head",
+     "rating": "fair",
+     "size_ft": "1–3",
+     "size_desc": "Waist–chest",
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Light W offshore 7–10am; onshore ESE from midday. Sneaky S swell wraps poorly — N corner."
+     "window": "Offshore W ~9–11 kph all morning, onshore by arvo. Slightly smaller than Mon — aim for the low around 11am."
     },
     "long-reef": {
-     "status": "estimated",
-     "rating": "fair",
-     "size_ft": "3–4",
-     "size_desc": "Shoulder–head+",
-     "energy_kj": null,
-     "consistency": null,
-     "wind_rel": "offshore-am",
-     "window": "Most size again; peaky head-high at the reef in the light AM winds."
-    },
-    "curl-curl": {
-     "status": "estimated",
-     "rating": "fair-good",
-     "size_ft": "2–4",
-     "size_desc": "Chest–head",
-     "energy_kj": null,
-     "consistency": null,
-     "wind_rel": "offshore-am",
-     "window": "Fair-good to ~10am; N end cleanest."
-    },
-    "manly": {
      "status": "estimated",
      "rating": "fair-good",
      "size_ft": "2–3",
@@ -251,56 +231,76 @@
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Fair-good early with the light W; smaller than the northern spots."
+     "window": "Rates best of the four early (fair-good 3–9am). Offshore W through the morning."
+    },
+    "curl-curl": {
+     "status": "estimated",
+     "rating": "fair-good",
+     "size_ft": "1–3",
+     "size_desc": "Waist–chest",
+     "energy_kj": null,
+     "consistency": null,
+     "wind_rel": "offshore-am",
+     "window": "Fair-good at first light, offshore W, easing as the swell drops."
+    },
+    "manly": {
+     "status": "estimated",
+     "rating": "fair",
+     "size_ft": "1–3",
+     "size_desc": "Waist–chest",
+     "energy_kj": null,
+     "consistency": null,
+     "wind_rel": "offshore-am",
+     "window": "Clean with W offshore through the morning; fun and mellow."
     }
    }
   },
   {
    "id": "weekend",
    "label": "Weekend",
-   "date": "Sun 4 Oct (rest of day)",
+   "date": "Sat 10 – Sun 11 Oct",
    "done": false,
-   "note": "Rest of Sunday: offshore through ~10am, light and variable at 1pm, then SE onshore ~20 kph from 4pm and a late southerly change — afternoon rating drops to poor-fair. Just past the weekend: Mon head-high and clean AM, Tue easing ENE waist–chest with morning offshores, Wed large onshore S — likely a skip.",
+   "note": "Early look (low confidence): Wed–Thu big onshore S swell, a skip. Winds go more favourable end of week, cleaning up the easing S/SE swell — Surfline flags Fri/Sat as the window. Check back Friday.",
    "spots": {
     "dee-why": {
      "status": "estimated",
      "rating": "fair",
-     "size_ft": "1–3",
-     "size_desc": "Waist–head",
+     "size_ft": "2–4",
+     "size_desc": "Chest–overhead",
      "energy_kj": null,
      "consistency": null,
-     "wind_rel": "onshore",
-     "window": "Best before noon; afternoon SE onshore chop and S change."
+     "wind_rel": "cross-off",
+     "window": "Easing S/SE swell cleaning up as winds turn offshore — low-confidence trend only."
     },
     "long-reef": {
      "status": "estimated",
      "rating": "fair",
-     "size_ft": "2–3",
+     "size_ft": "2–4",
      "size_desc": "Chest–overhead",
      "energy_kj": null,
      "consistency": null,
-     "wind_rel": "onshore",
-     "window": "Fair-good to ~10am, easing to poor-fair by 4pm."
+     "wind_rel": "cross-off",
+     "window": "Easing S/SE swell cleaning up as winds turn offshore — low-confidence trend only."
     },
     "curl-curl": {
      "status": "estimated",
      "rating": "fair",
-     "size_ft": "1–2+",
-     "size_desc": "Thigh–stomach+",
+     "size_ft": "2–4",
+     "size_desc": "Chest–overhead",
      "energy_kj": null,
      "consistency": null,
-     "wind_rel": "onshore",
-     "window": "Clean early, onshore from the arvo."
+     "wind_rel": "cross-off",
+     "window": "Easing S/SE swell cleaning up as winds turn offshore — low-confidence trend only."
     },
     "manly": {
      "status": "estimated",
      "rating": "fair",
-     "size_ft": "1–2",
-     "size_desc": "Thigh–waist",
+     "size_ft": "2–4",
+     "size_desc": "Chest–overhead",
      "energy_kj": null,
      "consistency": null,
-     "wind_rel": "onshore",
-     "window": "Fair all day on the ratings but onshore from 4pm."
+     "wind_rel": "cross-off",
+     "window": "Easing S/SE swell cleaning up as winds turn offshore — low-confidence trend only."
     }
    }
   }
