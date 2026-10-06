@@ -1,5 +1,5 @@
 {
- "published": "2026-10-07T06:10:00+11:00",
+ "published": "2026-10-07T06:20:00+11:00",
  "source": "live",
  "forecaster_note": "Large S swell with onshore-ish S winds: not much wrap into the sheltered breaks, junky stretches just north of the S corners — a day worth giving a miss. Thu: SW wind starts to clean up the S corners but still overhead and messy. Fri: better-quality SE swell arrives off a Tasman low, well overhead; light W through to mid-arvo. Sat eases slowly, NNW/NW winds texture exposed breaks. — Surfline forecaster (Wed 7 Oct)",
  "water_temp_c": 20,
@@ -18,9 +18,11 @@
   "last_light": "7:27pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
-  "affected": [],
+  "level": "alert",
+  "summary": "Northern Beaches, last 24h: tagged White Shark #2880 detected at North Steyne (Manly) at 5:06pm Tue (~13h ago), and a 1.88m White Shark tagged & released from a SMART drumline at Warriewood at 4:16pm Tue (~14h ago). Nothing at Dee Why, Long Reef or Curl Curl. Feed current (newest statewide activity <1h old; ~38 detections statewide in 24h). Check the live map before paddling out — Manly especially.",
+  "affected": [
+   "manly"
+  ],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
  "tides": {
