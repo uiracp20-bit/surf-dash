@@ -1,5 +1,5 @@
 {
- "published": "2026-10-08T06:12:00+11:00",
+ "published": "2026-10-08T06:13:00+11:00",
  "source": "live",
  "forecaster_note": "Thu: more SW'ly morning wind so there'll be cleaner options in the S corners; size is overhead across the south-facing beaches and messy with the onshores later. Fri: a low in the Tasman sends better-quality SE swell, well overhead on open beaches; light westerlies keep it clean until a mid-arvo onshore switch — aim for the AM high. Sat: swell eases slowly, NNW/NW winds add texture to exposed breaks. — Surfline forecaster (Thu 8 Oct)",
  "water_temp_c": 20,
@@ -18,8 +18,8 @@
   "last_light": "7:28pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "alert",
+  "summary": "Northern Beaches, last 24h: tagged White Shark #2285 pinged the Palm Beach receiver 5 times between 5:07am and 6:05am today (newest ~10 min ago) — it's actively hanging around the northern end. Nothing at Dee Why, Long Reef, Curl Curl or Manly in the last 24h (last Manly/North Steyne detection was White Shark #2880 at 5:06pm Tue, ~37h ago). Feed is current (~28 real detections statewide in 24h). Check the live map before paddling out, especially dawn at the northern beaches.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
