@@ -204,7 +204,8 @@
       "text": "S wind is offshore here at dawn — cleanest of the four but tiny. Easy longboard morning."
      }
     }
-   }
+   },
+   "surfline_text": "SE swell will have eased right back into the small size range and it looks like we'll see a mixture of NE and S wind swells in the water. Nothing of major quality out there but we'll have chest high sets across most stretches. Winds are looking to be from the south at dawn so tuck yourself into a Sth corner for the cleanest wave. Onshores through the afternoon will add texture to most breaks."
   },
   {
    "id": "tomorrow",
@@ -253,7 +254,8 @@
      "wind_rel": "offshore-am",
      "window": "Mon: small windswells, light winds clean until the 9:54am high; NE chop kicks in through the arvo. Low 3:33am. Best at dawn on the lower tide."
     }
-   }
+   },
+   "surfline_text": "Small little windswells offer a couple waist high waves on the better banks and we'll see the best conditions at dawn with that lower tide. Worth bringing a lengthy board to make the most of it, light winds should keep it clean up until the high tide mark. Into the afternoon NE winds will start to add chop to the open beaches. Tuck into the Nth corners if your chasing that arvo low."
   },
   {
    "id": "weekend",
@@ -267,42 +269,135 @@
      "rating": "poor-fair",
      "size_ft": "1–2",
      "size_desc": "Thigh to stomach",
-     "energy_kj": null,
+     "energy_kj": 197,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Sun: small mixed windswell, S dawn wind then onshore E pm (best 6–9am, high 9:18am). Mon clean AM. Tue S change mid-morning; Wed short-period S swell with strong S gusts — low confidence."
+     "window": "Sun: small mixed windswell, S dawn wind then onshore E pm (best 6–9am, high 9:18am). Mon clean AM. Tue S change mid-morning; Wed short-period S swell with strong S gusts — low confidence.",
+     "swells": [
+      {
+       "h_ft": 3.5,
+       "period_s": 8,
+       "dir": "NE",
+       "deg": 46,
+       "label": "NE windswell — best angle for Dee Why, main energy today (~128 kJ)"
+      },
+      {
+       "h_ft": 2.1,
+       "period_s": 7,
+       "dir": "SE",
+       "deg": 136,
+       "label": "Fading SE leftover — minor wrap, helps the Point a touch"
+      },
+      {
+       "h_ft": 2.5,
+       "period_s": 5,
+       "dir": "S",
+       "deg": 188,
+       "label": "Short-period S wind chop — wraps badly at Dee Why, adds lump"
+      }
+     ]
     },
     "long-reef": {
      "status": "estimated",
      "rating": "poor-fair",
      "size_ft": "1–3",
      "size_desc": "Waist to shoulder",
-     "energy_kj": null,
+     "energy_kj": 197,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Sun: small mixed windswell, S dawn wind then onshore E pm (best 6–9am, high 9:18am). Mon clean AM. Tue S change mid-morning; Wed short-period S swell with strong S gusts — low confidence."
+     "window": "Sun: small mixed windswell, S dawn wind then onshore E pm (best 6–9am, high 9:18am). Mon clean AM. Tue S change mid-morning; Wed short-period S swell with strong S gusts — low confidence.",
+     "swells": [
+      {
+       "h_ft": 3.5,
+       "period_s": 8,
+       "dir": "NE",
+       "deg": 46,
+       "label": "NE windswell — best angle for Dee Why, main energy today (~128 kJ)"
+      },
+      {
+       "h_ft": 2.1,
+       "period_s": 7,
+       "dir": "SE",
+       "deg": 136,
+       "label": "Fading SE leftover — minor wrap, helps the Point a touch"
+      },
+      {
+       "h_ft": 2.5,
+       "period_s": 5,
+       "dir": "S",
+       "deg": 188,
+       "label": "Short-period S wind chop — wraps badly at Dee Why, adds lump"
+      }
+     ]
     },
     "curl-curl": {
      "status": "estimated",
      "rating": "poor-fair",
      "size_ft": "1–3",
      "size_desc": "Waist to shoulder",
-     "energy_kj": null,
+     "energy_kj": 197,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Sun: small mixed windswell, S dawn wind then onshore E pm (best 6–9am, high 9:18am). Mon clean AM. Tue S change mid-morning; Wed short-period S swell with strong S gusts — low confidence."
+     "window": "Sun: small mixed windswell, S dawn wind then onshore E pm (best 6–9am, high 9:18am). Mon clean AM. Tue S change mid-morning; Wed short-period S swell with strong S gusts — low confidence.",
+     "swells": [
+      {
+       "h_ft": 3.5,
+       "period_s": 8,
+       "dir": "NE",
+       "deg": 46,
+       "label": "NE windswell — best angle for Dee Why, main energy today (~128 kJ)"
+      },
+      {
+       "h_ft": 2.1,
+       "period_s": 7,
+       "dir": "SE",
+       "deg": 136,
+       "label": "Fading SE leftover — minor wrap, helps the Point a touch"
+      },
+      {
+       "h_ft": 2.5,
+       "period_s": 5,
+       "dir": "S",
+       "deg": 188,
+       "label": "Short-period S wind chop — wraps badly at Dee Why, adds lump"
+      }
+     ]
     },
     "manly": {
      "status": "estimated",
      "rating": "poor-fair",
      "size_ft": "1–2",
      "size_desc": "Thigh to stomach",
-     "energy_kj": null,
+     "energy_kj": 197,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Sun: small mixed windswell, S dawn wind then onshore E pm (best 6–9am, high 9:18am). Mon clean AM. Tue S change mid-morning; Wed short-period S swell with strong S gusts — low confidence."
+     "window": "Sun: small mixed windswell, S dawn wind then onshore E pm (best 6–9am, high 9:18am). Mon clean AM. Tue S change mid-morning; Wed short-period S swell with strong S gusts — low confidence.",
+     "swells": [
+      {
+       "h_ft": 3.5,
+       "period_s": 8,
+       "dir": "NE",
+       "deg": 46,
+       "label": "NE windswell — best angle for Dee Why, main energy today (~128 kJ)"
+      },
+      {
+       "h_ft": 2.1,
+       "period_s": 7,
+       "dir": "SE",
+       "deg": 136,
+       "label": "Fading SE leftover — minor wrap, helps the Point a touch"
+      },
+      {
+       "h_ft": 2.5,
+       "period_s": 5,
+       "dir": "S",
+       "deg": 188,
+       "label": "Short-period S wind chop — wraps badly at Dee Why, adds lump"
+      }
+     ]
     }
-   }
+   },
+   "surfline_text": "SE swell will have eased right back into the small size range and it looks like we'll see a mixture of NE and S wind swells in the water. Nothing of major quality out there but we'll have chest high sets across most stretches. Winds are looking to be from the south at dawn so tuck yourself into a Sth corner for the cleanest wave. Onshores through the afternoon will add texture to most breaks."
   }
  ]
 }
