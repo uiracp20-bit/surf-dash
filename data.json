@@ -18,8 +18,8 @@
   "last_light": "7:30pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "clear",
+  "summary": "Northern Beaches (Palm Beach → Manly), last 24h: no tagged-shark, drone-sighting or DPI detections. Only SLS drone paused/resumed notices (Sat). Feed is current (newest statewide detection ~6 min ago; 58 real detections statewide in 24h). DPI feed returned no features, so check the live map before paddling out, especially dawn.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
