@@ -333,13 +333,28 @@ var ALT_WHY = [
   'Drop down if it is pivoty rather than genuinely powerful.',
   'Drop down if the sets are running wall rather than heavy slab.'
 ];
-function pickGear(sd){
+
+/* Groveller override (2026-10-11): low-energy short-period days, or Surfline wording
+   like "small board day / foamy / groveller / longboard", drop a daily-driver day to the groveller tier. */
+function grovelerReason(en, T, d){
+  var R = (GEAR && GEAR.board_logic && GEAR.board_logic.groveller_rule) || {max_kj:225,max_period_s:10,keywords:["groveller","grovel","foamy","small board","longboard","lengthy board","mini mal","mini-mal","mushy"]};
+  if (en != null && T != null && T < R.max_period_s && en < R.max_kj)
+    return 'Low-energy short-period windswell (under ' + R.max_kj + ' kJ, under ' + R.max_period_s + 's) — groveller day.';
+  var txt = String((d && d.surfline_text) || '').toLowerCase();
+  for (var i = 0; i < (R.keywords || []).length; i++) {
+    if (txt.indexOf(R.keywords[i]) !== -1) return 'Surfline wording points to a small-board day ("' + R.keywords[i] + '") — groveller day.';
+  }
+  return null;
+}
+function pickGear(sd, d){
   if (!sd || !GEAR) return null;
   var L = GEAR.board_logic;
   var en = sd.energy_kj, T = domPeriod(sd), r = sd.rating || 'fair';
   var longP = (T != null && T > L.long_period_cutoff_s);
   var B = longP ? L.bands_long_kj : L.bands_short_kj;
   var tier = gearTier(en, T);
+  var gr = grovelerReason(en, T, d);
+  if (gr && tier === 1) tier = 0; else gr = (tier === 0 ? gr : null);
   var keys = activePicks(tier);
   var good = (r === 'good' || r === 'fair-good' || r === 'epic');
   var label = ((L.tiers || [])[tier] || {}).label || 'Board';
@@ -347,7 +362,7 @@ function pickGear(sd){
           + (T != null ? ' @ ' + T + 's' : '')
           + (longP ? ' — long-period bands' : '');
   var why;
-  if (tier === 0)      why = ctx + '. Under ' + B[0] + ' kJ there is nothing to push against — volume and glide to keep moving through the fat bits.';
+  if (tier === 0)      why = ctx + '. ' + (gr ? gr + ' Volume and glide to keep moving through the fat bits.' : 'Under ' + B[0] + ' kJ there is nothing to push against — volume and glide to keep moving through the fat bits.');
   else if (tier === 1) why = ctx + '. Sits in the ' + B[0] + '–' + B[1] + ' kJ daily-driver band — performance baseline. No reason to go bigger.';
   else if (tier === 2) why = ctx + '. Real power in the ' + B[1] + '–' + B[2] + ' kJ band — paddle, hold and control while staying responsive.';
   else                 why = ctx + '. Over the ' + B[2] + ' kJ step-up floor — genuine power, so paddle, hold and confidence win.';
@@ -467,7 +482,7 @@ function render(){
 
   // gear
   var gsd = d.spots[best ? best.sp.id : 'dee-why'];
-  var picks = pickGear(gsd);
+  var picks = pickGear(gsd, d);
   h += '<div class="card"><h2>Board + fins' + (best ? ' <span class="when">for ' + esc(best.sp.name) + '</span>' : '') + '</h2>';
   if (picks) picks.forEach(function(g){
     h += '<div class="gear"><div class="g1">' + esc(g.b) + ' <span class="gtag">' + esc(g.tag) + '</span></div><div class="gf">⋔ ' + esc(g.f) + '</div><div class="gw">' + esc(g.why) + '</div></div>';
