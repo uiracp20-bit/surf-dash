@@ -1,6 +1,6 @@
 {
-  "version": "2026-09-24",
-  "updated": "2026-09-24",
+  "version": "2026-10-11",
+  "updated": "2026-10-11",
   "_note": "SINGLE SOURCE OF TRUTH for Uira's quiver and the selection logic. Both dashboards and the 6:10am task read this file. Edit here, nowhere else. Mobile PWA fetches it from GitHub Pages; the desktop dashboard gets it injected into its #gear-data block by the daily task.",
   "boards": {
     "sub": {
@@ -108,7 +108,23 @@
       }
     ],
     "_tier_note": "Each tier lists boards in preference order. The engine takes the first TWO that are active:true, so an on-order or retired board degrades gracefully instead of being recommended. Inferno 72 and Inferno FT deliberately share the daily-driver tier (72 primary, FT when walls run fast and clean).",
-    "_synergy_note": "Synergy sits between the FT and the FMN3: it takes the powerful-but-not-heavy days the FT was being stretched into, pushing the 6'2 up to genuinely serious surf only. While active:false, tier 2 falls back to the FT — the pre-Synergy behaviour."
+    "_synergy_note": "Synergy sits between the FT and the FMN3: it takes the powerful-but-not-heavy days the FT was being stretched into, pushing the 6'2 up to genuinely serious surf only. While active:false, tier 2 falls back to the FT — the pre-Synergy behaviour.",
+    "groveller_rule": {
+      "max_kj": 225,
+      "max_period_s": 10,
+      "keywords": [
+        "groveller",
+        "grovel",
+        "foamy",
+        "small board",
+        "longboard",
+        "lengthy board",
+        "mini mal",
+        "mini-mal",
+        "mushy"
+      ],
+      "_note": "Groveller override (added 2026-10-11 at Uira's request). If the dominant swell period is under max_period_s AND energy is under max_kj, OR the day's Surfline forecaster text contains a keyword (days[].surfline_text), a daily-driver day is dropped to the groveller tier. Never demotes Power or Step-up days. Size still never picks a board."
+    }
   },
   "wetsuits": [
     {
