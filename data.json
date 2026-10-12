@@ -18,9 +18,12 @@
   "last_light": "7:32pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
-  "affected": [],
+  "level": "alert",
+  "summary": "Northern Beaches (Palm Beach → Manly), last 24h: 3 real detections. NORTH STEYNE (Manly): tagged White Shark #3595 detected by the receiver at 2:58am today (~3h ago). PALM BEACH: tagged Bull Shark #969 at 2:43am (~3.5h ago). NORTH CURL CURL: SLS drone shark sighting 5:32pm yesterday (~13h ago). Feed is current (newest statewide detection ~3h ago, Yamba; 30 real detections statewide in 24h). DPI feed returned no features. Check the live map before paddling out.",
+  "affected": [
+   "manly",
+   "curl-curl"
+  ],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
  "tides": {
