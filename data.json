@@ -1,52 +1,49 @@
 {
- "published": "2026-10-13T06:25:00+11:00",
+ "published": "2026-10-14T06:12:00+11:00",
  "source": "live",
- "forecaster_note": "Tue: light to moderate S/SW at dawn, cleanish on the Northern Beaches but no real swell — waist high at best on the south magnets; short-period S swell picks up through the day and winds go onshore with rain, lumpy and unappealing. Wed: strong southerly gusts and a spike of short-period S swell — S exposures well overhead to 2x OH mess, only waist-high at sheltered Sth corners, chest to head at slightly more exposed ones. Thu: S swell stays overhead on S exposures, chance of a SW window at dawn then SE lump. Fri: S swell drifts SSE, persistent easterlies add lump — dawn the only window. Sat: short-period SSE swell plus small E windswells, onshore winds, morning best. — Surfline forecaster, Tue 13 Oct",
+ "forecaster_note": "Wed: strong S gusts and a spike of short-period S swell — S exposures well overhead to 2x OH mess, sheltered S corners waist high, slightly more exposed ones chest to head with cleanish faces; easing PM. Thu: S swell eases, head to OH at S magnets, light S–SW AM then S/SE bump. Fri: S swell drifts SSE, persistent easterlies add lump. Sat: short-period SSE swell + E windswells, onshore, junky. — Surfline forecaster, Wed 14 Oct",
  "water_temp_c": 20,
- "air_temp_c": 18,
+ "air_temp_c": 13,
  "wind": {
-  "speed_kph": 12,
-  "gust_kph": 21,
-  "dir": "SSW",
-  "deg": 189,
+  "speed_kph": 28,
+  "gust_kph": 40,
+  "dir": "S",
+  "deg": 179,
   "relative": "cross",
-  "summary": "SSW ~12 kph at 6am (cross), S/SSW ~15 kph by 9am, SE onshore from ~1pm with rain."
+  "summary": "S ~28 kph (gusts 40) at 6am, easing to ~25 by 9am; still S through the day. Rain showers at dawn."
  },
  "sun": {
-  "sunrise": "6:17am",
-  "sunset": "7:06pm",
+  "sunrise": "6:16am",
+  "sunset": "7:07pm",
   "last_light": "7:32pm"
  },
  "shark": {
-  "level": "alert",
-  "summary": "Northern Beaches (Palm Beach → Manly), last 24h: 3 real detections. NORTH STEYNE (Manly): tagged White Shark #3595 detected by the receiver at 2:58am today (~3h ago). PALM BEACH: tagged Bull Shark #969 at 2:43am (~3.5h ago). NORTH CURL CURL: SLS drone shark sighting 5:32pm yesterday (~13h ago). Feed is current (newest statewide detection ~3h ago, Yamba; 30 real detections statewide in 24h). DPI feed returned no features. Check the live map before paddling out.",
-  "affected": [
-   "manly",
-   "curl-curl"
-  ],
+  "level": "unknown",
+  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
  "tides": {
   "station": "Blue Fish Point, Sydney",
   "events": [
    {
-    "time": "4:02am",
-    "height_m": 0.4,
+    "time": "4:31am",
+    "height_m": 0.5,
     "type": "low"
    },
    {
-    "time": "10:30am",
+    "time": "11:05am",
     "height_m": 1.6,
     "type": "high"
    },
    {
-    "time": "5:02pm",
+    "time": "5:46pm",
     "height_m": 0.4,
     "type": "low"
    },
    {
-    "time": "10:56pm",
-    "height_m": 1.2,
+    "time": "11:35pm",
+    "height_m": 1.1,
     "type": "high"
    }
   ]
@@ -55,197 +52,113 @@
   {
    "id": "today",
    "label": "Today",
-   "date": "Tue 13 Oct",
+   "date": "Wed 14 Oct",
    "done": false,
-   "note": "Small, short-period NE windswell (~91 kJ, 7s) with a trace of S chop. Poor–fair everywhere, rain building. Go 6–9am on the low push before the SE onshore; a mushy groveller day.",
-   "surfline_text": "Light to moderate S/SW winds at dawn with cleanish to bumpy conditions depending where you are - cleanest for Northern Beaches and S corners, but a lack of any real swell. It's maybe pushing waist high on the sets at the south magnets.  A bit of a pick up in short period S swell through the day and sets hitting chest high at the south magnets by the afternoon - smaller elsewhere. Winds going more onshore though for lumpy surf at all spots. Doable but unappealing. Raining as well.",
+   "note": "Strong S wind and a big dead-S swell spike (11.5ft @ 9s, ~2000 kJ) — Dee Why/Long Reef/Curl Curl a wind-hit mess, poor. Only sheltered North Steyne (Manly) is surfable: chest to head, cleanish. Dawn on the 4:31am low push; easing PM.",
+   "surfline_text": "Breezy to strong southerlies and decent a spike of short period S swell. South exposures are copping the winds and swell - they'll be a well overhead to 2x OH mess so best give these a miss. Wrap will be limited for the well sheltered Sth corners - waist high. But a bit more will get into the slightly more exposed ones, with cleanish faces and maybe chest to head surf. Might be worth trading a bit of quality for a bit more size. Easing a bit for PM.",
    "spots": {
     "dee-why": {
      "status": "live",
-     "rating": "poor-fair",
-     "size_ft": "1–2",
-     "size_desc": "Thigh–waist",
-     "energy_kj": 91,
+     "rating": "poor",
+     "size_ft": "4–5",
+     "size_desc": "Overhead+",
+     "energy_kj": 2002,
      "consistency": null,
      "wind_rel": "cross-off",
      "swells": [
       {
-       "h_ft": 3.2,
-       "period_s": 7,
-       "dir": "NE",
-       "deg": 57,
-       "label": "NE windswell — main energy (~83 kJ), best angle for Dee Why, short period"
-      },
-      {
-       "h_ft": 0.9,
-       "period_s": 5,
+       "h_ft": 11.5,
+       "period_s": 9,
        "dir": "S",
-       "deg": 186,
-       "label": "Tiny short-period S chop — negligible"
-      },
-      {
-       "h_ft": 0.3,
-       "period_s": 12,
-       "dir": "NE",
-       "deg": 41,
-       "label": "Minor NE ground-swell trace"
-      },
-      {
-       "h_ft": 0.2,
-       "period_s": 14,
-       "dir": "S",
-       "deg": 184,
-       "label": "Trace long-period S — barely registers"
+       "deg": 179,
+       "label": "S swell spike — dead south (179°), short-ish period, ~2002 kJ; wraps badly into Dee Why"
       }
      ],
-     "window": "Dawn SSW ~12 kph (gusts 21) at 6am, S/SSW 15 kph by 9am (cross), SE onshore from ~1pm with rain. Tide 4:02am low (0.4m), 10:30am high (1.6m), 5:02pm low. Best 6–9am on the low push; it's small NE windswell — bring volume.",
+     "window": "S 28 kph (gusts 40) at 6am easing to 25 at 9am, still S/cross. Tide 4:31am low (0.5m), 11:05am high (1.6m). Dead-S swell wraps badly — messy and wind-hit. Skip unless desperate.",
      "alerts": [
-      "Showers/rain through the day; wind swings onshore by lunch"
+      "Strong S wind (gusts to ~42 kph) and heavy S swell spike — messy; rain showers at dawn"
      ],
      "tip": {
       "label": "Frontside Point",
-      "text": "Small, short-period NE windswell (7s) — Point rights marginal and mushy. Go at first light on the low push before the SE kicks in; cross-shore S/SSW adds some bump."
+      "text": "Dead S (179°) is the worst angle for Dee Why — wrap is poor and the Point is a bumpy mess in a strong S. Not a day for the rights."
      }
     },
     "long-reef": {
      "status": "live",
-     "rating": "poor-fair",
-     "size_ft": "0–1",
-     "size_desc": "Knee–thigh",
-     "energy_kj": 91,
+     "rating": "poor",
+     "size_ft": "4–5",
+     "size_desc": "Overhead+",
+     "energy_kj": 2002,
      "consistency": null,
      "wind_rel": "onshore",
      "swells": [
       {
-       "h_ft": 3.2,
-       "period_s": 7,
-       "dir": "NE",
-       "deg": 57,
-       "label": "NE windswell — main energy (~83 kJ), best angle for Dee Why, short period"
-      },
-      {
-       "h_ft": 0.9,
-       "period_s": 5,
+       "h_ft": 11.5,
+       "period_s": 9,
        "dir": "S",
-       "deg": 186,
-       "label": "Tiny short-period S chop — negligible"
-      },
-      {
-       "h_ft": 0.3,
-       "period_s": 12,
-       "dir": "NE",
-       "deg": 41,
-       "label": "Minor NE ground-swell trace"
-      },
-      {
-       "h_ft": 0.2,
-       "period_s": 14,
-       "dir": "S",
-       "deg": 184,
-       "label": "Trace long-period S — barely registers"
+       "deg": 179,
+       "label": "S swell spike — dead south (179°), short-ish period, ~2002 kJ; wraps badly into Dee Why"
       }
      ],
-     "window": "Smallest of the four today — Surfline has it knee to thigh with S/SW cross-onshore. Dawn only, low push, if at all.",
+     "window": "S gale onshore at Long Reef, heavy S swell spike. Skip.",
      "alerts": [
-      "Rain developing"
+      "Strong S wind (gusts to ~42 kph) and heavy S swell spike — messy; rain showers at dawn"
      ],
      "tip": {
       "label": "Backside/Left",
-      "text": "Very small and weak — only worth it for a mushy longboard-style wave at first light."
+      "text": "Exposed to the S spike and wind — closed-out mess. Give it a miss."
      }
     },
     "curl-curl": {
      "status": "live",
-     "rating": "poor-fair",
-     "size_ft": "1–2+",
-     "size_desc": "Thigh–stomach",
-     "energy_kj": 91,
+     "rating": "poor",
+     "size_ft": "4–5",
+     "size_desc": "Overhead+",
+     "energy_kj": 2002,
      "consistency": null,
      "wind_rel": "cross-off",
      "swells": [
       {
-       "h_ft": 3.2,
-       "period_s": 7,
-       "dir": "NE",
-       "deg": 57,
-       "label": "NE windswell — main energy (~83 kJ), best angle for Dee Why, short period"
-      },
-      {
-       "h_ft": 0.9,
-       "period_s": 5,
+       "h_ft": 11.5,
+       "period_s": 9,
        "dir": "S",
-       "deg": 186,
-       "label": "Tiny short-period S chop — negligible"
-      },
-      {
-       "h_ft": 0.3,
-       "period_s": 12,
-       "dir": "NE",
-       "deg": 41,
-       "label": "Minor NE ground-swell trace"
-      },
-      {
-       "h_ft": 0.2,
-       "period_s": 14,
-       "dir": "S",
-       "deg": 184,
-       "label": "Trace long-period S — barely registers"
+       "deg": 179,
+       "label": "S swell spike — dead south (179°), short-ish period, ~2002 kJ; wraps badly into Dee Why"
       }
      ],
-     "window": "Slightly more size than Dee Why (thigh to stomach). Dawn SSW cross, onshore by lunch. Best 6–9am on the low push.",
+     "window": "S 28 kph gusting 40 at dawn; south end copping the spike. Messy; north end sheltered-ish.",
      "alerts": [
-      "Rain developing"
+      "Strong S wind (gusts to ~42 kph) and heavy S swell spike — messy; rain showers at dawn"
      ],
      "tip": {
       "label": "Backside/Left",
-      "text": "Mushy, short-period NE windswell. Best banks near the north end at dawn; expect bump from the S/SW breeze."
+      "text": "North end gets a little shelter from the S; still lumpy and wind-affected. Low expectations."
      }
     },
     "manly": {
      "status": "live",
      "rating": "poor-fair",
-     "size_ft": "1–2",
-     "size_desc": "Thigh–waist",
-     "energy_kj": 91,
+     "size_ft": "2–3",
+     "size_desc": "Chest–head",
+     "energy_kj": 2002,
      "consistency": null,
      "wind_rel": "cross-off",
      "swells": [
       {
-       "h_ft": 3.2,
-       "period_s": 7,
-       "dir": "NE",
-       "deg": 57,
-       "label": "NE windswell — main energy (~83 kJ), best angle for Dee Why, short period"
-      },
-      {
-       "h_ft": 0.9,
-       "period_s": 5,
+       "h_ft": 11.5,
+       "period_s": 9,
        "dir": "S",
-       "deg": 186,
-       "label": "Tiny short-period S chop — negligible"
-      },
-      {
-       "h_ft": 0.3,
-       "period_s": 12,
-       "dir": "NE",
-       "deg": 41,
-       "label": "Minor NE ground-swell trace"
-      },
-      {
-       "h_ft": 0.2,
-       "period_s": 14,
-       "dir": "S",
-       "deg": 184,
-       "label": "Trace long-period S — barely registers"
+       "deg": 179,
+       "label": "S swell spike — dead south (179°), short-ish period, ~2002 kJ; wraps badly into Dee Why"
       }
      ],
-     "window": "Dawn S/SW cross, light; picks up and turns onshore from lunch with rain. Go 6–9am.",
+     "window": "Sheltered S corner at North Steyne — chest to head with cleanish faces per Surfline (S 25 kph by 9am, cross). Best of the four; trade quality for size. High tide 11:05am.",
      "alerts": [
-      "Rain developing"
+      "Strong S wind (gusts to ~42 kph) and heavy S swell spike — messy; rain showers at dawn"
      ],
      "tip": {
       "label": "Frontside/Right",
-      "text": "Small NE windswell, sheltered-ish from the S — North Steyne is the cleanest of the four at dawn but still mushy."
+      "text": "Most sheltered of the four from the S gale. Cleaner faces, chest to head — the only realistic option today."
      }
     }
    }
@@ -253,50 +166,50 @@
   {
    "id": "tomorrow",
    "label": "Tomorrow",
-   "date": "Wed 14 Oct",
+   "date": "Thu 15 Oct",
    "done": false,
-   "note": "Strong S gusts (to ~47 kph) and a short-period S swell spike — S exposures a mess. Dee Why/Long Reef sheltered but wind-hit; Manly/Curl south corners get the size. Dawn only, low expectations.",
-   "surfline_text": "There's going to be some strong southerly gusts out there today and decent a spike of short period S swell. South exposures will be copping the winds and swell - they'll be a well overhead to 2x OH mess so best give these a miss.  Wrap will be limited for the well sheltered Sth corners - waist high. But a bit more will get into the slightly more exposed ones, with cleanish faces and maybe chest to head surf. Might be worth trading a bit of quality for a bit more size.  Easing a bit for PM.",
+   "note": "S swell easing; light S–SW at dawn is the window (fair), then S/SE bump from lunch. Head to OH at S magnets, chest-ish elsewhere. Go early.",
+   "surfline_text": "Raw size and energy will have calmed down compared to Friday as mid-period S swell eases through the day and we see a little E swell. Head to OH at S magnets - with more OH sets in the morning. Sheltered S corners about waist high. AM has the best chance of clean conditions with light S to maybe SW winds. Then light to moderate S/SE'lies add some bump / wobble but it should be alrightish.",
    "spots": {
     "dee-why": {
      "status": "estimated",
-     "rating": "poor",
-     "size_ft": "2–3",
-     "size_desc": "Waist–chest",
+     "rating": "fair",
+     "size_ft": "3–5",
+     "size_desc": "Chest–head+",
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "cross-off",
-     "window": "Strong southerly gusts (30–47 kph) overnight/dawn, easing to ~25 kph by 9am but still S. Sheltered from the S spike but wrap is limited. Tide 4:31am low, 11:05am high (1.6m). Likely a bumpy, wind-hit day — dawn is the only shot."
+     "window": "AM light S/SW (7–9 kph) = best window, then S/SE onshore ~16 kph from noon. Low 5:00am (0.5m), high 11:42am. S swell easing."
     },
     "long-reef": {
      "status": "estimated",
-     "rating": "poor",
-     "size_ft": "1–2",
-     "size_desc": "Thigh–waist",
+     "rating": "fair",
+     "size_ft": "2–4",
+     "size_desc": "Waist–head",
      "energy_kj": null,
      "consistency": null,
-     "wind_rel": "onshore",
-     "window": "S gale and short-period S spike; limited wrap, wind-hammered. Probably skip."
+     "wind_rel": "cross-off",
+     "window": "Dawn light S–SW, SE bump after midday. S swell easing."
     },
     "curl-curl": {
      "status": "estimated",
-     "rating": "poor",
-     "size_ft": "2–4",
-     "size_desc": "Waist–head",
+     "rating": "fair",
+     "size_ft": "3–5",
+     "size_desc": "Chest–head+",
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "cross-off",
-     "window": "Slightly more exposed corners get chest to head with cleanish faces per Surfline; strong S gusts though. South end only, dawn."
+     "window": "Light S–SW dawn; S exposures head to overhead, north end smaller. SE lump from noon."
     },
     "manly": {
      "status": "estimated",
-     "rating": "poor-fair",
+     "rating": "fair",
      "size_ft": "2–4",
      "size_desc": "Waist–head",
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "cross-off",
-     "window": "Sth corners get chest-to-head with cleanish faces; S gusts 25–45 kph. The best bet of the four if you want size — but trading quality for size."
+     "window": "Sheltered S corners about waist high, more at exposed bits. Best chance of clean in the AM before light S/SE bump."
     }
    }
   },
@@ -305,8 +218,8 @@
    "label": "Weekend",
    "date": "Sat 17 – Sun 18 Oct",
    "done": false,
-   "note": "Short-period SSE swell plus small E windswells, onshore winds. Waist to chest on most beaches, bigger at the Sth magnets. Morning is the best shot.",
-   "surfline_text": "Short period SSE swell is joined by some small small easterly windswells. Sth magnets will still be picking up the most size - in the head to overhead range. Most other beaches will be waist to chest.  We're still going to be battling the onshore winds - best chance for something more appealing will be in the morning.",
+   "note": "Short-period SSE swell + small E windswells with onshore E winds — junky, waist to chest, bigger at S magnets. Dawn only. Fri 16 is also E-lumpy. (Sun 18 not yet forecast.)",
+   "surfline_text": "Short period SSE swell is joined by some easterly windswells. Sth magnets will still be picking up the most size - in the head high plus range. Most other beaches will be waist to chest. We're still going to be battling the onshore winds - best chance for something more appealing will be in the early morning and maybe at the very S facing breaks if we get a bit of N in the wind. I think it will be pretty junky though.",
    "spots": {
     "dee-why": {
      "status": "estimated",
@@ -316,17 +229,17 @@
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "onshore",
-     "window": "Weekend (Sat 17 – Sun 18): SSE short-period swell plus small E windswells; E/SE onshore. Morning is the best chance."
+     "window": "Sat 17: SSE short-period swell + small E windswells, E/ENE onshore 15–19 kph. Early morning only. Sun 18 not yet forecast."
     },
     "long-reef": {
      "status": "estimated",
      "rating": "poor-fair",
-     "size_ft": "1–3",
-     "size_desc": "Thigh–chest",
+     "size_ft": "2–3",
+     "size_desc": "Waist–chest",
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "onshore",
-     "window": "Waist to chest at best with onshore E winds; morning only."
+     "window": "Waist to chest, onshore E all day; dawn at best."
     },
     "curl-curl": {
      "status": "estimated",
@@ -336,7 +249,7 @@
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "onshore",
-     "window": "Waist to chest; south end picks up most. Morning is the pick."
+     "window": "Waist to chest; S end picks up most. Junky — dawn the pick."
     },
     "manly": {
      "status": "estimated",
@@ -346,7 +259,7 @@
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "onshore",
-     "window": "Sth magnets/corners pick up head-high SSE per Surfline; Manly the likelier to have size. Onshore all day — dawn."
+     "window": "S magnets head high plus; Manly the likeliest for size. Onshore E — dawn only."
     }
    }
   }
