@@ -18,8 +18,8 @@
   "last_light": "7:32pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "alert",
+  "summary": "Northern Beaches (Palm Beach → Manly), last 24h: 5 detections, all PALM BEACH — tagged White Shark #3494 pinged the Palm Beach receiver 5 times between 9:49pm and 10:55pm last night (newest ~7h ago). Nothing at Manly, Curl Curl, Dee Why or Long Reef. Feed is current (newest statewide detection ~2h ago, Killcare; 43 real detections statewide in 24h). DPI feed returned no features. Check the live map before paddling out.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
