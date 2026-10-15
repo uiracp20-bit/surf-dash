@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-11",
+  "version": "2026-10-15",
   "updated": "2026-10-11",
   "_note": "SINGLE SOURCE OF TRUTH for Uira's quiver and the selection logic. Both dashboards and the 6:10am task read this file. Edit here, nowhere else. Mobile PWA fetches it from GitHub Pages; the desktop dashboard gets it injected into its #gear-data block by the daily task.",
   "boards": {
