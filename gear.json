@@ -15,9 +15,9 @@
     "i72": {
       "name": "Sharpeye Inferno 72",
       "dims": "5’9 / 28.6L",
-      "fin": "Sharpeye Tri L (thruster)",
+      "fin": "Medina Tri L",
       "fin_good": "FT Tri L (thruster)",
-      "fin_alt": "Carver Tri-Quad L",
+      "fin_alt": "FT Tri L",
       "role": "Daily driver",
       "active": true,
       "status": "owned"
@@ -44,14 +44,13 @@
       "name": "Sharpeye Synergy",
       "dims": "5’11 / 29.5L",
       "specs": "5'11 x 19 1/4 x 2 9/16 · PU · squash · FCS2 thruster",
-      "fin": null,
-      "fin_alt": null,
+      "fin": "Sharp Eye Tri L",
+      "fin_alt": "Medina Tri L",
       "_fin_note": "UNTESTED — no confirmed pairing yet. Candidates: Sharpeye Tri L, FT Tri L, JS Tri L. Engine prints 'fins: your call' until this is set.",
       "role": "Power — paddle, hold and control in bigger or more powerful surf, still responsive",
-      "active": false,
-      "status": "on_order",
+      "active": true,
+      "status": "owned",
       "ordered": "2026-09-24",
-      "due": "2026-10-16",
       "shop": "Surfection Mosman",
       "order_ref": "PO 786586 / board 1178331",
       "shaper_notes": "Rails foiled down a little. More paddle power, hold and control in larger or more powerful waves while still feeling responsive."
@@ -173,7 +172,8 @@
     "FCS II JS Tri L",
     "FCS II Carver Tri-Quad L",
     "FCS II Reactor Quad Rear M",
-    "FCS II Pyzel Tri L"
+    "FCS II Pyzel Tri L",
+    "Medina Tri L"
   ],
   "retired": [
     {
