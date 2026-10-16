@@ -18,8 +18,8 @@
   "last_light": "7:35pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "clear",
+  "summary": "Northern Beaches (Palm Beach → Manly), last 24h: no shark detections at Palm Beach, Manly, Curl Curl, Dee Why or Long Reef. Feed is current (newest statewide detection ~1h ago, South West Rocks; ~30 real detections statewide in 24h). Nearest: tagged White Shark at Cronulla ~6:01am today (south Sydney, not Northern Beaches). DPI feed returned no features. Always check the live map before paddling out.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
