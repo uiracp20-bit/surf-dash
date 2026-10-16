@@ -1,5 +1,5 @@
 {
- "published": "2026-10-17T06:52:00+11:00",
+ "published": "2026-10-17T07:30:00+11:00",
  "source": "live",
  "forecaster_note": "Sat: short-period SSE/SE + mixed E swells, S magnets head high plus, elsewhere waist–chest; onshore, bumpy to lumpy but better than Fri — best early. Sun: SE/E mix, head high at S exposures; offshore and clean in the morning, onshore and lumpy from later morning. Mon: smaller peaky waist–chest, clean-ish AM at S magnets/N corners. Tue: weak, junky short-period surf. — Surfline forecaster (Anthony Spinks), Sat 17 Oct",
  "water_temp_c": 20,
@@ -18,8 +18,8 @@
   "last_light": "7:35pm"
  },
  "shark": {
-  "level": "clear",
-  "summary": "Northern Beaches (Palm Beach → Manly), last 24h: no shark detections at Palm Beach, Manly, Curl Curl, Dee Why or Long Reef. Feed is current (newest statewide detection ~1h ago, South West Rocks; ~30 real detections statewide in 24h). Nearest: tagged White Shark at Cronulla ~6:01am today (south Sydney, not Northern Beaches). DPI feed returned no features. Always check the live map before paddling out.",
+  "level": "unknown",
+  "summary": "SharkSmart check pending this refresh — tap to check live detections",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
