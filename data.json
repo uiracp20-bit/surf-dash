@@ -1,5 +1,5 @@
 {
- "published": "2026-10-18T06:11:00+11:00",
+ "published": "2026-10-18T06:12:00+11:00",
  "source": "live",
  "forecaster_note": "Sun: SE/E swell mix, head high at the south exposures and waist–chest elsewhere; offshore and clean in the morning, onshore and lumpy from later morning. Mon: peaky waist–chest, clean-ish AM at south magnets/north corners, NE'lies and junky later. Tue: weak, waist–chest, average; S-facing cleanest in the morning. Wed: worth a look early, peaky chest high. — Surfline forecaster (Anthony Spinks), Sun 18 Oct",
  "water_temp_c": 20,
@@ -18,9 +18,11 @@
   "last_light": "7:36pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
-  "affected": [],
+  "level": "alert",
+  "summary": "Tagged White Shark #2855 detected at North Steyne (Manly) ~8h ago (10:07pm Sat). Only Northern Beaches detection in the last 24h — none at Palm Beach, Curl Curl, Dee Why or Long Reef. Feed is current (newest statewide detection ~30 min ago, South West Rocks; ~34 real detections statewide in 24h). DPI feed returned no features. Tagged-shark pings are receiver detections, not sightings — check the live map before paddling out, and weigh Manly carefully.",
+  "affected": [
+   "manly"
+  ],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
  "tides": {
