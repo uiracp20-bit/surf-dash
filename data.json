@@ -1,25 +1,25 @@
 {
- "published": "2026-10-17T07:30:00+11:00",
+ "published": "2026-10-18T06:11:00+11:00",
  "source": "live",
- "forecaster_note": "Sat: short-period SSE/SE + mixed E swells, S magnets head high plus, elsewhere waist–chest; onshore, bumpy to lumpy but better than Fri — best early. Sun: SE/E mix, head high at S exposures; offshore and clean in the morning, onshore and lumpy from later morning. Mon: smaller peaky waist–chest, clean-ish AM at S magnets/N corners. Tue: weak, junky short-period surf. — Surfline forecaster (Anthony Spinks), Sat 17 Oct",
+ "forecaster_note": "Sun: SE/E swell mix, head high at the south exposures and waist–chest elsewhere; offshore and clean in the morning, onshore and lumpy from later morning. Mon: peaky waist–chest, clean-ish AM at south magnets/north corners, NE'lies and junky later. Tue: weak, waist–chest, average; S-facing cleanest in the morning. Wed: worth a look early, peaky chest high. — Surfline forecaster (Anthony Spinks), Sun 18 Oct",
  "water_temp_c": 20,
- "air_temp_c": 15,
+ "air_temp_c": 12,
  "wind": {
-  "speed_kph": 11,
-  "gust_kph": 17,
-  "dir": "ESE",
-  "deg": 104,
-  "relative": "onshore",
-  "summary": "Onshore ESE ~11 kph (gusts ~17) at 6am, 13–14 kph through the morning, ~17 kph mid-afternoon. Cloudy."
+  "speed_kph": 6,
+  "gust_kph": 6,
+  "dir": "W",
+  "deg": 269,
+  "relative": "offshore",
+  "summary": "Light W offshore ~6 kph at dawn through ~9am — clean. Swings onshore E ~13 kph by noon, ~15 kph arvo, 17–22 kph by evening. Clear and cool."
  },
  "sun": {
-  "sunrise": "6:12am",
-  "sunset": "7:09pm",
-  "last_light": "7:35pm"
+  "sunrise": "6:11am",
+  "sunset": "7:10pm",
+  "last_light": "7:36pm"
  },
  "shark": {
-  "level": "clear",
-  "summary": "Northern Beaches (Palm Beach → Manly), last 24h: no shark detections at Palm Beach, Manly, Curl Curl, Dee Why or Long Reef. Feed is current (newest statewide detection minutes ago, Kiama; ~33 real detections statewide in 24h). Nearest: tagged White Shark at Cronulla ~1h ago (south Sydney, not Northern Beaches). DPI feed returned no features. Always check the live map before paddling out.",
+  "level": "unknown",
+  "summary": "SharkSmart check pending this refresh — tap to check live detections",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
@@ -27,23 +27,23 @@
   "station": "Blue Fish Point, Sydney",
   "events": [
    {
-    "time": "6:12am",
-    "height_m": 0.7,
+    "time": "7:09am",
+    "height_m": 0.8,
     "type": "low"
    },
    {
-    "time": "1:08pm",
-    "height_m": 1.4,
+    "time": "2:05pm",
+    "height_m": 1.3,
     "type": "high"
    },
    {
-    "time": "8:31pm",
+    "time": "9:35pm",
     "height_m": 0.5,
     "type": "low"
    },
    {
-    "time": "2:32am",
-    "height_m": 0.9,
+    "time": "3:54am",
+    "height_m": 1.0,
     "type": "high"
    }
   ]
@@ -52,180 +52,180 @@
   {
    "id": "today",
    "label": "Today",
-   "date": "Sat 17 Oct",
+   "date": "Sun 18 Oct",
    "done": false,
-   "note": "SE 5.8ft @ 9s (~571 kJ) + small E swells. Onshore ESE all day — lumpy but better than Fri. Long Reef/Curl Curl biggest; go early on the low.",
-   "surfline_text": "Short period SSE/SE swell is joined by some mixed easterly swells. Sth magnets will still be picking up the most size - in the head high plus range. Most other beaches will be waist to chest. We're still going to be battling the onshore winds - best chance for something cleaner is the early morning. It will be bumpy to lumpy, but better than Friday.",
+   "note": "SE 4ft @ 9s + short E swells (~361 kJ). Offshore and clean at dawn, onshore and lumpy from late morning — Long Reef/Curl Curl biggest. Be in the water by 7am on the low.",
+   "surfline_text": "SE and E swell mix should give us something head high at the south exposures with waist to chest at other breaks. Winds expected to go offshore in the morning with clean surf. Then  onshore and lumpy from later morning. ",
    "spots": {
     "dee-why": {
      "status": "live",
-     "rating": "poor-fair",
-     "size_ft": "2–3",
-     "size_desc": "Chest–overhead",
-     "energy_kj": 571,
+     "rating": "fair",
+     "size_ft": "1–3",
+     "size_desc": "Waist–shoulder",
+     "energy_kj": 361,
      "consistency": null,
-     "wind_rel": "onshore",
+     "wind_rel": "offshore-am",
      "swells": [
       {
-       "h_ft": 5.8,
+       "h_ft": 4.0,
        "period_s": 9,
        "dir": "SE",
-       "deg": 145,
-       "label": "SE swell, 9s, ~502 kJ — short period; SE (145°) wraps better than dead S into Dee Why but onshore lump spoils it"
+       "deg": 150,
+       "label": "SE swell, 9s, ~237 kJ — short period; SE (150°) wraps OK into Dee Why, clean on the dawn offshore"
       },
       {
-       "h_ft": 1.5,
+       "h_ft": 2.5,
+       "period_s": 7,
+       "dir": "E",
+       "deg": 94,
+       "label": "Short-period E wind swell, 7s, ~62 kJ"
+      },
+      {
+       "h_ft": 1.8,
        "period_s": 10,
        "dir": "E",
-       "deg": 86,
-       "label": "Small E swell, 10s, ~42 kJ"
-      },
-      {
-       "h_ft": 1.0,
-       "period_s": 12,
-       "dir": "E",
-       "deg": 83,
-       "label": "Small E groundswell, 12s, ~27 kJ"
+       "deg": 85,
+       "label": "Small E swell, 10s, ~62 kJ"
       }
      ],
-     "window": "Onshore E ~11–14 kph (gusts ~17) through the morning, ~17 kph mid-afternoon. Low 6:12am (0.7m), high 1:08pm (1.4m). Early on the low is the best shot; improves to fair around midday as wind holds lighter. SE wraps OK into the Point but bumpy.",
-     "alerts": [
-      "Persistent E onshore all day — lumpy"
-     ],
+     "window": "Light W offshore ~6 kph from dawn to ~9am, then swings onshore E ~13 kph by noon, ~15 kph arvo. Low 7:09am (0.8m), high 2:05pm (1.3m). Be in by 7am. Dee Why is a touch smaller than the south magnets but clean.",
      "tip": {
       "label": "Frontside Point",
-      "text": "SE 9s wraps into the Point — rights are frontside but bumpy. Go early on the low, pick the cleanest bank."
-     }
+      "text": "SE 9s wraps into the Point — rights are frontside and clean on the dawn offshore. Be out by 7am before the E lump builds."
+     },
+     "alerts": [
+      "Onshore E from late morning — go early"
+     ]
     },
     "long-reef": {
      "status": "live",
-     "rating": "poor-fair",
-     "size_ft": "2–4",
-     "size_desc": "Head–2ft overhead",
-     "energy_kj": 571,
+     "rating": "fair",
+     "size_ft": "2–3",
+     "size_desc": "Chest–overhead",
+     "energy_kj": 361,
      "consistency": null,
-     "wind_rel": "onshore",
+     "wind_rel": "offshore-am",
      "swells": [
       {
-       "h_ft": 5.8,
+       "h_ft": 4.0,
        "period_s": 9,
        "dir": "SE",
-       "deg": 145,
-       "label": "SE swell, 9s, ~502 kJ — short period; SE (145°) wraps better than dead S into Dee Why but onshore lump spoils it"
+       "deg": 150,
+       "label": "SE swell, 9s, ~237 kJ — short period; SE (150°) wraps OK into Dee Why, clean on the dawn offshore"
       },
       {
-       "h_ft": 1.5,
+       "h_ft": 2.5,
+       "period_s": 7,
+       "dir": "E",
+       "deg": 94,
+       "label": "Short-period E wind swell, 7s, ~62 kJ"
+      },
+      {
+       "h_ft": 1.8,
        "period_s": 10,
        "dir": "E",
-       "deg": 86,
-       "label": "Small E swell, 10s, ~42 kJ"
-      },
-      {
-       "h_ft": 1.0,
-       "period_s": 12,
-       "dir": "E",
-       "deg": 83,
-       "label": "Small E groundswell, 12s, ~27 kJ"
+       "deg": 85,
+       "label": "Small E swell, 10s, ~62 kJ"
       }
      ],
-     "window": "Onshore E ~11–14 kph (gusts ~17) through the morning, ~17 kph mid-afternoon. Low 6:12am (0.7m), high 1:08pm (1.4m). S magnet — biggest of the four. Dawn before the lump builds.",
-     "alerts": [
-      "Persistent E onshore all day — lumpy"
-     ],
+     "window": "Light W offshore ~6 kph from dawn to ~9am, then swings onshore E ~13 kph by noon, ~15 kph arvo. Low 7:09am (0.8m), high 2:05pm (1.3m). Be in by 7am. S magnet, biggest of the four.",
      "tip": {
       "label": "Backside Lefts",
-      "text": "Most size and punch here. Backside on the lefts early; expect lump."
-     }
+      "text": "S magnet — most size here. Backside on the lefts at dawn while it's offshore."
+     },
+     "alerts": [
+      "Onshore E from late morning — go early"
+     ]
     },
     "curl-curl": {
      "status": "live",
-     "rating": "poor-fair",
-     "size_ft": "2–3+",
-     "size_desc": "Chest–1ft overhead",
-     "energy_kj": 571,
+     "rating": "fair",
+     "size_ft": "2–3",
+     "size_desc": "Chest–overhead",
+     "energy_kj": 361,
      "consistency": null,
-     "wind_rel": "onshore",
+     "wind_rel": "offshore-am",
      "swells": [
       {
-       "h_ft": 5.8,
+       "h_ft": 4.0,
        "period_s": 9,
        "dir": "SE",
-       "deg": 145,
-       "label": "SE swell, 9s, ~502 kJ — short period; SE (145°) wraps better than dead S into Dee Why but onshore lump spoils it"
+       "deg": 150,
+       "label": "SE swell, 9s, ~237 kJ — short period; SE (150°) wraps OK into Dee Why, clean on the dawn offshore"
       },
       {
-       "h_ft": 1.5,
+       "h_ft": 2.5,
+       "period_s": 7,
+       "dir": "E",
+       "deg": 94,
+       "label": "Short-period E wind swell, 7s, ~62 kJ"
+      },
+      {
+       "h_ft": 1.8,
        "period_s": 10,
        "dir": "E",
-       "deg": 86,
-       "label": "Small E swell, 10s, ~42 kJ"
-      },
-      {
-       "h_ft": 1.0,
-       "period_s": 12,
-       "dir": "E",
-       "deg": 83,
-       "label": "Small E groundswell, 12s, ~27 kJ"
+       "deg": 85,
+       "label": "Small E swell, 10s, ~62 kJ"
       }
      ],
-     "window": "Onshore E ~11–14 kph (gusts ~17) through the morning, ~17 kph mid-afternoon. Low 6:12am (0.7m), high 1:08pm (1.4m). South end picks up the most size; north end a touch more sheltered.",
-     "alerts": [
-      "Persistent E onshore all day — lumpy"
-     ],
+     "window": "Light W offshore ~6 kph from dawn to ~9am, then swings onshore E ~13 kph by noon, ~15 kph arvo. Low 7:09am (0.8m), high 2:05pm (1.3m). Be in by 7am. South end picks up the most size.",
      "tip": {
       "label": "Backside Lefts",
-      "text": "Punchy but bumpy. North end at dawn; backside on the lefts."
-     }
+      "text": "South end picks up the most size; backside on the lefts early, north end a touch more sheltered."
+     },
+     "alerts": [
+      "Onshore E from late morning — go early"
+     ]
     },
     "manly": {
      "status": "live",
-     "rating": "poor-fair",
-     "size_ft": "1–2+",
-     "size_desc": "Thigh–stomach",
-     "energy_kj": 571,
+     "rating": "fair",
+     "size_ft": "1–3",
+     "size_desc": "Waist–chest",
+     "energy_kj": 361,
      "consistency": null,
-     "wind_rel": "onshore",
+     "wind_rel": "offshore-am",
      "swells": [
       {
-       "h_ft": 5.8,
+       "h_ft": 4.0,
        "period_s": 9,
        "dir": "SE",
-       "deg": 145,
-       "label": "SE swell, 9s, ~502 kJ — short period; SE (145°) wraps better than dead S into Dee Why but onshore lump spoils it"
+       "deg": 150,
+       "label": "SE swell, 9s, ~237 kJ — short period; SE (150°) wraps OK into Dee Why, clean on the dawn offshore"
       },
       {
-       "h_ft": 1.5,
+       "h_ft": 2.5,
+       "period_s": 7,
+       "dir": "E",
+       "deg": 94,
+       "label": "Short-period E wind swell, 7s, ~62 kJ"
+      },
+      {
+       "h_ft": 1.8,
        "period_s": 10,
        "dir": "E",
-       "deg": 86,
-       "label": "Small E swell, 10s, ~42 kJ"
-      },
-      {
-       "h_ft": 1.0,
-       "period_s": 12,
-       "dir": "E",
-       "deg": 83,
-       "label": "Small E groundswell, 12s, ~27 kJ"
+       "deg": 85,
+       "label": "Small E swell, 10s, ~62 kJ"
       }
      ],
-     "window": "Onshore E ~11–14 kph (gusts ~17) through the morning, ~17 kph mid-afternoon. Low 6:12am (0.7m), high 1:08pm (1.4m). Smallest of the four (camera-confirmed). Skip unless the others are crowded.",
-     "alerts": [
-      "Persistent E onshore all day — lumpy"
-     ],
+     "window": "Light W offshore ~6 kph from dawn to ~9am, then swings onshore E ~13 kph by noon, ~15 kph arvo. Low 7:09am (0.8m), high 2:05pm (1.3m). Be in by 7am. Smallest of the four.",
      "tip": {
       "label": "Frontside/Right",
-      "text": "Small and wobbly under the E wind. Only if you want an easy paddle."
-     }
+      "text": "Smallest of the four and fades once the E wind arrives. Easy paddle if the others are crowded."
+     },
+     "alerts": [
+      "Onshore E from late morning — go early"
+     ]
     }
    }
   },
   {
    "id": "tomorrow",
    "label": "Tomorrow",
-   "date": "Sun 18 Oct",
+   "date": "Mon 19 Oct",
    "done": false,
-   "note": "Best of the weekend: SE/E mix, head high at S exposures, offshore and clean at dawn, onshore from later morning. Be in the water by 7am.",
-   "surfline_text": "SE and E swell mix should give us something head high at the south exposures with waist to chest at other breaks. Winds expected to go offshore in the morning with clean surf. Then  onshore and lumpy from later morning. ",
+   "note": "Smaller peaky waist–chest. Clean-ish at dawn, particularly at the south magnets / north corners; NE and junky later.",
+   "surfline_text": "Some peaky surf about in the waist to chest range. Should be clean to cleanish in the morning - particularly for the south magnets / north corners. Later NE'lies and junky for most spots - OK for the proper S facing spots.",
    "spots": {
     "dee-why": {
      "status": "estimated",
@@ -235,19 +235,9 @@
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Offshore W at dawn (~4 kph), clean; turns onshore E ~12 kph by noon. Low 7:09am (0.8m), high 2:05pm (1.3m). Dawn to ~9am is the window."
+     "window": "Offshore W/NW at dawn (~6 kph), clean-ish; turns NE and junky later. High 3:54am, low 8:32am (0.8m), high 3:11pm (1.3m). Dawn to ~9am is the window."
     },
     "long-reef": {
-     "status": "estimated",
-     "rating": "fair",
-     "size_ft": "3–4",
-     "size_desc": "Chest–head",
-     "energy_kj": null,
-     "consistency": null,
-     "wind_rel": "offshore-am",
-     "window": "S magnet head high. Offshore and clean early, lumpy from late morning."
-    },
-    "curl-curl": {
      "status": "estimated",
      "rating": "fair",
      "size_ft": "2–3",
@@ -255,9 +245,9 @@
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "SE/E mix; clean early on the light offshore, onshore later."
+     "window": "Peaky; clean-ish early at the south magnets, NE'lies and junky later (OK at proper S-facing spots)."
     },
-    "manly": {
+    "curl-curl": {
      "status": "estimated",
      "rating": "fair",
      "size_ft": "2–3",
@@ -265,149 +255,159 @@
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Clean at dawn; onshore and wobbly from mid-morning."
+     "window": "South end cleanest early; NE junk from mid-morning."
+    },
+    "manly": {
+     "status": "estimated",
+     "rating": "poor-fair",
+     "size_ft": "1–2",
+     "size_desc": "Thigh–waist",
+     "energy_kj": null,
+     "consistency": null,
+     "wind_rel": "offshore-am",
+     "window": "Smaller and wobbly; cleanish only at dawn, NE and junky after."
     }
    }
   },
   {
    "id": "weekend",
    "label": "Weekend",
-   "date": "Sat 17 – Sun 18 Oct",
+   "date": "Sun 18 Oct",
    "done": false,
-   "note": "Sun dawn is the pick (offshore, clean). Sat lumpy, early only. Coming up: Mon smaller peaky waist–chest, clean-ish AM; Tue weak and junky.",
-   "surfline_text": "Short period SSE/SE swell is joined by some mixed easterly swells. Sth magnets will still be picking up the most size - in the head high plus range. Most other beaches will be waist to chest. We're still going to be battling the onshore winds - best chance for something cleaner is the early morning. It will be bumpy to lumpy, but better than Friday. SE and E swell mix should give us something head high at the south exposures with waist to chest at other breaks. Winds expected to go offshore in the morning with clean surf. Then  onshore and lumpy from later morning. ",
+   "note": "Sun dawn is the last weekend window (offshore, clean) — onshore from late morning. Coming up: Mon smaller and peaky, clean-ish AM; Tue weak and junky.",
+   "surfline_text": "SE and E swell mix should give us something head high at the south exposures with waist to chest at other breaks. Winds expected to go offshore in the morning with clean surf. Then  onshore and lumpy from later morning. ",
    "spots": {
     "dee-why": {
      "status": "estimated",
      "rating": "fair",
-     "size_ft": "2–3",
-     "size_desc": "Waist–chest",
-     "energy_kj": 571,
+     "size_ft": "1–3",
+     "size_desc": "Waist–shoulder",
+     "energy_kj": 361,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Sat lumpy onshore, early only. Sun: offshore and clean at dawn, onshore from later morning — Sun dawn is the pick of the weekend.",
      "swells": [
       {
-       "h_ft": 5.8,
+       "h_ft": 4.0,
        "period_s": 9,
        "dir": "SE",
-       "deg": 145,
-       "label": "SE swell, 9s, ~502 kJ — short period; SE (145°) wraps better than dead S into Dee Why but onshore lump spoils it"
+       "deg": 150,
+       "label": "SE swell, 9s, ~237 kJ — short period; SE (150°) wraps OK into Dee Why, clean on the dawn offshore"
       },
       {
-       "h_ft": 1.5,
+       "h_ft": 2.5,
+       "period_s": 7,
+       "dir": "E",
+       "deg": 94,
+       "label": "Short-period E wind swell, 7s, ~62 kJ"
+      },
+      {
+       "h_ft": 1.8,
        "period_s": 10,
        "dir": "E",
-       "deg": 86,
-       "label": "Small E swell, 10s, ~42 kJ"
-      },
-      {
-       "h_ft": 1.0,
-       "period_s": 12,
-       "dir": "E",
-       "deg": 83,
-       "label": "Small E groundswell, 12s, ~27 kJ"
+       "deg": 85,
+       "label": "Small E swell, 10s, ~62 kJ"
       }
-     ]
+     ],
+     "window": "Sun is the weekend's last day: offshore and clean at dawn, onshore and lumpy from later morning. Coming up: Mon smaller peaky waist–chest, clean-ish AM; Tue weak and junky."
     },
     "long-reef": {
      "status": "estimated",
      "rating": "fair",
-     "size_ft": "3–4",
-     "size_desc": "Chest–head",
-     "energy_kj": 571,
+     "size_ft": "2–3",
+     "size_desc": "Chest–overhead",
+     "energy_kj": 361,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Sat lumpy onshore, early only. Sun: offshore and clean at dawn, onshore from later morning — Sun dawn is the pick of the weekend.",
      "swells": [
       {
-       "h_ft": 5.8,
+       "h_ft": 4.0,
        "period_s": 9,
        "dir": "SE",
-       "deg": 145,
-       "label": "SE swell, 9s, ~502 kJ — short period; SE (145°) wraps better than dead S into Dee Why but onshore lump spoils it"
+       "deg": 150,
+       "label": "SE swell, 9s, ~237 kJ — short period; SE (150°) wraps OK into Dee Why, clean on the dawn offshore"
       },
       {
-       "h_ft": 1.5,
+       "h_ft": 2.5,
+       "period_s": 7,
+       "dir": "E",
+       "deg": 94,
+       "label": "Short-period E wind swell, 7s, ~62 kJ"
+      },
+      {
+       "h_ft": 1.8,
        "period_s": 10,
        "dir": "E",
-       "deg": 86,
-       "label": "Small E swell, 10s, ~42 kJ"
-      },
-      {
-       "h_ft": 1.0,
-       "period_s": 12,
-       "dir": "E",
-       "deg": 83,
-       "label": "Small E groundswell, 12s, ~27 kJ"
+       "deg": 85,
+       "label": "Small E swell, 10s, ~62 kJ"
       }
-     ]
+     ],
+     "window": "Sun is the weekend's last day: offshore and clean at dawn, onshore and lumpy from later morning. Coming up: Mon smaller peaky waist–chest, clean-ish AM; Tue weak and junky."
     },
     "curl-curl": {
      "status": "estimated",
      "rating": "fair",
      "size_ft": "2–3",
-     "size_desc": "Waist–chest+",
-     "energy_kj": 571,
+     "size_desc": "Chest–overhead",
+     "energy_kj": 361,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Sat lumpy onshore, early only. Sun: offshore and clean at dawn, onshore from later morning — Sun dawn is the pick of the weekend.",
      "swells": [
       {
-       "h_ft": 5.8,
+       "h_ft": 4.0,
        "period_s": 9,
        "dir": "SE",
-       "deg": 145,
-       "label": "SE swell, 9s, ~502 kJ — short period; SE (145°) wraps better than dead S into Dee Why but onshore lump spoils it"
+       "deg": 150,
+       "label": "SE swell, 9s, ~237 kJ — short period; SE (150°) wraps OK into Dee Why, clean on the dawn offshore"
       },
       {
-       "h_ft": 1.5,
+       "h_ft": 2.5,
+       "period_s": 7,
+       "dir": "E",
+       "deg": 94,
+       "label": "Short-period E wind swell, 7s, ~62 kJ"
+      },
+      {
+       "h_ft": 1.8,
        "period_s": 10,
        "dir": "E",
-       "deg": 86,
-       "label": "Small E swell, 10s, ~42 kJ"
-      },
-      {
-       "h_ft": 1.0,
-       "period_s": 12,
-       "dir": "E",
-       "deg": 83,
-       "label": "Small E groundswell, 12s, ~27 kJ"
+       "deg": 85,
+       "label": "Small E swell, 10s, ~62 kJ"
       }
-     ]
+     ],
+     "window": "Sun is the weekend's last day: offshore and clean at dawn, onshore and lumpy from later morning. Coming up: Mon smaller peaky waist–chest, clean-ish AM; Tue weak and junky."
     },
     "manly": {
      "status": "estimated",
      "rating": "fair",
-     "size_ft": "2–3",
+     "size_ft": "1–3",
      "size_desc": "Waist–chest",
-     "energy_kj": 571,
+     "energy_kj": 361,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Sat lumpy onshore, early only. Sun: offshore and clean at dawn, onshore from later morning — Sun dawn is the pick of the weekend.",
      "swells": [
       {
-       "h_ft": 5.8,
+       "h_ft": 4.0,
        "period_s": 9,
        "dir": "SE",
-       "deg": 145,
-       "label": "SE swell, 9s, ~502 kJ — short period; SE (145°) wraps better than dead S into Dee Why but onshore lump spoils it"
+       "deg": 150,
+       "label": "SE swell, 9s, ~237 kJ — short period; SE (150°) wraps OK into Dee Why, clean on the dawn offshore"
       },
       {
-       "h_ft": 1.5,
+       "h_ft": 2.5,
+       "period_s": 7,
+       "dir": "E",
+       "deg": 94,
+       "label": "Short-period E wind swell, 7s, ~62 kJ"
+      },
+      {
+       "h_ft": 1.8,
        "period_s": 10,
        "dir": "E",
-       "deg": 86,
-       "label": "Small E swell, 10s, ~42 kJ"
-      },
-      {
-       "h_ft": 1.0,
-       "period_s": 12,
-       "dir": "E",
-       "deg": 83,
-       "label": "Small E groundswell, 12s, ~27 kJ"
+       "deg": 85,
+       "label": "Small E swell, 10s, ~62 kJ"
       }
-     ]
+     ],
+     "window": "Sun is the weekend's last day: offshore and clean at dawn, onshore and lumpy from later morning. Coming up: Mon smaller peaky waist–chest, clean-ish AM; Tue weak and junky."
     }
    }
   }
