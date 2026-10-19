@@ -18,8 +18,8 @@
   "last_light": "7:38pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "alert",
+  "summary": "SLS drone sighting at North Palm Beach — a shark was sighted by drone at 3:01pm Mon 19 Oct (~15h ago). Palm Beach is at the northern end of the Northern Beaches; none of your 4 tracked spots (Dee Why, Long Reef, Curl Curl, North Steyne) has a detection in the last 24h. Feed is current — newest statewide detection ~30 min ago (Hawks Nest); ~43 real detections statewide in 24h. DPI feed returned no features. Detections are receiver pings or drone sightings, not a guarantee — check the live map before paddling out.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
