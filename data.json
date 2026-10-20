@@ -18,8 +18,8 @@
   "last_light": "7:38pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "alert",
+  "summary": "3 Northern Beaches-area detections in the last 24h, none at your 4 tracked spots: tagged White Shark #3654 pinged the Palm Beach receiver at 12:02am Wed (~7h ago); SLS shark reported at Shelly Beach (Manly, beach closed) 12:20pm Tue (~18h ago); SLS drone sighting at Newport Beach 8:25am Tue (~22h ago). Feed is current — newest statewide detection ~2h ago; ~42 real detections statewide in 24h. DPI feed returned no features. Detections are receiver pings or sightings, not a guarantee — check the live map before paddling out.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
