@@ -18,8 +18,8 @@
   "last_light": "7:42pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "clear",
+  "summary": "No tagged-shark or SLS drone detections Palm Beach → Manly in the last 24h (feed current, newest statewide ping ~6 min ago). 32 real detections statewide in 24h — mostly Mid North/North Coast and Port Stephens tagged pings; closest to Sydney: Killcare (Central Coast, north of Palm Beach, ~17h ago) and Stanwell Park (~10h ago). DPI feed returned no features. Absence of detections is not a guarantee — check the live map before paddling out.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
