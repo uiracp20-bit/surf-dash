@@ -1,5 +1,5 @@
 {
- "published": "2026-10-26T06:16:22+11:00",
+ "published": "2026-10-26T06:17:21+11:00",
  "source": "live",
  "forecaster_note": "Mon: easing ENE/NE swell, head high to slightly overhead early, brief offshore around dawn then a southerly change — sheltered southern corners hold clean. Tue: S swell head-high to overhead at southern magnets, chest high on E-facing beaches, light offshore early then onshore. — Surfline forecaster, Mon 26 Oct",
  "water_temp_c": 21,
@@ -18,8 +18,8 @@
   "last_light": "7:43pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "alert",
+  "summary": "1 tagged white shark detection in the Palm Beach → Manly zone in the last 24h: Palm Beach receiver, ~19h ago (10:55am Sun, tagged White Shark #3689). Nothing at Dee Why, Long Reef, Curl Curl or Manly. Feed current (newest statewide ping ~6 min ago); ~60 real detections statewide in 24h (Maroubra, Hawks Nest and Port Stephens most active). DPI feed returned no features. Absence of detections is not a guarantee — check the live map before paddling out.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
