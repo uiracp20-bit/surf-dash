@@ -1,25 +1,25 @@
 {
- "published": "2026-10-25T06:17:00+11:00",
+ "published": "2026-10-26T06:16:22+11:00",
  "source": "live",
- "forecaster_note": "Sun: chest to head high surf from the swell mix with traces of longer S swell. N winds all day — hit the S-facing spots for the cleanest conditions, lumpier elsewhere. Big morning high tide, so some spots are struggling to break early. Mon: easing ENE/NE swell, head high to slightly overhead with a brief offshore dawn before a southerly change. — Surfline forecaster, Sun 25 Oct",
- "water_temp_c": 20,
- "air_temp_c": 19,
+ "forecaster_note": "Mon: easing ENE/NE swell, head high to slightly overhead early, brief offshore around dawn then a southerly change — sheltered southern corners hold clean. Tue: S swell head-high to overhead at southern magnets, chest high on E-facing beaches, light offshore early then onshore. — Surfline forecaster, Mon 26 Oct",
+ "water_temp_c": 21,
+ "air_temp_c": 18,
  "wind": {
-  "speed_kph": 11,
-  "gust_kph": 37,
-  "dir": "NNW",
-  "deg": 343,
+  "speed_kph": 31,
+  "gust_kph": 44,
+  "dir": "S",
+  "deg": 189,
   "relative": "cross",
-  "summary": "NNW 11 kph (gust 37) at 6am, NNW ~21 kph (gust 37) by 9am, N 17–21 kph through the arvo. Mostly clear, ~19°C."
+  "summary": "S 31 kph (gust 44) at 6am, S 24 kph by 9am, S 20 kph noon, SE 20 kph arvo — southerly change through. Light showers, ~18°C."
  },
  "sun": {
-  "sunrise": "6:03am",
-  "sunset": "7:16pm",
-  "last_light": "7:42pm"
+  "sunrise": "6:02am",
+  "sunset": "7:17pm",
+  "last_light": "7:43pm"
  },
  "shark": {
-  "level": "clear",
-  "summary": "No tagged-shark or SLS drone detections Palm Beach → Manly in the last 24h (feed current, newest statewide ping ~6 min ago). 32 real detections statewide in 24h — mostly Mid North/North Coast and Port Stephens tagged pings; closest to Sydney: Killcare (Central Coast, north of Palm Beach, ~17h ago) and Stanwell Park (~10h ago). DPI feed returned no features. Absence of detections is not a guarantee — check the live map before paddling out.",
+  "level": "unknown",
+  "summary": "SharkSmart check pending this refresh — tap to check live detections",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
@@ -27,22 +27,22 @@
   "station": "Blue Fish Point, Sydney",
   "events": [
    {
-    "time": "1:49am",
+    "time": "2:25am",
     "height_m": 0.3,
     "type": "low"
    },
    {
-    "time": "8:08am",
-    "height_m": 1.6,
+    "time": "8:46am",
+    "height_m": 1.7,
     "type": "high"
    },
    {
-    "time": "2:26pm",
-    "height_m": 0.3,
+    "time": "3:11pm",
+    "height_m": 0.2,
     "type": "low"
    },
    {
-    "time": "8:25pm",
+    "time": "9:10pm",
     "height_m": 1.4,
     "type": "high"
    }
@@ -52,111 +52,132 @@
   {
    "id": "today",
    "label": "Today",
-   "date": "Sun 25 Oct",
+   "date": "Mon 26 Oct",
    "done": false,
-   "note": "Chest-to-head NE wind swell (~589 kJ, 8s) with big 8am high tide; N winds all day but light before 9am. S-facing / Curl Curl cleanest — go 8–11am once the tide drains a touch.",
-   "surfline_text": "Chest to head high surf from the swell mix, with some traces of underlying longer S swell. N winds all day - hit up the south facing spots for cleanest conditions. Lumpier elsewhere. Factor in the big morning high tide if going early as some spots are struggling to break.",
+   "note": "Easing NE/ENE swell (762 kJ, 10s) but southerly already in at 6am — dawn offshore gone. Go S end of Curl Curl / Manly corner; exposures bumpy. Light showers.",
+   "surfline_text": "Nice mix of easing ENE / NE swell for the early with head to maybe slightly overhead surf at most spots. Perhaps a brief offshore window around dawn otherwise S winds. Sheltered southern corners probably the best bet for lasting clean surf. Once the south change is through we'll see slowly building surf at exposures into the overhead range but junky and onshore - sheltered southern corners continue clean to cleanish all day with fun sized surf from easing ENE swell mix.",
    "spots": {
     "dee-why": {
      "status": "live",
      "rating": "poor-fair",
-     "size_ft": "1–3",
-     "size_desc": "Waist–head",
-     "energy_kj": 589,
+     "size_ft": "2–3",
+     "size_desc": "Chest–head",
+     "energy_kj": 762,
      "consistency": null,
      "wind_rel": "cross-off",
      "swells": [
       {
-       "h_ft": 6.9,
-       "period_s": 8,
+       "h_ft": 5.0,
+       "period_s": 10,
        "dir": "NE",
-       "deg": 56,
-       "label": "NE swell, 8s, ~581 kJ — dominant short-period wind swell"
+       "deg": 41,
+       "label": "NE swell, 10s, ~428 kJ — dominant, easing"
       },
       {
-       "h_ft": 0.3,
-       "period_s": 19,
-       "dir": "S",
-       "deg": 188,
-       "label": "S swell, 19s, ~7 kJ — minor long-period background"
+       "h_ft": 4.6,
+       "period_s": 9,
+       "dir": "ENE",
+       "deg": 67,
+       "label": "ENE swell, 9s, ~328 kJ — easing"
+      },
+      {
+       "h_ft": 1.8,
+       "period_s": 3,
+       "dir": "W",
+       "deg": 272,
+       "label": "W windchop, 3s, ~6 kJ — negligible"
       }
      ],
-     "window": "Sun 25: NNW 11 kph (gust 37) at 6am, NNW 21 kph (gust 37) 9am, N 17 kph noon, N ~21 kph arvo. High 8:08am (1.59m), low 2:26pm (0.28m), high 8:25pm (1.44m). Big morning high — some spots struggle to break; S-facing cleanest.",
+     "window": "Mon 26: S 31 kph (gust 44) at 6am — dawn offshore already gone — S 24 kph (gust 35) 9am, S 20 kph noon, SE 20 kph arvo. High 8:46am (1.7m), low 3:11pm (0.2m).",
      "alerts": [
-      "Big morning high tide (8:08am, 1.59m) — some banks struggling to break",
-      "N winds all day — S-facing cleanest"
+      "Southerly already in at 6am — dawn offshore window gone",
+      "Sheltered southern corners hold cleanest; exposures junky/onshore"
      ],
      "tip": {
       "label": "Frontside Point",
-      "text": "Short-period NE 8s with a big, punchy 589 kJ — Point rights are frontside but N wind gives chop; high tide first up smothers it. Hunt the S end / go mid-morning."
+      "text": "Punchy NE/ENE 10s (762 kJ) but S wind at 31 kph is cross-on and bumpy; Point rights frontside, S end of the beach the cleanest bit. Dawn only."
      }
     },
     "long-reef": {
      "status": "live",
-     "rating": "fair",
+     "rating": "poor-fair",
      "size_ft": "1–3",
-     "size_desc": "Waist–shoulder",
-     "energy_kj": 589,
+     "size_desc": "Waist–chest",
+     "energy_kj": 762,
      "consistency": null,
-     "wind_rel": "offshore-am",
+     "wind_rel": "cross-off",
      "swells": [
       {
-       "h_ft": 6.9,
-       "period_s": 8,
+       "h_ft": 5.0,
+       "period_s": 10,
        "dir": "NE",
-       "deg": 56,
-       "label": "NE swell, 8s, ~581 kJ — dominant short-period wind swell"
+       "deg": 41,
+       "label": "NE swell, 10s, ~428 kJ — dominant, easing"
       },
       {
-       "h_ft": 0.3,
-       "period_s": 19,
-       "dir": "S",
-       "deg": 188,
-       "label": "S swell, 19s, ~7 kJ — minor long-period background"
+       "h_ft": 4.6,
+       "period_s": 9,
+       "dir": "ENE",
+       "deg": 67,
+       "label": "ENE swell, 9s, ~328 kJ — easing"
+      },
+      {
+       "h_ft": 1.8,
+       "period_s": 3,
+       "dir": "W",
+       "deg": 272,
+       "label": "W windchop, 3s, ~6 kJ — negligible"
       }
      ],
-     "window": "Sun 25: NNW 11 kph (gust 37) at 6am, NNW 21 kph (gust 37) 9am, N 17 kph noon, N ~21 kph arvo. High 8:08am (1.59m), low 2:26pm (0.28m), high 8:25pm (1.44m). Big morning high — some spots struggle to break; S-facing cleanest.",
+     "window": "Mon 26: S 31 kph (gust 44) at 6am — dawn offshore already gone — S 24 kph (gust 35) 9am, S 20 kph noon, SE 20 kph arvo. High 8:46am (1.7m), low 3:11pm (0.2m).",
      "alerts": [
-      "Big morning high tide (8:08am, 1.59m) — some banks struggling to break",
-      "N winds all day — S-facing cleanest"
+      "Southerly already in at 6am — dawn offshore window gone",
+      "Sheltered southern corners hold cleanest; exposures junky/onshore"
      ],
      "tip": {
       "label": "Backside lefts",
-      "text": "Lefts are backside here; N offshore-ish keeps it tidy but the high tide makes it soft. Best on the push after 9am."
+      "text": "Lefts are backside; S wind is straight onshore here — sheltered S corner only, otherwise skip."
      }
     },
     "curl-curl": {
      "status": "live",
-     "rating": "fair",
+     "rating": "poor-fair",
      "size_ft": "2–3",
-     "size_desc": "Chest–overhead",
-     "energy_kj": 589,
+     "size_desc": "Chest–1ft overhead",
+     "energy_kj": 762,
      "consistency": null,
-     "wind_rel": "offshore-am",
+     "wind_rel": "cross-off",
      "swells": [
       {
-       "h_ft": 6.9,
-       "period_s": 8,
+       "h_ft": 5.0,
+       "period_s": 10,
        "dir": "NE",
-       "deg": 56,
-       "label": "NE swell, 8s, ~581 kJ — dominant short-period wind swell"
+       "deg": 41,
+       "label": "NE swell, 10s, ~428 kJ — dominant, easing"
       },
       {
-       "h_ft": 0.3,
-       "period_s": 19,
-       "dir": "S",
-       "deg": 188,
-       "label": "S swell, 19s, ~7 kJ — minor long-period background"
+       "h_ft": 4.6,
+       "period_s": 9,
+       "dir": "ENE",
+       "deg": 67,
+       "label": "ENE swell, 9s, ~328 kJ — easing"
+      },
+      {
+       "h_ft": 1.8,
+       "period_s": 3,
+       "dir": "W",
+       "deg": 272,
+       "label": "W windchop, 3s, ~6 kJ — negligible"
       }
      ],
-     "window": "Sun 25: NNW 11 kph (gust 37) at 6am, NNW 21 kph (gust 37) 9am, N 17 kph noon, N ~21 kph arvo. High 8:08am (1.59m), low 2:26pm (0.28m), high 8:25pm (1.44m). Big morning high — some spots struggle to break; S-facing cleanest.",
+     "window": "Mon 26: S 31 kph (gust 44) at 6am — dawn offshore already gone — S 24 kph (gust 35) 9am, S 20 kph noon, SE 20 kph arvo. High 8:46am (1.7m), low 3:11pm (0.2m).",
      "alerts": [
-      "Big morning high tide (8:08am, 1.59m) — some banks struggling to break",
-      "N winds all day — S-facing cleanest"
+      "Southerly already in at 6am — dawn offshore window gone",
+      "Sheltered southern corners hold cleanest; exposures junky/onshore"
      ],
      "tip": {
       "label": "Peaky beachie",
-      "text": "Best of the four today — S-facing end of Curl Curl is the clean pick; peaky banks, go before the N breeze lifts."
+      "text": "Best of the four — S end of Curl Curl is sheltered from the southerly and holds clean-ish; go early before it lifts."
      }
     },
     "manly": {
@@ -164,33 +185,40 @@
      "rating": "poor-fair",
      "size_ft": "2–3",
      "size_desc": "Chest–overhead",
-     "energy_kj": 589,
+     "energy_kj": 762,
      "consistency": null,
      "wind_rel": "cross-off",
      "swells": [
       {
-       "h_ft": 6.9,
-       "period_s": 8,
+       "h_ft": 5.0,
+       "period_s": 10,
        "dir": "NE",
-       "deg": 56,
-       "label": "NE swell, 8s, ~581 kJ — dominant short-period wind swell"
+       "deg": 41,
+       "label": "NE swell, 10s, ~428 kJ — dominant, easing"
       },
       {
-       "h_ft": 0.3,
-       "period_s": 19,
-       "dir": "S",
-       "deg": 188,
-       "label": "S swell, 19s, ~7 kJ — minor long-period background"
+       "h_ft": 4.6,
+       "period_s": 9,
+       "dir": "ENE",
+       "deg": 67,
+       "label": "ENE swell, 9s, ~328 kJ — easing"
+      },
+      {
+       "h_ft": 1.8,
+       "period_s": 3,
+       "dir": "W",
+       "deg": 272,
+       "label": "W windchop, 3s, ~6 kJ — negligible"
       }
      ],
-     "window": "Sun 25: NNW 11 kph (gust 37) at 6am, NNW 21 kph (gust 37) 9am, N 17 kph noon, N ~21 kph arvo. High 8:08am (1.59m), low 2:26pm (0.28m), high 8:25pm (1.44m). Big morning high — some spots struggle to break; S-facing cleanest.",
+     "window": "Mon 26: S 31 kph (gust 44) at 6am — dawn offshore already gone — S 24 kph (gust 35) 9am, S 20 kph noon, SE 20 kph arvo. High 8:46am (1.7m), low 3:11pm (0.2m).",
      "alerts": [
-      "Big morning high tide (8:08am, 1.59m) — some banks struggling to break",
-      "N winds all day — S-facing cleanest"
+      "Southerly already in at 6am — dawn offshore window gone",
+      "Sheltered southern corners hold cleanest; exposures junky/onshore"
      ],
      "tip": {
       "label": "Beachie peaks",
-      "text": "South end near the corner is the sheltered bit; rest is lumpy on the N wind."
+      "text": "South corner by the wall is the sheltered pick; rest is bumpy on the S breeze."
      }
     }
    }
@@ -198,180 +226,100 @@
   {
    "id": "tomorrow",
    "label": "Tomorrow",
-   "date": "Mon 26 Oct",
+   "date": "Tue 27 Oct",
    "done": false,
-   "note": "Easing ENE/NE swell head high+ at dawn with a brief W/WSW offshore window, then a southerly change from ~9am. Dawn only; sheltered southern corners hold clean after.",
-   "surfline_text": "Nice mix of easing ENE / NE swell for the early with head to maybe slightly overhead surf at most spots. Perhaps a brief offshore window around dawn otherwise S winds. Sheltered southern corners probably the best bet for lasting clean surf. Once the south change is through we'll see slowly building surf at exposures into the overhead range but junky and onshore - sheltered southern corners continue clean to cleanish all day with fun sized surf from easing ENE swell mix.",
+   "note": "S swell arrives (head-high at southern magnets, chest on E-facing; Dee Why wraps poorly off S). Light offshore until ~noon — best AM window of the week.",
+   "surfline_text": "S swell delivers head high to overhead surf at the southern magnets, chest high or so surf on the E facing beaks, smaller for shelter. Light, variable offshore winds offer a promising early morning window, with clean conditions at most breaks Then from later morning S swell gradually eases, with chest to head high sets at the S exposures. Moderate onshore winds develop, adding bump and reducing quality.",
    "spots": {
     "dee-why": {
      "status": "estimated",
      "rating": "fair",
-     "size_ft": "3–5",
-     "size_desc": "Chest–head",
+     "size_ft": "2–4",
+     "size_desc": "Waist–chest",
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Mon 26: NW 19 kph (gust 46) at midnight easing WSW 11 kph at 6am (brief offshore dawn), then S 24 kph (gust 35) by 9am — southerly change. High 8:46am (1.69m)."
+     "window": "Tue 27: Light WNW 9 kph (gust 15) at 9am, SW 6 kph noon — clean early; ENE 20 kph onshore from 3pm. High 9:26am (1.75m), low 3:59pm (0.18m)."
     },
     "long-reef": {
      "status": "estimated",
-     "rating": "poor-fair",
-     "size_ft": "3–5",
-     "size_desc": "Chest–head",
+     "rating": "fair",
+     "size_ft": "2–4",
+     "size_desc": "Waist–chest",
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Mon 26: NW 19 kph (gust 46) at midnight easing WSW 11 kph at 6am (brief offshore dawn), then S 24 kph (gust 35) by 9am — southerly change. High 8:46am (1.69m)."
+     "window": "Tue 27: Light WNW 9 kph (gust 15) at 9am, SW 6 kph noon — clean early; ENE 20 kph onshore from 3pm. High 9:26am (1.75m), low 3:59pm (0.18m)."
     },
     "curl-curl": {
      "status": "estimated",
      "rating": "fair",
-     "size_ft": "3–5",
+     "size_ft": "3–4",
      "size_desc": "Chest–head",
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Mon 26: NW 19 kph (gust 46) at midnight easing WSW 11 kph at 6am (brief offshore dawn), then S 24 kph (gust 35) by 9am — southerly change. High 8:46am (1.69m)."
+     "window": "Tue 27: Light WNW 9 kph (gust 15) at 9am, SW 6 kph noon — clean early; ENE 20 kph onshore from 3pm. High 9:26am (1.75m), low 3:59pm (0.18m)."
     },
     "manly": {
      "status": "estimated",
      "rating": "fair",
-     "size_ft": "3–5",
+     "size_ft": "3–4",
      "size_desc": "Chest–head",
      "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Mon 26: NW 19 kph (gust 46) at midnight easing WSW 11 kph at 6am (brief offshore dawn), then S 24 kph (gust 35) by 9am — southerly change. High 8:46am (1.69m)."
+     "window": "Tue 27: Light WNW 9 kph (gust 15) at 9am, SW 6 kph noon — clean early; ENE 20 kph onshore from 3pm. High 9:26am (1.75m), low 3:59pm (0.18m)."
     }
    }
   },
   {
    "id": "weekend",
    "label": "Weekend",
-   "date": "Sun 25 Oct",
+   "date": "Sat 31 Oct – Sun 1 Nov",
    "done": false,
-   "note": "Rest of the weekend = today: chest-to-head NE swell, N winds all day, S-facing cleanest. Just past the weekend: Mon dawn head high+ before a southerly change; Tue S swell head-high to overhead at southern magnets with a light offshore early.",
-   "surfline_text": "Chest to head high surf from the swell mix, with some traces of underlying longer S swell. N winds all day - hit up the south facing spots for cleanest conditions. Lumpier elsewhere. Factor in the big morning high tide if going early as some spots are struggling to break.",
+   "note": "Beyond Surfline's 4-day range — estimated only. Mid-week: Wed small leftovers, Thu new S swell. Re-check Thu.",
+   "surfline_text": "Surfline forecaster text only runs to Thu 29 Oct. Latest: New south swell is expected to fill in through the day. Should be head high or so, maybe a bit bigger, at the south exposed breaks. Clean to cleanish in the morning with light offshore to SW winds. Then more onshore the rest of the day.",
    "spots": {
     "dee-why": {
      "status": "estimated",
      "rating": "poor-fair",
-     "size_ft": "1–3",
+     "size_ft": "2–4",
      "size_desc": "Waist–head",
-     "energy_kj": 589,
+     "energy_kj": null,
      "consistency": null,
      "wind_rel": "cross-off",
-     "swells": [
-      {
-       "h_ft": 6.9,
-       "period_s": 8,
-       "dir": "NE",
-       "deg": 56,
-       "label": "NE swell, 8s, ~581 kJ — dominant short-period wind swell"
-      },
-      {
-       "h_ft": 0.3,
-       "period_s": 19,
-       "dir": "S",
-       "deg": 188,
-       "label": "S swell, 19s, ~7 kJ — minor long-period background"
-      }
-     ],
-     "window": "Sun 25: NNW 11 kph (gust 37) at 6am, NNW 21 kph (gust 37) 9am, N 17 kph noon, N ~21 kph arvo. High 8:08am (1.59m), low 2:26pm (0.28m), high 8:25pm (1.44m). Big morning high — some spots struggle to break; S-facing cleanest.",
-     "alerts": [
-      "Big morning high tide (8:08am, 1.59m) — some banks struggling to break",
-      "N winds all day — S-facing cleanest"
-     ]
+     "window": "Beyond Surfline's 4-day window (data ends Thu 29). Thu: new S swell filling in, head high at S-exposed breaks, light offshore AM then onshore — check back mid-week."
     },
     "long-reef": {
      "status": "estimated",
-     "rating": "fair",
-     "size_ft": "1–3",
-     "size_desc": "Waist–shoulder",
-     "energy_kj": 589,
+     "rating": "poor-fair",
+     "size_ft": "2–4",
+     "size_desc": "Waist–head",
+     "energy_kj": null,
      "consistency": null,
-     "wind_rel": "offshore-am",
-     "swells": [
-      {
-       "h_ft": 6.9,
-       "period_s": 8,
-       "dir": "NE",
-       "deg": 56,
-       "label": "NE swell, 8s, ~581 kJ — dominant short-period wind swell"
-      },
-      {
-       "h_ft": 0.3,
-       "period_s": 19,
-       "dir": "S",
-       "deg": 188,
-       "label": "S swell, 19s, ~7 kJ — minor long-period background"
-      }
-     ],
-     "window": "Sun 25: NNW 11 kph (gust 37) at 6am, NNW 21 kph (gust 37) 9am, N 17 kph noon, N ~21 kph arvo. High 8:08am (1.59m), low 2:26pm (0.28m), high 8:25pm (1.44m). Big morning high — some spots struggle to break; S-facing cleanest.",
-     "alerts": [
-      "Big morning high tide (8:08am, 1.59m) — some banks struggling to break",
-      "N winds all day — S-facing cleanest"
-     ]
+     "wind_rel": "cross-off",
+     "window": "Beyond Surfline's 4-day window (data ends Thu 29). Thu: new S swell filling in, head high at S-exposed breaks, light offshore AM then onshore — check back mid-week."
     },
     "curl-curl": {
      "status": "estimated",
-     "rating": "fair",
-     "size_ft": "2–3",
-     "size_desc": "Chest–overhead",
-     "energy_kj": 589,
+     "rating": "poor-fair",
+     "size_ft": "2–4",
+     "size_desc": "Waist–head",
+     "energy_kj": null,
      "consistency": null,
-     "wind_rel": "offshore-am",
-     "swells": [
-      {
-       "h_ft": 6.9,
-       "period_s": 8,
-       "dir": "NE",
-       "deg": 56,
-       "label": "NE swell, 8s, ~581 kJ — dominant short-period wind swell"
-      },
-      {
-       "h_ft": 0.3,
-       "period_s": 19,
-       "dir": "S",
-       "deg": 188,
-       "label": "S swell, 19s, ~7 kJ — minor long-period background"
-      }
-     ],
-     "window": "Sun 25: NNW 11 kph (gust 37) at 6am, NNW 21 kph (gust 37) 9am, N 17 kph noon, N ~21 kph arvo. High 8:08am (1.59m), low 2:26pm (0.28m), high 8:25pm (1.44m). Big morning high — some spots struggle to break; S-facing cleanest.",
-     "alerts": [
-      "Big morning high tide (8:08am, 1.59m) — some banks struggling to break",
-      "N winds all day — S-facing cleanest"
-     ]
+     "wind_rel": "cross-off",
+     "window": "Beyond Surfline's 4-day window (data ends Thu 29). Thu: new S swell filling in, head high at S-exposed breaks, light offshore AM then onshore — check back mid-week."
     },
     "manly": {
      "status": "estimated",
      "rating": "poor-fair",
-     "size_ft": "2–3",
-     "size_desc": "Chest–overhead",
-     "energy_kj": 589,
+     "size_ft": "2–4",
+     "size_desc": "Waist–head",
+     "energy_kj": null,
      "consistency": null,
      "wind_rel": "cross-off",
-     "swells": [
-      {
-       "h_ft": 6.9,
-       "period_s": 8,
-       "dir": "NE",
-       "deg": 56,
-       "label": "NE swell, 8s, ~581 kJ — dominant short-period wind swell"
-      },
-      {
-       "h_ft": 0.3,
-       "period_s": 19,
-       "dir": "S",
-       "deg": 188,
-       "label": "S swell, 19s, ~7 kJ — minor long-period background"
-      }
-     ],
-     "window": "Sun 25: NNW 11 kph (gust 37) at 6am, NNW 21 kph (gust 37) 9am, N 17 kph noon, N ~21 kph arvo. High 8:08am (1.59m), low 2:26pm (0.28m), high 8:25pm (1.44m). Big morning high — some spots struggle to break; S-facing cleanest.",
-     "alerts": [
-      "Big morning high tide (8:08am, 1.59m) — some banks struggling to break",
-      "N winds all day — S-facing cleanest"
-     ]
+     "window": "Beyond Surfline's 4-day window (data ends Thu 29). Thu: new S swell filling in, head high at S-exposed breaks, light offshore AM then onshore — check back mid-week."
     }
    }
   }
