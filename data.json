@@ -1,5 +1,5 @@
 {
- "published": "2026-10-27T06:20:00+11:00",
+ "published": "2026-10-27T06:26:00+11:00",
  "source": "live",
  "forecaster_note": "Tue: S swell head-high to overhead at the southern magnets, chest-high on E-facing beaches, light variable offshore early then easing S and onshore winds from the arvo. Wed: leftover S/ENE, waist–chest, clean AM. Thu–Fri: new long-period S swell building. — Surfline forecaster, Tue 27 Oct",
  "water_temp_c": 21,
@@ -18,8 +18,8 @@
   "last_light": "7:44pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "clear",
+  "summary": "No shark detections in the Palm Beach → Manly zone in the last 24h (last one: tagged white shark at Palm Beach receiver ~43h ago). Feed is current (newest statewide detection ~1h ago); 42 real detections statewide in 24h (Maroubra, Bennetts Beach, Yamba most active). DPI feed returned no features. Absence of detections is not a guarantee — check the live map before paddling out.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
