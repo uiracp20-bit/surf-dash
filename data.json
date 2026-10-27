@@ -18,8 +18,8 @@
   "last_light": "7:45pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "clear",
+  "summary": "No shark detections in the Palm Beach → Manly zone in the last 24h (last one: tagged white shark #3689 at Palm Beach receiver ~67h ago; latest drone sighting Newport ~7 days ago). Feed is current (newest statewide detection ~6 min ago); 62 real detections statewide in 24h (Birubi, Surf Beach, Yamba, Bennetts most active). DPI feed returned no features. Absence of detections is not a guarantee — check the live map before paddling out.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
