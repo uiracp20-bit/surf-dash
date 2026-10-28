@@ -1,5 +1,5 @@
 {
- "published": "2026-10-29T06:24:00+11:00",
+ "published": "2026-10-29T06:30:00+11:00",
  "source": "live",
  "forecaster_note": "Thu: new mixed S swell fills in through the day — head high or so at S exposed breaks in AM, small to fun elsewhere; clean AM light offshore then onshore. Fri: long-period S swell peaks, plenty of size but straight; light N offshore AM, NE pickup arvo. Sat: eases, chest–head at S magnets, breezy N. — Surfline forecaster, Thu 29 Oct",
  "water_temp_c": 20,
@@ -18,9 +18,11 @@
   "last_light": "7:46pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
-  "affected": [],
+  "level": "alert",
+  "summary": "Tagged white shark #2895 detected at North Steyne (Manly) receiver at 10:28pm last night (~8h ago). Only Palm Beach→Manly detection in the last 24h — nothing at Dee Why, Long Reef or Curl Curl. Miners Beach (S Curl Curl) drumline tag-and-release was ~47h ago (outside 24h). 74 real detections statewide in 24h (newest ~20 min ago, Maroubra); DPI feed returned no features. Absence of detections is not a guarantee — check the live map before paddling out.",
+  "affected": [
+   "manly"
+  ],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
  "tides": {
