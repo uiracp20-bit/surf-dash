@@ -18,8 +18,8 @@
   "last_light": "7:47pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "clear",
+  "summary": "No Palm Beach → Manly detections in the last 24h. Feed is current (newest statewide ~20 min ago, Maroubra); 51 real detections statewide in 24h. Most recent on the Northern Beaches: tagged white shark #2895 at North Steyne (Manly) ~32h ago (outside 24h). DPI feed returned no features. Absence of detections is not a guarantee — check the live map before paddling out.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
