@@ -424,7 +424,7 @@ function render(){
       + '<div class="why">' + esc(d.note || '') + '</div>'
       + '<div class="vrow">'
       + '<div class="vstat"><div class="n">' + esc(sizeM(sd.size_ft) || '—') + ' m</div><div class="l">' + esc(sd.size_ft) + ' ft face</div></div>'
-      + '<div class="vstat"><div class="n">' + (sd.energy_kj != null ? sd.energy_kj + ' kJ' : '—') + '</div><div class="l">Energy' + (domPeriod(sd) != null ? ' · ' + domPeriod(sd) + 's' : '') + '</div></div>'
+      + '<div class="vstat"><div class="n">' + (sd.energy_kj != null ? sd.energy_kj + ' kJ' : '—') + '</div><div class="l">Energy' + (domPeriod(sd) != null ? ' · ' + domPeriod(sd) + 's' : '') + (sd.energy_peak_kj != null ? ' · pk ' + sd.energy_peak_kj : '') + '</div></div>'
       + '<div class="vstat"><div class="n">' + best.score + '/100</div><div class="l">Guru score</div></div>'
       + '</div>'
       + (sd.window ? '<div class="vwin"><b>Best window</b>' + esc(sd.window) + '</div>' : '')
@@ -446,7 +446,7 @@ function render(){
       + '<div class="sz">' + esc(sizeM(sd2.size_ft) || '—') + ' m<small style="font-weight:500;opacity:.55"> · ' + esc(sd2.size_ft) + 'ft face</small></div>'
       + '<div class="meta"><span class="chip ' + ratingClass(sd2.rating) + '">' + esc(RATING_LABEL[sd2.rating] || sd2.rating || '—') + '</span>'
       + (sd2.status === 'estimated' ? ' <span class="chip est">est</span>' : '') + '</div>'
-      + '<div class="sub">' + esc(sd2.wind_rel || '') + (sd2.energy_kj != null ? ' · ' + sd2.energy_kj + ' kJ' : '') + '</div>'
+      + '<div class="sub">' + esc(sd2.wind_rel || '') + (sd2.energy_kj != null ? ' · <b>' + sd2.energy_kj + ' kJ</b>' + (sd2.energy_peak_kj != null ? ' <span style="opacity:.6">pk ' + sd2.energy_peak_kj + '</span>' : '') : '') + '</div>'
       + '</button>';
     if (open) {
       h += '<div class="spot-det">'
