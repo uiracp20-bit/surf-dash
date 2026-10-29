@@ -1,16 +1,16 @@
 {
- "published": "2026-10-29T06:30:00+11:00",
+ "published": "2026-10-29T13:35:00+11:00",
  "source": "live",
- "forecaster_note": "Thu: new mixed S swell fills in through the day — head high or so at S exposed breaks in AM, small to fun elsewhere; clean AM light offshore then onshore. Fri: long-period S swell peaks, plenty of size but straight; light N offshore AM, NE pickup arvo. Sat: eases, chest–head at S magnets, breezy N. — Surfline forecaster, Thu 29 Oct",
- "water_temp_c": 20,
- "air_temp_c": 11,
+ "forecaster_note": "Thu: new mixed S swell filling in, longer period more so through the day — head high with odd bigger sets at S magnets, a few more overhead sets this arvo; onshore rest of the day. Fri: plenty of long-period S swell, head to overhead at exposures, light N/offshore AM is the clean window, NE'lies pick up. Sat: S swell eases, chest–head at S magnets, breezy N all day. Sun: waist–chest leftover S + NE wind wave, best early. — Surfline forecaster, Thu 29 Oct",
+ "water_temp_c": 20.5,
+ "air_temp_c": 21,
  "wind": {
-  "speed_kph": 9,
+  "speed_kph": 15,
   "gust_kph": 17,
-  "dir": "WNW",
-  "deg": 286,
-  "relative": "offshore",
-  "summary": "W/WNW ~9 kph at 6am, ~11 kph 9am, SE onshore ~16 kph by noon. Clear, 11°C rising to ~20°C."
+  "dir": "SE",
+  "deg": 138,
+  "relative": "onshore",
+  "summary": "SE onshore ~15 kph at 1pm, ESE ~17 kph through 3–5pm, easing to ~13 kph by 7pm — onshore the rest of the day. Fri: light NW/N offshore ~6 kph at dawn, NE builds 18–24 kph from noon."
  },
  "sun": {
   "sunrise": "5:59am",
@@ -19,7 +19,7 @@
  },
  "shark": {
   "level": "alert",
-  "summary": "Tagged white shark #2895 detected at North Steyne (Manly) receiver at 10:28pm last night (~8h ago). Only Palm Beach→Manly detection in the last 24h — nothing at Dee Why, Long Reef or Curl Curl. Miners Beach (S Curl Curl) drumline tag-and-release was ~47h ago (outside 24h). 74 real detections statewide in 24h (newest ~20 min ago, Maroubra); DPI feed returned no features. Absence of detections is not a guarantee — check the live map before paddling out.",
+  "summary": "Tagged white shark #2895 detected at the North Steyne (Manly) receiver at 10:28pm Wed (~15h ago) — the only Palm Beach → Manly detection in the last 24h. Feed is current (newest statewide detection 11:58am today); 69 real detections statewide in 24h. DPI feed returned no features. Absence of newer detections is not a guarantee — check the live map before paddling out.",
   "affected": [
    "manly"
   ],
@@ -56,200 +56,152 @@
    "label": "Today",
    "date": "Thu 29 Oct",
    "done": false,
-   "note": "New mixed S swell (503 kJ, 10s + 15s) filling in through the day with light W/WNW offshore early — best 6–10am. Curl Curl S end carries the size; Dee Why wraps poorly off dead S. Onshore from ~noon.",
+   "note": "1pm update: long-period S swell still building (452 kJ arvo avg, peak 515; 10s + 15s). Curl Curl S end and Long Reef up to head–overhead+ by late arvo, Dee Why chest–overhead, Manly small. BUT SE/ESE onshore 15–17 kph all afternoon — bumpy, rated poor–fair everywhere. Low tide 5:43pm. Tomorrow's dawn offshore is the better call.",
    "surfline_text": "New mixed shorter and longer south swell is expected. The longer swell to fill in through the day. Should be head high or so, to maybe a bit bigger at the south exposed breaks in AM. A few more OH sets into the afternoon. Small to fun size elsewhere if you want something easy going.  Clean to cleanish in the morning with light offshore to SW winds. Then more onshore the rest of the day.",
    "spots": {
     "dee-why": {
      "status": "live",
-     "rating": "fair",
-     "size_ft": "1–3",
-     "size_desc": "Waist–shoulder",
-     "energy_kj": 503,
+     "rating": "poor-fair",
+     "size_ft": "4–6",
+     "size_desc": "Chest to overhead",
+     "energy_kj": 452,
      "consistency": null,
-     "wind_rel": "offshore-am",
+     "wind_rel": "onshore",
      "swells": [
       {
-       "h_ft": 4.8,
+       "h_ft": 6.2,
        "period_s": 10,
        "dir": "S",
-       "deg": 180,
-       "label": "S swell, 10s, ~400 kJ — dominant, DEAD SOUTH (wraps poorly at Dee Why; S magnets carry the size)"
+       "deg": 182,
+       "label": "S swell, 10s, 6.2ft"
       },
       {
-       "h_ft": 1.3,
+       "h_ft": 2.5,
        "period_s": 15,
        "dir": "S",
-       "deg": 186,
-       "label": "Long-period S, 15s, ~72 kJ — fills in through the day"
-      },
-      {
-       "h_ft": 1.4,
-       "period_s": 7,
-       "dir": "ENE",
-       "deg": 65,
-       "label": "ENE wind swell, 7s, ~17 kJ"
-      },
-      {
-       "h_ft": 0.9,
-       "period_s": 10,
-       "dir": "ENE",
-       "deg": 75,
-       "label": "ENE swell, 10s, ~14 kJ"
+       "deg": 183,
+       "label": "S swell, 15s, 2.5ft"
       }
      ],
-     "window": "Thu 29: W/WNW offshore ~9 kph at 6am (gust 17), ~11 kph 9am; swings SE onshore ~16 kph from ~noon. Low 4:24am (0.4m), high 10:55am (1.8m), low 5:43pm (0.2m).",
+     "window": "Thu arvo: SE/ESE onshore 15–17 kph 1–5pm, ~13 kph by 7pm — choppy. Long-period S pulse building into dark. Low 5:43pm (0.19m), high 11:41pm (1.22m).",
      "alerts": [
       "Dead-S swell (180°) wraps poorly into Dee Why — southern exposures carry the size",
-      "Wind swings onshore from late morning — surf early"
+      "Onshore SE/ESE 15–17 kph all afternoon — wind-affected"
      ],
      "tip": {
       "label": "Frontside Point",
       "text": "Dead S wraps badly here — Point rights frontside, expect the small end. Light offshore early; find a bank at the S end of the beach."
-     }
+     },
+     "energy_peak_kj": 515,
+     "energy_window": "arvo 12–6 avg"
     },
     "long-reef": {
      "status": "live",
-     "rating": "fair",
-     "size_ft": "1–3",
-     "size_desc": "Waist–shoulder",
-     "energy_kj": 503,
+     "rating": "poor-fair",
+     "size_ft": "4–6",
+     "size_desc": "Chest to 1ft overhead",
+     "energy_kj": 452,
      "consistency": null,
-     "wind_rel": "offshore-am",
+     "wind_rel": "onshore",
      "swells": [
       {
-       "h_ft": 4.8,
+       "h_ft": 6.2,
        "period_s": 10,
        "dir": "S",
-       "deg": 180,
-       "label": "S swell, 10s, ~400 kJ — dominant, DEAD SOUTH (wraps poorly at Dee Why; S magnets carry the size)"
+       "deg": 182,
+       "label": "S swell, 10s, 6.2ft"
       },
       {
-       "h_ft": 1.3,
+       "h_ft": 2.5,
        "period_s": 15,
        "dir": "S",
-       "deg": 186,
-       "label": "Long-period S, 15s, ~72 kJ — fills in through the day"
-      },
-      {
-       "h_ft": 1.4,
-       "period_s": 7,
-       "dir": "ENE",
-       "deg": 65,
-       "label": "ENE wind swell, 7s, ~17 kJ"
-      },
-      {
-       "h_ft": 0.9,
-       "period_s": 10,
-       "dir": "ENE",
-       "deg": 75,
-       "label": "ENE swell, 10s, ~14 kJ"
+       "deg": 183,
+       "label": "S swell, 15s, 2.5ft"
       }
      ],
-     "window": "Thu 29: W/WNW offshore ~9 kph at 6am (gust 17), ~11 kph 9am; swings SE onshore ~16 kph from ~noon. Low 4:24am (0.4m), high 10:55am (1.8m), low 5:43pm (0.2m).",
+     "window": "Thu arvo: SE/ESE onshore 15–17 kph 1–5pm, ~13 kph by 7pm — choppy. Long-period S pulse building into dark. Low 5:43pm (0.19m), high 11:41pm (1.22m).",
      "alerts": [
       "Dead-S swell (180°) wraps poorly into Dee Why — southern exposures carry the size",
-      "Wind swings onshore from late morning — surf early"
+      "Onshore SE/ESE 15–17 kph all afternoon — wind-affected"
      ],
      "tip": {
       "label": "Backside lefts",
       "text": "Lefts are backside; offshore keeps it clean but the S swell is straight — find a bank or bit of reef."
-     }
+     },
+     "energy_peak_kj": 515,
+     "energy_window": "arvo 12–6 avg"
     },
     "curl-curl": {
      "status": "live",
-     "rating": "fair",
-     "size_ft": "2–4",
-     "size_desc": "Chest–head",
-     "energy_kj": 503,
+     "rating": "poor-fair",
+     "size_ft": "4–7",
+     "size_desc": "Head to 2ft overhead",
+     "energy_kj": 452,
      "consistency": null,
-     "wind_rel": "offshore-am",
+     "wind_rel": "onshore",
      "swells": [
       {
-       "h_ft": 4.8,
+       "h_ft": 6.2,
        "period_s": 10,
        "dir": "S",
-       "deg": 180,
-       "label": "S swell, 10s, ~400 kJ — dominant, DEAD SOUTH (wraps poorly at Dee Why; S magnets carry the size)"
+       "deg": 182,
+       "label": "S swell, 10s, 6.2ft"
       },
       {
-       "h_ft": 1.3,
+       "h_ft": 2.5,
        "period_s": 15,
        "dir": "S",
-       "deg": 186,
-       "label": "Long-period S, 15s, ~72 kJ — fills in through the day"
-      },
-      {
-       "h_ft": 1.4,
-       "period_s": 7,
-       "dir": "ENE",
-       "deg": 65,
-       "label": "ENE wind swell, 7s, ~17 kJ"
-      },
-      {
-       "h_ft": 0.9,
-       "period_s": 10,
-       "dir": "ENE",
-       "deg": 75,
-       "label": "ENE swell, 10s, ~14 kJ"
+       "deg": 183,
+       "label": "S swell, 15s, 2.5ft"
       }
      ],
-     "window": "Thu 29: W/WNW offshore ~9 kph at 6am (gust 17), ~11 kph 9am; swings SE onshore ~16 kph from ~noon. Low 4:24am (0.4m), high 10:55am (1.8m), low 5:43pm (0.2m).",
+     "window": "Thu arvo: SE/ESE onshore 15–17 kph 1–5pm, ~13 kph by 7pm — choppy. Long-period S pulse building into dark. Low 5:43pm (0.19m), high 11:41pm (1.22m).",
      "alerts": [
       "Dead-S swell (180°) wraps poorly into Dee Why — southern exposures carry the size",
-      "Wind swings onshore from late morning — surf early"
+      "Onshore SE/ESE 15–17 kph all afternoon — wind-affected"
      ],
      "tip": {
       "label": "Peaky beachie",
       "text": "Best of the four for size — S end soaks up the dead S and light offshore holds it clean. Go early on the push to the 10:55am high."
-     }
+     },
+     "energy_peak_kj": 515,
+     "energy_window": "arvo 12–6 avg"
     },
     "manly": {
      "status": "live",
-     "rating": "fair",
-     "size_ft": "1–3",
-     "size_desc": "Waist–chest",
-     "energy_kj": 503,
+     "rating": "poor-fair",
+     "size_ft": "2–4",
+     "size_desc": "Waist to chest",
+     "energy_kj": 452,
      "consistency": null,
-     "wind_rel": "offshore-am",
+     "wind_rel": "onshore",
      "swells": [
       {
-       "h_ft": 4.8,
+       "h_ft": 6.2,
        "period_s": 10,
        "dir": "S",
-       "deg": 180,
-       "label": "S swell, 10s, ~400 kJ — dominant, DEAD SOUTH (wraps poorly at Dee Why; S magnets carry the size)"
+       "deg": 182,
+       "label": "S swell, 10s, 6.2ft"
       },
       {
-       "h_ft": 1.3,
+       "h_ft": 2.5,
        "period_s": 15,
        "dir": "S",
-       "deg": 186,
-       "label": "Long-period S, 15s, ~72 kJ — fills in through the day"
-      },
-      {
-       "h_ft": 1.4,
-       "period_s": 7,
-       "dir": "ENE",
-       "deg": 65,
-       "label": "ENE wind swell, 7s, ~17 kJ"
-      },
-      {
-       "h_ft": 0.9,
-       "period_s": 10,
-       "dir": "ENE",
-       "deg": 75,
-       "label": "ENE swell, 10s, ~14 kJ"
+       "deg": 183,
+       "label": "S swell, 15s, 2.5ft"
       }
      ],
-     "window": "Thu 29: W/WNW offshore ~9 kph at 6am (gust 17), ~11 kph 9am; swings SE onshore ~16 kph from ~noon. Low 4:24am (0.4m), high 10:55am (1.8m), low 5:43pm (0.2m).",
+     "window": "Thu arvo: SE/ESE onshore 15–17 kph 1–5pm, ~13 kph by 7pm — choppy. Long-period S pulse building into dark. Low 5:43pm (0.19m), high 11:41pm (1.22m).",
      "alerts": [
       "Dead-S swell (180°) wraps poorly into Dee Why — southern exposures carry the size",
-      "Wind swings onshore from late morning — surf early"
+      "Onshore SE/ESE 15–17 kph all afternoon — wind-affected"
      ],
      "tip": {
       "label": "Beachie peaks",
       "text": "Southern corner by the wall catches the most S swell; rest is smaller and peaky. Clean early."
-     }
+     },
+     "energy_peak_kj": 515,
+     "energy_window": "arvo 12–6 avg"
     }
    }
   },
@@ -262,44 +214,116 @@
    "surfline_text": "Light N to offshore winds in the morning for cleanest window of the day. Plenty of size at the south exposed breaks from long period S swell - it might be a bit straight though - find a good bank or bit of reef. More easy going at other spots but long period swell should get into most breaks.  Similar size to slightly easing into the afternoon, but NE'lies expected to pick up - south facing spots cleanest.",
    "spots": {
     "dee-why": {
-     "status": "estimated",
+     "status": "live",
      "rating": "fair",
-     "size_ft": "2–4",
-     "size_desc": "Waist–head",
-     "energy_kj": 450,
+     "size_ft": "3–6",
+     "size_desc": "Chest to head",
+     "energy_kj": 470,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Fri 30: light N/NW offshore (~6 kph) at 6am, cross-shore light N by 9am; NE pickup in the arvo. Long-period S swell peaks — plenty of size at S exposures but straight. Low 5:10am (0.4m), high 11:45am (1.75m)."
+     "window": "Fri 30: light NW→N offshore ~6 kph at dawn (cleanest 6–9am), NE 18–24 kph from noon. Long-period S peaks early then eases. Low 5:10am (0.43m), high 11:45am (1.75m), low 6:41pm (0.22m).",
+     "energy_peak_kj": 595,
+     "energy_window": "6–12 avg",
+     "swells": [
+      {
+       "h_ft": 5,
+       "period_s": 9,
+       "dir": "S",
+       "deg": 181,
+       "label": "S swell, 9s, 5.0ft"
+      },
+      {
+       "h_ft": 3.7,
+       "period_s": 15,
+       "dir": "S",
+       "deg": 184,
+       "label": "S swell, 15s, 3.7ft"
+      }
+     ]
     },
     "long-reef": {
-     "status": "estimated",
+     "status": "live",
      "rating": "fair",
-     "size_ft": "2–4",
-     "size_desc": "Waist–head",
-     "energy_kj": 450,
+     "size_ft": "4–6",
+     "size_desc": "Chest to overhead",
+     "energy_kj": 470,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Fri 30: light N/NW offshore (~6 kph) at 6am, cross-shore light N by 9am; NE pickup in the arvo. Long-period S swell peaks — plenty of size at S exposures but straight. Low 5:10am (0.4m), high 11:45am (1.75m)."
+     "window": "Fri 30: light NW→N offshore ~6 kph at dawn (cleanest 6–9am), NE 18–24 kph from noon. Long-period S peaks early then eases. Low 5:10am (0.43m), high 11:45am (1.75m), low 6:41pm (0.22m).",
+     "energy_peak_kj": 595,
+     "energy_window": "6–12 avg",
+     "swells": [
+      {
+       "h_ft": 5,
+       "period_s": 9,
+       "dir": "S",
+       "deg": 181,
+       "label": "S swell, 9s, 5.0ft"
+      },
+      {
+       "h_ft": 3.7,
+       "period_s": 15,
+       "dir": "S",
+       "deg": 184,
+       "label": "S swell, 15s, 3.7ft"
+      }
+     ]
     },
     "curl-curl": {
-     "status": "estimated",
+     "status": "live",
      "rating": "fair-good",
-     "size_ft": "3–5",
-     "size_desc": "Chest–overhead",
-     "energy_kj": 450,
+     "size_ft": "4–7",
+     "size_desc": "Chest to 1ft overhead",
+     "energy_kj": 470,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Fri 30: light N/NW offshore (~6 kph) at 6am, cross-shore light N by 9am; NE pickup in the arvo. Long-period S swell peaks — plenty of size at S exposures but straight. Low 5:10am (0.4m), high 11:45am (1.75m)."
+     "window": "Fri 30: light NW→N offshore ~6 kph at dawn (cleanest 6–9am), NE 18–24 kph from noon. Long-period S peaks early then eases. Low 5:10am (0.43m), high 11:45am (1.75m), low 6:41pm (0.22m).",
+     "energy_peak_kj": 595,
+     "energy_window": "6–12 avg",
+     "swells": [
+      {
+       "h_ft": 5,
+       "period_s": 9,
+       "dir": "S",
+       "deg": 181,
+       "label": "S swell, 9s, 5.0ft"
+      },
+      {
+       "h_ft": 3.7,
+       "period_s": 15,
+       "dir": "S",
+       "deg": 184,
+       "label": "S swell, 15s, 3.7ft"
+      }
+     ]
     },
     "manly": {
-     "status": "estimated",
+     "status": "live",
      "rating": "fair",
-     "size_ft": "2–4",
-     "size_desc": "Chest–head",
-     "energy_kj": 450,
+     "size_ft": "2–3",
+     "size_desc": "Thigh to stomach",
+     "energy_kj": 470,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "window": "Fri 30: light N/NW offshore (~6 kph) at 6am, cross-shore light N by 9am; NE pickup in the arvo. Long-period S swell peaks — plenty of size at S exposures but straight. Low 5:10am (0.4m), high 11:45am (1.75m)."
+     "window": "Fri 30: light NW→N offshore ~6 kph at dawn (cleanest 6–9am), NE 18–24 kph from noon. Long-period S peaks early then eases. Low 5:10am (0.43m), high 11:45am (1.75m), low 6:41pm (0.22m).",
+     "energy_peak_kj": 595,
+     "energy_window": "6–12 avg",
+     "swells": [
+      {
+       "h_ft": 5,
+       "period_s": 9,
+       "dir": "S",
+       "deg": 181,
+       "label": "S swell, 9s, 5.0ft"
+      },
+      {
+       "h_ft": 3.7,
+       "period_s": 15,
+       "dir": "S",
+       "deg": 184,
+       "label": "S swell, 15s, 3.7ft"
+      }
+     ]
     }
    }
   },
@@ -312,47 +336,168 @@
    "surfline_text": "S swell eases back but there should be enough for chest to head high surf all day at the south magnets.  Best here with breezy N'lies all day. Other breaks more junky and wind affected.  Sun: S swell leftovers mixed with short period NE wind wave - about waist to chest high.  Cleanish in the morning with offshore winds looking likely. Then onshores and quality dropping further.",
    "spots": {
     "dee-why": {
-     "status": "estimated",
-     "rating": "poor-fair",
+     "status": "live",
+     "rating": "fair",
      "size_ft": "2–3",
-     "size_desc": "Waist–chest",
-     "energy_kj": 250,
+     "size_desc": "Thigh to stomach",
+     "energy_kj": 176,
      "consistency": null,
-     "wind_rel": "cross-off",
-     "window": "Sat 31 – Sun 1: Sat per Surfline (S swell easing, chest–head at S magnets, breezy N all day, cross-shore ~7–13 kph); Sun leftover S + short NE wind wave, waist–chest, offshore NW early (gusty) then onshore — estimated."
+     "wind_rel": "cross-shore",
+     "window": "Sat 31 – Sun 1: Sat per Surfline (S swell easing, chest–head at S magnets, breezy N all day, cross-shore ~7–13 kph); Sun leftover S + short NE wind wave, waist–chest, offshore NW early (gusty) then onshore.",
+     "energy_peak_kj": 219,
+     "energy_window": "6–12 avg",
+     "swells": [
+      {
+       "h_ft": 5,
+       "period_s": 6,
+       "dir": "NE",
+       "deg": 38,
+       "label": "NE swell, 6s, 5.0ft"
+      },
+      {
+       "h_ft": 3,
+       "period_s": 12,
+       "dir": "S",
+       "deg": 180,
+       "label": "S swell, 12s, 3.0ft"
+      }
+     ],
+     "energy_by_day": [
+      {
+       "day": "Sat",
+       "energy_kj": 176,
+       "energy_peak_kj": 219
+      },
+      {
+       "day": "Sun",
+       "energy_kj": 124,
+       "energy_peak_kj": 131
+      }
+     ]
     },
     "long-reef": {
-     "status": "estimated",
+     "status": "live",
      "rating": "fair",
      "size_ft": "2–3",
-     "size_desc": "Waist–chest",
-     "energy_kj": 250,
+     "size_desc": "Thigh to waist",
+     "energy_kj": 176,
      "consistency": null,
-     "wind_rel": "cross-off",
-     "window": "Sat 31 – Sun 1: Sat per Surfline (S swell easing, chest–head at S magnets, breezy N all day, cross-shore ~7–13 kph); Sun leftover S + short NE wind wave, waist–chest, offshore NW early (gusty) then onshore — estimated."
+     "wind_rel": "offshore",
+     "window": "Sat 31 – Sun 1: Sat per Surfline (S swell easing, chest–head at S magnets, breezy N all day, cross-shore ~7–13 kph); Sun leftover S + short NE wind wave, waist–chest, offshore NW early (gusty) then onshore.",
+     "energy_peak_kj": 219,
+     "energy_window": "6–12 avg",
+     "swells": [
+      {
+       "h_ft": 5,
+       "period_s": 6,
+       "dir": "NE",
+       "deg": 38,
+       "label": "NE swell, 6s, 5.0ft"
+      },
+      {
+       "h_ft": 3,
+       "period_s": 12,
+       "dir": "S",
+       "deg": 180,
+       "label": "S swell, 12s, 3.0ft"
+      }
+     ],
+     "energy_by_day": [
+      {
+       "day": "Sat",
+       "energy_kj": 176,
+       "energy_peak_kj": 219
+      },
+      {
+       "day": "Sun",
+       "energy_kj": 124,
+       "energy_peak_kj": 131
+      }
+     ]
     },
     "curl-curl": {
-     "status": "estimated",
+     "status": "live",
      "rating": "fair",
-     "size_ft": "3–5",
-     "size_desc": "Chest–overhead",
-     "energy_kj": 250,
+     "size_ft": "2–4",
+     "size_desc": "Thigh to stomach",
+     "energy_kj": 176,
      "consistency": null,
-     "wind_rel": "cross-off",
-     "window": "Sat 31 – Sun 1: Sat per Surfline (S swell easing, chest–head at S magnets, breezy N all day, cross-shore ~7–13 kph); Sun leftover S + short NE wind wave, waist–chest, offshore NW early (gusty) then onshore — estimated."
+     "wind_rel": "offshore",
+     "window": "Sat 31 – Sun 1: Sat per Surfline (S swell easing, chest–head at S magnets, breezy N all day, cross-shore ~7–13 kph); Sun leftover S + short NE wind wave, waist–chest, offshore NW early (gusty) then onshore.",
+     "energy_peak_kj": 219,
+     "energy_window": "6–12 avg",
+     "swells": [
+      {
+       "h_ft": 5,
+       "period_s": 6,
+       "dir": "NE",
+       "deg": 38,
+       "label": "NE swell, 6s, 5.0ft"
+      },
+      {
+       "h_ft": 3,
+       "period_s": 12,
+       "dir": "S",
+       "deg": 180,
+       "label": "S swell, 12s, 3.0ft"
+      }
+     ],
+     "energy_by_day": [
+      {
+       "day": "Sat",
+       "energy_kj": 176,
+       "energy_peak_kj": 219
+      },
+      {
+       "day": "Sun",
+       "energy_kj": 124,
+       "energy_peak_kj": 131
+      }
+     ]
     },
     "manly": {
-     "status": "estimated",
-     "rating": "poor-fair",
+     "status": "live",
+     "rating": "fair",
      "size_ft": "2–3",
-     "size_desc": "Waist–chest",
-     "energy_kj": 250,
+     "size_desc": "Thigh to stomach",
+     "energy_kj": 176,
      "consistency": null,
-     "wind_rel": "cross-off",
-     "window": "Sat 31 – Sun 1: Sat per Surfline (S swell easing, chest–head at S magnets, breezy N all day, cross-shore ~7–13 kph); Sun leftover S + short NE wind wave, waist–chest, offshore NW early (gusty) then onshore — estimated."
+     "wind_rel": "cross-shore",
+     "window": "Sat 31 – Sun 1: Sat per Surfline (S swell easing, chest–head at S magnets, breezy N all day, cross-shore ~7–13 kph); Sun leftover S + short NE wind wave, waist–chest, offshore NW early (gusty) then onshore.",
+     "energy_peak_kj": 219,
+     "energy_window": "6–12 avg",
+     "swells": [
+      {
+       "h_ft": 5,
+       "period_s": 6,
+       "dir": "NE",
+       "deg": 38,
+       "label": "NE swell, 6s, 5.0ft"
+      },
+      {
+       "h_ft": 3,
+       "period_s": 12,
+       "dir": "S",
+       "deg": 180,
+       "label": "S swell, 12s, 3.0ft"
+      }
+     ],
+     "energy_by_day": [
+      {
+       "day": "Sat",
+       "energy_kj": 176,
+       "energy_peak_kj": 219
+      },
+      {
+       "day": "Sun",
+       "energy_kj": 124,
+       "energy_peak_kj": 131
+      }
+     ]
     }
    }
   }
  ],
- "energy_window": "Today = Surfline 6am snapshot (hourly wave endpoint unavailable, so no 6am–12pm average or day peak this run); Fri/weekend energy is a forecast-narrative estimate"
+ "energy_window": "6am–12pm avg drives board (Today = 12–6pm on the 1pm run); peak = 6am–6pm max",
+ "run_slot": "midday"
 }
