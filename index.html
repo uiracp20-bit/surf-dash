@@ -170,6 +170,12 @@
   .foot { text-align:center; font-size:10.5px; color:var(--ink3); line-height:1.7; margin-top:18px; padding:0 10px; }
   .err { background:var(--poor-soft); color:#7f2222; border-radius:var(--r); padding:16px; font-size:13.5px; margin-bottom:12px; }
   .skel { color:var(--ink3); font-size:13px; text-align:center; padding:30px 0; }
+  .rpt { display:flex; align-items:center; gap:10px; padding:10px 14px; border-radius:14px; margin:0 0 10px; font-size:13px; line-height:1.35; }
+  .rpt .ico { font-size:24px; }
+  .rpt .t { font-weight:800; letter-spacing:.06em; text-transform:uppercase; font-size:12.5px; }
+  .rpt.am { background:#e6f0ff; color:#123a73; }
+  .rpt.pm { background:#ffefd9; color:#7a3e00; }
+  .rpt.old { background:#fde8e8; color:#7f2222; }
 </style>
 </head>
 <body>
@@ -396,6 +402,25 @@ function pickWetsuit(){
 /* ── rendering ── */
 function ratingClass(r){ if(!r) return 'est'; if (r.indexOf('good') !== -1 || r === 'epic') return 'good'; if (r === 'fair') return 'fair'; return r === 'poor-fair' ? 'fair' : 'poor'; }
 
+/* Morning vs arvo report label (added 31 Oct) — driven by SURF.run_slot, falls back to publish hour */
+function reportInfo(){
+  var pub = new Date(SURF.published), tz = { timeZone:'Australia/Sydney' };
+  var hr = parseInt(pub.toLocaleString('en-AU', { timeZone:'Australia/Sydney', hour:'numeric', hour12:false }), 10);
+  var pm = SURF.run_slot ? SURF.run_slot === 'midday' : hr >= 11;
+  var ds = { timeZone:'Australia/Sydney', weekday:'short', day:'numeric', month:'short' };
+  var dayStr = pub.toLocaleDateString('en-AU', ds), nowStr = new Date().toLocaleDateString('en-AU', ds);
+  return { pm: pm, old: dayStr !== nowStr, dayStr: dayStr, time: pub.toLocaleTimeString('en-AU', { timeZone:'Australia/Sydney', hour:'numeric', minute:'2-digit' }) };
+}
+function reportBanner(){
+  var r = reportInfo();
+  var sub = r.pm ? 'Today = this afternoon (12–6pm). Tomorrow & weekend = morning sessions (6am–noon).'
+                 : 'All days = morning sessions (6am–noon). Arvo update around 1pm.';
+  if (r.old) sub = 'Out of date — this is the ' + r.dayStr + ' report. ' + sub;
+  return '<div class="rpt ' + (r.old ? 'old' : (r.pm ? 'pm' : 'am')) + '"><span class="ico">' + (r.pm ? '☀️' : '🌅') + '</span><span>'
+    + '<span class="t">' + (r.pm ? 'Arvo report' : 'Morning report') + ' · ' + esc(r.time) + '</span> <span style="opacity:.7">' + esc(r.dayStr) + '</span><br>'
+    + esc(sub) + '</span></div>';
+}
+
 function render(){
   var app = $('app');
   if (!SURF || !SURF.days) { app.innerHTML = '<div class="err"><b>Couldn’t load forecast data.</b><br>Check your connection and pull down to retry.</div>'; return; }
@@ -403,6 +428,7 @@ function render(){
   if (!d.spots[state.spot]) state.spot = 'dee-why';
   var best = bestSpot(d);
   var h = '';
+  try { h += reportBanner(); } catch(e){}
 
   // shark strip
   var sh = SURF.shark || {};
@@ -419,7 +445,7 @@ function render(){
   if (best) {
     var sd = best.sd;
     h += '<div class="verdict">'
-      + '<div class="k">' + (state.view === 'today' ? 'Today’s call' : (state.view === 'tomorrow' ? 'Tomorrow’s call' : 'Weekend call')) + '</div>'
+      + '<div class="k">' + (state.view === 'today' ? 'Today’s call · ' + (reportInfo().pm ? 'arvo' : 'morning') : (state.view === 'tomorrow' ? 'Tomorrow’s call' : 'Weekend call')) + '</div>'
       + '<div class="hl">' + best.sp.emoji + ' ' + esc(best.sp.name) + ' — ' + esc(RATING_LABEL[sd.rating] || sd.rating) + '</div>'
       + '<div class="why">' + esc(d.note || '') + '</div>'
       + '<div class="vrow">'
