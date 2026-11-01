@@ -18,8 +18,8 @@
   "last_light": "7:50pm"
  },
  "shark": {
-  "level": "unknown",
-  "summary": "SharkSmart check pending this refresh — tap to check live detections",
+  "level": "alert",
+  "summary": "Shark sighted by SLS drone at Whale Beach (Palm Beach→Manly zone) at 5:43pm Sun 1 Nov (~12.6h ago), water evacuated. No detections at Dee Why, Long Reef, Curl Curl or Manly in the last 24h (most recent nearby: tagged white shark #2895 at North Steyne, 10:28pm Wed 28 Oct). Feed current (newest statewide ~3h old); 40 real detections statewide in 24h. DPINSW returned 0 features. Absence of detections is not a guarantee — check the live map before paddling out.",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
