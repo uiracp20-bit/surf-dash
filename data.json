@@ -1,25 +1,25 @@
 {
- "published": "2026-11-01T06:30:00+11:00",
+ "published": "2026-11-02T06:25:00+11:00",
  "source": "live",
- "forecaster_note": "Sun: S swell leftovers + short-period NE windswell. S magnets a couple of lingering chest-high sets, everything else waist-high. Clean at dawn with offshores, light southerly switch then SE onshores through the arvo — lump and bump but light enough for a little arvo grovel. Mon: slow start, a couple of waist-high peaky waves, S-facing beaches best, clean am then NE'lies arvo. — Surfline forecaster Max Stanley-Jones, Sun 1 Nov",
+ "forecaster_note": "Mon: slow start to the week — a couple of waist-high peaky waves from the small swell mix; S-facing beaches hold the best shape. Clean in the morning with offshores and the low tide helping banks, then NE'lies send us running for cover in the arvo. Tue: mostly waist-high, pretty junky; cleanest in N corners out of the N/NE wind — morning low is the window. Fri: short-range S swell peaks overnight and fades, S-facing beaches well overhead early. — Surfline forecaster Max Stanley-Jones, Mon 2 Nov",
  "water_temp_c": 19,
- "air_temp_c": 18,
+ "air_temp_c": 17,
  "wind": {
-  "speed_kph": 15,
-  "gust_kph": 33,
-  "dir": "WNW",
-  "deg": 288,
+  "speed_kph": 4,
+  "gust_kph": 6,
+  "dir": "N",
+  "deg": 351,
   "relative": "offshore",
-  "summary": "W/WNW offshore 15 kph (gusts 33) at dawn, light S cross 11 kph by 9am; SE onshore 19 kph by noon, E 20 kph 3pm. Mon dawn light N."
+  "summary": "Light N 4 kph at dawn, 7 kph by 9am; NE onshore 13 kph by noon, ENE 20 kph by 3pm. Light showers around."
  },
  "sun": {
-  "sunrise": "5:56am",
-  "sunset": "7:22pm",
-  "last_light": "7:49pm"
+  "sunrise": "5:55am",
+  "sunset": "7:23pm",
+  "last_light": "7:50pm"
  },
  "shark": {
-  "level": "clear",
-  "summary": "No Palm Beach → Manly detection in the last 24h. Most recent nearby: tagged white shark #2895 at North Steyne (Manly), 10:28pm Wed 28 Oct (~80h ago). Feed current (newest statewide ~45 min old); 34 real detections statewide in 24h. DPINSW returned 0 features. Absence of detections is not a guarantee — check the live map before paddling out.",
+  "level": "unknown",
+  "summary": "SharkSmart check pending this refresh — tap to check live detections",
   "affected": [],
   "link": "https://www.sharksmart.nsw.gov.au/shark-activity"
  },
@@ -27,24 +27,24 @@
   "station": "Blue Fish Point, Sydney",
   "events": [
    {
-    "time": "7:09am",
+    "time": "3:03am",
+    "height_m": 1.1,
+    "type": "high"
+   },
+   {
+    "time": "8:26am",
     "height_m": 0.6,
     "type": "low"
    },
    {
-    "time": "1:45pm",
+    "time": "2:54pm",
     "height_m": 1.6,
     "type": "high"
    },
    {
-    "time": "8:52pm",
+    "time": "9:56pm",
     "height_m": 0.3,
     "type": "low"
-   },
-   {
-    "time": "3:03am",
-    "height_m": 1.1,
-    "type": "high"
    }
   ]
  },
@@ -52,57 +52,57 @@
   {
    "id": "today",
    "label": "Today",
-   "date": "Sun 1 Nov",
+   "date": "Mon 2 Nov",
    "done": false,
-   "note": "230 kJ (126 from a 7s NE wind wave, 88 from 10–12s S leftovers) — small, peaky waist-high; chest at the S magnets. Clean W offshore at dawn, SE onshore from midday: surf 6–10am around the 7:09am low.",
-   "surfline_text": "S swell leftovers mix with some recent short period NE windswell. Southerly magnets see a couple lingering chest high sets, all other breaks are waist high.  Clean at dawn with these offshore winds, then a light southerly switch leads to SE onshores persisting through the afternoon - they'll add lump and bump but should stay light enough for a little arvo grovel.",
+   "note": "192 kJ (123 from a 9s dead-S, 67 from a 7s NE wind wave) — small, peaky waist-high; S-facing banks best. Clean light N at dawn, NE onshore from noon: surf 6–9:30am around the 8:26am low.",
+   "surfline_text": "Bit of a slow start to the week as we'll only see a couple waist high waves from the small swell mix - peaky. S facing beaches will probably hold the best shape. Clean in the morning with offshores and that low tide will help banks out - then NE'lies will send us running for cover in the arvy.",
    "spots": {
     "dee-why": {
      "status": "live",
      "rating": "poor-fair",
      "size_ft": "1–2",
      "size_desc": "Thigh–waist",
-     "energy_kj": 230,
+     "energy_kj": 192,
      "consistency": null,
-     "wind_rel": "offshore-am",
+     "wind_rel": "cross-off",
      "swells": [
       {
-       "h_ft": 3.8,
+       "h_ft": 2.8,
+       "period_s": 9,
+       "dir": "S",
+       "deg": 179,
+       "label": "S swell, 9s, 2.8ft"
+      },
+      {
+       "h_ft": 2.8,
        "period_s": 7,
        "dir": "NE",
-       "deg": 50,
-       "label": "NE wind wave, 7s, 3.8ft"
+       "deg": 54,
+       "label": "NE wind wave, 7s, 2.8ft"
       },
       {
-       "h_ft": 1.6,
-       "period_s": 10,
-       "dir": "S",
-       "deg": 173,
-       "label": "S swell, 10s, 1.6ft"
+       "h_ft": 0.2,
+       "period_s": 11,
+       "dir": "ENE",
+       "deg": 74,
+       "label": "ENE swell, 11s, 0.2ft"
       },
       {
-       "h_ft": 1.2,
-       "period_s": 12,
-       "dir": "S",
-       "deg": 180,
-       "label": "S swell, 12s, 1.2ft"
-      },
-      {
-       "h_ft": 2.5,
-       "period_s": 4,
-       "dir": "WNW",
-       "deg": 283,
-       "label": "WNW windswell, 4s, 2.5ft"
+       "h_ft": 0.2,
+       "period_s": 13,
+       "dir": "ENE",
+       "deg": 59,
+       "label": "ENE swell, 13s, 0.2ft"
       }
      ],
-     "window": "Sun 1: W/WNW offshore 15 kph (gusts 33) at 6am, light S cross 11 kph 9am; SE onshore 19 kph by noon, E 20 kph 3pm. Low 7:09am (0.6m), high 1:45pm (1.6m), low 8:52pm (0.3m). Best window 6–10am.",
+     "window": "Mon 2: light N 4–7 kph to ~9am (clean), NE onshore 13 kph by noon, 20 kph ENE by 3pm. High 3:03am (1.1m), low 8:26am (0.6m), high 2:54pm (1.6m). Best window 6–9:30am around the low.",
      "alerts": [
-      "Dead-S swell (172–180°) wraps poorly into Dee Why — S-facing exposures carry the size",
-      "SE onshore from midday — surf early"
+      "Dead-S swell (179°) wraps poorly into Dee Why — S-facing exposures carry the size",
+      "NE onshore from midday — surf early"
      ],
      "tip": {
       "label": "Frontside Point",
-      "text": "Small and peaky; S components wrap badly. Point rights frontside at the small end — go 6–9am while the W offshore holds, before the SE lump."
+      "text": "Small, peaky, S 179° wraps badly into Dee Why. Point rights frontside if anything is lining up — go 6–9am, low 8:26am helps the banks, before NE lump at noon."
      }
     },
     "long-reef": {
@@ -110,140 +110,140 @@
      "rating": "poor-fair",
      "size_ft": "1–2",
      "size_desc": "Thigh–waist",
-     "energy_kj": 230,
+     "energy_kj": 192,
      "consistency": null,
      "wind_rel": "offshore-am",
      "swells": [
       {
-       "h_ft": 3.8,
+       "h_ft": 2.8,
+       "period_s": 9,
+       "dir": "S",
+       "deg": 179,
+       "label": "S swell, 9s, 2.8ft"
+      },
+      {
+       "h_ft": 2.8,
        "period_s": 7,
        "dir": "NE",
-       "deg": 50,
-       "label": "NE wind wave, 7s, 3.8ft"
+       "deg": 54,
+       "label": "NE wind wave, 7s, 2.8ft"
       },
       {
-       "h_ft": 1.6,
-       "period_s": 10,
-       "dir": "S",
-       "deg": 173,
-       "label": "S swell, 10s, 1.6ft"
+       "h_ft": 0.2,
+       "period_s": 11,
+       "dir": "ENE",
+       "deg": 74,
+       "label": "ENE swell, 11s, 0.2ft"
       },
       {
-       "h_ft": 1.2,
-       "period_s": 12,
-       "dir": "S",
-       "deg": 180,
-       "label": "S swell, 12s, 1.2ft"
-      },
-      {
-       "h_ft": 2.5,
-       "period_s": 4,
-       "dir": "WNW",
-       "deg": 283,
-       "label": "WNW windswell, 4s, 2.5ft"
+       "h_ft": 0.2,
+       "period_s": 13,
+       "dir": "ENE",
+       "deg": 59,
+       "label": "ENE swell, 13s, 0.2ft"
       }
      ],
-     "window": "Sun 1: W/WNW offshore 15 kph (gusts 33) at 6am, light S cross 11 kph 9am; SE onshore 19 kph by noon, E 20 kph 3pm. Low 7:09am (0.6m), high 1:45pm (1.6m), low 8:52pm (0.3m). Best window 6–10am.",
+     "window": "Mon 2: light N 4–7 kph to ~9am (clean), NE onshore 13 kph by noon, 20 kph ENE by 3pm. High 3:03am (1.1m), low 8:26am (0.6m), high 2:54pm (1.6m). Best window 6–9:30am around the low.",
      "alerts": [
-      "SE onshore from midday — surf early"
+      "NE onshore from midday — surf early"
      ],
      "tip": {
-      "label": "Backside Lefts",
-      "text": "Cleanish dawn, offshore W; backside on the lefts, short-period NE wind wave dominates so expect peaky closeouts. Early only."
+      "label": "Backside Lefts / Reef",
+      "text": "Clean light N at dawn. Small peaks over the bank; backside on the lefts, rights frontside. Early session before NE builds."
      }
     },
     "curl-curl": {
      "status": "live",
      "rating": "fair",
      "size_ft": "1–3",
-     "size_desc": "Waist–shoulder",
-     "energy_kj": 230,
+     "size_desc": "Waist–chest",
+     "energy_kj": 192,
      "consistency": null,
      "wind_rel": "offshore-am",
      "swells": [
       {
-       "h_ft": 3.8,
+       "h_ft": 2.8,
+       "period_s": 9,
+       "dir": "S",
+       "deg": 179,
+       "label": "S swell, 9s, 2.8ft"
+      },
+      {
+       "h_ft": 2.8,
        "period_s": 7,
        "dir": "NE",
-       "deg": 50,
-       "label": "NE wind wave, 7s, 3.8ft"
+       "deg": 54,
+       "label": "NE wind wave, 7s, 2.8ft"
       },
       {
-       "h_ft": 1.6,
-       "period_s": 10,
-       "dir": "S",
-       "deg": 173,
-       "label": "S swell, 10s, 1.6ft"
+       "h_ft": 0.2,
+       "period_s": 11,
+       "dir": "ENE",
+       "deg": 74,
+       "label": "ENE swell, 11s, 0.2ft"
       },
       {
-       "h_ft": 1.2,
-       "period_s": 12,
-       "dir": "S",
-       "deg": 180,
-       "label": "S swell, 12s, 1.2ft"
-      },
-      {
-       "h_ft": 2.5,
-       "period_s": 4,
-       "dir": "WNW",
-       "deg": 283,
-       "label": "WNW windswell, 4s, 2.5ft"
+       "h_ft": 0.2,
+       "period_s": 13,
+       "dir": "ENE",
+       "deg": 59,
+       "label": "ENE swell, 13s, 0.2ft"
       }
      ],
-     "window": "Sun 1: W/WNW offshore 15 kph (gusts 33) at 6am, light S cross 11 kph 9am; SE onshore 19 kph by noon, E 20 kph 3pm. Low 7:09am (0.6m), high 1:45pm (1.6m), low 8:52pm (0.3m). Best window 6–10am.",
+     "window": "Mon 2: light N 4–7 kph to ~9am (clean), NE onshore 13 kph by noon, 20 kph ENE by 3pm. High 3:03am (1.1m), low 8:26am (0.6m), high 2:54pm (1.6m). Best window 6–9:30am around the low.",
      "alerts": [
-      "Best of the four at dawn; SE onshore from midday"
+      "NE onshore from midday — surf early"
      ],
      "tip": {
-      "label": "South Corner",
-      "text": "Best rated of the four at dawn (fair) — S corner picks up the lingering S sets (chest-high at the magnets). Go 6–9am."
+      "label": "S-end Banks",
+      "text": "S-facing end holds the best shape per Surfline — best bet today. Pick the peak off the south end around the 8:26am low."
      }
     },
     "manly": {
      "status": "live",
      "rating": "poor-fair",
-     "size_ft": "1–3",
-     "size_desc": "Waist–chest",
-     "energy_kj": 230,
+     "size_ft": "1–2",
+     "size_desc": "Thigh–waist",
+     "energy_kj": 192,
      "consistency": null,
      "wind_rel": "offshore-am",
      "swells": [
       {
-       "h_ft": 3.8,
+       "h_ft": 2.8,
+       "period_s": 9,
+       "dir": "S",
+       "deg": 179,
+       "label": "S swell, 9s, 2.8ft"
+      },
+      {
+       "h_ft": 2.8,
        "period_s": 7,
        "dir": "NE",
-       "deg": 50,
-       "label": "NE wind wave, 7s, 3.8ft"
+       "deg": 54,
+       "label": "NE wind wave, 7s, 2.8ft"
       },
       {
-       "h_ft": 1.6,
-       "period_s": 10,
-       "dir": "S",
-       "deg": 173,
-       "label": "S swell, 10s, 1.6ft"
+       "h_ft": 0.2,
+       "period_s": 11,
+       "dir": "ENE",
+       "deg": 74,
+       "label": "ENE swell, 11s, 0.2ft"
       },
       {
-       "h_ft": 1.2,
-       "period_s": 12,
-       "dir": "S",
-       "deg": 180,
-       "label": "S swell, 12s, 1.2ft"
-      },
-      {
-       "h_ft": 2.5,
-       "period_s": 4,
-       "dir": "WNW",
-       "deg": 283,
-       "label": "WNW windswell, 4s, 2.5ft"
+       "h_ft": 0.2,
+       "period_s": 13,
+       "dir": "ENE",
+       "deg": 59,
+       "label": "ENE swell, 13s, 0.2ft"
       }
      ],
-     "window": "Sun 1: W/WNW offshore 15 kph (gusts 33) at 6am, light S cross 11 kph 9am; SE onshore 19 kph by noon, E 20 kph 3pm. Low 7:09am (0.6m), high 1:45pm (1.6m), low 8:52pm (0.3m). Best window 6–10am.",
+     "window": "Mon 2: light N 4–7 kph to ~9am (clean), NE onshore 13 kph by noon, 20 kph ENE by 3pm. High 3:03am (1.1m), low 8:26am (0.6m), high 2:54pm (1.6m). Best window 6–9:30am around the low.",
      "alerts": [
-      "SE onshore from midday — surf early"
+      "NE onshore from midday — surf early"
      ],
      "tip": {
-      "label": "Banks",
-      "text": "Small peaky banks at North Steyne, water a degree warmer (20°C). Light grovel conditions even after the SE sets in."
+      "label": "North Steyne Banks",
+      "text": "Peaky banks, light N at dawn. Worth a look near the low; NE puts it out by noon."
      }
     }
    }
@@ -251,236 +251,102 @@
   {
    "id": "tomorrow",
    "label": "Tomorrow",
-   "date": "Mon 2 Nov",
+   "date": "Tue 3 Nov",
    "done": false,
-   "note": "Slow start to the week — a couple of waist-high peaky waves, S-facing beaches best. Clean light offshore to ~9am with the 8:26am low helping banks, NE onshore from noon.",
-   "surfline_text": "Bit of a slow start to the week as we'll only see a couple waist high waves from the small swell mix - peaky. S facing beaches will probably hold the best shape.  Clean in the morning with offshores and that low tide will help banks out - then NE'lies will send us running for cover in the arvy.",
+   "note": "Mostly waist-high and junky — lacking quality swell. Cleanest in N corners out of the N/NE wind; morning low (9:48am) is the only window.",
+   "surfline_text": "Looking at mostly waist high conditions as we're lacking some quality swell. Expect pretty junky surf - with cleanest conditions in Nth corners out of the N/NE wind. You'll probably find some better banks through that morning low tide, this is the window if you're super keen.",
    "spots": {
     "dee-why": {
      "status": "estimated",
-     "rating": "poor-fair",
-     "size_ft": "1–2",
-     "size_desc": "Thigh–waist",
+     "rating": "poor",
+     "size_ft": "2–3",
+     "size_desc": "Waist",
      "energy_kj": null,
      "consistency": null,
-     "wind_rel": "offshore-am",
-     "window": "Mon 2: light N/NNW 4–7 kph to ~9am (offshore, clean), NE onshore 19 kph from noon. Low 8:26am (0.6m), high 2:54pm (1.6m)."
+     "wind_rel": "cross-off",
+     "window": "Tue 3: NNE 19 kph gusting 41 at 6am easing to NE 15 kph by 9am, then E–ENE 15–20 kph. Low 9:48am (0.6m), high 4:05pm (1.5m). Only window is the dawn low."
     },
     "long-reef": {
      "status": "estimated",
      "rating": "poor-fair",
-     "size_ft": "1–2",
-     "size_desc": "Thigh–waist",
+     "size_ft": "2–3",
+     "size_desc": "Waist",
      "energy_kj": null,
      "consistency": null,
-     "wind_rel": "offshore-am",
-     "window": "Mon 2: light N/NNW 4–7 kph to ~9am (offshore, clean), NE onshore 19 kph from noon. Low 8:26am (0.6m), high 2:54pm (1.6m)."
+     "wind_rel": "cross-off",
+     "window": "Tue 3: NNE 19 kph gusting 41 at 6am easing to NE 15 kph by 9am, then E–ENE 15–20 kph. Low 9:48am (0.6m), high 4:05pm (1.5m). Only window is the dawn low."
     },
     "curl-curl": {
      "status": "estimated",
-     "rating": "fair",
-     "size_ft": "1–3",
-     "size_desc": "Waist–shoulder",
+     "rating": "poor-fair",
+     "size_ft": "2–3",
+     "size_desc": "Waist",
      "energy_kj": null,
      "consistency": null,
-     "wind_rel": "offshore-am",
-     "window": "Mon 2: light N/NNW 4–7 kph to ~9am (offshore, clean), NE onshore 19 kph from noon. Low 8:26am (0.6m), high 2:54pm (1.6m)."
+     "wind_rel": "cross-off",
+     "window": "Tue 3: NNE 19 kph gusting 41 at 6am easing to NE 15 kph by 9am, then E–ENE 15–20 kph. Low 9:48am (0.6m), high 4:05pm (1.5m). Only window is the dawn low."
     },
     "manly": {
      "status": "estimated",
-     "rating": "poor-fair",
-     "size_ft": "1–2",
-     "size_desc": "Waist–chest",
+     "rating": "poor",
+     "size_ft": "2–3",
+     "size_desc": "Waist",
      "energy_kj": null,
      "consistency": null,
-     "wind_rel": "offshore-am",
-     "window": "Mon 2: light N/NNW 4–7 kph to ~9am (offshore, clean), NE onshore 19 kph from noon. Low 8:26am (0.6m), high 2:54pm (1.6m)."
+     "wind_rel": "cross-off",
+     "window": "Tue 3: NNE 19 kph gusting 41 at 6am easing to NE 15 kph by 9am, then E–ENE 15–20 kph. Low 9:48am (0.6m), high 4:05pm (1.5m). Only window is the dawn low."
     }
    }
   },
   {
    "id": "weekend",
    "label": "Weekend",
-   "date": "Sun 1 Nov (remaining)",
+   "date": "Sat 7 – Sun 8 Nov",
    "done": false,
-   "note": "Weekend is down to today: small, peaky, clean early. Just past it: Mon waist-high peaky and clean am; Tue junky waist–chest in N/NE wind; Wed small windswell mix, SW/S early.",
-   "surfline_text": "S swell leftovers mix with some recent short period NE windswell. Southerly magnets see a couple lingering chest high sets, all other breaks are waist high.  Clean at dawn with these offshore winds, then a light southerly switch leads to SE onshores persisting through the afternoon - they'll add lump and bump but should stay light enough for a little arvo grovel.",
+   "note": "Fri's short-range S swell fades into the weekend — S-facing beaches still pushing size early Sat, protected corners small. Light winds at dawn, NE onshore from noon: dawn session. Dead-S wraps badly at Dee Why. Size is a best guess — Surfline hasn't written the weekend yet.",
+   "surfline_text": "",
    "spots": {
     "dee-why": {
      "status": "estimated",
      "rating": "poor-fair",
-     "size_ft": "1–2",
-     "size_desc": "Thigh–waist",
-     "energy_kj": 230,
+     "size_ft": "2–3",
+     "size_desc": "Waist–chest",
+     "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "swells": [
-      {
-       "h_ft": 3.8,
-       "period_s": 7,
-       "dir": "NE",
-       "deg": 50,
-       "label": "NE wind wave, 7s, 3.8ft"
-      },
-      {
-       "h_ft": 1.6,
-       "period_s": 10,
-       "dir": "S",
-       "deg": 173,
-       "label": "S swell, 10s, 1.6ft"
-      },
-      {
-       "h_ft": 1.2,
-       "period_s": 12,
-       "dir": "S",
-       "deg": 180,
-       "label": "S swell, 12s, 1.2ft"
-      },
-      {
-       "h_ft": 2.5,
-       "period_s": 4,
-       "dir": "WNW",
-       "deg": 283,
-       "label": "WNW windswell, 4s, 2.5ft"
-      }
-     ],
-     "window": "Sun 1: W/WNW offshore 15 kph (gusts 33) at 6am, light S cross 11 kph 9am; SE onshore 19 kph by noon, E 20 kph 3pm. Low 7:09am (0.6m), high 1:45pm (1.6m), low 8:52pm (0.3m). Best window 6–10am.",
-     "alerts": [
-      "Remaining weekend = Sun only; Mon waist-high, peaky, clean early; Tue junky waist–chest in NE wind"
-     ]
+     "window": "Sat 7: light NW 4 kph at dawn, NE onshore ~13 kph by noon, 20 kph by 3pm. Sun 8 similar light-wind pattern. Fading S swell — dawn is the window."
     },
     "long-reef": {
      "status": "estimated",
-     "rating": "poor-fair",
-     "size_ft": "1–2",
-     "size_desc": "Thigh–waist",
-     "energy_kj": 230,
+     "rating": "fair",
+     "size_ft": "2–3",
+     "size_desc": "Waist–chest",
+     "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "swells": [
-      {
-       "h_ft": 3.8,
-       "period_s": 7,
-       "dir": "NE",
-       "deg": 50,
-       "label": "NE wind wave, 7s, 3.8ft"
-      },
-      {
-       "h_ft": 1.6,
-       "period_s": 10,
-       "dir": "S",
-       "deg": 173,
-       "label": "S swell, 10s, 1.6ft"
-      },
-      {
-       "h_ft": 1.2,
-       "period_s": 12,
-       "dir": "S",
-       "deg": 180,
-       "label": "S swell, 12s, 1.2ft"
-      },
-      {
-       "h_ft": 2.5,
-       "period_s": 4,
-       "dir": "WNW",
-       "deg": 283,
-       "label": "WNW windswell, 4s, 2.5ft"
-      }
-     ],
-     "window": "Sun 1: W/WNW offshore 15 kph (gusts 33) at 6am, light S cross 11 kph 9am; SE onshore 19 kph by noon, E 20 kph 3pm. Low 7:09am (0.6m), high 1:45pm (1.6m), low 8:52pm (0.3m). Best window 6–10am.",
-     "alerts": [
-      "Remaining weekend = Sun only; Mon waist-high, peaky, clean early; Tue junky waist–chest in NE wind"
-     ]
+     "window": "Sat 7: light NW 4 kph at dawn, NE onshore ~13 kph by noon, 20 kph by 3pm. Sun 8 similar light-wind pattern. Fading S swell — dawn is the window."
     },
     "curl-curl": {
      "status": "estimated",
      "rating": "fair",
-     "size_ft": "1–3",
-     "size_desc": "Waist–shoulder",
-     "energy_kj": 230,
+     "size_ft": "2–4",
+     "size_desc": "Waist–chest+",
+     "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "swells": [
-      {
-       "h_ft": 3.8,
-       "period_s": 7,
-       "dir": "NE",
-       "deg": 50,
-       "label": "NE wind wave, 7s, 3.8ft"
-      },
-      {
-       "h_ft": 1.6,
-       "period_s": 10,
-       "dir": "S",
-       "deg": 173,
-       "label": "S swell, 10s, 1.6ft"
-      },
-      {
-       "h_ft": 1.2,
-       "period_s": 12,
-       "dir": "S",
-       "deg": 180,
-       "label": "S swell, 12s, 1.2ft"
-      },
-      {
-       "h_ft": 2.5,
-       "period_s": 4,
-       "dir": "WNW",
-       "deg": 283,
-       "label": "WNW windswell, 4s, 2.5ft"
-      }
-     ],
-     "window": "Sun 1: W/WNW offshore 15 kph (gusts 33) at 6am, light S cross 11 kph 9am; SE onshore 19 kph by noon, E 20 kph 3pm. Low 7:09am (0.6m), high 1:45pm (1.6m), low 8:52pm (0.3m). Best window 6–10am.",
-     "alerts": [
-      "Remaining weekend = Sun only; Mon waist-high, peaky, clean early; Tue junky waist–chest in NE wind"
-     ]
+     "window": "Sat 7: light NW 4 kph at dawn, NE onshore ~13 kph by noon, 20 kph by 3pm. Sun 8 similar light-wind pattern. Fading S swell — dawn is the window."
     },
     "manly": {
      "status": "estimated",
      "rating": "poor-fair",
-     "size_ft": "1–3",
+     "size_ft": "2–3",
      "size_desc": "Waist–chest",
-     "energy_kj": 230,
+     "energy_kj": null,
      "consistency": null,
      "wind_rel": "offshore-am",
-     "swells": [
-      {
-       "h_ft": 3.8,
-       "period_s": 7,
-       "dir": "NE",
-       "deg": 50,
-       "label": "NE wind wave, 7s, 3.8ft"
-      },
-      {
-       "h_ft": 1.6,
-       "period_s": 10,
-       "dir": "S",
-       "deg": 173,
-       "label": "S swell, 10s, 1.6ft"
-      },
-      {
-       "h_ft": 1.2,
-       "period_s": 12,
-       "dir": "S",
-       "deg": 180,
-       "label": "S swell, 12s, 1.2ft"
-      },
-      {
-       "h_ft": 2.5,
-       "period_s": 4,
-       "dir": "WNW",
-       "deg": 283,
-       "label": "WNW windswell, 4s, 2.5ft"
-      }
-     ],
-     "window": "Sun 1: W/WNW offshore 15 kph (gusts 33) at 6am, light S cross 11 kph 9am; SE onshore 19 kph by noon, E 20 kph 3pm. Low 7:09am (0.6m), high 1:45pm (1.6m), low 8:52pm (0.3m). Best window 6–10am.",
-     "alerts": [
-      "Remaining weekend = Sun only; Mon waist-high, peaky, clean early; Tue junky waist–chest in NE wind"
-     ]
+     "window": "Sat 7: light NW 4 kph at dawn, NE onshore ~13 kph by noon, 20 kph by 3pm. Sun 8 similar light-wind pattern. Fading S swell — dawn is the window."
     }
    }
   }
- ],
- "energy_window": "current SSR power sum (wave endpoint unavailable)",
- "run_slot": "morning"
+ ]
 }
